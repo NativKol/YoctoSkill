@@ -2,7 +2,7 @@ name: validate
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   pull_request:
 
 permissions:
@@ -28,4 +28,9 @@ jobs:
       - name: Check generated references are reproducible
         run: |
           python tools/sync_references.py
+          python tools/build_manual_refs.py
           git diff --exit-code
+
+      - name: Test yocto-image-analysis helper
+        working-directory: skills/yocto-image-analysis/scripts
+        run: python -m unittest test_yocto_diff
