@@ -7,7 +7,7 @@ description: Analyze what a Yocto/OpenEmbedded distro and image actually contain
 
 Answer two questions with evidence: **what ends up in this image/distro and why**, and
 **what did this change do to it**. Target release: Yocto Project 5.0 "scarthgap" /
-BitBake 2.8 (provisional; check the user's release first — `LAYERSERIES_COMPAT_*` in
+BitBake 2.8 (still check the project's release first — `LAYERSERIES_COMPAT_*` in
 `conf/layer.conf`, the poky/openembedded-core branch, or `DISTRO_VERSION`). Facts that
 differ in other releases are flagged "scarthgap" in the references.
 

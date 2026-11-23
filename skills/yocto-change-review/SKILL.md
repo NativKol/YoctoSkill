@@ -8,7 +8,7 @@ description: Automated code review of changes to Yocto Project / OpenEmbedded re
 Review a *change* to Yocto/OpenEmbedded metadata the way an experienced layer maintainer
 would: understand what the change does to the build, prove it where possible, and report
 only what matters at the requested strictness. Target release: **Yocto Project 5.0
-"scarthgap" (BitBake 2.8)**, provisional until the user confirms; facts that differ by
+"scarthgap" (BitBake 2.8)**; check the project's release first. Facts that differ by
 release are marked *[release-specific]* in the references.
 
 This skill is change-centric. It does not replace the object checklists of
