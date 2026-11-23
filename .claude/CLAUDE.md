@@ -1,8 +1,7 @@
 # Project Rules
 
-YoctoSkill is a fork of the public yocto-agent-skills repository. It is private today, but
-treat it as public: everything committed here (commit messages, file contents, branch
-names, issue/PR text) may be published later.
+YoctoSkill is a **public repository** (a fork of yocto-agent-skills). Everything committed
+here is published: commit messages, file contents, branch names, and issue/PR text.
 
 ## Security
 

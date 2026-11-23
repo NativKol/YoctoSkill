@@ -36,7 +36,7 @@ Validation must pass before opening a PR. CI runs the same checks.
 
 ## Security
 
-Treat every commit as a publication, even while the repository is private: forks and future publication are easy, rewriting history is not.
+This is a public repository, so every commit is a publication.
 
 `tools/validate_skills.py` scans for email addresses, real usernames, absolute local
 paths, and credential patterns, but it cannot catch everything. Before opening a PR,
