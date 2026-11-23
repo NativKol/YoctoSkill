@@ -18,6 +18,7 @@ import re
 import sys
 from pathlib import Path
 
+import build_manual_refs
 import sync_references
 from sync_references import REPO_ROOT, SKILLS_DIR
 
@@ -28,7 +29,7 @@ DESCRIPTION_LIMIT = 1536
 # This is a public repository, so every commit is a publication. These patterns
 # catch the disclosures that are easy to paste in from a real build machine.
 # Generic placeholders stay allowed so documentation examples still read naturally.
-PLACEHOLDER_USERS = {"user", "username", "youruser", "builder", "build", "yocto", "developer"}
+PLACEHOLDER_USERS = {"root", "user", "username", "youruser", "builder", "build", "yocto", "developer"}
 
 DISCLOSURE_PATTERNS = (
     ("email address", re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")),
@@ -39,6 +40,9 @@ DISCLOSURE_PATTERNS = (
     ("credential", re.compile(r"xox[baprs]-[A-Za-z0-9-]{10,}")),
     ("private key", re.compile(r"BEGIN [A-Z ]*PRIVATE KEY")),
 )
+
+# Public project addresses quoted from the official manuals are not personal data.
+PUBLIC_EMAIL = re.compile(r"@(lists\.[a-z.]+|example\.com|[a-z.]*yoctoproject\.org)$|^git@")
 
 HOME_PATH = re.compile(r"/(?:home|Users)/([A-Za-z0-9._-]+)")
 
@@ -247,6 +251,10 @@ def check_disclosure(problems: list[str]) -> None:
         for number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
             for label, pattern in DISCLOSURE_PATTERNS:
                 match = pattern.search(line)
+                if match and label == "email address" and PUBLIC_EMAIL.search(match.group(0)):
+                    continue
+                if match and label == "Windows user path" and match.group(0).lower().endswith("\\user"):
+                    continue
                 if match:
                     problems.append(f"{rel}:{number}: {label} in public repo: {match.group(0)}")
 
@@ -268,6 +276,8 @@ def main() -> int:
     check_manifests(problems)
     check_disclosure(problems)
     problems.extend(sync_references.check())
+    if build_manual_refs.build(check=True):
+        problems.append("manual references are out of date: run python tools/build_manual_refs.py")
 
     for problem in problems:
         print(f"error: {problem}")
