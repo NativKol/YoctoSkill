@@ -49,6 +49,7 @@ oe-pkgdata-util find-path '*/path/or/file'
 
 ## References
 
+- Read [references/keywords.md](references/keywords.md) for the official scarthgap (5.0) manual entry of every variable, class, task and QA check this skill names. Grep it for `` ## Variable `NAME` `` (or `Class`, `Task`, `QA check`) instead of reading it whole. For a keyword that is not there, use the `yocto-manuals` skill.
 - Read [references/yocto-field-guide.md](references/yocto-field-guide.md) for the broader task playbook.
 - Read [references/qa-errors.md](references/qa-errors.md) for common QA failures.
 - Read [references/variables-core.md](references/variables-core.md) when the fix depends on variable semantics.

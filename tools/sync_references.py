@@ -89,11 +89,18 @@ def expected_files() -> dict[Path, str]:
     }
 
 
+def is_generated_copy(path: Path) -> bool:
+    """Skill-owned references (and keywords.md) live next to the copies; leave them alone."""
+    with open(path, encoding="utf-8") as handle:
+        return handle.readline().startswith("<!-- Generated from references/")
+
+
 def existing_files() -> set[Path]:
     return {
         path
         for skill in SKILL_REFERENCES
         for path in (SKILLS_DIR / skill / "references").glob("*.md")
+        if is_generated_copy(path)
     }
 
 

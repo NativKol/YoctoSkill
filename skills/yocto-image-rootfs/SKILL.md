@@ -42,6 +42,7 @@ oe-pkgdata-util find-path '*/usr/bin/<tool>'
 
 ## References
 
+- Read [references/keywords.md](references/keywords.md) for the official scarthgap (5.0) manual entry of every variable, class, task and QA check this skill names. Grep it for `` ## Variable `NAME` `` (or `Class`, `Task`, `QA check`) instead of reading it whole. For a keyword that is not there, use the `yocto-manuals` skill.
 - Read [references/image-rootfs.md](references/image-rootfs.md).
 - Read [references/variables-core.md](references/variables-core.md) for `IMAGE_INSTALL`, `IMAGE_FEATURES`, and package variables.
 - Read [references/tasks-reference.md](references/tasks-reference.md) for `do_rootfs`, `do_image`, and package tasks.

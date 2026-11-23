@@ -28,6 +28,11 @@ Use this skill to route Yocto and BitBake questions to the correct official docu
 - Security/SBOM/CVE/license: Security Manual, Security Reference, Reference Manual classes and variables.
 - Image/rootfs: Development Tasks Manual image customization, package management, and Reference Manual image/rootfs tasks.
 
+## References
+
+- Read [references/keywords.md](references/keywords.md) for the official scarthgap (5.0) manual entry of every variable, class, task and QA check this skill names. Grep it for `` ## Variable `NAME` `` (or `Class`, `Task`, `QA check`) instead of reading it whole. For a keyword that is not there, use the `yocto-manuals` skill.
+- Read [references/official-doc-map.md](references/official-doc-map.md) and [references/migration.md](references/migration.md) as described in the workflow.
+
 ## Output
 
 Answer with:

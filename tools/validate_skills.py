@@ -126,6 +126,11 @@ def check_reference_mapping(problems: list[str]) -> None:
             Path(target).name
             for target in MARKDOWN_LINK.findall(skill_md.read_text(encoding="utf-8"))
             if target.startswith("references/")
+            and target.count("/") == 1
+            and (
+                not (skill_md.parent / target).exists()
+                or sync_references.is_generated_copy(skill_md.parent / target)
+            )
         }
         mapped = {Path(source).name for source in sources}
 

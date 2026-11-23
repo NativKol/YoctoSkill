@@ -48,6 +48,7 @@ bitbake -c savedefconfig virtual/kernel
 
 ## References
 
+- Read [references/keywords.md](references/keywords.md) for the official scarthgap (5.0) manual entry of every variable, class, task and QA check this skill names. Grep it for `` ## Variable `NAME` `` (or `Class`, `Task`, `QA check`) instead of reading it whole. For a keyword that is not there, use the `yocto-manuals` skill.
 - Read [references/bsp-kernel.md](references/bsp-kernel.md).
 - Read [references/classes-core.md](references/classes-core.md) for kernel and U-Boot classes.
 - Read [references/migration.md](references/migration.md) for release compatibility risks.

@@ -42,6 +42,7 @@ find tmp/deploy -maxdepth 4 -iname '*spdx*' -o -path '*licenses*'
 
 ## References
 
+- Read [references/keywords.md](references/keywords.md) for the official scarthgap (5.0) manual entry of every variable, class, task and QA check this skill names. Grep it for `` ## Variable `NAME` `` (or `Class`, `Task`, `QA check`) instead of reading it whole. For a keyword that is not there, use the `yocto-manuals` skill.
 - Read [references/security-sbom.md](references/security-sbom.md).
 - Read [references/classes-core.md](references/classes-core.md) for `license`, `archiver`, `create-spdx`, and release-sensitive security classes.
 - Read [references/migration.md](references/migration.md) for SBOM/CVE release changes.

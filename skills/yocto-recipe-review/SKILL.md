@@ -62,6 +62,7 @@ Avoid `_append`, `_prepend`, `_remove`, and old package override syntax unless t
 
 ## References
 
+- Read [references/keywords.md](references/keywords.md) for the official scarthgap (5.0) manual entry of every variable, class, task and QA check this skill names. Grep it for `` ## Variable `NAME` `` (or `Class`, `Task`, `QA check`) instead of reading it whole. For a keyword that is not there, use the `yocto-manuals` skill.
 - Read [references/variables-core.md](references/variables-core.md) for variable semantics.
 - Read [references/classes-core.md](references/classes-core.md) for class-specific review.
 - Read [references/qa-errors.md](references/qa-errors.md) for package QA risks.

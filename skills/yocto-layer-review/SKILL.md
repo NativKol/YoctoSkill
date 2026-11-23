@@ -55,6 +55,7 @@ Check:
 
 ## References
 
+- Read [references/keywords.md](references/keywords.md) for the official scarthgap (5.0) manual entry of every variable, class, task and QA check this skill names. Grep it for `` ## Variable `NAME` `` (or `Class`, `Task`, `QA check`) instead of reading it whole. For a keyword that is not there, use the `yocto-manuals` skill.
 - Read [references/official-doc-map.md](references/official-doc-map.md) for official layer docs.
 - Read [references/yocto-field-guide.md](references/yocto-field-guide.md) for layer and provider basics.
 - Read [references/migration.md](references/migration.md) for release compatibility checks.
