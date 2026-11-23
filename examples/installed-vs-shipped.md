@@ -1,35 +1,34 @@
 # Example: installed-vs-shipped QA Error
 
+Skill: `yocto-recipe-review` (or `bitbake-debug` when only the log is given).
+
 ## User Prompt
 
 ```text
-Use yocto-recipe-review to fix an installed-vs-shipped QA error in my recipe.
+do_package_qa fails: "foo: Files/directories were installed but not shipped in any package: /opt/foo/bin/foo-daemon /opt/foo/etc/foo.conf [installed-vs-shipped]". How do I fix it?
 ```
 
 ## Evidence to Request
 
-- exact QA message
-- affected recipe
-- `log.do_package_qa`
-- `do_install` function
-- installed path under `${D}`
-- `bitbake -e <recipe>` output for `PACKAGES` and `FILES:*`
+- the full QA message and the recipe (class, `EXTRA_OECMAKE`/`EXTRA_OECONF`, `do_install`)
+- `bitbake-getvar -r foo PACKAGES` and `bitbake-getvar -r foo FILES:foo`
+- the contents of `${D}` (`tmp/work/*/foo/*/image/`)
 
 ## Bad Answer Pattern
 
-- Adding broad `INSANE_SKIP:${PN} += "installed-vs-shipped"`.
-- Adding random paths to `FILES:${PN}` without checking package split intent.
+- `INSANE_SKIP:${PN} += "installed-vs-shipped"` (the files would silently vanish from every image).
+- Adding random paths to `FILES:${PN}` without checking the package split, or adding paths that an earlier package (`${PN}-dev`, `${PN}-dbg`) already matches: the leftmost package in `PACKAGES` wins, so that line has no effect.
 
 ## Expected Answer Pattern
 
-- Identify which installed file has no owning package.
-- Decide whether the file should be packaged or removed.
-- Add the narrow path to the correct `FILES:<package>` if it should ship.
-- Validate with `bitbake -c package_qa <recipe>`.
+- Explain that `/opt` is covered by no default `FILES` entry, so nothing owns the files.
+- Preferred fix: stop overriding the install prefix so the build uses `${bindir}` and `${sysconfdir}` (default `FILES:${PN}` covers them).
+- If `/opt` is a product requirement: `FILES:${PN} += "/opt/foo"`, and mark `/opt/foo/etc/foo.conf` in `CONFFILES:${PN}` if users edit it.
+- If the files are not needed: delete them at the end of `do_install`.
 
 ## Validation
 
 ```bash
-bitbake -e <recipe> | rg '^(PACKAGES|FILES)[:=]'
-bitbake -c package_qa <recipe>
+bitbake -c package_qa foo
+oe-pkgdata-util list-pkg-files -p foo
 ```

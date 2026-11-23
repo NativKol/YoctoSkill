@@ -1,92 +1,117 @@
 # Yocto Field Guide for Agents
 
-This guide compresses the official Yocto Project and BitBake documentation into practical agent behavior. It is not a replacement for the official manuals; use it to decide what to inspect and which official section to verify.
+The one place for the task-failure playbook, the recipe and layer checklists, and review red flags. Release: Yocto Project 5.0 "scarthgap" / BitBake 2.8. Operators and overrides are explained in `variables-core.md`, tasks in `tasks-reference.md`, QA tags in `qa-errors.md` (each skill ships the ones it needs).
 
-## Mental Model
+## 1. Mental Model
 
-- Yocto Project is a distribution construction system built on OpenEmbedded metadata and BitBake execution.
-- BitBake parses configuration, layers, classes, recipes, and appends, then executes tasks with a datastore of expanded variables.
-- Recipes produce packages; images install packages. Do not confuse recipe names, package names, and image targets.
-- Layers organize metadata. Layer ordering, collection names, dependencies, priorities, and append matching affect which metadata wins.
-- Tasks run in isolated work directories. The most useful truth is usually in `tmp/work/.../temp/log.do_<task>` and `run.do_<task>`.
-- Shared state can hide or reveal changes. If behavior is surprising, distinguish parse-time metadata from task execution and sstate reuse.
+- BitBake parses configuration (`bitbake.conf`, `local.conf`, `bblayers.conf`, machine and distro conf), then each recipe with its classes, includes and appends, then runs tasks. Every recipe has a private copy of the datastore.
+- Recipes produce packages; images install packages. Recipe names, package names and image names are different namespaces.
+- Layers decide which metadata exists and which wins (`BBFILE_PRIORITY`, appends, `BBMASK`).
+- The truth about a failure is in `tmp/work/<arch>/<pn>/<pv>/temp/log.do_<task>` and `run.do_<task>`; the truth about a value is `bitbake-getvar -r <recipe> VAR`.
+- Shared state can skip tasks entirely (restored from sstate). "My change did nothing" is often a signature question (`debug-tools.md`).
 
-## Core File Types
+## 2. File Types
 
-- `.bb`: recipe.
-- `.bbappend`: append to an existing recipe from another layer.
-- `.bbclass`: reusable class inherited by recipes.
-- `.inc`: include file shared by recipes.
-- `conf/layer.conf`: layer collection, file patterns, compatibility, dependencies, priority.
-- `conf/local.conf`: local build configuration, not usually committed.
-- `conf/bblayers.conf`: enabled layer list, not usually committed to product metadata.
-- `conf/machine/*.conf`: machine/BSP configuration.
-- `conf/distro/*.conf`: distro policy.
-- image recipe: recipe that inherits image behavior and defines installed packages/features.
+`.bb` recipe; `.bbappend` append from another layer (`foo_%.bbappend` matches any version); `.bbclass` class; `.inc` shared include (`require` it); `conf/layer.conf`; `conf/local.conf` and `conf/bblayers.conf` (build dir, not product metadata); `conf/machine/*.conf`; `conf/distro/*.conf`; `conf/multiconfig/*.conf`; `.wks` wic kickstart; `.cfg` / `.scc` kernel fragments and features; `files/` or `${PN}/` directories for `file://` sources.
 
-## Assignment and Override Rules
+## 3. Gather Evidence (agent-safe commands)
 
-Prefer current BitBake override syntax:
-
-```bitbake
-VAR = "value"
-VAR ?= "default if unset"
-VAR ??= "weak default"
-VAR := "${IMMEDIATE_EXPANSION}"
-VAR += " value-with-leading-space-usually-needed"
-VAR =+ "value-with-trailing-space-usually-needed "
-VAR .= "suffix-no-space"
-VAR =. "prefix-no-space"
-VAR:append = " suffix"
-VAR:prepend = "prefix "
-VAR:remove = "token"
-VAR:machine = "machine-specific"
-FILES:${PN} += "${bindir}/mytool"
-RDEPENDS:${PN} += "bash"
+```bash
+bitbake-layers show-layers
+bitbake-layers show-recipes <pn>
+bitbake-layers show-appends
+bitbake-getvar -r <recipe> <VAR>             # final value with history
+bitbake -c listtasks <recipe>
+bitbake -n <target>                          # dry run
+bitbake -k <target>                          # build and keep going to collect every failure
+grep -n -E 'ERROR|error:|QA Issue' tmp/work/*/<pn>/*/temp/log.do_<task>
+oe-pkgdata-util list-pkgs '<pattern>*'      # packages already built
+oe-pkgdata-util find-path '*/usr/bin/<tool>'
 ```
 
-Agent cautions:
+Not evidence gathering: `bitbake -c devshell` (interactive, for a human), `bitbake -c cleansstate` / `cleanall` (destructive; see section 6). Never pipe to `less`.
 
-- Spacing matters for `+=`, `=+`, `.=` and `=.`.
-- Override-style `:append`, `:prepend`, and `:remove` are applied at expansion time.
-- Package-specific variables usually need package overrides such as `${PN}`, `${PN}-dev`, or `${PN}-ptest`.
-- `DEPENDS` takes recipe-level build dependencies. `RDEPENDS:${PN}` takes runtime package dependencies.
-- `PN` collisions with entries in `OVERRIDES` can cause surprising override behavior; check QA `pn-overrides`.
+## 4. Task Failure Playbook
 
-## Recipe Checklist
+Always start from the first failing task and its first error.
 
-Minimum recipe review:
+### do_fetch
+- Evidence: `log.do_fetch`, `bitbake-getvar -r <pn> SRC_URI`, `SRCREV`, `DL_DIR`, `PREMIRRORS`/`MIRRORS`, `BB_NO_NETWORK`.
+- Git URIs need `branch=` (or `nobranch=1`) and usually `protocol=https`; `SRCREV` must exist on that branch. Archives need `SRC_URI[sha256sum]`; update it only after confirming upstream really changed.
+- Corporate networks: mirrors and `PREMIRRORS`, not edits to the fetcher. Refetch with `bitbake -f -c fetch <pn>`, not `cleanall`.
+
+### do_unpack
+- Evidence: the `WORKDIR` listing and `S`.
+- Scarthgap git sources unpack to `${WORKDIR}/git`: set `S = "${WORKDIR}/git"`. (From 5.1 styhead this becomes `${UNPACKDIR}/git`; not for scarthgap.) Archives with a different top directory: set `S`; colliding multi-source URIs: `subdir=`/`destsuffix=`.
+
+### do_patch
+- Evidence: `log.do_patch`, the patch list in `SRC_URI`, `FILESPATH`/`FILESEXTRAPATHS`.
+- Refresh failing or fuzzy patches with `devtool modify <pn>` + `devtool finish --force-patch-refresh <pn> <layer>` and review the diff. Every patch needs a valid `Upstream-Status:` header (`patch-status`). `apply=no` only for files that must not be applied; `striplevel=` for non-`-p1` patches.
+
+### do_configure
+- Evidence: inherited class, `EXTRA_OECONF`/`EXTRA_OECMAKE`/`EXTRA_OEMESON`, `PACKAGECONFIG`, `config.log` or `CMakeCache.txt` in `${B}`, `recipe-sysroot*`.
+- Missing library or header: add the providing recipe to `DEPENDS`; missing host tool: `foo-native` in `DEPENDS` or the right class (`pkgconfig`, `gettext`). Feature switches belong in `PACKAGECONFIG`. `configure-unsafe` means host paths were probed. `LIC_FILES_CHKSUM` mismatch errors appear at the end of this task.
+
+### do_compile
+- Evidence: the failing command in `log.do_compile`, generated files, `-j` races.
+- Fix cross variables through the class (`EXTRA_OEMAKE`, `CC`, `CFLAGS`), add generator tools as `-native`. Only use `PARALLEL_MAKE = ""` for a proven race, in that recipe, with a comment (dev-manual "Debugging Parallel Make Races" 32.13).
+
+### do_install
+- Evidence: `run.do_install`, contents of `${D}` (`${WORKDIR}/image`).
+- Install with `install -d`/`install -m` into `${D}${bindir}` etc.; never to host paths. Avoid `cp -a` (host ownership, `host-user-contaminated`): use `cp --no-preserve=ownership` or `tar --no-same-owner`.
+
+### do_package / do_package_qa
+- Evidence: the bracketed QA tag, `PACKAGES`, `FILES:<pkg>`, `${WORKDIR}/packages-split/`.
+- Remember leftmost-package-wins (`variables-core.md` section 8). See `qa-errors.md` for each tag. `INSANE_SKIP` only with a stated reason.
+
+### do_populate_sysroot / do_prepare_recipe_sysroot
+- Files another recipe needs at build time must be installed into `${D}` in a directory listed in `SYSROOT_DIRS` (add with `SYSROOT_DIRS += "/opt"`); recipes never write into sysroots directly.
+
+### do_rootfs, do_image*
+- Owned by `yocto-image-rootfs`: package names, `IMAGE_INSTALL`, recommendations, postinsts, `IMAGE_FSTYPES`, wic.
+
+### Parse errors (before any task)
+- "No recipes available for: .../foo_1.2.bbappend": dangling append (fatal by default; `BB_DANGLINGAPPENDS_WARNONLY = "1"` downgrades it). Rename to the new version or `foo_%.bbappend`.
+- "Layer X is not compatible with the core layer": `LAYERSERIES_COMPAT_X` does not list `scarthgap`.
+- Old `_append`/`_prepend` syntax: parse error since 3.4; convert to `:`.
+- "Nothing PROVIDES 'foo'": no recipe provides it (layer missing, `BBMASK`, `COMPATIBLE_MACHINE`, `features_check` skip). `bitbake-layers show-recipes foo` and the skip reason in the error help.
+
+## 5. Recipe Checklist
 
 ```bitbake
-SUMMARY = "Short package summary"
-DESCRIPTION = "Longer description if needed"
+SUMMARY = "Short summary"
 HOMEPAGE = "https://example.org"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=<md5>"
+
 SRC_URI = "git://example.org/project.git;protocol=https;branch=main"
-SRCREV = "<fixed revision>"
-S = "${WORKDIR}/git"
-inherit cmake
-DEPENDS += "openssl"
-PACKAGECONFIG ??= ""
-FILES:${PN} += "${systemd_system_unitdir}/foo.service"
-RDEPENDS:${PN} += "bash"
+SRCREV = "<full commit hash>"
+S = "${WORKDIR}/git"            # scarthgap; 5.1+ uses ${UNPACKDIR}/git
+
+inherit cmake pkgconfig systemd
+
+DEPENDS = "openssl"
+PACKAGECONFIG ??= "foo"
+PACKAGECONFIG[foo] = "-DWITH_FOO=ON,-DWITH_FOO=OFF,libfoo"
+
+SYSTEMD_SERVICE:${PN} = "example.service"   # the systemd class packages the unit; no FILES line needed
+RDEPENDS:${PN} += "bash"                    # because a shipped script uses #!/bin/bash
 ```
 
-Check:
+Check: required fields (`SUMMARY`, `DESCRIPTION` or default, `HOMEPAGE`, `LICENSE`, `LIC_FILES_CHKSUM`; recipe style guide 3.5.1); fixed `SRCREV` (no `${AUTOREV}` in production); checksums for archives; correct `S`; build class instead of hand-rolled configure/compile; build deps in `DEPENDS`, runtime deps in `RDEPENDS:<pkg>` as package names; installs only under `${D}`; every installed file packaged; no unexplained `INSANE_SKIP`; `${BPN}` (not `${PN}`) in `SRC_URI`; `BBCLASSEXTEND` instead of separate `-native` recipes; idempotent tasks.
 
-- Use fixed `SRCREV` for reproducible builds; avoid `${AUTOREV}` outside active development.
-- Use checksums for archive downloads.
-- Match `S` to unpacked source layout.
-- Use the build-system class instead of hand-running generic commands when possible.
-- Add build tools and libraries to `DEPENDS`, not host assumptions.
-- Install only under `${D}` in `do_install`.
-- Package installed files through `FILES:*`.
-- Do not silence QA with `INSANE_SKIP` until the real cause is understood.
+## 6. Clean Commands and Their Cost
 
-## Layer Checklist
+| Command | Removes | When |
+| --- | --- | --- |
+| `bitbake -f -c <task> <pn>` | nothing; forces the task | first choice to rerun |
+| `bitbake -c clean <pn>` | work dir output | stale work dir; sstate may restore it |
+| `bitbake -c cleansstate <pn>` | work dir + recipe sstate | ask first; not with shared `SSTATE_DIR` |
+| `bitbake -c cleanall <pn>` | + downloads | ask first; almost never (use `bitbake -f -c fetch`) |
 
-Review `conf/layer.conf` for:
+Never recommend deleting `tmp/`, `sstate-cache/` or `downloads/` as a fix.
+
+## 7. Layer Checklist
 
 ```bitbake
 BBPATH .= ":${LAYERDIR}"
@@ -94,251 +119,43 @@ BBFILES += "${LAYERDIR}/recipes-*/*/*.bb ${LAYERDIR}/recipes-*/*/*.bbappend"
 BBFILE_COLLECTIONS += "mylayer"
 BBFILE_PATTERN_mylayer = "^${LAYERDIR}/"
 BBFILE_PRIORITY_mylayer = "6"
-LAYERSERIES_COMPAT_mylayer = "scarthgap wrynose"
 LAYERDEPENDS_mylayer = "core"
+LAYERSERIES_COMPAT_mylayer = "scarthgap"   # list only series you have built and tested
+BBFILES_DYNAMIC += "openembedded-layer:${LAYERDIR}/dynamic-layers/meta-oe/*/*/*.bbappend"
 ```
 
-Check:
+Check: unique, stable collection name; `LAYERSERIES_COMPAT` names only tested series; `LAYERDEPENDS` complete; globs cover the files; appends verified with `bitbake-layers show-appends`; optional appends behind `BBFILES_DYNAMIC`; priority not used to paper over provider or version policy (use `PREFERRED_PROVIDER_*` / `PREFERRED_VERSION_*`).
 
-- collection name is stable and unique.
-- `LAYERSERIES_COMPAT_*` matches the target release.
-- `LAYERDEPENDS_*` lists required layers.
-- `.bbappend` files match existing recipes; verify with `bitbake-layers show-appends`.
-- Dynamic appends should use `BBFILES_DYNAMIC` when optional layers may be absent.
-- Avoid raising layer priority to mask dependency or provider problems.
+## 8. Provider Rules
 
-## Task Failure Playbook
+- `PROVIDES` + `PREFERRED_PROVIDER_<item>`: build-time choice. Keep the underscore: `PREFERRED_PROVIDER_virtual/kernel`, never `PREFERRED_PROVIDER:virtual/kernel`.
+- `RPROVIDES`: runtime alternatives; no `virtual/` names at runtime (use `VIRTUAL-RUNTIME_*`).
+- `PREFERRED_VERSION_<pn> = "1.2%"`: matched against `PV`.
+- `bitbake -DDD -v <target>` shows why a provider or version was chosen.
 
-### `do_fetch`
+## 9. Review Red Flags
 
-Evidence:
-
-- `SRC_URI`, `SRCREV`, branch, protocol, checksums.
-- `log.do_fetch`.
-- mirror settings and network policy.
-
-Fix patterns:
-
-- use `protocol=https` for Git when needed.
-- pin `SRCREV` to a real commit on the selected branch.
-- update archive checksums after verifying upstream source intentionally changed.
-- use mirrors or premirrors for controlled environments.
-
-### `do_unpack`
-
-Evidence:
-
-- source archive layout under `${WORKDIR}`.
-- value of `S`.
-- multi-source `SRC_URI` entries.
-
-Fix patterns:
-
-- set `S = "${WORKDIR}/git"` for Git fetches when needed.
-- set subdirectories on `SRC_URI` entries when multiple sources collide.
-
-### `do_patch`
-
-Evidence:
-
-- `SRC_URI` patch entries.
-- `log.do_patch`.
-- patch strip level, context, fuzz, and upstream status.
-
-Fix patterns:
-
-- refresh patches against the release source.
-- add `Upstream-Status` where project policy requires it.
-- use `apply=yes` or `apply=no` only when automatic patch handling is wrong.
-
-### `do_configure`
-
-Evidence:
-
-- inherited class.
-- `PACKAGECONFIG`, `EXTRA_OECONF`, `EXTRA_OECMAKE`, `EXTRA_OEMESON`.
-- `recipe-sysroot` and `recipe-sysroot-native`.
-
-Fix patterns:
-
-- add missing build dependencies to `DEPENDS`.
-- move feature toggles to `PACKAGECONFIG`.
-- avoid host paths and host tools; add native tools as `foo-native` dependencies.
-
-### `do_compile`
-
-Evidence:
-
-- compiler command in `log.do_compile`.
-- generated files expected by build.
-- parallel build race signs.
-
-Fix patterns:
-
-- fix upstream build system variables through the right class.
-- add missing generated-code tools to `DEPENDS`.
-- only disable parallel make for a proven race, and do it locally.
-
-### `do_install`
-
-Evidence:
-
-- install commands in `run.do_install`.
-- contents under `${D}`.
-- permissions and ownership.
-
-Fix patterns:
-
-- use `install -d` and `install -m`.
-- never install to host `/usr`, `/etc`, or source tree paths.
-- use `${bindir}`, `${sbindir}`, `${libdir}`, `${sysconfdir}`, `${systemd_system_unitdir}`.
-
-### `do_package` and `do_package_qa`
-
-Evidence:
-
-- QA message tag.
-- files under `${D}`.
-- package split variables.
-
-Fix patterns:
-
-- `installed-vs-shipped`: add correct files to `FILES:${PN}` or remove unwanted installed files.
-- `file-rdeps`: add runtime package dependency to the right `RDEPENDS:<package>`.
-- `dev-so`: move unversioned `.so` only if it is truly a development symlink.
-- `already-stripped`: stop upstream install from stripping binaries.
-- `host-user-contaminated`: fix install ownership; do not preserve host uid/gid.
-- `patch-fuzz`: refresh patch.
-- `buildpaths`: remove absolute build paths from outputs.
-
-### `do_rootfs`
-
-Evidence:
-
-- `log.do_rootfs`.
-- image recipe and `IMAGE_INSTALL`.
-- package names from pkgdata.
-
-Fix patterns:
-
-- use package names, not always recipe names.
-- verify package availability with `oe-pkgdata-util list-pkgs`.
-- check `RPROVIDES`, `RCONFLICTS`, `RREPLACES`, and selected package manager.
-- resolve license or incompatible package policy before forcing install.
-
-## Image and Package Debugging
-
-Useful commands:
-
-```bash
-oe-pkgdata-util list-pkgs
-oe-pkgdata-util find-path '*/usr/bin/foo'
-oe-pkgdata-util lookup-recipe <package>
-bitbake -e <image> | rg '^(IMAGE_INSTALL|IMAGE_FEATURES|PACKAGE_CLASSES|DISTRO_FEATURES|MACHINE_FEATURES)='
-```
-
-Common mistakes:
-
-- adding a recipe name to `IMAGE_INSTALL` when the produced package has another name.
-- using `IMAGE_INSTALL +=` in `local.conf` without understanding parse ordering.
-- enabling a feature in `DISTRO_FEATURES` but missing required layer or package config.
-- expecting `DEPENDS` to install something into the final image.
-
-## Provider and Dependency Debugging
-
-Check:
-
-```bash
-bitbake-layers show-recipes <name>
-bitbake-layers show-overlayed
-bitbake -e <recipe> | rg '^(PREFERRED_PROVIDER|PREFERRED_VERSION|PROVIDES|RPROVIDES|DEPENDS|RDEPENDS)'
-```
-
-Rules:
-
-- `PROVIDES` and `PREFERRED_PROVIDER_*` affect build-time provider selection.
-- `RPROVIDES` affects runtime package provider selection.
-- `PREFERRED_VERSION_*` selects recipe versions where multiple versions exist.
-- `virtual/kernel`, `virtual/bootloader`, and similar virtual providers are policy decisions usually made by machine or distro config.
-
-## Kernel and BSP Checklist
-
-Check:
-
-- `MACHINE` and machine `.conf`.
-- BSP layer enabled and compatible.
-- `PREFERRED_PROVIDER_virtual/kernel`.
-- kernel recipe and bbappends.
-- `KERNEL_DEVICETREE`, kernel fragments, defconfig, and config check logs.
-- deploy artifacts under `tmp/deploy/images/${MACHINE}`.
-
-Useful tasks:
-
-```bash
-bitbake -c menuconfig virtual/kernel
-bitbake -c diffconfig virtual/kernel
-bitbake -c savedefconfig virtual/kernel
-bitbake -c kernel_configme virtual/kernel
-bitbake -c kernel_configcheck virtual/kernel
-```
-
-## Clean Commands
-
-Use targeted cleans:
-
-```bash
-bitbake -c clean <recipe>
-bitbake -c cleansstate <recipe>
-bitbake -c cleanall <recipe>
-```
-
-Guidance:
-
-- `clean` removes work output for the recipe.
-- `cleansstate` also removes shared state for that recipe.
-- `cleanall` also removes downloads; avoid unless source download state is the problem.
-- Prefer explaining rebuild impact before recommending cleans.
-
-## Review Red Flags
-
-- old override syntax used in a modern layer without release reason.
-- `INSANE_SKIP` added without a linked QA root cause.
+- Old `_append`/`FILES_${PN}` syntax in a scarthgap layer (parse error since 3.4).
+- `PREFERRED_PROVIDER:` / `PREFERRED_VERSION:` / `LAYERSERIES_COMPAT:` written with a colon.
+- `INSANE_SKIP` without a linked root cause.
 - `SRCREV = "${AUTOREV}"` in production metadata.
-- missing `LIC_FILES_CHKSUM` or vague `LICENSE`.
-- host tools assumed instead of `-native` dependencies.
-- installing outside `${D}`.
-- global changes in `local.conf` used as product metadata.
-- `.bbappend` tied to an exact version when a wildcard append is intended, or wildcard append used when release behavior must be pinned.
-- layer priority used to override another layer without explicit provider/version policy.
-- image changes that confuse recipe names and runtime package names.
-- deleting `tmp`/`sstate-cache` as a routine fix.
+- Missing or vague `LICENSE` / `LIC_FILES_CHKSUM`, or a checksum change without `License-Update:`.
+- Host tools assumed instead of `-native` dependencies; installing outside `${D}`.
+- `IMAGE_INSTALL +=` in `local.conf`; product policy in `local.conf`.
+- Version-pinned bbappend where `%` was intended (or the reverse).
+- `DEPENDS` used to put something in an image; recipe names used as package names.
+- Patches without `Upstream-Status`.
+- Destructive cleans or deleting `tmp`/`sstate-cache` as routine.
 
-## Response Templates
-
-Build failure:
+## 10. Response Template
 
 ```text
 Most likely cause: ...
-Evidence: ...
-Check next: ...
-Fix: ...
-Why this is the Yocto fix: ...
-Official docs: ...
-Validation: bitbake -c <task> <recipe> or bitbake <target>
+Evidence (observed / needed): ...
+Fix (metadata change or command): ...
+Why this is the Yocto/BitBake fix: ...
+Validate: bitbake -c <task> <recipe>, then bitbake <target>
+Manual: <manual> "<section>"
 ```
 
-Recipe review:
-
-```text
-Findings:
-- ...
-
-Suggested metadata:
-...
-
-Validation:
-- bitbake -e <recipe>
-- bitbake -c patch <recipe>
-- bitbake <recipe>
-- bitbake <image>
-```
+Derived from the Yocto Project scarthgap (5.0) documentation, CC BY-SA 2.0 UK.

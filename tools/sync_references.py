@@ -27,24 +27,24 @@ SKILL_REFERENCES: dict[str, list[str]] = {
     "bitbake-debug": [
         "shared/yocto-field-guide.md",
         "yocto/qa-errors.md",
+        "bitbake/tasks-reference.md",
         "bitbake/variables-core.md",
+        "bitbake/debug-tools.md",
     ],
     "yocto-doc-router": [
         "shared/official-doc-map.md",
         "yocto/migration.md",
-        "yocto/qa-errors.md",
-        "bitbake/variables-core.md",
-        "bitbake/classes-core.md",
     ],
     "yocto-recipe-review": [
-        "shared/official-doc-map.md",
-        "yocto/qa-errors.md",
         "bitbake/variables-core.md",
         "bitbake/classes-core.md",
+        "yocto/qa-errors.md",
+        "shared/yocto-field-guide.md",
+        "bitbake/debug-tools.md",
     ],
     "yocto-layer-review": [
-        "shared/official-doc-map.md",
         "shared/yocto-field-guide.md",
+        "bitbake/variables-core.md",
         "yocto/migration.md",
     ],
     "yocto-image-rootfs": [
@@ -54,13 +54,15 @@ SKILL_REFERENCES: dict[str, list[str]] = {
     ],
     "yocto-bsp-kernel": [
         "yocto/bsp-kernel.md",
-        "yocto/migration.md",
+        "bitbake/tasks-reference.md",
         "bitbake/classes-core.md",
+        "yocto/migration.md",
     ],
     "yocto-security-sbom": [
         "yocto/security-sbom.md",
-        "yocto/migration.md",
         "bitbake/classes-core.md",
+        "bitbake/variables-core.md",
+        "yocto/migration.md",
     ],
 }
 

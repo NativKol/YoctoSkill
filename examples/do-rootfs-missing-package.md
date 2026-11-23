@@ -1,35 +1,38 @@
 # Example: Missing Package in do_rootfs
 
+Skill: `yocto-image-rootfs`.
+
 ## User Prompt
 
 ```text
-Use yocto-image-rootfs to debug this do_rootfs failure. I added `foo` to IMAGE_INSTALL but rootfs says nothing provides foo.
+I added foo to IMAGE_INSTALL but do_rootfs says nothing provides foo. There is a foo_1.0.bb recipe in my layer.
 ```
 
 ## Evidence to Request
 
-- image recipe or `local.conf` change
-- `tmp/work/.../<image>/.../temp/log.do_rootfs`
-- `bitbake -e <image>` output for `IMAGE_INSTALL`
-- `oe-pkgdata-util list-pkgs | rg foo`
-- `bitbake-layers show-recipes foo`
+- where `foo` was added (`local.conf`, image recipe, bbappend) and the exact line
+- the first error in `tmp/work/<machine>-*/<image>/*/temp/log.do_rootfs`
+- `bitbake-getvar -r <image> IMAGE_INSTALL`
+- `oe-pkgdata-util list-pkgs 'foo*'` after `bitbake foo` (pkgdata only knows built packages)
 
 ## Bad Answer Pattern
 
-- Telling the user to add `DEPENDS += "foo"` to the image.
-- Assuming recipe name and package name are identical.
-- Recommending a full `tmp/` deletion.
+- `DEPENDS += "foo"` in the image recipe (builds it, never installs it).
+- Assuming the recipe name equals the package name.
+- `IMAGE_INSTALL += "foo"` in `local.conf` (skips the image's `?=` default list).
+- Deleting `tmp/`.
 
 ## Expected Answer Pattern
 
-- Verify whether `foo` is a runtime package name.
-- Use `oe-pkgdata-util lookup-recipe <package>` or `list-pkgs`.
-- If the recipe emits `foo-bin` or `${PN}-utils`, add that package to `IMAGE_INSTALL`.
-- If no package exists, review the recipe's `PACKAGES` and `FILES:*`.
+- Build `foo`, then list its packages: `oe-pkgdata-util list-pkgs 'foo*'`, `oe-pkgdata-util list-pkg-files -p <pkg>`.
+- If the recipe emits `foo-bin`, `foo-utils` or a Debian-renamed library package, put that name in `IMAGE_INSTALL`.
+- If no package contains the files, check `PACKAGES`/`FILES:*` (empty packages are not created unless `ALLOW_EMPTY`).
+- In `local.conf` use `IMAGE_INSTALL:append = " foo-utils"` (leading space).
 
 ## Validation
 
 ```bash
-oe-pkgdata-util list-pkgs | rg foo
-bitbake -c rootfs <image>
+oe-pkgdata-util list-pkgs 'foo*'
+bitbake -c rootfs -f <image>
+grep foo tmp/deploy/images/<machine>/<image>-<machine>.rootfs.manifest
 ```

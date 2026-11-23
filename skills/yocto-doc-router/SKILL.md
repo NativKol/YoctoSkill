@@ -1,43 +1,42 @@
 ---
 name: yocto-doc-router
-description: Release-aware official documentation routing for Yocto Project, OpenEmbedded, and BitBake questions. Use when the user asks where to find current Yocto docs, when a Yocto answer may depend on release/branch, or before giving precise guidance about variables, classes, tasks, QA errors, migration, BSP, kernel, SDK, security, SBOM, CVE, or build setup.
+description: Answer "which Yocto/BitBake manual, section or release applies" questions - where the official docs for a topic live, which docs version matches the user's branch, how to tell which Yocto release a build uses (bitbake --version, DISTRO_VERSION, LAYERSERIES_COMPAT), whether a release such as scarthgap or kirkstone is still supported, what LTS policy is, and which migration guides to read before upgrading. Use it when the user wants a documentation pointer or release/upgrade orientation rather than a fix, or before quoting release-specific behavior you are unsure of. For actual debugging, recipe, layer, image, kernel or license work, use the focused skill (bitbake-debug, yocto-recipe-review, yocto-layer-review, yocto-image-rootfs, yocto-bsp-kernel, yocto-security-sbom); for the manual text itself use yocto-manuals.
 ---
 
 # Yocto Doc Router
 
-Use this skill to route Yocto and BitBake questions to the correct official documentation before answering. Yocto is release-sensitive; do not rely on generic memory when syntax, variables, classes, host support, or QA behavior may differ by branch.
+Route to the smallest correct piece of official documentation for the user's release, and say which release you assumed.
 
 ## Workflow
 
-1. Identify the release or branch: inspect `LAYERSERIES_COMPAT_*`, `conf/layer.conf`, Poky/OE-Core branch names, build output, or vendor layer documentation.
-2. If the release is unknown, state the assumption and prefer current official docs.
-3. Read [references/official-doc-map.md](references/official-doc-map.md) to route by problem type.
-4. For release changes, read [references/migration.md](references/migration.md).
-5. Return the smallest useful doc path, the reason it matters, and the evidence needed from the user's tree.
+1. **Detect the release from the build** (do not guess):
+   ```bash
+   bitbake --version                          # BitBake 2.8.x = Yocto 5.0 scarthgap
+   bitbake-getvar --value DISTRO_VERSION
+   bitbake-getvar --value LAYERSERIES_CORENAMES
+   grep -h LAYERSERIES_COMPAT */conf/layer.conf
+   ```
+   If none is available, say you assume scarthgap (this collection's baseline) and use the scarthgap docs URLs.
+2. **Route by problem** with [references/official-doc-map.md](references/official-doc-map.md): it gives the manual, the section and the offline path in the `yocto-manuals` skill.
+3. **Release status and upgrades:** [references/migration.md](references/migration.md) has the LTS policy, the releases named in the scarthgap manuals, the syntax boundaries (3.4 override syntax, 5.1 `UNPACKDIR`) and the kirkstone-to-scarthgap checklist. For anything newer than the manuals, check https://wiki.yoctoproject.org/wiki/Releases and say that you did; do not invent codenames or dates.
+4. **Hand off** to the focused skill once the user needs a fix.
 
-## Routing Rules
+## Facts Worth Stating Directly
 
-- New build setup: Quick Build, Development Tasks Manual, source directory structure, supported host distro.
-- Syntax and overrides: BitBake User Manual > Syntax and Operators, Conditional Syntax, Functions, Tasks.
-- Variables: Reference Manual Variables Glossary plus [references/variables-core.md](references/variables-core.md).
-- Classes: Reference Manual Classes plus [references/classes-core.md](references/classes-core.md).
-- QA errors: Reference Manual QA messages plus [references/qa-errors.md](references/qa-errors.md).
-- Layers: Development Tasks Manual > Layers, BitBake concepts for layers and appends.
-- Recipes: Development Tasks Manual > Writing a New Recipe, Reference Manual Tasks and Classes.
-- BSP/kernel: BSP Guide, Kernel Development Manual, relevant class and variable entries.
-- Security/SBOM/CVE/license: Security Manual, Security Reference, Reference Manual classes and variables.
-- Image/rootfs: Development Tasks Manual image customization, package management, and Reference Manual image/rootfs tasks.
+- Scarthgap is Yocto 5.0, an LTS released April 2024 and supported until April 2028, with BitBake 2.8.
+- LTS releases come every two years with four years of support; other releases get seven months.
+- The latest scarthgap manuals name 6.0 "wrynose" (May 2026, to April 2030) as the other supported LTS.
+- `bitbake-setup` is not part of scarthgap; scarthgap builds start with `oe-init-build-env`.
 
 ## References
 
-- Read [references/keywords.md](references/keywords.md) for the official scarthgap (5.0) manual entry of every variable, class, task and QA check this skill names. Grep it for `` ## Variable `NAME` `` (or `Class`, `Task`, `QA check`) instead of reading it whole. For a keyword that is not there, use the `yocto-manuals` skill.
-- Read [references/official-doc-map.md](references/official-doc-map.md) and [references/migration.md](references/migration.md) as described in the workflow.
+- [references/official-doc-map.md](references/official-doc-map.md): manuals table and problem-to-section routing.
+- [references/migration.md](references/migration.md): release facts, detection, migration checklist.
+- [references/keywords.md](references/keywords.md): official scarthgap manual entry for every keyword named here; grep `` ## Variable `NAME` ``. Other keywords and full pages: `yocto-manuals` skill.
 
 ## Output
 
-Answer with:
-
-1. assumed or detected release
-2. official manual section to check
-3. local file/log/command that confirms the issue
-4. next focused skill to use, if any: `bitbake-debug`, `yocto-recipe-review`, `yocto-layer-review`, `yocto-image-rootfs`, `yocto-bsp-kernel`, or `yocto-security-sbom`
+1. detected or assumed release (and how it was detected)
+2. manual and section, with URL for that release
+3. the local file, log or command that confirms the issue
+4. the focused skill to use next, if any

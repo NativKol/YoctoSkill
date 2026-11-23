@@ -2,6 +2,44 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.0] - 2026-11-23
+
+First release of the YoctoSkill fork of yocto-agent-skills 0.3.0, written for Yocto
+Project 5.0 "scarthgap" with BitBake 2.8.
+
+### Added
+
+- `yocto-manuals` skill: the scarthgap manuals and the BitBake 2.8 User Manual as
+  Markdown, with one file per variable, class, task, feature and QA check, plus
+  `INDEX.md` and `MANUALS.md`. The text is CC BY-SA 2.0 UK (BitBake: CC BY 2.5), see
+  `skills/yocto-manuals/LICENSE-docs.md`.
+- A `keywords.txt` in every skill, and a generated `references/keywords.md` with the
+  official entry for each keyword the skill uses.
+- `yocto-image-analysis` skill, which explains what an image or distro contains and what
+  a commit changed in it. Includes `scripts/yocto_diff.py`.
+- `yocto-change-review` skill: automated review of Yocto changes, with `gentle`,
+  `standard` and `strict` levels.
+- `references/bitbake/debug-tools.md`, covering `bitbake-getvar`, signatures, devtool and
+  buildhistory.
+- `tools/convert_manuals.py` and `tools/build_manual_refs.py`. The validator now checks
+  that their output is up to date.
+
+### Fixed
+
+- `+=`/`=+` spacing, `PREFERRED_PROVIDER_`/`PREFERRED_VERSION_` naming, `kernel-fitimage`,
+  invented QA tags, the dangling-bbappend behavior, broken grep patterns, and interactive
+  or destructive commands listed as evidence gathering.
+- The self-contradicting `installed-vs-shipped` eval case. Eval prompts no longer name the
+  skill they test.
+
+### Changed
+
+- All shared references rewritten and deepened from the manuals, and release facts stated
+  instead of hedged. Skill descriptions rewritten to reduce overlap.
+- The plugin is renamed `yocto-skill` (marketplace `yoctoskill`), and the Korean README is
+  dropped.
+- `sync_references.py` only manages files that carry its generated header.
+
 ## [0.3.0] - 2026-07-31
 
 Yocto Agent Skills now installs as a Claude Code plugin, and every skill folder is

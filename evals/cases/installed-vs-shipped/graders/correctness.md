@@ -1,37 +1,35 @@
-# Grader: installed-vs-shipped and dev-so
+# Grader: installed-vs-shipped caused by a hardcoded libdir
 
-The user has already made the mistake the QA message invites: they added development files
-to the runtime package to silence `installed-vs-shipped`, which then triggers `dev-so`.
-The correct fix is to let the default packaging rules apply, not to widen `FILES:${PN}`.
+The recipe forces CMake to install into `/usr/lib64` while the distro's `${libdir}` is
+`/usr/lib`. No default `FILES` pattern covers `/usr/lib64`, which produced the original
+`installed-vs-shipped`. The user then added `FILES:${PN} += "/usr/lib64/*"`, which ships
+everything, including the `libfoo.so` development symlink, in the runtime package. That is
+why `dev-so` now fires: the default `FILES:${PN}-dev` (through `FILES_SOLIBSDEV`, which uses
+`${libdir}`) never matched the lib64 path, so the leftmost-package rule could not send the
+symlink to `${PN}-dev`. The `libdir` warning names the root cause.
 
 ## Required to pass
 
-The answer must do all of the following:
-
-1. Explain that `.so` symlinks and headers belong in `${PN}-dev`, not `${PN}`, and that the
-   `dev-so` error is caused by the `FILES:${PN}` line already in the recipe.
-2. Tell the user to remove that `FILES:${PN}` line rather than extend it, because the
-   default `FILES` rules already package `${libdir}/*.so` and `${includedir}` into
-   `${PN}-dev`.
-3. Treat `installed-vs-shipped` as a packaging question, not a build failure: the files are
-   installed correctly, they are just assigned to the wrong package.
+1. Identify the hardcoded `-DCMAKE_INSTALL_LIBDIR=lib64` (install path not matching
+   `${libdir}`) as the root cause, using the `libdir` warning as evidence.
+2. Fix it at the source: remove the override (or pass the real `${libdir}`/`${baselib}`
+   value) so files install under `${libdir}`, and remove the `FILES:${PN} += "/usr/lib64/*"`
+   line.
+3. Explain that once paths are standard the default package split applies: versioned
+   `libfoo.so.*` in `${PN}`, the `libfoo.so` symlink and headers in `${PN}-dev`.
 
 ## Automatic fail
 
-Any of these fails the case regardless of the rest:
-
-- Recommending `INSANE_SKIP` to silence either check. This hides a real packaging defect
-  and is the answer a general model tends to give.
-- Telling the user to delete the files in `do_install` when they are legitimate development
-  files that belong in `${PN}-dev`.
-- Recommending deletion of `tmp/`, `downloads/`, or `sstate-cache/`.
-- Adding the files to `FILES:${PN}` as the recommended fix.
+- Recommending `INSANE_SKIP` for `dev-so`, `libdir` or `installed-vs-shipped` as the fix.
+- Keeping or widening the `/usr/lib64` `FILES` line as the recommended fix.
+- Recommending deletion of `tmp/`, `downloads/` or `sstate-cache/`.
+- Using old override syntax (`FILES_${PN}`).
 
 ## Improves the score
 
-- Noting that `${PN}-dev` is not shipped in images by default, and that a target needing
-  headers wants `-dev` packages or an SDK instead.
-- Mentioning `oe-pkgdata-util list-pkg-files -p libfoo` to confirm the resulting split.
-- Explaining that a genuinely unversioned `.so` in the runtime package, such as a plugin,
-  is the narrow case where `FILES:${PN}` plus `INSANE_SKIP:${PN} = "dev-so"` is defensible,
-  so the user can tell the two situations apart.
+- Stating the leftmost-package-wins rule for `PACKAGES` and that `${PN}-dev` comes before
+  `${PN}`.
+- Validating with `bitbake -c package_qa libfoo` and
+  `oe-pkgdata-util list-pkg-files -p libfoo libfoo-dev`.
+- Noting that a genuinely unversioned library (no SONAME) is a different case, handled with
+  `SOLIBS = ".so"` and `FILES_SOLIBSDEV = ""`.

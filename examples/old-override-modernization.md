@@ -1,33 +1,34 @@
 # Example: Old Override Modernization
 
+Skill: `yocto-recipe-review`.
+
 ## User Prompt
 
 ```text
-Use yocto-recipe-review to modernize this recipe's old BitBake override syntax.
+We are moving a layer from dunfell to scarthgap. Convert this: FILES_${PN} += "${bindir}/foo"; do_install_append() { ... }; PREFERRED_VERSION_linux-yocto_mymachine = "5.4%"
 ```
 
 ## Evidence to Request
 
-- target Yocto release
-- recipe or bbappend diff
-- vendor BSP branch if relevant
-- current parse error, if any
+- target release (scarthgap) and the current parse error, if any
+- the full recipe/bbappend and any vendor BSP layers involved
 
 ## Bad Answer Pattern
 
-- Blindly converting syntax without checking target release.
-- Changing behavior by altering spacing around `:append` or `+=`.
+- Converting blindly, including underscore-suffixed variable names (`PREFERRED_VERSION:linux-yocto` is wrong).
+- Adding or removing spaces in `:append` values (changes behavior; `:append` adds no space).
 
 ## Expected Answer Pattern
 
-- Confirm release supports modern override syntax.
-- Convert package overrides such as `FILES_${PN}` to `FILES:${PN}`.
-- Convert `_append`, `_prepend`, `_remove` to `:append`, `:prepend`, `:remove`.
-- Preserve spacing semantics.
+- State that `:` is required from 3.4 honister on; old `_append` fails to parse on scarthgap.
+- Run `scripts/contrib/convert-overrides.py <layer>` and review the diff.
+- Result: `FILES:${PN} += "${bindir}/foo"`, `do_install:append() { ... }`, `PREFERRED_VERSION_linux-yocto:mymachine = "6.6%"` (the variable name keeps `_linux-yocto`; only the machine override uses `:`; scarthgap ships linux-yocto 6.6).
+- Update `LAYERSERIES_COMPAT_<col>` to `scarthgap` after testing.
 
 ## Validation
 
 ```bash
 bitbake -p
-bitbake -e <recipe> | rg '^(FILES|RDEPENDS|PACKAGECONFIG)'
+bitbake-getvar -r <recipe> FILES:<recipe>
+bitbake-getvar --value PREFERRED_VERSION_linux-yocto
 ```

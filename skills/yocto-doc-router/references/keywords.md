@@ -6,342 +6,110 @@ Verbatim entries from the official manuals for every keyword this skill relies o
 
 ## Contents
 
-- Variable `ALLOW_EMPTY`
-- Variable `ALTERNATIVE`
-- Variable `ASSUME_PROVIDED`
-- Variable `AUTOREV`
-- Variable `B`
-- Variable `BBCLASSEXTEND`
-- Variable `BBFILES`
-- Variable `BBFILES_DYNAMIC`
-- Variable `BBFILE_COLLECTIONS`
-- Variable `BBFILE_PATTERN`
+- Variable `BB_DANGLINGAPPENDS_WARNONLY`
 - Variable `BBFILE_PRIORITY`
-- Variable `BBMASK`
-- Variable `BBPATH`
-- Variable `BB_NO_NETWORK`
-- Variable `COMBINED_FEATURES`
-- Variable `CONFFILES`
-- Variable `COPYLEFT_LICENSE_EXCLUDE`
-- Variable `COPYLEFT_LICENSE_INCLUDE`
-- Variable `CORE_IMAGE_EXTRA_INSTALL`
-- Variable `D`
-- Variable `DEPENDS`
-- Variable `DESCRIPTION`
+- Variable `BBFILES_DYNAMIC`
+- Variable `BBMULTICONFIG`
+- Variable `CC`
+- Variable `CVE_CHECK_IGNORE`
+- Variable `CVE_STATUS`
+- Variable `DEPLOY_DIR`
 - Variable `DISTRO`
-- Variable `DISTROOVERRIDES`
-- Variable `DISTRO_FEATURES`
-- Variable `DL_DIR`
-- Variable `EXTRA_IMAGE_FEATURES`
-- Variable `EXTRA_OECMAKE`
-- Variable `EXTRA_OECONF`
-- Variable `EXTRA_OEMESON`
+- Variable `DISTRO_VERSION`
 - Variable `FILES`
-- Variable `FILES_SOLIBSDEV`
-- Variable `HOMEPAGE`
 - Variable `IMAGE_FEATURES`
-- Variable `IMAGE_FSTYPES`
 - Variable `IMAGE_INSTALL`
-- Variable `IMAGE_ROOTFS`
-- Variable `INCOMPATIBLE_LICENSE`
-- Variable `INITSCRIPT_NAME`
-- Variable `INITSCRIPT_PACKAGES`
-- Variable `INITSCRIPT_PARAMS`
-- Variable `INSANE_SKIP`
-- Variable `KERNEL_DEVICETREE`
-- Variable `KERNEL_FEATURES`
-- Variable `KERNEL_MODULE_AUTOLOAD`
-- Variable `LAYERDEPENDS`
 - Variable `LAYERSERIES_COMPAT`
 - Variable `LICENSE`
 - Variable `LICENSE_FLAGS`
 - Variable `LICENSE_FLAGS_ACCEPTED`
-- Variable `LIC_FILES_CHKSUM`
-- Variable `MACHINE`
-- Variable `MACHINEOVERRIDES`
-- Variable `MACHINE_FEATURES`
-- Variable `MIRRORS`
+- Variable `OLDEST_KERNEL`
+- Variable `OVERRIDES`
 - Variable `PACKAGECONFIG`
-- Variable `PACKAGES`
-- Variable `PACKAGES_DYNAMIC`
-- Variable `PACKAGE_ARCH`
-- Variable `PACKAGE_BEFORE_PN`
-- Variable `PACKAGE_CLASSES`
+- Variable `PE`
 - Variable `PN`
+- Variable `PR`
 - Variable `PREFERRED_PROVIDER`
-- Variable `PREFERRED_VERSION`
-- Variable `PREMIRRORS`
-- Variable `PROVIDES`
-- Variable `RCONFLICTS`
 - Variable `RDEPENDS`
-- Variable `ROOTFS_POSTPROCESS_COMMAND`
 - Variable `RPROVIDES`
-- Variable `RRECOMMENDS`
-- Variable `RREPLACES`
-- Variable `RSUGGESTS`
 - Variable `S`
-- Variable `SOLIBS`
-- Variable `SOLIBSDEV`
-- Variable `SRCREV`
-- Variable `SRCREV_FORMAT`
+- Variable `SERIAL_CONSOLES`
 - Variable `SRC_URI`
-- Variable `SSTATE_DIR`
-- Variable `SUMMARY`
-- Variable `SYSTEMD_AUTO_ENABLE`
-- Variable `SYSTEMD_PACKAGES`
-- Variable `SYSTEMD_SERVICE`
-- Variable `TUNE_FEATURES`
-- Variable `UBOOT_BINARY`
-- Variable `UBOOT_CONFIG`
+- Variable `SRCREV`
+- Variable `TARGET_DBGSRC_DIR`
+- Variable `VIRTUAL-RUNTIME`
 - Variable `WORKDIR`
-- Task `do_compile`
-- Task `do_configure`
-- Task `do_fetch`
-- Task `do_install`
-- Task `do_package`
-- Task `do_package_qa`
-- Task `do_patch`
-- Task `do_populate_lic`
-- Task `do_rootfs`
-- Task `do_unpack`
 - Class `archiver`
-- Class `autotools`
-- Class `buildhistory`
-- Class `cargo`
-- Class `cargo-update-recipe-crates`
-- Class `cargo_c`
-- Class `cargo_common`
-- Class `cmake`
-- Class `cmake-qemu`
-- Class `copyleft_compliance`
-- Class `copyleft_filter`
 - Class `create-spdx`
 - Class `cve-check`
 - Class `devicetree`
-- Class `fontcache`
-- Class `go`
-- Class `go-mod`
-- Class `go-vendor`
-- Class `gsettings`
-- Class `gtk-icon-cache`
-- Class `image`
-- Class `image-buildinfo`
-- Class `image-container`
-- Class `image-live`
-- Class `image_types`
-- Class `insane`
 - Class `kernel`
 - Class `kernel-devicetree`
-- Class `kernel-module-split`
+- Class `kernel-fitimage`
 - Class `kernel-yocto`
 - Class `license`
-- Class `meson`
-- Class `mime`
-- Class `mime-xdg`
-- Class `native`
-- Class `nativesdk`
-- Class `npm`
-- Class `package`
-- Class `package_deb`
-- Class `package_ipk`
-- Class `package_rpm`
-- Class `pkgconfig`
-- Class `populate_sdk`
 - Class `ptest`
-- Class `ptest-cargo`
-- Class `ptest-gnome`
-- Class `python3native`
-- Class `python3targetconfig`
-- Class `python_flit_core`
-- Class `python_maturin`
-- Class `python_mesonpy`
-- Class `python_pep517`
-- Class `python_poetry_core`
-- Class `rm_work`
-- Class `scons`
-- Class `setuptools3`
-- Class `setuptools3-base`
-- Class `setuptools3_legacy`
-- Class `systemd`
 - Class `testimage`
-- Class `testsdk`
 - Class `uboot-config`
 - Class `uboot-sign`
-- Class `update-alternatives`
-- Class `update-rc.d`
-- Class `useradd`
-- QA check `already-stripped`
-- QA check `build-deps`
-- QA check `configure-gettext`
-- QA check `configure-unsafe`
-- QA check `debug-deps`
-- QA check `debug-files`
-- QA check `dep-cmp`
-- QA check `dev-deps`
-- QA check `dev-so`
-- QA check `empty-dirs`
-- QA check `file-rdeps`
-- QA check `files-invalid`
-- QA check `installed-vs-shipped`
-- QA check `mime-xdg`
-- QA check `missing-update-alternatives`
-- QA check `packages-list`
-- QA check `patch-fuzz`
-- QA check `patch-status`
-- QA check `pn-overrides`
-- QA check `shebang-size`
-- QA check `src-uri-bad`
-- QA check `unknown-configure-option`
-- QA check `unlisted-pkg-lics`
-- QA check `useless-rpaths`
-- QA check `xorg-driver-abi`
+- Class `vex`
+- Task `do_fetch`
+- Task `do_install`
+- Task `do_package_qa`
+- Task `do_patch`
+- Task `do_populate_sdk`
+- Task `do_populate_sdk_ext`
 
-## Variable `ALLOW_EMPTY`
+## Variable `BB_DANGLINGAPPENDS_WARNONLY`
 
 ## Yocto Project Reference Manual
 
-Specifies whether to produce an output package even if it is empty. By default, BitBake does not produce empty packages. This default behavior can cause issues when there is an RDEPENDS or some other hard runtime requirement on the existence of the package.
+Defines how BitBake handles situations where an append file (`.bbappend`) has no corresponding recipe file (`.bb`). This condition often occurs when layers get out of sync (e.g. `oe-core` bumps a recipe version and the old recipe no longer exists and the other layer has not been updated to the new version of the recipe yet).
 
-Like all package-controlling variables, you must always use them in conjunction with a package name override, as in:
+The default fatal behavior is safest because it is the sane reaction given something is out of sync. It is important to realize when your changes are no longer being applied.
 
-```
-ALLOW_EMPTY:${PN} = "1"
-ALLOW_EMPTY:${PN}-dev = "1"
-ALLOW_EMPTY:${PN}-staticdev = "1"
+You can change the default behavior by setting this variable to “1”, “yes”, or “true” in your `local.conf` file, which is located in the Build Directory: Here is an example:
 
 ```
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ALLOW_EMPTY
-
-## Variable `ALTERNATIVE`
-
-## Yocto Project Reference Manual
-
-Lists commands in a package that need an alternative binary naming scheme. Sometimes the same command is provided in multiple packages. When this occurs, the OpenEmbedded build system needs to use the alternatives system to create a different binary naming scheme so the commands can co-exist.
-
-To use the variable, list out the package’s commands that are also provided by another package. For example, if the `busybox` package has four such commands, you identify them as follows:
+BB_DANGLINGAPPENDS_WARNONLY = "1"
 
 ```
-ALTERNATIVE:busybox = "sh sed test bracket"
-
-```
-
-For more information on the alternatives system, see the “update-alternatives” section.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ALTERNATIVE
-
-## Variable `ASSUME_PROVIDED`
-
-## Yocto Project Reference Manual
-
-Lists recipe names (PN values) BitBake does not attempt to build. Instead, BitBake assumes these recipes have already been built.
-
-In OpenEmbedded-Core, ASSUME_PROVIDED mostly specifies native tools that should not be built. An example is `git-native`, which when specified, allows for the Git binary from the host to be used rather than building `git-native`.
 
 ## BitBake User Manual
 
-Lists recipe names (PN values) BitBake does not attempt to build. Instead, BitBake assumes these recipes have already been built.
+Defines how BitBake handles situations where an append file (`.bbappend`) has no corresponding recipe file (`.bb`). This condition often occurs when layers get out of sync (e.g. `oe-core` bumps a recipe version and the old recipe no longer exists and the other layer has not been updated to the new version of the recipe yet).
 
-In OpenEmbedded-Core, ASSUME_PROVIDED mostly specifies native tools that should not be built. An example is `git-native`, which when specified allows for the Git binary from the host to be used rather than building `git-native`.
+The default fatal behavior is safest because it is the sane reaction given something is out of sync. It is important to realize when your changes are no longer being applied.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ASSUME_PROVIDED , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-ASSUME_PROVIDED
+Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_DANGLINGAPPENDS_WARNONLY , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_DANGLINGAPPENDS_WARNONLY
 
-## Variable `AUTOREV`
-
-## Yocto Project Reference Manual
-
-When SRCREV is set to the value of this variable, it specifies to use the latest source revision in the repository. Here is an example:
-
-```
-SRCREV = "${AUTOREV}"
-
-```
-
-If you use the previous statement to retrieve the latest version of software, you need to make sure PV contains the `+` sign so bitbake includes source control information to PKGV when packaging the recipe. For example:
-
-```
-PV = "6.10.y+git"
-
-```
-
-For more information see the “Automatically Incrementing a Package Version Number” section in the Yocto Project Development Tasks Manual.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-AUTOREV
-
-## Variable `B`
+## Variable `BBFILE_PRIORITY`
 
 ## Yocto Project Reference Manual
 
-The directory within the Build Directory in which the OpenEmbedded build system places generated objects during a recipe’s build process. By default, this directory is the same as the S directory, which is defined as:
+Assigns the priority for recipe files in each layer.
 
-```
-S = "${WORKDIR}/${BP}"
+This variable is useful in situations where the same recipe appears in more than one layer. Setting this variable allows you to prioritize a layer against other layers that contain the same recipe — effectively letting you control the precedence for the multiple layers. The precedence established through this variable stands regardless of a recipe’s version (PV variable). For example, a layer that has a recipe with a higher PV value but for which the BBFILE_PRIORITY is set to have a lower precedence still has a lower precedence.
 
-```
+A larger value for the BBFILE_PRIORITY variable results in a higher precedence. For example, the value 6 has a higher precedence than the value 5. If not specified, the BBFILE_PRIORITY variable is set based on layer dependencies (see the LAYERDEPENDS variable for more information. The default priority, if unspecified for a layer with no dependencies, is the lowest defined priority + 1 (or 1 if no priorities are defined).
 
-You can separate the (S) directory and the directory pointed to by the B variable. Most Autotools-based recipes support separating these directories. The build system defaults to using separate directories for `gcc` and some kernel recipes.
+Tip
+
+You can use the command `bitbake-layers show-layers` to list all configured layers along with their priorities.
 
 ## BitBake User Manual
 
-The directory in which BitBake executes functions during a recipe’s build process.
+Assigns the priority for recipe files in each layer.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-B , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-B
+This variable is useful in situations where the same recipe appears in more than one layer. Setting this variable allows you to prioritize a layer against other layers that contain the same recipe — effectively letting you control the precedence for the multiple layers. The precedence established through this variable stands regardless of a recipe’s version (PV variable). For example, a layer that has a recipe with a higher PV value but for which the BBFILE_PRIORITY is set to have a lower precedence still has a lower precedence.
 
-## Variable `BBCLASSEXTEND`
+A larger value for the BBFILE_PRIORITY variable results in a higher precedence. For example, the value 6 has a higher precedence than the value 5. If not specified, the BBFILE_PRIORITY variable is set based on layer dependencies (see the LAYERDEPENDS variable for more information. The default priority, if unspecified for a layer with no dependencies, is the lowest defined priority + 1 (or 1 if no priorities are defined).
 
-## Yocto Project Reference Manual
+Tip
 
-Allows you to extend a recipe so that it builds variants of the software. There are common variants for recipes as “natives” like `quilt-native`, which is a copy of Quilt built to run on the build system; “crosses” such as `gcc-cross`, which is a compiler built to run on the build machine but produces binaries that run on the target MACHINE; “nativesdk”, which targets the SDK machine instead of MACHINE; and “mulitlibs” in the form “`multilib:`multilib_name”.
+You can use the command bitbake-layers show-layers to list all configured layers along with their priorities.
 
-To build a different variant of the recipe with a minimal amount of code, it usually is as simple as adding the following to your recipe:
-
-```
-BBCLASSEXTEND =+ "native nativesdk"
-BBCLASSEXTEND =+ "multilib:multilib_name"
-
-```
-
-Note
-
-Internally, the BBCLASSEXTEND mechanism generates recipe variants by rewriting variable values and applying overrides such as `:class-native`. For example, to generate a native version of a recipe, a DEPENDS on “foo” is rewritten to a DEPENDS on “foo-native”.
-
-Even when using BBCLASSEXTEND, the recipe is only parsed once. Parsing once adds some limitations. For example, it is not possible to include a different file depending on the variant, since `include` statements are processed when the recipe is parsed.
-
-## BitBake User Manual
-
-Allows you to extend a recipe so that it builds variants of the software. Some examples of these variants for recipes from the OpenEmbedded-Core metadata are “natives” such as `quilt-native`, which is a copy of Quilt built to run on the build system; “crosses” such as `gcc-cross`, which is a compiler built to run on the build machine but produces binaries that run on the target `MACHINE`; “nativesdk”, which targets the SDK machine instead of `MACHINE`; and “mulitlibs” in the form “`multilib:`multilib_name”.
-
-To build a different variant of the recipe with a minimal amount of code, it usually is as simple as adding the variable to your recipe. Here are two examples. The “native” variants are from the OpenEmbedded-Core metadata:
-
-```
-BBCLASSEXTEND =+ "native nativesdk"
-BBCLASSEXTEND =+ "multilib:multilib_name"
-
-```
-
-Note
-
-Internally, the BBCLASSEXTEND mechanism generates recipe variants by rewriting variable values and applying overrides such as `_class-native`. For example, to generate a native version of a recipe, a DEPENDS on “foo” is rewritten to a DEPENDS on “foo-native”.
-
-Even when using BBCLASSEXTEND, the recipe is only parsed once. Parsing once adds some limitations. For example, it is not possible to include a different file depending on the variant, since `include` statements are processed when the recipe is parsed.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBCLASSEXTEND , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBCLASSEXTEND
-
-## Variable `BBFILES`
-
-## Yocto Project Reference Manual
-
-A space-separated list of recipe files BitBake uses to build software.
-
-When specifying recipe files, you can pattern match using Python’s glob syntax. For details on the syntax, see the documentation by following the previous link.
-
-## BitBake User Manual
-
-A space-separated list of recipe files BitBake uses to build software.
-
-When specifying recipe files, you can pattern match using Python’s glob syntax. For details on the syntax, see the documentation by following the previous link.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBFILES , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBFILES
+Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBFILE_PRIORITY , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBFILE_PRIORITY
 
 ## Variable `BBFILES_DYNAMIC`
 
@@ -417,304 +185,78 @@ ERROR: BBFILES_DYNAMIC entries must be of the form {!}<collection name>:<filenam
 
 Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBFILES_DYNAMIC , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBFILES_DYNAMIC
 
-## Variable `BBFILE_COLLECTIONS`
+## Variable `BBMULTICONFIG`
 
 ## Yocto Project Reference Manual
 
-Lists the names of configured layers. These names are used to find the other `BBFILE_*` variables. Typically, each layer will append its name to this variable in its `conf/layer.conf` file.
+Specifies each additional separate configuration when you are building targets with multiple configurations. Use this variable in your `conf/local.conf` configuration file. Specify a multiconfig name for each configuration file you are using. For example, the following line specifies three configuration files:
+
+```
+BBMULTICONFIG = "configA configB configC"
+
+```
+
+Each configuration file you use must reside in a `multiconfig` subdirectory of a configuration directory within a layer, or within the Build Directory (e.g. `build_directory/conf/multiconfig/configA.conf` or `mylayer/conf/multiconfig/configB.conf`).
+
+For information on how to use BBMULTICONFIG in an environment that supports building targets with multiple configurations, see the “Building Images for Multiple Targets Using Multiple Configurations” section in the Yocto Project Development Tasks Manual.
 
 ## BitBake User Manual
 
-Lists the names of configured layers. These names are used to find the other `BBFILE_*` variables. Typically, each layer appends its name to this variable in its `conf/layer.conf` file.
+Enables BitBake to perform multiple configuration builds and lists each separate configuration (multiconfig). You can use this variable to cause BitBake to build multiple targets where each target has a separate configuration. Define BBMULTICONFIG in your `conf/local.conf` configuration file.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBFILE_COLLECTIONS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBFILE_COLLECTIONS
+As an example, the following line specifies three multiconfigs, each having a separate configuration file:
 
-## Variable `BBFILE_PATTERN`
+```
+BBMULTIFONFIG = "configA configB configC"
+
+```
+
+Each configuration file you use must reside in the build directory within a directory named `conf/multiconfig` (e.g. build_directory`/conf/multiconfig/configA.conf`).
+
+For information on how to use BBMULTICONFIG in an environment that supports building targets with multiple configurations, see the “Executing a Multiple Configuration Build” section.
+
+Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBMULTICONFIG , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBMULTICONFIG
+
+## Variable `CC`
 
 ## Yocto Project Reference Manual
 
-Variable that expands to match files from BBFILES in a particular layer. This variable is used in the `conf/layer.conf` file and must be suffixed with the name of the specific layer (e.g. `BBFILE_PATTERN_emenlow`).
+The minimal command and arguments used to run the C compiler.
 
-## BitBake User Manual
+Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CC
 
-Variable that expands to match files from BBFILES in a particular layer. This variable is used in the `conf/layer.conf` file and must be suffixed with the name of the specific layer (e.g. `BBFILE_PATTERN_emenlow`).
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBFILE_PATTERN , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBFILE_PATTERN
-
-## Variable `BBFILE_PRIORITY`
+## Variable `CVE_CHECK_IGNORE`
 
 ## Yocto Project Reference Manual
 
-Assigns the priority for recipe files in each layer.
+This variable is deprecated and should be replaced by CVE_STATUS.
 
-This variable is useful in situations where the same recipe appears in more than one layer. Setting this variable allows you to prioritize a layer against other layers that contain the same recipe — effectively letting you control the precedence for the multiple layers. The precedence established through this variable stands regardless of a recipe’s version (PV variable). For example, a layer that has a recipe with a higher PV value but for which the BBFILE_PRIORITY is set to have a lower precedence still has a lower precedence.
+Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CVE_CHECK_IGNORE
 
-A larger value for the BBFILE_PRIORITY variable results in a higher precedence. For example, the value 6 has a higher precedence than the value 5. If not specified, the BBFILE_PRIORITY variable is set based on layer dependencies (see the LAYERDEPENDS variable for more information. The default priority, if unspecified for a layer with no dependencies, is the lowest defined priority + 1 (or 1 if no priorities are defined).
-
-Tip
-
-You can use the command `bitbake-layers show-layers` to list all configured layers along with their priorities.
-
-## BitBake User Manual
-
-Assigns the priority for recipe files in each layer.
-
-This variable is useful in situations where the same recipe appears in more than one layer. Setting this variable allows you to prioritize a layer against other layers that contain the same recipe — effectively letting you control the precedence for the multiple layers. The precedence established through this variable stands regardless of a recipe’s version (PV variable). For example, a layer that has a recipe with a higher PV value but for which the BBFILE_PRIORITY is set to have a lower precedence still has a lower precedence.
-
-A larger value for the BBFILE_PRIORITY variable results in a higher precedence. For example, the value 6 has a higher precedence than the value 5. If not specified, the BBFILE_PRIORITY variable is set based on layer dependencies (see the LAYERDEPENDS variable for more information. The default priority, if unspecified for a layer with no dependencies, is the lowest defined priority + 1 (or 1 if no priorities are defined).
-
-Tip
-
-You can use the command bitbake-layers show-layers to list all configured layers along with their priorities.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBFILE_PRIORITY , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBFILE_PRIORITY
-
-## Variable `BBMASK`
+## Variable `CVE_STATUS`
 
 ## Yocto Project Reference Manual
 
-Prevents BitBake from processing recipes and recipe append files.
-
-You can use the BBMASK variable to “hide” these `.bb` and `.bbappend` files. BitBake ignores any recipe or recipe append files that match any of the expressions. It is as if BitBake does not see them at all. Consequently, matching files are not parsed or otherwise used by BitBake.
-
-The values you provide are passed to Python’s regular expression compiler. Consequently, the syntax follows Python’s Regular Expression (re) syntax. The expressions are compared against the full paths to the files. For complete syntax information, see Python’s documentation at https://docs.python.org/3/library/re.html#regular-expression-syntax.
-
-The following example uses a complete regular expression to tell BitBake to ignore all recipe and recipe append files in the `meta-ti/recipes-misc/` directory:
+The CVE ID which is patched or should be ignored. Here is an example from the Python3 recipe:
 
 ```
-BBMASK = "meta-ti/recipes-misc/"
+CVE_STATUS[CVE-2020-15523] = "not-applicable-platform: Issue only applies on Windows"
 
 ```
 
-If you want to mask out multiple directories or recipes, you can specify multiple regular expression fragments. This next example masks out multiple directories and individual recipes:
+It has the format “reason: description” and the description is optional. The Reason is mapped to the final CVE state by mapping via CVE_CHECK_STATUSMAP. See Fixing vulnerabilities in recipes for details.
 
-```
-BBMASK += "/meta-ti/recipes-misc/ meta-ti/recipes-ti/packagegroup/"
-BBMASK += "/meta-oe/recipes-support/"
-BBMASK += "/meta-foo/.*/openldap"
-BBMASK += "opencv.*\.bbappend"
-BBMASK += "lzma"
+Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CVE_STATUS
 
-```
-
-Note
-
-When specifying a directory name, use the trailing slash character to ensure you match just that directory name.
-
-## BitBake User Manual
-
-Prevents BitBake from processing recipes and recipe append files.
-
-You can use the BBMASK variable to “hide” these `.bb` and `.bbappend` files. BitBake ignores any recipe or recipe append files that match any of the expressions. It is as if BitBake does not see them at all. Consequently, matching files are not parsed or otherwise used by BitBake.
-
-The values you provide are passed to Python’s regular expression compiler. Consequently, the syntax follows Python’s Regular Expression (re) syntax. The expressions are compared against the full paths to the files. For complete syntax information, see Python’s documentation at http://docs.python.org/3/library/re.html.
-
-The following example uses a complete regular expression to tell BitBake to ignore all recipe and recipe append files in the `meta-ti/recipes-misc/` directory:
-
-```
-BBMASK = "meta-ti/recipes-misc/"
-
-```
-
-If you want to mask out multiple directories or recipes, you can specify multiple regular expression fragments. This next example masks out multiple directories and individual recipes:
-
-```
-BBMASK += "/meta-ti/recipes-misc/ meta-ti/recipes-ti/packagegroup/"
-BBMASK += "/meta-oe/recipes-support/"
-BBMASK += "/meta-foo/.*/openldap"
-BBMASK += "opencv.*\.bbappend"
-BBMASK += "lzma"
-
-```
-
-Note
-
-When specifying a directory name, use the trailing slash character to ensure you match just that directory name.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBMASK , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBMASK
-
-## Variable `BBPATH`
+## Variable `DEPLOY_DIR`
 
 ## Yocto Project Reference Manual
 
-See BBPATH in the BitBake manual.
+Points to the general area that the OpenEmbedded build system uses to place images, packages, SDKs, and other output files that are ready to be used outside of the build system. By default, this directory resides within the Build Directory as `${TMPDIR}/deploy`.
 
-## BitBake User Manual
+For more information on the structure of the Build Directory, see “The Build Directory — build/” section. For more detail on the contents of the `deploy` directory, see the “Images”, “Package Feeds”, and “Application Development SDK” sections all in the Yocto Project Overview and Concepts Manual.
 
-A colon-separated list used by BitBake to locate class (`.bbclass`) and configuration (`.conf`) files. This variable is analogous to the `PATH` variable.
-
-If you run BitBake from a directory outside of the build directory, you must be sure to set BBPATH to point to the build directory. Set the variable as you would any environment variable and then run BitBake:
-
-```
-$ BBPATH="build_directory"
-$ export BBPATH
-$ bitbake target
-
-```
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBPATH , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBPATH
-
-## Variable `BB_NO_NETWORK`
-
-## Yocto Project Reference Manual
-
-See BB_NO_NETWORK in the BitBake manual.
-
-## BitBake User Manual
-
-Disables network access in the BitBake fetcher modules. With this access disabled, any command that attempts to access the network becomes an error.
-
-Disabling network access is useful for testing source mirrors, running builds when not connected to the Internet, and when operating in certain kinds of firewall environments.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_NO_NETWORK , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_NO_NETWORK
-
-## Variable `COMBINED_FEATURES`
-
-## Yocto Project Reference Manual
-
-Provides a list of hardware features that are enabled in both MACHINE_FEATURES and DISTRO_FEATURES. This select list of features contains features that make sense to be controlled both at the machine and distribution configuration level. For example, the “bluetooth” feature requires hardware support but should also be optional at the distribution level, in case the hardware supports Bluetooth but you do not ever intend to use it.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-COMBINED_FEATURES
-
-## Variable `CONFFILES`
-
-## Yocto Project Reference Manual
-
-Identifies editable or configurable files that are part of a package. If the Package Management System (PMS) is being used to update packages on the target system, it is possible that configuration files you have changed after the original installation and that you now want to remain unchanged are overwritten. In other words, editable files might exist in the package that you do not want reset as part of the package update process. You can use the CONFFILES variable to list the files in the package that you wish to prevent the PMS from overwriting during this update process.
-
-To use the CONFFILES variable, provide a package name override that identifies the resulting package. Then, provide a space-separated list of files. Here is an example:
-
-```
-CONFFILES:${PN} += "${sysconfdir}/file1 \
-    ${sysconfdir}/file2 ${sysconfdir}/file3"
-
-```
-
-There is a relationship between the CONFFILES and FILES variables. The files listed within CONFFILES must be a subset of the files listed within FILES. Because the configuration files you provide with CONFFILES are simply being identified so that the PMS will not overwrite them, it makes sense that the files must already be included as part of the package through the FILES variable.
-
-Note
-
-When specifying paths as part of the CONFFILES variable, it is good practice to use appropriate path variables. For example, `${sysconfdir}` rather than `/etc` or `${bindir}` rather than `/usr/bin`. You can find a list of these variables at the top of the `meta/conf/bitbake.conf` file in the Source Directory.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CONFFILES
-
-## Variable `COPYLEFT_LICENSE_EXCLUDE`
-
-## Yocto Project Reference Manual
-
-A space-separated list of licenses to exclude from the source archived by the archiver class. In other words, if a license in a recipe’s LICENSE value is in the value of COPYLEFT_LICENSE_EXCLUDE, then its source is not archived by the class.
-
-Note
-
-The COPYLEFT_LICENSE_EXCLUDE variable takes precedence over the COPYLEFT_LICENSE_INCLUDE variable.
-
-The default value, which is “CLOSED Proprietary”, for COPYLEFT_LICENSE_EXCLUDE is set by the copyleft_filter class, which is inherited by the archiver class.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-COPYLEFT_LICENSE_EXCLUDE
-
-## Variable `COPYLEFT_LICENSE_INCLUDE`
-
-## Yocto Project Reference Manual
-
-A space-separated list of licenses to include in the source archived by the archiver class. In other words, if a license in a recipe’s LICENSE value is in the value of COPYLEFT_LICENSE_INCLUDE, then its source is archived by the class.
-
-The default value is set by the copyleft_filter class, which is inherited by the archiver class. The default value includes “GPL*”, “LGPL*”, and “AGPL*”.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-COPYLEFT_LICENSE_INCLUDE
-
-## Variable `CORE_IMAGE_EXTRA_INSTALL`
-
-## Yocto Project Reference Manual
-
-Specifies the list of packages to be added to the image. You should only set this variable in the `local.conf` configuration file found in the Build Directory.
-
-This variable replaces `POKY_EXTRA_INSTALL`, which is no longer supported.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CORE_IMAGE_EXTRA_INSTALL
-
-## Variable `D`
-
-## Yocto Project Reference Manual
-
-The destination directory. The location in the Build Directory where components are installed by the do_install task. This location defaults to:
-
-```
-${WORKDIR}/image
-
-```
-
-Note
-
-Tasks that read from or write to this directory should run under fakeroot.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-D
-
-## Variable `DEPENDS`
-
-## Yocto Project Reference Manual
-
-Lists a recipe’s build-time dependencies. These are dependencies on other recipes whose contents (e.g. headers and shared libraries) are needed by the recipe at build time.
-
-As an example, consider a recipe `foo` that contains the following assignment:
-
-```
-DEPENDS = "bar"
-
-```
-
-The practical effect of the previous assignment is that all files installed by bar will be available in the appropriate staging sysroot, given by the STAGING_DIR* variables, by the time the do_configure task for `foo` runs. This mechanism is implemented by having do_configure depend on the do_populate_sysroot task of each recipe listed in DEPENDS, through a `[`deptask`]` declaration in the base class.
-
-Note
-
-It seldom is necessary to reference, for example, STAGING_DIR_HOST explicitly. The standard classes and build-related variables are configured to automatically use the appropriate staging sysroots.
-
-As another example, DEPENDS can also be used to add utilities that run on the build machine during the build. For example, a recipe that makes use of a code generator built by the recipe `codegen` might have the following:
-
-```
-DEPENDS = "codegen-native"
-
-```
-
-For more information, see the native class and the EXTRANATIVEPATH variable.
-
-Note
-
-- DEPENDS is a list of recipe names. Or, to be more precise, it is a list of PROVIDES names, which usually match recipe names. Putting a package name such as “foo-dev” in DEPENDS does not make sense. Use “foo” instead, as this will put files from all the packages that make up `foo`, which includes those from `foo-dev`, into the sysroot.
-
-- One recipe having another recipe in DEPENDS does not by itself add any runtime dependencies between the packages produced by the two recipes. However, as explained in the “Automatically Added Runtime Dependencies” section in the Yocto Project Overview and Concepts Manual, runtime dependencies will often be added automatically, meaning DEPENDS alone is sufficient for most recipes.
-
-- Counterintuitively, DEPENDS is often necessary even for recipes that install precompiled components. For example, if `libfoo` is a precompiled library that links against `libbar`, then linking against `libfoo` requires both `libfoo` and `libbar` to be available in the sysroot. Without a DEPENDS from the recipe that installs `libfoo` to the recipe that installs `libbar`, other recipes might fail to link against `libfoo`.
-
-For information on runtime dependencies, see the RDEPENDS variable. You can also see the “Tasks” and “Dependencies” sections in the BitBake User Manual for additional information on tasks and dependencies.
-
-## BitBake User Manual
-
-Lists a recipe’s build-time dependencies (i.e. other recipe files).
-
-Consider this simple example for two recipes named “a” and “b” that produce similarly named packages. In this example, the DEPENDS statement appears in the “a” recipe:
-
-```
-DEPENDS = "b"
-
-```
-
-Here, the dependency is such that the `do_configure` task for recipe “a” depends on the `do_populate_sysroot` task of recipe “b”. This means anything that recipe “b” puts into sysroot is available when recipe “a” is configuring itself.
-
-For information on runtime dependencies, see the RDEPENDS variable.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DEPENDS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-DEPENDS
-
-## Variable `DESCRIPTION`
-
-## Yocto Project Reference Manual
-
-The package description used by package managers. If not set, DESCRIPTION takes the value of the SUMMARY variable.
-
-## BitBake User Manual
-
-A long description for the recipe.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DESCRIPTION , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-DESCRIPTION
+Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DEPLOY_DIR
 
 ## Variable `DISTRO`
 
@@ -739,136 +281,13 @@ If the DISTRO variable is blank, a set of default configurations are used, which
 
 Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DISTRO
 
-## Variable `DISTROOVERRIDES`
+## Variable `DISTRO_VERSION`
 
 ## Yocto Project Reference Manual
 
-A colon-separated list of overrides specific to the current distribution. By default, this list includes the value of DISTRO.
+The version of the distribution.
 
-You can extend DISTROOVERRIDES to add extra overrides that should apply to the distribution.
-
-The underlying mechanism behind DISTROOVERRIDES is simply that it is included in the default value of OVERRIDES.
-
-Here is an example from meta-poky/conf/distro/poky-tiny.conf:
-
-```
-DISTROOVERRIDES = "poky:poky-tiny"
-
-```
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DISTROOVERRIDES
-
-## Variable `DISTRO_FEATURES`
-
-## Yocto Project Reference Manual
-
-The software support you want in your distribution for various features. You define your distribution features in the distribution configuration file.
-
-In most cases, the presence or absence of a feature in DISTRO_FEATURES is translated to the appropriate option supplied to the configure script during the do_configure task for recipes that optionally support the feature. For example, specifying “x11” in DISTRO_FEATURES, causes every piece of software built for the target that can optionally support X11 to have its X11 support enabled.
-
-Note
-
-Just enabling DISTRO_FEATURES alone doesn’t enable feature support for packages. Mechanisms such as making PACKAGECONFIG track DISTRO_FEATURES are used to enable/disable package features.
-
-Two more examples are Bluetooth and NFS support. For a more complete list of features that ships with the Yocto Project and that you can provide with this variable, see the “Distro Features” section.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DISTRO_FEATURES
-
-## Variable `DL_DIR`
-
-## Yocto Project Reference Manual
-
-The central download directory used by the build process to store downloads. By default, DL_DIR gets files suitable for mirroring for everything except Git repositories. If you want tarballs of Git repositories, use the BB_GENERATE_MIRROR_TARBALLS variable.
-
-You can set this directory by defining the DL_DIR variable in the `conf/local.conf` file. This directory is self-maintaining and you should not have to touch it. By default, the directory is `downloads` in the Build Directory:
-
-```
-#DL_DIR ?= "${TOPDIR}/downloads"
-
-```
-
-To specify a different download directory, simply remove the comment from the line and provide your directory.
-
-During a first build, the system downloads many different source code tarballs from various upstream projects. Downloading can take a while, particularly if your network connection is slow. Tarballs are all stored in the directory defined by DL_DIR and the build system looks there first to find source tarballs.
-
-Note
-
-When wiping and rebuilding, you can preserve this directory to speed up this part of subsequent builds.
-
-You can safely share this directory between multiple builds on the same development machine. For additional information on how the build process gets source files when working behind a firewall or proxy server, see this specific question in the “FAQ” chapter. You can also refer to the “Working Behind a Network Proxy” Wiki page.
-
-## BitBake User Manual
-
-The central download directory used by the build process to store downloads. By default, DL_DIR gets files suitable for mirroring for everything except Git repositories. If you want tarballs of Git repositories, use the BB_GENERATE_MIRROR_TARBALLS variable.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DL_DIR , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-DL_DIR
-
-## Variable `EXTRA_IMAGE_FEATURES`
-
-## Yocto Project Reference Manual
-
-A list of additional features to include in an image. When listing more than one feature, separate them with a space.
-
-Typically, you configure this variable in your `local.conf` file, which is found in the Build Directory. Although you can use this variable from within a recipe, best practices dictate that you do not.
-
-Note
-
-To enable primary features from within the image recipe, use the IMAGE_FEATURES variable.
-
-Here are some examples of features you can add:
-
-- “dbg-pkgs” — adds -dbg packages for all installed packages including symbol information for debugging and profiling.
-
-- “debug-tweaks” — makes an image suitable for debugging. For example, allows root logins without passwords and enables post-installation logging. See the ‘allow-empty-password’ and ‘post-install-logging’ features in the “Image Features” section for more information.
-
-- “dev-pkgs” — adds -dev packages for all installed packages. This is useful if you want to develop against the libraries in the image.
-
-- “read-only-rootfs” — creates an image whose root filesystem is read-only. See the “Creating a Read-Only Root Filesystem” section in the Yocto Project Development Tasks Manual for more information
-
-- “tools-debug” — adds debugging tools such as gdb and strace.
-
-- “tools-sdk” — adds development tools such as gcc, make, pkgconfig and so forth.
-
-- “tools-testapps” — adds useful testing tools such as ts_print, aplay, arecord and so forth.
-
-For a complete list of image features that ships with the Yocto Project, see the “Image Features” section.
-
-For an example that shows how to customize your image by using this variable, see the “Customizing Images Using Custom IMAGE_FEATURES and EXTRA_IMAGE_FEATURES” section in the Yocto Project Development Tasks Manual.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTRA_IMAGE_FEATURES
-
-## Variable `EXTRA_OECMAKE`
-
-## Yocto Project Reference Manual
-
-Additional CMake options. See the cmake class for additional information.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTRA_OECMAKE
-
-## Variable `EXTRA_OECONF`
-
-## Yocto Project Reference Manual
-
-Additional `configure` script options. See PACKAGECONFIG_CONFARGS for additional information on passing configure script options.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTRA_OECONF
-
-## Variable `EXTRA_OEMESON`
-
-## Yocto Project Reference Manual
-
-Additional Meson options. See the meson class for additional information.
-
-In addition to standard Meson options, such options correspond to Meson build options defined in the `meson_options.txt` file in the sources to build. Here is an example:
-
-```
-EXTRA_OEMESON = "-Dpython=disabled -Dvalgrind=disabled"
-
-```
-
-Note that any custom value for the Meson `--buildtype` option should be set through the MESON_BUILDTYPE variable.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTRA_OEMESON
+Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DISTRO_VERSION
 
 ## Variable `FILES`
 
@@ -893,33 +312,6 @@ If some of the files you provide with the FILES variable are editable and you kn
 
 Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FILES
 
-## Variable `FILES_SOLIBSDEV`
-
-## Yocto Project Reference Manual
-
-Defines the file specification to match SOLIBSDEV. In other words, FILES_SOLIBSDEV defines the full path name of the development symbolic link (symlink) for shared libraries on the target platform.
-
-The following statement from the `bitbake.conf` shows how it is set:
-
-```
-FILES_SOLIBSDEV ?= "${base_libdir}/lib*${SOLIBSDEV} ${libdir}/lib*${SOLIBSDEV}"
-
-```
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FILES_SOLIBSDEV
-
-## Variable `HOMEPAGE`
-
-## Yocto Project Reference Manual
-
-Website where more information about the software the recipe is building can be found.
-
-## BitBake User Manual
-
-Website where more information about the software the recipe is building can be found.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-HOMEPAGE , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-HOMEPAGE
-
 ## Variable `IMAGE_FEATURES`
 
 ## Yocto Project Reference Manual
@@ -935,27 +327,6 @@ For a list of image features that ships with the Yocto Project, see the “Image
 For an example that shows how to customize your image by using this variable, see the “Customizing Images Using Custom IMAGE_FEATURES and EXTRA_IMAGE_FEATURES” section in the Yocto Project Development Tasks Manual.
 
 Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_FEATURES
-
-## Variable `IMAGE_FSTYPES`
-
-## Yocto Project Reference Manual
-
-Specifies the formats the OpenEmbedded build system uses during the build when creating the root filesystem. For example, setting IMAGE_FSTYPES as follows causes the build system to create root filesystems using two formats: `.ext3` and `.tar.bz2`:
-
-```
-IMAGE_FSTYPES = "ext3 tar.bz2"
-
-```
-
-For the complete list of supported image formats from which you can choose, see IMAGE_TYPES.
-
-Note
-
-- If an image recipe uses the “inherit image” line and you are setting IMAGE_FSTYPES inside the recipe, you must set IMAGE_FSTYPES prior to using the “inherit image” line.
-
-- Due to the way the OpenEmbedded build system processes this variable, you cannot update its contents by using `:append` or `:prepend`. You must use the `+=` operator to add one or more options to the IMAGE_FSTYPES variable.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_FSTYPES
 
 ## Variable `IMAGE_INSTALL`
 
@@ -981,185 +352,6 @@ Note
 - Using IMAGE_INSTALL with the += BitBake operator within the `/conf/local.conf` file or from within an image recipe is not recommended. Use of this operator in these ways can cause ordering issues. Since core-image sets IMAGE_INSTALL to a default value using the ?= operator, using a `+=` operation against IMAGE_INSTALL results in unexpected behavior when used within `conf/local.conf`. Furthermore, the same operation from within an image recipe may or may not succeed depending on the specific situation. In both these cases, the behavior is contrary to how most users expect the `+=` operator to work.
 
 Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_INSTALL
-
-## Variable `IMAGE_ROOTFS`
-
-## Yocto Project Reference Manual
-
-The location of the root filesystem while it is under construction (i.e. during the do_rootfs task). This variable is not configurable. Do not change it.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_ROOTFS
-
-## Variable `INCOMPATIBLE_LICENSE`
-
-## Yocto Project Reference Manual
-
-Specifies a space-separated list of license names (as they would appear in LICENSE) that should be excluded from the build (if set globally), or from an image (if set locally in an image recipe).
-
-When the variable is set globally, recipes that provide no alternatives to listed incompatible licenses are not built. Packages that are individually licensed with the specified incompatible licenses will be deleted. Most of the time this does not allow a feasible build (because it becomes impossible to satisfy build time dependencies), so the recommended way to implement license restrictions is to set the variable in specific image recipes where the restrictions must apply. That way there are no build time restrictions, but the license check is still performed when the image’s filesystem is assembled from packages.
-
-There is some support for wildcards in this variable’s value, however it is restricted to specific licenses. Currently only these wildcards are allowed and expand as follows:
-
-- `AGPL-3.0*"`: `AGPL-3.0-only`, `AGPL-3.0-or-later`
-
-- `GPL-3.0*`: `GPL-3.0-only`, `GPL-3.0-or-later`
-
-- `LGPL-3.0*`: `LGPL-3.0-only`, `LGPL-3.0-or-later`
-
-Note
-
-This functionality is only regularly tested using the following setting:
-
-```
-INCOMPATIBLE_LICENSE = "GPL-3.0* LGPL-3.0* AGPL-3.0*"
-
-```
-
-Although you can use other settings, you might be required to remove dependencies on (or provide alternatives to) components that are required to produce a functional system image.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INCOMPATIBLE_LICENSE
-
-## Variable `INITSCRIPT_NAME`
-
-## Yocto Project Reference Manual
-
-The filename of the initialization script as installed to `${sysconfdir}/init.d`.
-
-This variable is used in recipes when using update-rc.d. The variable is mandatory.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INITSCRIPT_NAME
-
-## Variable `INITSCRIPT_PACKAGES`
-
-## Yocto Project Reference Manual
-
-A list of the packages that contain initscripts. If multiple packages are specified, you need to append the package name to the other `INITSCRIPT_*` as an override.
-
-This variable is used in recipes when using update-rc.d. The variable is optional and defaults to the PN variable.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INITSCRIPT_PACKAGES
-
-## Variable `INITSCRIPT_PARAMS`
-
-## Yocto Project Reference Manual
-
-Specifies the options to pass to `update-rc.d`. Here is an example:
-
-```
-INITSCRIPT_PARAMS = "start 99 5 2 . stop 20 0 1 6 ."
-
-```
-
-In this example, the script has a runlevel of 99, starts the script in initlevels 2 and 5, and stops the script in levels 0, 1 and 6.
-
-The variable’s default value is “defaults”, which is set in the update-rc.d class.
-
-The value in INITSCRIPT_PARAMS is passed through to the `update-rc.d` command. For more information on valid parameters, please see the manual page: *update-rc.d*.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INITSCRIPT_PARAMS
-
-## Variable `INSANE_SKIP`
-
-## Yocto Project Reference Manual
-
-Specifies the QA checks to skip for a specific package within a recipe. For example, to skip the check for symbolic link `.so` files in the main package of a recipe, add the following to the recipe. The package name override must be used, which in this example is `${PN}`:
-
-```
-INSANE_SKIP:${PN} += "dev-so"
-
-```
-
-See the “insane” section for a list of the valid QA checks you can specify using this variable.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INSANE_SKIP
-
-## Variable `KERNEL_DEVICETREE`
-
-## Yocto Project Reference Manual
-
-Specifies the name of the generated Linux kernel device tree (i.e. the `.dtb`) file.
-
-Note
-
-There is legacy support for specifying the full path to the device tree. However, providing just the `.dtb` file is preferred.
-
-In order to use this variable, the kernel-devicetree class must be inherited.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_DEVICETREE
-
-## Variable `KERNEL_FEATURES`
-
-## Yocto Project Reference Manual
-
-Includes additional kernel metadata. In the OpenEmbedded build system, the default Board Support Packages (BSPs) Metadata is provided through the KMACHINE and KBRANCH variables. You can use the KERNEL_FEATURES variable from within the kernel recipe or kernel append file to further add metadata for all BSPs or specific BSPs.
-
-The metadata you add through this variable includes config fragments and features descriptions, which usually includes patches as well as config fragments. You typically override the KERNEL_FEATURES variable for a specific machine. In this way, you can provide validated, but optional, sets of kernel configurations and features.
-
-For example, the following example from the `linux-yocto-rt_4.12` kernel recipe adds “netfilter” and “taskstats” features to all BSPs as well as “virtio” configurations to all QEMU machines. The last two statements add specific configurations to targeted machine types:
-
-```
-KERNEL_EXTRA_FEATURES ?= "features/netfilter/netfilter.scc features/taskstats/taskstats.scc"
-KERNEL_FEATURES:append = " ${KERNEL_EXTRA_FEATURES}"
-KERNEL_FEATURES:append:qemuall = " cfg/virtio.scc"
-KERNEL_FEATURES:append:qemux86 = "  cfg/sound.scc cfg/paravirt_kvm.scc"
-KERNEL_FEATURES:append:qemux86-64 = " cfg/sound.scc"
-
-```
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_FEATURES
-
-## Variable `KERNEL_MODULE_AUTOLOAD`
-
-## Yocto Project Reference Manual
-
-Lists kernel modules that need to be auto-loaded during boot.
-
-Note
-
-This variable replaces the deprecated module_autoload variable.
-
-You can use the KERNEL_MODULE_AUTOLOAD variable anywhere that it can be recognized by the kernel recipe or by an out-of-tree kernel module recipe (e.g. a machine configuration file, a distribution configuration file, an append file for the recipe, or the recipe itself).
-
-Specify it as follows:
-
-```
-KERNEL_MODULE_AUTOLOAD += "module_name1 module_name2 module_name3"
-
-```
-
-Including KERNEL_MODULE_AUTOLOAD causes the OpenEmbedded build system to populate the `/etc/modules-load.d/modname.conf` file with the list of modules to be auto-loaded on boot. The modules appear one-per-line in the file. Here is an example of the most common use case:
-
-```
-KERNEL_MODULE_AUTOLOAD += "module_name"
-
-```
-
-For information on how to populate the `modname.conf` file with `modprobe.d` syntax lines, see the KERNEL_MODULE_PROBECONF variable.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_MODULE_AUTOLOAD
-
-## Variable `LAYERDEPENDS`
-
-## Yocto Project Reference Manual
-
-Lists the layers, separated by spaces, on which this layer depends. Optionally, you can specify a specific layer version for a dependency by adding it to the end of the layer name. Here is an example:
-
-```
-LAYERDEPENDS_mylayer = "anotherlayer (=3)"
-
-```
-
-In this previous example, version 3 of “anotherlayer” is compared against LAYERVERSION`_anotherlayer`.
-
-An error is produced if any dependency is missing or the version numbers (if specified) do not match exactly. This variable is used in the `conf/layer.conf` file and must be suffixed with the name of the specific layer (e.g. `LAYERDEPENDS_mylayer`).
-
-## BitBake User Manual
-
-Lists the layers, separated by spaces, upon which this recipe depends. Optionally, you can specify a specific layer version for a dependency by adding it to the end of the layer name with a colon, (e.g. “anotherlayer:3” to be compared against LAYERVERSION`_anotherlayer` in this case). BitBake produces an error if any dependency is missing or the version numbers do not match exactly (if specified).
-
-You use this variable in the `conf/layer.conf` file. You must also use the specific layer name as a suffix to the variable (e.g. `LAYERDEPENDS_mylayer`).
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LAYERDEPENDS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-LAYERDEPENDS
 
 ## Variable `LAYERSERIES_COMPAT`
 
@@ -1248,108 +440,49 @@ Lists license flags that when specified in LICENSE_FLAGS within a recipe should 
 
 Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LICENSE_FLAGS_ACCEPTED
 
-## Variable `LIC_FILES_CHKSUM`
+## Variable `OLDEST_KERNEL`
 
 ## Yocto Project Reference Manual
 
-Checksums of the license text in the recipe source code.
+Declares the oldest version of the Linux kernel that the produced binaries must support. This variable is passed into the build of the Embedded GNU C Library (`glibc`).
 
-This variable tracks changes in license text of the source code files. If the license text is changed, it will trigger a build failure, which gives the developer an opportunity to review any license change.
+The default for this variable comes from the `meta/conf/bitbake.conf` configuration file. You can override this default by setting the variable in a custom distribution configuration file.
 
-This variable must be defined for all recipes (unless LICENSE is set to “CLOSED”).
+Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-OLDEST_KERNEL
 
-For more information, see the “Tracking License Changes” section in the Yocto Project Development Tasks Manual.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LIC_FILES_CHKSUM
-
-## Variable `MACHINE`
+## Variable `OVERRIDES`
 
 ## Yocto Project Reference Manual
 
-Specifies the target device for which the image is built. You define MACHINE in the `local.conf` file found in the Build Directory. By default, MACHINE is set to “qemux86”, which is an x86-based architecture machine to be emulated using QEMU:
+A colon-separated list of overrides that currently apply. Overrides are a BitBake mechanism that allows variables to be selectively overridden at the end of parsing. The set of overrides in OVERRIDES represents the “state” during building, which includes the current recipe being built, the machine for which it is being built, and so forth.
+
+As an example, if the string “an-override” appears as an element in the colon-separated list in OVERRIDES, then the following assignment will override `FOO` with the value “overridden” at the end of parsing:
 
 ```
-MACHINE ?= "qemux86"
-
-```
-
-The variable corresponds to a machine configuration file of the same name, through which machine-specific configurations are set. Thus, when MACHINE is set to “qemux86”, the corresponding `qemux86.conf` machine configuration file can be found in the Source Directory in `meta/conf/machine`.
-
-The list of machines supported by the Yocto Project as shipped include the following:
-
-```
-MACHINE ?= "qemuarm"
-MACHINE ?= "qemuarm64"
-MACHINE ?= "qemumips"
-MACHINE ?= "qemumips64"
-MACHINE ?= "qemuppc"
-MACHINE ?= "qemux86"
-MACHINE ?= "qemux86-64"
-MACHINE ?= "genericx86"
-MACHINE ?= "genericx86-64"
-MACHINE ?= "beaglebone"
+FOO:an-override = "overridden"
 
 ```
 
-The last five are Yocto Project reference hardware boards, which are provided in the `meta-yocto-bsp` layer.
+See the “Conditional Syntax (Overrides)” section in the BitBake User Manual for more information on the overrides mechanism.
+
+The default value of OVERRIDES includes the values of the CLASSOVERRIDE, MACHINEOVERRIDES, and DISTROOVERRIDES variables. Another important override included by default is `pn-${PN}`. This override allows variables to be set for a single recipe within configuration (`.conf`) files. Here is an example:
+
+```
+FOO:pn-myrecipe = "myrecipe-specific value"
+
+```
 
 Note
 
-Adding additional Board Support Package (BSP) layers to your configuration adds new possible settings for MACHINE.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MACHINE
-
-## Variable `MACHINEOVERRIDES`
-
-## Yocto Project Reference Manual
-
-A colon-separated list of overrides that apply to the current machine. By default, this list includes the value of MACHINE.
-
-You can extend MACHINEOVERRIDES to add extra overrides that should apply to a machine. For example, all machines emulated in QEMU (e.g. `qemuarm`, `qemux86`, and so forth) include a file named `meta/conf/machine/include/qemu.inc` that prepends the following override to MACHINEOVERRIDES:
-
-```
-MACHINEOVERRIDES =. "qemuall:"
-
-```
-
-This override allows variables to be overridden for all machines emulated in QEMU, like in the following example from the `connman-conf` recipe:
-
-```
-SRC_URI:append:qemuall = " file://wired.config \
-    file://wired-setup \
-    "
-
-```
-
-The underlying mechanism behind MACHINEOVERRIDES is simply that it is included in the default value of OVERRIDES.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MACHINEOVERRIDES
-
-## Variable `MACHINE_FEATURES`
-
-## Yocto Project Reference Manual
-
-Specifies the list of hardware features the MACHINE is capable of supporting. For related information on enabling features, see the DISTRO_FEATURES, COMBINED_FEATURES, and IMAGE_FEATURES variables.
-
-For a list of hardware features supported by the Yocto Project as shipped, see the “Machine Features” section.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MACHINE_FEATURES
-
-## Variable `MIRRORS`
-
-## Yocto Project Reference Manual
-
-Specifies additional paths from which the OpenEmbedded build system gets source code. When the build system searches for source code, it first tries the local download directory. If that location fails, the build system tries locations defined by PREMIRRORS, the upstream source, and then locations specified by MIRRORS in that order.
-
-The default value for MIRRORS is defined in the `meta/classes-global/mirrors.bbclass` file in the core metadata layer.
-
-See the definition of this variable in the BitBake Manual for more details: MIRRORS.
+An easy way to see what overrides apply is to run the command `bitbake-getvar -r myrecipe OVERRIDES`. See the “Viewing Variable Values” section in the Yocto Project Development Tasks Manual for more information.
 
 ## BitBake User Manual
 
-Specifies additional paths from which BitBake gets source code. When the build system searches for source code, it first tries the local download directory. If that location fails, the build system tries locations defined by PREMIRRORS, the upstream source, and then locations specified by MIRRORS in that order.
+A colon-separated list that BitBake uses to control what variables are overridden after BitBake parses recipes and configuration files.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MIRRORS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-MIRRORS
+Following is a simple example that uses an overrides list based on machine architectures: OVERRIDES = “arm:x86:mips:powerpc” You can find information on how to use OVERRIDES in the “Conditional Syntax (Overrides)” section.
+
+Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-OVERRIDES , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-OVERRIDES
 
 ## Variable `PACKAGECONFIG`
 
@@ -1462,97 +595,19 @@ PACKAGECONFIG = "${@'systemd' if d.getVar('INIT_MANAGER') == 'systemd' else ''}"
 
 Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGECONFIG
 
-## Variable `PACKAGES`
+## Variable `PE`
 
 ## Yocto Project Reference Manual
 
-The list of packages the recipe creates. The default value is the following:
+The epoch of the recipe. By default, this variable is unset. The variable is used to make upgrades possible when the versioning scheme changes in some backwards incompatible way.
 
-```
-${PN}-src ${PN}-dbg ${PN}-staticdev ${PN}-dev ${PN}-doc ${PN}-locale ${PACKAGE_BEFORE_PN} ${PN}
-
-```
-
-During packaging, the do_package task goes through PACKAGES and uses the FILES variable corresponding to each package to assign files to the package. If a file matches the FILES variable for more than one package in PACKAGES, it will be assigned to the earliest (leftmost) package.
-
-Packages in the variable’s list that are empty (i.e. where none of the patterns in `FILES:`pkg match any files installed by the do_install task) are not generated, unless generation is forced through the ALLOW_EMPTY variable.
+PE is the default value of the PKGE variable.
 
 ## BitBake User Manual
 
-The list of packages the recipe creates.
+The epoch of the recipe. By default, this variable is unset. The variable is used to make upgrades possible when the versioning scheme changes in some backwards incompatible way.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGES , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PACKAGES
-
-## Variable `PACKAGES_DYNAMIC`
-
-## Yocto Project Reference Manual
-
-A promise that your recipe satisfies runtime dependencies for optional modules that are found in other recipes. PACKAGES_DYNAMIC does not actually satisfy the dependencies, it only states that they should be satisfied. For example, if a hard, runtime dependency (RDEPENDS) of another package is satisfied at build time through the PACKAGES_DYNAMIC variable, but a package with the module name is never actually produced, then the other package will be broken. Thus, if you attempt to include that package in an image, you will get a dependency failure from the packaging system during the do_rootfs task.
-
-Typically, if there is a chance that such a situation can occur and the package that is not created is valid without the dependency being satisfied, then you should use RRECOMMENDS (a soft runtime dependency) instead of RDEPENDS.
-
-For an example of how to use the PACKAGES_DYNAMIC variable when you are splitting packages, see the “Handling Optional Module Packaging” section in the Yocto Project Development Tasks Manual.
-
-## BitBake User Manual
-
-A promise that your recipe satisfies runtime dependencies for optional modules that are found in other recipes. PACKAGES_DYNAMIC does not actually satisfy the dependencies, it only states that they should be satisfied. For example, if a hard, runtime dependency (RDEPENDS) of another package is satisfied during the build through the PACKAGES_DYNAMIC variable, but a package with the module name is never actually produced, then the other package will be broken.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGES_DYNAMIC , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PACKAGES_DYNAMIC
-
-## Variable `PACKAGE_ARCH`
-
-## Yocto Project Reference Manual
-
-The architecture of the resulting package or packages.
-
-By default, the value of this variable is set to TUNE_PKGARCH when building for the target, BUILD_ARCH when building for the build host, and “${SDK_ARCH}-${SDKPKGSUFFIX}” when building for the SDK.
-
-Note
-
-See SDK_ARCH for more information.
-
-However, if your recipe’s output packages are built specific to the target machine rather than generally for the architecture of the machine, you should set PACKAGE_ARCH to the value of MACHINE_ARCH in the recipe as follows:
-
-```
-PACKAGE_ARCH = "${MACHINE_ARCH}"
-
-```
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGE_ARCH
-
-## Variable `PACKAGE_BEFORE_PN`
-
-## Yocto Project Reference Manual
-
-Enables easily adding packages to PACKAGES before `${PN}` so that those added packages can pick up files that would normally be included in the default package.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGE_BEFORE_PN
-
-## Variable `PACKAGE_CLASSES`
-
-## Yocto Project Reference Manual
-
-This variable, which is set in the `local.conf` configuration file found in the `conf` folder of the Build Directory, specifies the package manager the OpenEmbedded build system uses when packaging data.
-
-You can provide one or more of the following arguments for the variable:
-
-```
-PACKAGE_CLASSES ?= "package_rpm package_deb package_ipk"
-
-```
-
-The build system uses only the first argument in the list as the package manager when creating your image or SDK. However, packages will be created using any additional packaging classes you specify. For example, if you use the following in your `local.conf` file:
-
-```
-PACKAGE_CLASSES ?= "package_ipk"
-
-```
-
-The OpenEmbedded build system uses the IPK package manager to create your image or SDK.
-
-For information on packaging and build performance effects as a result of the package manager in use, see the “package” section.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGE_CLASSES
+Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PE , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PE
 
 ## Variable `PN`
 
@@ -1571,6 +626,30 @@ If applicable, the PN variable also contains any special suffix or prefix. For e
 The recipe name.
 
 Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PN , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PN
+
+## Variable `PR`
+
+## Yocto Project Reference Manual
+
+The revision of the recipe. The default value for this variable is “r0”. Subsequent revisions of the recipe conventionally have the values “r1”, “r2”, and so forth. When PV increases, PR is conventionally reset to “r0”.
+
+Note
+
+The OpenEmbedded build system does not need the aid of PR to know when to rebuild a recipe. The build system uses the task input checksums along with the stamp and Shared State Cache mechanisms.
+
+The PR variable primarily becomes significant when a package manager dynamically installs packages on an already built image. In this case, PR, which is the default value of PKGR, helps the package manager distinguish which package is the most recent one in cases where many packages have the same PV (i.e. PKGV). A component having many packages with the same PV usually means that the packages all install the same upstream version, but with later (PR) version packages including packaging fixes.
+
+Note
+
+PR does not need to be increased for changes that do not change the package contents or metadata.
+
+Because manually managing PR can be cumbersome and error-prone, an automated solution exists. See the “Working With a PR Service” section in the Yocto Project Development Tasks Manual for more information.
+
+## BitBake User Manual
+
+The revision of the recipe.
+
+Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PR , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PR
 
 ## Variable `PREFERRED_PROVIDER`
 
@@ -1611,207 +690,6 @@ PREFERRED_PROVIDER_virtual/libgl ?= "mesa"
 ```
 
 Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PREFERRED_PROVIDER , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PREFERRED_PROVIDER
-
-## Variable `PREFERRED_VERSION`
-
-## Yocto Project Reference Manual
-
-If there are multiple versions of a recipe available, this variable determines which version should be given preference. You must always suffix the variable with the PN you want to select (python in the first example below), and you should specify the PV accordingly (3.4.0 in the example).
-
-The PREFERRED_VERSION variable supports limited wildcard use through the “`%`” character. You can use the character to match any number of characters, which can be useful when specifying versions that contain long revision numbers that potentially change. Here are two examples:
-
-```
-PREFERRED_VERSION_python = "3.4.0"
-PREFERRED_VERSION_linux-yocto = "5.0%"
-
-```
-
-Note
-
-The use of the “%” character is limited in that it only works at the end of the string. You cannot use the wildcard character in any other location of the string.
-
-The specified version is matched against PV, which does not necessarily match the version part of the recipe’s filename.
-
-If you want to select a recipe named `foo_git.bb` which has PV set to `1.2.3+git`, you can do so by setting ``PREFERRED_VERSION_foo` to `1.2.3%` (i.e. simply setting `PREFERRED_VERSION_foo` to `git` will not work as the name of the recipe isn’t used, but rather its PV definition).
-
-Sometimes the PREFERRED_VERSION variable can be set by configuration files in a way that is hard to change. You can use OVERRIDES to set a machine-specific override. Here is an example:
-
-```
-PREFERRED_VERSION_linux-yocto:qemux86 = "5.0%"
-
-```
-
-Although not recommended, worst case, you can also use the “forcevariable” override, which is the strongest override possible. Here is an example:
-
-```
-PREFERRED_VERSION_linux-yocto:forcevariable = "5.0%"
-
-```
-
-Note
-
-The `:forcevariable` override is not handled specially. This override only works because the default value of OVERRIDES includes “forcevariable”.
-
-If a recipe with the specified version is not available, a warning message will be shown. See REQUIRED_VERSION if you want this to be an error instead.
-
-## BitBake User Manual
-
-If there are multiple versions of a recipe available, this variable determines which version should be given preference. You must always suffix the variable with the PN you want to select, and you should set PV accordingly for precedence.
-
-The PREFERRED_VERSION variable supports limited wildcard use through the “`%`” character. You can use the character to match any number of characters, which can be useful when specifying versions that contain long revision numbers that potentially change. Here are two examples:
-
-```
-PREFERRED_VERSION_python = "2.7.3"
-PREFERRED_VERSION_linux-yocto = "4.12%"
-
-```
-
-Important
-
-The use of the “ % “ character is limited in that it only works at the end of the string. You cannot use the wildcard character in any other location of the string.
-
-If a recipe with the specified version is not available, a warning message will be shown. See REQUIRED_VERSION if you want this to be an error instead.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PREFERRED_VERSION , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PREFERRED_VERSION
-
-## Variable `PREMIRRORS`
-
-## Yocto Project Reference Manual
-
-Specifies additional paths from which the OpenEmbedded build system gets source code. When the build system searches for source code, it first tries the local download directory. If that location fails, the build system tries locations defined by PREMIRRORS, the upstream source, and then locations specified by MIRRORS in that order.
-
-The default value for PREMIRRORS is defined in the `meta/classes-global/mirrors.bbclass` file in the core metadata layer.
-
-Typically, you could add a specific server for the build system to attempt before any others by adding something like the following to the `local.conf` configuration file in the Build Directory:
-
-```
-PREMIRRORS:prepend = "\
-    git://.*/.* https://downloads.yoctoproject.org/mirror/sources/ \
-    ftp://.*/.* https://downloads.yoctoproject.org/mirror/sources/ \
-    http://.*/.* https://downloads.yoctoproject.org/mirror/sources/ \
-    https://.*/.* https://downloads.yoctoproject.org/mirror/sources/ \
-"
-
-```
-
-These changes cause the build system to intercept Git, FTP, HTTP, and HTTPS requests and direct them to the `http://` sources mirror. You can use `file://` URLs to point to local directories or network shares as well.
-
-See the definition of this variable in the BitBake Manual for more details: PREMIRRORS.
-
-## BitBake User Manual
-
-Specifies additional paths from which BitBake gets source code. When the build system searches for source code, it first tries the local download directory. If that location fails, the build system tries locations defined by PREMIRRORS, the upstream source, and then locations specified by MIRRORS in that order.
-
-Typically, you would add a specific server for the build system to attempt before any others by adding something like the following to your configuration:
-
-```
-PREMIRRORS:prepend = "\
-git://.*/.* http://downloads.yoctoproject.org/mirror/sources/ \
-ftp://.*/.* http://downloads.yoctoproject.org/mirror/sources/ \
-http://.*/.* http://downloads.yoctoproject.org/mirror/sources/ \
-https://.*/.* http://downloads.yoctoproject.org/mirror/sources/"
-
-```
-
-These changes cause the build system to intercept Git, FTP, HTTP, and HTTPS requests and direct them to the `http://` sources mirror. You can use `file://` URLs to point to local directories or network shares as well.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PREMIRRORS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PREMIRRORS
-
-## Variable `PROVIDES`
-
-## Yocto Project Reference Manual
-
-A list of aliases by which a particular recipe can be known. By default, a recipe’s own PN is implicitly already in its PROVIDES list and therefore does not need to mention that it provides itself. If a recipe uses PROVIDES, the additional aliases are synonyms for the recipe and can be useful for satisfying dependencies of other recipes during the build as specified by DEPENDS.
-
-Consider the following example PROVIDES statement from the recipe file `eudev_3.2.9.bb`:
-
-```
-PROVIDES += "udev"
-
-```
-
-The PROVIDES statement results in the “eudev” recipe also being available as simply “udev”.
-
-Note
-
-A recipe’s own recipe name (PN) is always implicitly prepended to PROVIDES, so while using “+=” in the above example may not be strictly necessary it is recommended to avoid confusion.
-
-In addition to providing recipes under alternate names, the PROVIDES mechanism is also used to implement virtual targets. A virtual target is a name that corresponds to some particular functionality (e.g. a Linux kernel). Recipes that provide the functionality in question list the virtual target in PROVIDES. Recipes that depend on the functionality in question can include the virtual target in DEPENDS to leave the choice of provider open.
-
-Conventionally, virtual targets have names on the form “virtual/function” (e.g. “virtual/kernel”). The slash is simply part of the name and has no syntactical significance.
-
-The PREFERRED_PROVIDER variable is used to select which particular recipe provides a virtual target.
-
-Note
-
-A corresponding mechanism for virtual runtime dependencies (packages) exists. However, the mechanism does not depend on any special functionality beyond ordinary variable assignments. For example, VIRTUAL-RUNTIME_dev_manager refers to the package of the component that manages the `/dev` directory.
-
-Setting the “preferred provider” for runtime dependencies is as simple as using the following assignment in a configuration file:
-
-```
-VIRTUAL-RUNTIME_dev_manager = "udev"
-
-```
-
-## BitBake User Manual
-
-A list of aliases by which a particular recipe can be known. By default, a recipe’s own PN is implicitly already in its PROVIDES list. If a recipe uses PROVIDES, the additional aliases are synonyms for the recipe and can be useful satisfying dependencies of other recipes during the build as specified by DEPENDS.
-
-Consider the following example PROVIDES statement from a recipe file `libav_0.8.11.bb`:
-
-```
-PROVIDES += "libpostproc"
-
-```
-
-The PROVIDES statement results in the “libav” recipe also being known as “libpostproc”.
-
-In addition to providing recipes under alternate names, the PROVIDES mechanism is also used to implement virtual targets. A virtual target is a name that corresponds to some particular functionality (e.g. a Linux kernel). Recipes that provide the functionality in question list the virtual target in PROVIDES. Recipes that depend on the functionality in question can include the virtual target in DEPENDS to leave the choice of provider open.
-
-Conventionally, virtual targets have names on the form “virtual/function” (e.g. “virtual/kernel”). The slash is simply part of the name and has no syntactical significance.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PROVIDES , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PROVIDES
-
-## Variable `RCONFLICTS`
-
-## Yocto Project Reference Manual
-
-The list of packages that conflict with packages. Note that packages will not be installed if conflicting packages are not first removed.
-
-Like all package-controlling variables, you must always use them in conjunction with a package name override. Here is an example:
-
-```
-RCONFLICTS:${PN} = "another_conflicting_package_name"
-
-```
-
-BitBake, which the OpenEmbedded build system uses, supports specifying versioned dependencies. Although the syntax varies depending on the packaging format, BitBake hides these differences from you. Here is the general syntax to specify versions with the RCONFLICTS variable:
-
-```
-RCONFLICTS:${PN} = "package (operator version)"
-
-```
-
-For `operator`, you can specify the following:
-
-- =
-
-- <
-
-- >
-
-- <=
-
-- >=
-
-For example, the following sets up a dependency on version 1.2 or greater of the package `foo`:
-
-```
-RCONFLICTS:${PN} = "foo (>= 1.2)"
-
-```
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RCONFLICTS
 
 ## Variable `RDEPENDS`
 
@@ -1923,21 +801,6 @@ For information on build-time dependencies, see the DEPENDS variable.
 
 Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RDEPENDS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-RDEPENDS
 
-## Variable `ROOTFS_POSTPROCESS_COMMAND`
-
-## Yocto Project Reference Manual
-
-Specifies a list of functions to call once the OpenEmbedded build system has created the root filesystem. You can specify functions separated by spaces:
-
-```
-ROOTFS_POSTPROCESS_COMMAND += "function"
-
-```
-
-If you need to pass the root filesystem path to a command within a function, you can use `${IMAGE_ROOTFS}`, which points to the directory that becomes the root filesystem image. See the IMAGE_ROOTFS variable for more information.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ROOTFS_POSTPROCESS_COMMAND
-
 ## Variable `RPROVIDES`
 
 ## Yocto Project Reference Manual
@@ -1968,140 +831,6 @@ RPROVIDES:${PN} = "widget-abi-2"
 
 Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RPROVIDES , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-RPROVIDES
 
-## Variable `RRECOMMENDS`
-
-## Yocto Project Reference Manual
-
-A list of packages that extends the usability of a package being built. The package being built does not depend on this list of packages in order to successfully build, but rather uses them for extended usability. To specify runtime dependencies for packages, see the RDEPENDS variable.
-
-The package manager will automatically install the RRECOMMENDS list of packages when installing the built package. However, you can prevent listed packages from being installed by using the BAD_RECOMMENDATIONS, NO_RECOMMENDATIONS, and PACKAGE_EXCLUDE variables.
-
-Packages specified in RRECOMMENDS need not actually be produced. However, there must be a recipe providing each package, either through the PACKAGES or PACKAGES_DYNAMIC variables or the RPROVIDES variable, or an error will occur during the build. If such a recipe does exist and the package is not produced, the build continues without error.
-
-Because the RRECOMMENDS variable applies to packages being built, you should always attach an override to the variable to specify the particular package whose usability is being extended. For example, suppose you are building a development package that is extended to support wireless functionality. In this case, you would use the following:
-
-```
-RRECOMMENDS:${PN}-dev += "wireless_package_name"
-
-```
-
-In the example, the package name (`${PN}-dev`) must appear as it would in the PACKAGES namespace before any renaming of the output package by classes such as debian.
-
-BitBake, which the OpenEmbedded build system uses, supports specifying versioned recommends. Although the syntax varies depending on the packaging format, BitBake hides these differences from you. Here is the general syntax to specify versions with the RRECOMMENDS variable:
-
-```
-RRECOMMENDS:${PN} = "package (operator version)"
-
-```
-
-For `operator`, you can specify the following:
-
-- =
-
-- <
-
-- >
-
-- <=
-
-- >=
-
-For example, the following sets up a recommend on version 1.2 or greater of the package `foo`:
-
-```
-RRECOMMENDS:${PN} = "foo (>= 1.2)"
-
-```
-
-## BitBake User Manual
-
-A list of packages that extends the usability of a package being built. The package being built does not depend on this list of packages in order to successfully build, but needs them for the extended usability. To specify runtime dependencies for packages, see the RDEPENDS variable.
-
-BitBake supports specifying versioned recommends. Although the syntax varies depending on the packaging format, BitBake hides these differences from you. Here is the general syntax to specify versions with the RRECOMMENDS variable:
-
-```
-RRECOMMENDS:${PN} = "package (operator version)"
-
-```
-
-For `operator`, you can specify the following:
-
-```
-=
-<
->
-<=
->=
-
-```
-
-For example, the following sets up a recommend on version 1.2 or greater of the package `foo`:
-
-```
-RRECOMMENDS:${PN} = "foo (>= 1.2)"
-
-```
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RRECOMMENDS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-RRECOMMENDS
-
-## Variable `RREPLACES`
-
-## Yocto Project Reference Manual
-
-A list of packages replaced by a package. The package manager uses this variable to determine which package should be installed to replace other package(s) during an upgrade. In order to also have the other package(s) removed at the same time, you must add the name of the other package to the RCONFLICTS variable.
-
-As with all package-controlling variables, you must use this variable in conjunction with a package name override. Here is an example:
-
-```
-RREPLACES:${PN} = "other_package_being_replaced"
-
-```
-
-BitBake, which the OpenEmbedded build system uses, supports specifying versioned replacements. Although the syntax varies depending on the packaging format, BitBake hides these differences from you. Here is the general syntax to specify versions with the RREPLACES variable:
-
-```
-RREPLACES:${PN} = "package (operator version)"
-
-```
-
-For `operator`, you can specify the following:
-
-- =
-
-- <
-
-- >
-
-- <=
-
-- >=
-
-For example, the following sets up a replacement using version 1.2 or greater of the package `foo`:
-
-```
-RREPLACES:${PN} = "foo (>= 1.2)"
-
-```
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RREPLACES
-
-## Variable `RSUGGESTS`
-
-## Yocto Project Reference Manual
-
-A list of additional packages that you can suggest for installation by the package manager at the time a package is installed. Not all package managers support this functionality. This feature takes effect only when the package manager is being used to install packages on the target system from a package feed.
-
-As with all package-controlling variables, you must always use this variable in conjunction with a package name override. Here is an example:
-
-```
-RSUGGESTS:${PN} = "useful_package another_package"
-
-```
-
-For more information on package management, see the Using Runtime Package Management section of the Yocto Project Development Tasks Manual.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RSUGGESTS
-
 ## Variable `S`
 
 ## Yocto Project Reference Manual
@@ -2127,55 +856,18 @@ S = "${WORKDIR}/git"
 
 Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-S
 
-## Variable `SOLIBS`
+## Variable `SERIAL_CONSOLES`
 
 ## Yocto Project Reference Manual
 
-Defines the suffix for shared libraries used on the target platform. By default, this suffix is “.so.*” for all Linux-based systems and is defined in the `meta/conf/bitbake.conf` configuration file.
+Defines a serial console (TTY) to enable using getty. Provide a value that specifies the baud rate followed by the TTY device name separated by a semicolon. Use spaces to separate multiple devices:
 
-You will see this variable referenced in the default values of `FILES:${PN}`.
+```
+SERIAL_CONSOLES = "115200;ttyS0 115200;ttyS1"
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SOLIBS
+```
 
-## Variable `SOLIBSDEV`
-
-## Yocto Project Reference Manual
-
-Defines the suffix for the development symbolic link (symlink) for shared libraries on the target platform. By default, this suffix is “.so” for Linux-based systems and is defined in the `meta/conf/bitbake.conf` configuration file.
-
-You will see this variable referenced in the default values of `FILES:${PN}-dev`.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SOLIBSDEV
-
-## Variable `SRCREV`
-
-## Yocto Project Reference Manual
-
-The revision of the source code used to build the package. This variable applies to Subversion, Git, Mercurial, and Bazaar only. Note that if you want to build a fixed revision and you want to avoid performing a query on the remote repository every time BitBake parses your recipe, you should specify a SRCREV that is a full revision identifier (e.g. the full SHA hash in git) and not just a tag.
-
-Note
-
-For information on limitations when inheriting the latest revision of software using SRCREV, see the AUTOREV variable description and the “Automatically Incrementing a Package Version Number” section, which is in the Yocto Project Development Tasks Manual.
-
-## BitBake User Manual
-
-The revision of the source code used to build the package. This variable applies only when using Subversion, Git, Mercurial and Bazaar. If you want to build a fixed revision and you want to avoid performing a query on the remote repository every time BitBake parses your recipe, you should specify a SRCREV that is a full revision identifier and not just a tag.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SRCREV , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-SRCREV
-
-## Variable `SRCREV_FORMAT`
-
-## Yocto Project Reference Manual
-
-See SRCREV_FORMAT in the BitBake manual.
-
-## BitBake User Manual
-
-Helps construct valid SRCREV values when multiple source controlled URLs are used in SRC_URI.
-
-The system needs help constructing these values under these circumstances. Each component in the SRC_URI is assigned a name and these are referenced in the SRCREV_FORMAT variable. Consider an example with URLs named “machine” and “meta”. In this case, SRCREV_FORMAT could look like “machine_meta” and those names would have the SCM versions substituted into each position. Only one `AUTOINC` placeholder is added and if needed. And, this placeholder is placed at the start of the returned string.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SRCREV_FORMAT , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-SRCREV_FORMAT
+Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SERIAL_CONSOLES
 
 ## Variable `SRC_URI`
 
@@ -2282,127 +974,65 @@ SRC_URI[third.sha256sum] = "13550350a8681c84c861aac2e5b440161c2b33a3e4f302ac680c
 
 Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SRC_URI , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-SRC_URI
 
-## Variable `SSTATE_DIR`
+## Variable `SRCREV`
 
 ## Yocto Project Reference Manual
 
-The directory for the shared state cache.
+The revision of the source code used to build the package. This variable applies to Subversion, Git, Mercurial, and Bazaar only. Note that if you want to build a fixed revision and you want to avoid performing a query on the remote repository every time BitBake parses your recipe, you should specify a SRCREV that is a full revision identifier (e.g. the full SHA hash in git) and not just a tag.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SSTATE_DIR
+Note
 
-## Variable `SUMMARY`
-
-## Yocto Project Reference Manual
-
-The short (72 characters or less) summary of the binary package for packaging systems such as `opkg`, `rpm`, or `dpkg`. By default, SUMMARY is used to define the DESCRIPTION variable if DESCRIPTION is not set in the recipe.
+For information on limitations when inheriting the latest revision of software using SRCREV, see the AUTOREV variable description and the “Automatically Incrementing a Package Version Number” section, which is in the Yocto Project Development Tasks Manual.
 
 ## BitBake User Manual
 
-A short summary for the recipe, which is 72 characters or less.
+The revision of the source code used to build the package. This variable applies only when using Subversion, Git, Mercurial and Bazaar. If you want to build a fixed revision and you want to avoid performing a query on the remote repository every time BitBake parses your recipe, you should specify a SRCREV that is a full revision identifier and not just a tag.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SUMMARY , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-SUMMARY
+Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SRCREV , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-SRCREV
 
-## Variable `SYSTEMD_AUTO_ENABLE`
-
-## Yocto Project Reference Manual
-
-When inheriting the systemd class, this variable specifies whether the specified service in SYSTEMD_SERVICE should start automatically or not. By default, the service is enabled to automatically start at boot time. The default setting is in the systemd class as follows:
-
-```
-SYSTEMD_AUTO_ENABLE ??= "enable"
-
-```
-
-You can disable the service by setting the variable to “disable”.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SYSTEMD_AUTO_ENABLE
-
-## Variable `SYSTEMD_PACKAGES`
+## Variable `TARGET_DBGSRC_DIR`
 
 ## Yocto Project Reference Manual
 
-When inheriting the systemd class, this variable locates the systemd unit files when they are not found in the main recipe’s package. By default, the SYSTEMD_PACKAGES variable is set such that the systemd unit files are assumed to reside in the recipes main package:
+Specifies the target path to debug source files. The default is `/usr/src/debug/${PN}/${PV}`.
 
-```
-SYSTEMD_PACKAGES ?= "${PN}"
+Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TARGET_DBGSRC_DIR
 
-```
-
-If these unit files are not in this recipe’s main package, you need to use SYSTEMD_PACKAGES to list the package or packages in which the build system can find the systemd unit files.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SYSTEMD_PACKAGES
-
-## Variable `SYSTEMD_SERVICE`
+## Variable `VIRTUAL-RUNTIME`
 
 ## Yocto Project Reference Manual
 
-When inheriting the systemd class, this variable specifies the systemd service name for a package.
+VIRTUAL-RUNTIME is a commonly used prefix for defining virtual packages for runtime usage, typically for use in RDEPENDS or in image definitions.
 
-Multiple services can be specified, each one separated by a space.
-
-When you specify this file in your recipe, use a package name override to indicate the package to which the value applies. Here is an example from the connman recipe:
+An example is `VIRTUAL-RUNTIME_base-utils` that makes it possible to either use BusyBox based utilities:
 
 ```
-SYSTEMD_SERVICE:${PN} = "connman.service"
+VIRTUAL-RUNTIME_base-utils = "busybox"
 
 ```
 
-The package overrides that can be specified are directly related to the value of SYSTEMD_PACKAGES. Overrides not included in SYSTEMD_PACKAGES will be silently ignored.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SYSTEMD_SERVICE
-
-## Variable `TUNE_FEATURES`
-
-## Yocto Project Reference Manual
-
-Features used to “tune” a compiler for optimal use given a specific processor. The features are defined within the tune files and allow arguments (i.e. `TUNE_*ARGS`) to be dynamically generated based on the features.
-
-The OpenEmbedded build system verifies the features to be sure they are not conflicting and that they are supported.
-
-The BitBake configuration file (`meta/conf/bitbake.conf`) defines TUNE_FEATURES as follows:
+or their full featured implementations from GNU Coreutils and other projects:
 
 ```
-TUNE_FEATURES ??= "${TUNE_FEATURES:tune-${DEFAULTTUNE}}"
+VIRTUAL-RUNTIME_base-utils = "packagegroup-core-base-utils"
 
 ```
 
-See the DEFAULTTUNE variable for more information.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TUNE_FEATURES
-
-## Variable `UBOOT_BINARY`
-
-## Yocto Project Reference Manual
-
-Specifies the name of the binary build by U-Boot.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_BINARY
-
-## Variable `UBOOT_CONFIG`
-
-## Yocto Project Reference Manual
-
-Configures one or more U-Boot configurations to build. Each configuration can define the UBOOT_MACHINE and optionally the IMAGE_FSTYPES and the UBOOT_BINARY.
-
-Here is an example from the `meta-freescale` layer.
+Here are two examples using this virtual runtime package. The first one is in initramfs-framework_1.0.bb:
 
 ```
-UBOOT_CONFIG ??= "sdcard-ifc-secure-boot sdcard-ifc sdcard-qspi lpuart qspi secure-boot nor"
-UBOOT_CONFIG[nor] = "ls1021atwr_nor_defconfig"
-UBOOT_CONFIG[sdcard-ifc] = "ls1021atwr_sdcard_ifc_defconfig,,u-boot-with-spl-pbl.bin"
-UBOOT_CONFIG[sdcard-qspi] = "ls1021atwr_sdcard_qspi_defconfig,,u-boot-with-spl-pbl.bin"
-UBOOT_CONFIG[lpuart] = "ls1021atwr_nor_lpuart_defconfig"
-UBOOT_CONFIG[qspi] = "ls1021atwr_qspi_defconfig"
-UBOOT_CONFIG[secure-boot] = "ls1021atwr_nor_SECURE_BOOT_defconfig"
-UBOOT_CONFIG[sdcard-ifc-secure-boot] = "ls1021atwr_sdcard_ifc_SECURE_BOOT_defconfig,,u-boot-with-spl-pbl.bin"
+RDEPENDS:${PN} += "${VIRTUAL-RUNTIME_base-utils}"
 
 ```
 
-In this example, all possible seven configurations are selected. Each configuration specifies “…_defconfig” as UBOOT_MACHINE, and the “sd…” configurations define an individual name for UBOOT_BINARY. No configuration defines a second parameter for IMAGE_FSTYPES to use for the U-Boot image.
+The second example is in the core-image-initramfs-boot image definition:
 
-For more information on how the UBOOT_CONFIG is handled, see the uboot-config class.
+```
+PACKAGE_INSTALL = "${INITRAMFS_SCRIPTS} ${VIRTUAL-RUNTIME_base-utils} base-passwd"
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_CONFIG
+```
+
+Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-VIRTUAL-RUNTIME
 
 ## Variable `WORKDIR`
 
@@ -2440,135 +1070,6 @@ poky/build/tmp/work/qemux86-poky-linux/foo/1.3.0-r0
 
 Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-WORKDIR
 
-## Task `do_compile`
-
-Compiles the source code. This task runs with the current working directory set to `${`B`}`.
-
-The default behavior of this task is to run the `oe_runmake` function if a makefile (`Makefile`, `makefile`, or `GNUmakefile`) is found. If no such file is found, the do_compile task does nothing.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-compile
-
-## Task `do_configure`
-
-Configures the source by enabling and disabling any build-time and configuration options for the software being built. The task runs with the current working directory set to `${`B`}`.
-
-The default behavior of this task is to run `oe_runmake clean` if a makefile (`Makefile`, `makefile`, or `GNUmakefile`) is found and CLEANBROKEN is not set to “1”. If no such file is found or the CLEANBROKEN variable is set to “1”, the do_configure task does nothing.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-configure
-
-## Task `do_fetch`
-
-Fetches the source code. This task uses the SRC_URI variable and the argument’s prefix to determine the correct fetcher module.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-fetch
-
-## Task `do_install`
-
-Copies files that are to be packaged into the holding area `${`D`}`. This task runs with the current working directory set to `${`B`}`, which is the compilation directory. The do_install task, as well as other tasks that either directly or indirectly depend on the installed files (e.g. do_package, do_package_write_*, and do_rootfs), run under fakeroot.
-
-Note
-
-When installing files, be careful not to set the owner and group IDs of the installed files to unintended values. Some methods of copying files, notably when using the recursive `cp` command, can preserve the UID and/or GID of the original file, which is usually not what you want. The `host-user-contaminated` QA check checks for files that probably have the wrong ownership.
-
-Safe methods for installing files include the following:
-
-- The `install` utility. This utility is the preferred method.
-
-- The `cp` command with the `--no-preserve=ownership` option.
-
-- The `tar` command with the `--no-same-owner` option. See the `bin_package.bbclass` file in the `meta/classes-recipe` subdirectory of the Source Directory for an example.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-install
-
-## Task `do_package`
-
-Analyzes the content of the holding area `${`D`}` and splits the content into subsets based on available packages and files. This task makes use of the PACKAGES and FILES variables.
-
-The do_package task, in conjunction with the do_packagedata task, also saves some important package metadata. For additional information, see the PKGDESTWORK variable and the “Automatically Added Runtime Dependencies” section in the Yocto Project Overview and Concepts Manual.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-package
-
-## Task `do_package_qa`
-
-Runs QA checks on packaged files. For more information on these checks, see the insane class.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-package-qa
-
-## Task `do_patch`
-
-Locates patch files and applies them to the source code.
-
-After fetching and unpacking source files, the build system uses the recipe’s SRC_URI statements to locate and apply patch files to the source code.
-
-Note
-
-The build system uses the FILESPATH variable to determine the default set of directories when searching for patches.
-
-Patch files, by default, are `*.patch` and `*.diff` files created and kept in a subdirectory of the directory holding the recipe file. For example, consider the bluez5 recipe from the OE-Core layer (i.e. `poky/meta`):
-
-```
-poky/meta/recipes-connectivity/bluez5
-
-```
-
-This recipe has two patch files located here:
-
-```
-poky/meta/recipes-connectivity/bluez5/bluez5
-
-```
-
-In the `bluez5` recipe, the SRC_URI statements point to the source and patch files needed to build the package.
-
-Note
-
-In the case for the `bluez5_5.48.bb` recipe, the SRC_URI statements are from an include file `bluez5.inc`.
-
-As mentioned earlier, the build system treats files whose file types are `.patch` and `.diff` as patch files. However, you can use the “apply=yes” parameter with the SRC_URI statement to indicate any file as a patch file:
-
-```
-SRC_URI = " \
-    git://path_to_repo/some_package \
-    file://file;apply=yes \
-    "
-
-```
-
-Conversely, if you have a file whose file type is `.patch` or `.diff` and you want to exclude it so that the do_patch task does not apply it during the patch phase, you can use the “apply=no” parameter with the SRC_URI statement:
-
-```
-SRC_URI = " \
-    git://path_to_repo/some_package \
-    file://file1.patch \
-    file://file2.patch;apply=no \
-    "
-
-```
-
-In the previous example `file1.patch` would be applied as a patch by default while `file2.patch` would not be applied.
-
-You can find out more about the patching process in the “Patching” section in the Yocto Project Overview and Concepts Manual and the “Patching Code” section in the Yocto Project Development Tasks Manual.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-patch
-
-## Task `do_populate_lic`
-
-Writes license information for the recipe that is collected later when the image is constructed.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-populate-lic
-
-## Task `do_rootfs`
-
-Creates the root filesystem (file and directory structure) for an image. See the “Image Generation” section in the Yocto Project Overview and Concepts Manual for more information on how the root filesystem is created.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-rootfs
-
-## Task `do_unpack`
-
-Unpacks the source code into a working directory pointed to by `${`WORKDIR`}`. The S variable also plays a role in where unpacked source files ultimately reside. For more information on how source files are unpacked, see the “Source Fetching” section in the Yocto Project Overview and Concepts Manual and also see the WORKDIR and S variable descriptions.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-unpack
-
 ## Class `archiver`
 
 The archiver class supports releasing source code and other materials with the binaries.
@@ -2576,129 +1077,6 @@ The archiver class supports releasing source code and other materials with the b
 For more details on the source archiver, see the “Maintaining Open Source License Compliance During Your Product’s Lifecycle” section in the Yocto Project Development Tasks Manual. You can also see the ARCHIVER_MODE variable for information about the variable flags (varflags) that help control archive creation.
 
 Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-archiver
-
-## Class `autotools`
-
-The autotools* classes support packages built with the GNU Autotools.
-
-The `autoconf`, `automake`, and `libtool` packages bring standardization. This class defines a set of tasks (e.g. `configure`, `compile` and so forth) that work for all Autotooled packages. It should usually be enough to define a few standard variables and then simply `inherit autotools`. These classes can also work with software that emulates Autotools. For more information, see the “Building an Autotooled Package” section in the Yocto Project Development Tasks Manual.
-
-By default, the autotools* classes use out-of-tree builds (i.e. `autotools.bbclass` building with `B != S`).
-
-If the software being built by a recipe does not support using out-of-tree builds, you should have the recipe inherit the autotools-brokensep class. The autotools-brokensep class behaves the same as the autotools* class but builds with B == S. This method is useful when out-of-tree build support is either not present or is broken.
-
-Note
-
-It is recommended that out-of-tree support be fixed and used if at all possible.
-
-It’s useful to have some idea of how the tasks defined by the autotools* classes work and what they do behind the scenes.
-
-- do_configure — regenerates the configure script (using `autoreconf`) and then launches it with a standard set of arguments used during cross-compilation. You can pass additional parameters to `configure` through the EXTRA_OECONF or PACKAGECONFIG_CONFARGS variables.
-
-- do_compile — runs `make` with arguments that specify the compiler and linker. You can pass additional arguments through the EXTRA_OEMAKE variable.
-
-- do_install — runs `make install` and passes in `${`D`}` as `DESTDIR`.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-autotools
-
-## Class `buildhistory`
-
-The buildhistory class records a history of build output metadata, which can be used to detect possible regressions as well as used for analysis of the build output. For more information on using Build History, see the “Maintaining Build Output Quality” section in the Yocto Project Development Tasks Manual.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-buildhistory
-
-## Class `cargo`
-
-The cargo class allows to compile Rust language programs using Cargo. Cargo is Rust’s package manager, allowing to fetch package dependencies and build your program.
-
-Using this class makes it very easy to build Rust programs. All you need is to use the SRC_URI variable to point to a source repository which can be built by Cargo, typically one that was created by the `cargo new` command, containing a `Cargo.toml` file, a `Cargo.lock` file and a `src` subdirectory.
-
-If you want to build and package tests of the program, inherit the ptest-cargo class instead of cargo.
-
-You will find an example (that show also how to handle possible git source dependencies) in the zvariant_3.12.0.bb recipe. Another example, with only crate dependencies, is the uutils-coreutils recipe, which was generated by the cargo-bitbake tool.
-
-This class inherits the cargo_common class.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-cargo
-
-## Class `cargo-update-recipe-crates`
-
-The cargo-update-recipe-crates class allows recipe developers to update the list of Cargo crates in SRC_URI by reading the `Cargo.lock` file in the source tree.
-
-To do so, create a recipe for your program, for example using devtool, make it inherit the cargo and cargo-update-recipe-crates and run:
-
-```
-bitbake -c update_crates recipe
-
-```
-
-This creates a `recipe-crates.inc` file that you can include in your recipe:
-
-```
-require ${BPN}-crates.inc
-
-```
-
-That’s also something you can achieve by using the cargo-bitbake tool.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-cargo-update-recipe-crates
-
-## Class `cargo_c`
-
-The cargo_c class can be inherited by a recipe to generate a Rust library that can be called by C/C++ code. The recipe which inherits this class has to only replace `inherit cargo` by `inherit cargo_c`.
-
-See the rust-c-lib-example_git.bb example recipe.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-cargo_c
-
-## Class `cargo_common`
-
-The cargo_common class is an internal class that is not intended to be used directly.
-
-An exception is the “rust” recipe, to build the Rust compiler and runtime library, which is built by Cargo but cannot use the cargo class. This is why this class was introduced.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-cargo_common
-
-## Class `cmake`
-
-The cmake class allows recipes to build software using the CMake build system. You can use the EXTRA_OECMAKE variable to specify additional configuration options to pass to the `cmake` command line.
-
-By default, the cmake class uses Ninja instead of GNU make for building, which offers better build performance. If a recipe is broken with Ninja, then the recipe can set the OECMAKE_GENERATOR variable to `Unix Makefiles` to use GNU make instead.
-
-If you need to install custom CMake toolchain files supplied by the application being built, you should install them (during do_install) to the preferred CMake Module directory: `${D}${datadir}/cmake/modules/`.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-cmake
-
-## Class `cmake-qemu`
-
-The cmake-qemu class might be used instead of the cmake class. In addition to the features provided by the cmake class, the cmake-qemu class passes the `CMAKE_CROSSCOMPILING_EMULATOR` setting to `cmake`. This allows to use QEMU user-mode emulation for the execution of cross-compiled binaries on the host machine. For more information about `CMAKE_CROSSCOMPILING_EMULATOR` please refer to the related section of the CMake documentation.
-
-Not all platforms are supported by QEMU. This class only works for machines with `qemu-usermode` in the Machine Features. Using QEMU user-mode therefore involves a certain risk, which is also the reason why this feature is not part of the main cmake class by default.
-
-One use case is the execution of cross-compiled unit tests with CTest on the build machine. If `CMAKE_CROSSCOMPILING_EMULATOR` is configured:
-
-```
-cmake --build --target test
-
-```
-
-works transparently with QEMU user-mode.
-
-If the CMake project is developed with this use case in mind this works very nicely. This also applies to an IDE configured to use `cmake-native` for cross-compiling.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-cmake-qemu
-
-## Class `copyleft_compliance`
-
-The copyleft_compliance class preserves source code for the purposes of license compliance. This class is an alternative to the archiver class and is still used by some users even though it has been deprecated in favor of the archiver class.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-copyleft_compliance
-
-## Class `copyleft_filter`
-
-A class used by the archiver and copyleft_compliance classes for filtering licenses. The `copyleft_filter` class is an internal class and is not intended to be used directly.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-copyleft_filter
 
 ## Class `create-spdx`
 
@@ -2807,269 +1185,6 @@ SRC_URI:mymachine = "file://mymachine.dts"
 
 Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-devicetree
 
-## Class `fontcache`
-
-The fontcache class generates the proper post-install and post-remove (postinst and postrm) scriptlets for font packages. These scriptlets call `fc-cache` (part of `Fontconfig`) to add the fonts to the font information cache. Since the cache files are architecture-specific, `fc-cache` runs using QEMU if the postinst scriptlets need to be run on the build host during image creation.
-
-If the fonts being installed are in packages other than the main package, set FONT_PACKAGES to specify the packages containing the fonts.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-fontcache
-
-## Class `go`
-
-The go class supports building Go programs. The behavior of this class is controlled by the mandatory GO_IMPORT variable, and by the optional GO_INSTALL and GO_INSTALL_FILTEROUT ones.
-
-To build a Go program with the Yocto Project, you can use the go-helloworld_0.1.bb recipe as an example.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-go
-
-## Class `go-mod`
-
-The go-mod class allows to use Go modules, and inherits the go class.
-
-See the associated GO_WORKDIR variable.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-go-mod
-
-## Class `go-vendor`
-
-The go-vendor class implements support for offline builds, also known as Go vendoring. In such a scenario, the module dependencias are downloaded during the do_fetch task rather than when modules are imported, thus being coherent with Yocto’s concept of fetching every source beforehand.
-
-The dependencies are unpacked into the modules’ `vendor` directory, where a manifest file is generated.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-go-vendor
-
-## Class `gsettings`
-
-The gsettings class provides common functionality for recipes that need to install GSettings (glib) schemas. The schemas are assumed to be part of the main package. Appropriate post-install and post-remove (postinst/postrm) scriptlets are added to register and unregister the schemas in the target image.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-gsettings
-
-## Class `gtk-icon-cache`
-
-The gtk-icon-cache class generates the proper post-install and post-remove (postinst/postrm) scriptlets for packages that use GTK+ and install icons. These scriptlets call `gtk-update-icon-cache` to add the fonts to GTK+’s icon cache. Since the cache files are architecture-specific, `gtk-update-icon-cache` is run using QEMU if the postinst scriptlets need to be run on the build host during image creation.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-gtk-icon-cache
-
-## Class `image`
-
-The image class helps support creating images in different formats. First, the root filesystem is created from packages using one of the `rootfs*.bbclass` files (depending on the package format used) and then one or more image files are created.
-
-- The IMAGE_FSTYPES variable controls the types of images to generate.
-
-- The IMAGE_INSTALL variable controls the list of packages to install into the image.
-
-For information on customizing images, see the “Customizing Images” section in the Yocto Project Development Tasks Manual. For information on how images are created, see the “Images” section in the Yocto Project Overview and Concepts Manual.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-image
-
-## Class `image-buildinfo`
-
-The image-buildinfo class writes a plain text file containing build information to the target filesystem at `${sysconfdir}/buildinfo` by default (as specified by IMAGE_BUILDINFO_FILE). This can be useful for manually determining the origin of any given image. It writes out two sections:
-
-- Build Configuration: a list of variables and their values (specified by IMAGE_BUILDINFO_VARS, which defaults to DISTRO and DISTRO_VERSION)
-
-- Layer Revisions: the revisions of all of the layers used in the build.
-
-Additionally, when building an SDK it will write the same contents to `/buildinfo` by default (as specified by SDK_BUILDINFO_FILE).
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-image-buildinfo
-
-## Class `image-container`
-
-The image-container class is automatically inherited in image recipes that have the `container` image type in IMAGE_FSTYPES. It provides relevant settings to generate an image ready for use with an OCI-compliant container management tool, such as Podman or Docker.
-
-Note
-
-This class neither builds nor installs container management tools on the target. Those tools are available in the meta-virtualization layer.
-
-You should set the PREFERRED_PROVIDER for the Linux kernel to `linux-dummy` in a configuration file:
-
-```
-PREFERRED_PROVIDER_virtual/kernel = "linux-dummy"
-
-```
-
-Otherwise an error is triggered. If desired, the IMAGE_CONTAINER_NO_DUMMY variable can be set to “1” to avoid triggering this error.
-
-The `linux-dummy` recipe acts as a Linux kernel recipe but builds nothing. It is relevant to use as the preferred Linux kernel provider in this case as a container image does not need to include a Linux kernel. Selecting it as the preferred provider for the kernel will also decrease build time.
-
-Using this class only deploys an additional `tar.bz2` archive to DEPLOY_DIR_IMAGE. This archive can be used in a container file (a file typically named `Dockerfile` or `Containerfile`). For example, to be used with Podman or Docker, the container file could contain the following instructions:
-
-```
-FROM scratch
-ADD ./image-container-qemux86-64.rootfs.tar.bz2 /
-ENTRYPOINT /bin/sh
-
-```
-
-This is suitable to build a container using our generated root filesystem image.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-image-container
-
-## Class `image-live`
-
-This class controls building “live” (i.e. HDDIMG and ISO) images. Live images contain syslinux for legacy booting, as well as the bootloader specified by EFI_PROVIDER if MACHINE_FEATURES contains “efi”.
-
-Normally, you do not use this class directly. Instead, you add “live” to IMAGE_FSTYPES.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-image-live
-
-## Class `image_types`
-
-The image_types class defines all of the standard image output types that you can enable through the IMAGE_FSTYPES variable. You can use this class as a reference on how to add support for custom image output types.
-
-By default, the image class automatically enables the image_types class. The image class uses the `IMGCLASSES` variable as follows:
-
-```
-IMGCLASSES = "rootfs_${IMAGE_PKGTYPE} image_types ${IMAGE_CLASSES}"
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-image_types
-
-## Class `insane`
-
-The insane class adds a step to the package generation process so that output quality assurance checks are generated by the OpenEmbedded build system. A range of checks are performed that check the build’s output for common problems that show up during runtime. Distribution policy usually dictates whether to include this class.
-
-You can configure the sanity checks so that specific test failures either raise a warning or an error message. Typically, failures for new tests generate a warning. Subsequent failures for the same test would then generate an error message once the metadata is in a known and good condition. See the “QA Error and Warning Messages” Chapter for a list of all the warning and error messages you might encounter using a default configuration.
-
-Use the WARN_QA and ERROR_QA variables to control the behavior of these checks at the global level (i.e. in your custom distro configuration). However, to skip one or more checks in recipes, you should use INSANE_SKIP. For example, to skip the check for symbolic link `.so` files in the main package of a recipe, add the following to the recipe. You need to realize that the package name override, in this example `${PN}`, must be used:
-
-```
-INSANE_SKIP:${PN} += "dev-so"
-
-```
-
-Please keep in mind that the QA checks are meant to detect real or potential problems in the packaged output. So exercise caution when disabling these checks.
-
-The tests you can list with the WARN_QA and ERROR_QA variables are:
-
-- `already-stripped:` Checks that produced binaries have not already been stripped prior to the build system extracting debug symbols. It is common for upstream software projects to default to stripping debug symbols for output binaries. In order for debugging to work on the target using `-dbg` packages, this stripping must be disabled.
-
-- `arch:` Checks the Executable and Linkable Format (ELF) type, bit size, and endianness of any binaries to ensure they match the target architecture. This test fails if any binaries do not match the type since there would be an incompatibility. The test could indicate that the wrong compiler or compiler options have been used. Sometimes software, like bootloaders, might need to bypass this check.
-
-- `buildpaths:` Checks for paths to locations on the build host inside the output files. Not only can these leak information about the build environment, they also hinder binary reproducibility.
-
-- `build-deps:` Determines if a build-time dependency that is specified through DEPENDS, explicit RDEPENDS, or task-level dependencies exists to match any runtime dependency. This determination is particularly useful to discover where runtime dependencies are detected and added during packaging. If no explicit dependency has been specified within the metadata, at the packaging stage it is too late to ensure that the dependency is built, and thus you can end up with an error when the package is installed into the image during the do_rootfs task because the auto-detected dependency was not satisfied. An example of this would be where the update-rc.d class automatically adds a dependency on the `initscripts-functions` package to packages that install an initscript that refers to `/etc/init.d/functions`. The recipe should really have an explicit RDEPENDS for the package in question on `initscripts-functions` so that the OpenEmbedded build system is able to ensure that the `initscripts` recipe is actually built and thus the `initscripts-functions` package is made available.
-
-- `configure-gettext:` Checks that if a recipe is building something that uses automake and the automake files contain an `AM_GNU_GETTEXT` directive, that the recipe also inherits the gettext class to ensure that gettext is available during the build.
-
-- `compile-host-path:` Checks the do_compile log for indications that paths to locations on the build host were used. Using such paths might result in host contamination of the build output.
-
-- `cve_status_not_in_db:` Checks for each component if CVEs that are ignored via CVE_STATUS, that those are (still) reported for this component in the NIST database. If not, a warning is printed. This check is disabled by default.
-
-- `debug-deps:` Checks that all packages except `-dbg` packages do not depend on `-dbg` packages, which would cause a packaging bug.
-
-- `debug-files:` Checks for `.debug` directories in anything but the `-dbg` package. The debug files should all be in the `-dbg` package. Thus, anything packaged elsewhere is incorrect packaging.
-
-- `dep-cmp:` Checks for invalid version comparison statements in runtime dependency relationships between packages (i.e. in RDEPENDS, RRECOMMENDS, RSUGGESTS, RPROVIDES, RREPLACES, and RCONFLICTS variable values). Any invalid comparisons might trigger failures or undesirable behavior when passed to the package manager.
-
-- `desktop:` Runs the `desktop-file-validate` program against any `.desktop` files to validate their contents against the specification for `.desktop` files.
-
-- `dev-deps:` Checks that all packages except `-dev` or `-staticdev` packages do not depend on `-dev` packages, which would be a packaging bug.
-
-- `dev-so:` Checks that the `.so` symbolic links are in the `-dev` package and not in any of the other packages. In general, these symlinks are only useful for development purposes. Thus, the `-dev` package is the correct location for them. In very rare cases, such as dynamically loaded modules, these symlinks are needed instead in the main package.
-
-- `empty-dirs:` Checks that packages are not installing files to directories that are normally expected to be empty (such as `/tmp`) The list of directories that are checked is specified by the QA_EMPTY_DIRS variable.
-
-- `file-rdeps:` Checks that file-level dependencies identified by the OpenEmbedded build system at packaging time are satisfied. For example, a shell script might start with the line `#!/bin/bash`. This line would translate to a file dependency on `/bin/bash`. Of the three package managers that the OpenEmbedded build system supports, only RPM directly handles file-level dependencies, resolving them automatically to packages providing the files. However, the lack of that functionality in the other two package managers does not mean the dependencies do not still need resolving. This QA check attempts to ensure that explicitly declared RDEPENDS exist to handle any file-level dependency detected in packaged files.
-
-- `files-invalid:` Checks for FILES variable values that contain “//”, which is invalid.
-
-- `host-user-contaminated:` Checks that no package produced by the recipe contains any files outside of `/home` with a user or group ID that matches the user running BitBake. A match usually indicates that the files are being installed with an incorrect UID/GID, since target IDs are independent from host IDs. For additional information, see the section describing the do_install task.
-
-- `incompatible-license:` Report when packages are excluded from being created due to being marked with a license that is in INCOMPATIBLE_LICENSE.
-
-- `install-host-path:` Checks the do_install log for indications that paths to locations on the build host were used. Using such paths might result in host contamination of the build output.
-
-- `installed-vs-shipped:` Reports when files have been installed within do_install but have not been included in any package by way of the FILES variable. Files that do not appear in any package cannot be present in an image later on in the build process. Ideally, all installed files should be packaged or not installed at all. These files can be deleted at the end of do_install if the files are not needed in any package.
-
-- `invalid-chars:` Checks that the recipe metadata variables DESCRIPTION, SUMMARY, LICENSE, and SECTION do not contain non-UTF-8 characters. Some package managers do not support such characters.
-
-- `invalid-packageconfig:` Checks that no undefined features are being added to PACKAGECONFIG. For example, any name “foo” for which the following form does not exist:
-
-```
-PACKAGECONFIG[foo] = "..."
-
-```
-
-- `la:` Checks `.la` files for any TMPDIR paths. Any `.la` file containing these paths is incorrect since `libtool` adds the correct sysroot prefix when using the files automatically itself.
-
-- `ldflags:` Ensures that the binaries were linked with the LDFLAGS options provided by the build system. If this test fails, check that the LDFLAGS variable is being passed to the linker command.
-
-- `libdir:` Checks for libraries being installed into incorrect (possibly hardcoded) installation paths. For example, this test will catch recipes that install `/lib/bar.so` when `${base_libdir}` is “lib32”. Another example is when recipes install `/usr/lib64/foo.so` when `${libdir}` is “/usr/lib”.
-
-- `libexec:` Checks if a package contains files in `/usr/libexec`. This check is not performed if the `libexecdir` variable has been set explicitly to `/usr/libexec`.
-
-- `mime:` Check that if a package contains mime type files (`.xml` files in `${datadir}/mime/packages`) that the recipe also inherits the mime class in order to ensure that these get properly installed.
-
-- `mime-xdg:` Checks that if a package contains a .desktop file with a ‘MimeType’ key present, that the recipe inherits the mime-xdg class that is required in order for that to be activated.
-
-- `missing-update-alternatives:` Check that if a recipe sets the ALTERNATIVE variable that the recipe also inherits update-alternatives such that the alternative will be correctly set up.
-
-- `packages-list:` Checks for the same package being listed multiple times through the PACKAGES variable value. Installing the package in this manner can cause errors during packaging.
-
-- `patch-fuzz:` Checks for fuzz in patch files that may allow them to apply incorrectly if the underlying code changes.
-
-- `patch-status:` Checks that the `Upstream-Status` is specified and valid in the headers of patches for recipes.
-
-- `perllocalpod:` Checks for `perllocal.pod` being erroneously installed and packaged by a recipe.
-
-- `perm-config:` Reports lines in `fs-perms.txt` that have an invalid format.
-
-- `perm-line:` Reports lines in `fs-perms.txt` that have an invalid format.
-
-- `perm-link:` Reports lines in `fs-perms.txt` that specify ‘link’ where the specified target already exists.
-
-- `perms:` Currently, this check is unused but reserved.
-
-- `pkgconfig:` Checks `.pc` files for any TMPDIR/WORKDIR paths. Any `.pc` file containing these paths is incorrect since `pkg-config` itself adds the correct sysroot prefix when the files are accessed.
-
-- `pkgname:` Checks that all packages in PACKAGES have names that do not contain invalid characters (i.e. characters other than 0-9, a-z, ., +, and -).
-
-- `pkgv-undefined:` Checks to see if the PKGV variable is undefined during do_package.
-
-- `pkgvarcheck:` Checks through the variables RDEPENDS, RRECOMMENDS, RSUGGESTS, RCONFLICTS, RPROVIDES, RREPLACES, FILES, ALLOW_EMPTY, `pkg_preinst`, `pkg_postinst`, `pkg_prerm` and `pkg_postrm`, and reports if there are variable sets that are not package-specific. Using these variables without a package suffix is bad practice, and might unnecessarily complicate dependencies of other packages within the same recipe or have other unintended consequences.
-
-- `pn-overrides:` Checks that a recipe does not have a name (PN) value that appears in OVERRIDES. If a recipe is named such that its PN value matches something already in OVERRIDES (e.g. PN happens to be the same as MACHINE or DISTRO), it can have unexpected consequences. For example, assignments such as `FILES:${PN} = "xyz"` effectively turn into `FILES = "xyz"`.
-
-- `rpaths:` Checks for rpaths in the binaries that contain build system paths such as TMPDIR. If this test fails, bad `-rpath` options are being passed to the linker commands and your binaries have potential security issues.
-
-- `shebang-size:` Check that the shebang line (`#!` in the first line) in a packaged script is not longer than 128 characters, which can cause an error at runtime depending on the operating system.
-
-- `split-strip:` Reports that splitting or stripping debug symbols from binaries has failed.
-
-- `staticdev:` Checks for static library files (`*.a`) in non-`staticdev` packages.
-
-- `src-uri-bad:` Checks that the SRC_URI value set by a recipe does not contain a reference to `${PN}` (instead of the correct `${BPN}`) nor refers to unstable Github archive tarballs.
-
-- `symlink-to-sysroot:` Checks for symlinks in packages that point into TMPDIR on the host. Such symlinks will work on the host, but are clearly invalid when running on the target.
-
-- `textrel:` Checks for ELF binaries that contain relocations in their `.text` sections, which can result in a performance impact at runtime. See the explanation for the `ELF binary` message in “QA Error and Warning Messages” for more information regarding runtime performance issues.
-
-- `unhandled-features-check:` check that if one of the variables that the features_check class supports (e.g. REQUIRED_DISTRO_FEATURES) is set by a recipe, then the recipe also inherits features_check in order for the requirement to actually work.
-
-- `unimplemented-ptest:` Checks that ptests are implemented for upstream tests.
-
-- `unlisted-pkg-lics:` Checks that all declared licenses applying for a package are also declared on the recipe level (i.e. any license in `LICENSE:*` should appear in LICENSE).
-
-- `useless-rpaths:` Checks for dynamic library load paths (rpaths) in the binaries that by default on a standard system are searched by the linker (e.g. `/lib` and `/usr/lib`). While these paths will not cause any breakage, they do waste space and are unnecessary.
-
-- `usrmerge:` If `usrmerge` is in DISTRO_FEATURES, this check will ensure that no package installs files to root (`/bin`, `/sbin`, `/lib`, `/lib64`) directories.
-
-- `var-undefined:` Reports when variables fundamental to packaging (i.e. WORKDIR, DEPLOY_DIR, D, PN, and PKGD) are undefined during do_package.
-
-- `version-going-backwards:` If the buildhistory class is enabled, reports when a package being written out has a lower version than the previously written package under the same name. If you are placing output packages into a feed and upgrading packages on a target system using that feed, the version of a package going backwards can result in the target system not correctly upgrading to the “new” version of the package.
-
-Note
-
-This is only relevant when you are using runtime package management on your target system.
-
-- `virtual-slash:` Checks to see if `virtual/` is being used in RDEPENDS or RPROVIDES, which is not good practice — `virtual/` is a convention intended for use in the build context (i.e. PROVIDES and DEPENDS) rather than the runtime context.
-
-- `xorg-driver-abi:` Checks that all packages containing Xorg drivers have ABI dependencies. The `xserver-xorg` recipe provides driver ABI names. All drivers should depend on the ABI versions that they have been built against. Driver recipes that include `xorg-driver-input.inc` or `xorg-driver-video.inc` will automatically get these versions. Consequently, you should only need to explicitly add dependencies to binary driver recipes.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-insane
-
 ## Class `kernel`
 
 The kernel class handles building Linux kernels. The class contains code to build all kernel trees. All needed headers are staged into the STAGING_KERNEL_DIR directory to allow out-of-tree module builds using the module class.
@@ -3102,11 +1217,27 @@ Its behavior is mainly controlled by the following variables:
 
 Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-kernel-devicetree
 
-## Class `kernel-module-split`
+## Class `kernel-fitimage`
 
-The kernel-module-split class provides common functionality for splitting Linux kernel modules into separate packages.
+The kernel-fitimage class provides support to pack a kernel image, device trees, a U-boot script, an Initramfs bundle and a RAM disk into a single FIT image. In theory, a FIT image can support any number of kernels, U-boot scripts, Initramfs bundles, RAM disks and device-trees. However, kernel-fitimage currently only supports limited usecases: just one kernel image, an optional U-boot script, an optional Initramfs bundle, an optional RAM disk, and any number of device trees.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-kernel-module-split
+To create a FIT image, it is required that KERNEL_CLASSES is set to include “kernel-fitimage” and one of KERNEL_IMAGETYPE, KERNEL_ALT_IMAGETYPE or KERNEL_IMAGETYPES to include “fitImage”.
+
+The options for the device tree compiler passed to `mkimage -D` when creating the FIT image are specified using the UBOOT_MKIMAGE_DTCOPTS variable.
+
+Only a single kernel can be added to the FIT image created by kernel-fitimage and the kernel image in FIT is mandatory. The address where the kernel image is to be loaded by U-Boot is specified by UBOOT_LOADADDRESS and the entrypoint by UBOOT_ENTRYPOINT. Setting FIT_ADDRESS_CELLS to “2” is necessary if such addresses are 64 bit ones.
+
+Multiple device trees can be added to the FIT image created by kernel-fitimage and the device tree is optional. The address where the device tree is to be loaded by U-Boot is specified by UBOOT_DTBO_LOADADDRESS for device tree overlays and by UBOOT_DTB_LOADADDRESS for device tree binaries.
+
+Only a single RAM disk can be added to the FIT image created by kernel-fitimage and the RAM disk in FIT is optional. The address where the RAM disk image is to be loaded by U-Boot is specified by UBOOT_RD_LOADADDRESS and the entrypoint by UBOOT_RD_ENTRYPOINT. The ramdisk is added to the FIT image when INITRAMFS_IMAGE is specified and requires that INITRAMFS_IMAGE_BUNDLE is not set to 1.
+
+Only a single Initramfs bundle can be added to the FIT image created by kernel-fitimage and the Initramfs bundle in FIT is optional. In case of Initramfs, the kernel is configured to be bundled with the root filesystem in the same binary (example: zImage-initramfs-MACHINE.bin). When the kernel is copied to RAM and executed, it unpacks the Initramfs root filesystem. The Initramfs bundle can be enabled when INITRAMFS_IMAGE is specified and requires that INITRAMFS_IMAGE_BUNDLE is set to 1. The address where the Initramfs bundle is to be loaded by U-boot is specified by UBOOT_LOADADDRESS and the entrypoint by UBOOT_ENTRYPOINT.
+
+Only a single U-boot boot script can be added to the FIT image created by kernel-fitimage and the boot script is optional. The boot script is specified in the ITS file as a text file containing U-boot commands. When using a boot script the user should configure the U-boot do_install task to copy the script to sysroot. So the script can be included in the FIT image by the kernel-fitimage class. At run-time, U-boot CONFIG_BOOTCOMMAND define can be configured to load the boot script from the FIT image and execute it.
+
+The FIT image generated by the kernel-fitimage class is signed when the variables UBOOT_SIGN_ENABLE, UBOOT_MKIMAGE_DTCOPTS, UBOOT_SIGN_KEYDIR and UBOOT_SIGN_KEYNAME are set appropriately. The default values used for FIT_HASH_ALG and FIT_SIGN_ALG in kernel-fitimage are “sha256” and “rsa2048” respectively. The keys for signing the FIT image can be generated using the kernel-fitimage class when both FIT_GENERATE_KEYS and UBOOT_SIGN_ENABLE are set to “1”.
+
+Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-kernel-fitimage
 
 ## Class `kernel-yocto`
 
@@ -3120,188 +1251,6 @@ The license class provides license manifest creation and license exclusion. This
 
 Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-license
 
-## Class `meson`
-
-The meson class allows to create recipes that build software using the Meson build system. You can use the MESON_BUILDTYPE, MESON_TARGET and EXTRA_OEMESON variables to specify additional configuration options to be passed using the `meson` command line.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-meson
-
-## Class `mime`
-
-The mime class generates the proper post-install and post-remove (postinst/postrm) scriptlets for packages that install MIME type files. These scriptlets call `update-mime-database` to add the MIME types to the shared database.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-mime
-
-## Class `mime-xdg`
-
-The mime-xdg class generates the proper post-install and post-remove (postinst/postrm) scriptlets for packages that install `.desktop` files containing `MimeType` entries. These scriptlets call `update-desktop-database` to add the MIME types to the database of MIME types handled by desktop files.
-
-Thanks to this class, when users open a file through a file browser on recently created images, they don’t have to choose the application to open the file from the pool of all known applications, even the ones that cannot open the selected file.
-
-If you have recipes installing their `.desktop` files as absolute symbolic links, the detection of such files cannot be done by the current implementation of this class. In this case, you have to add the corresponding package names to the MIME_XDG_PACKAGES variable.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-mime-xdg
-
-## Class `native`
-
-The native class provides common functionality for recipes that build tools to run on the Build Host (i.e. tools that use the compiler or other tools from the build host).
-
-You can create a recipe that builds tools that run natively on the host a couple different ways:
-
-- Create a `myrecipe-native.bb` recipe that inherits the native class. If you use this method, you must order the inherit statement in the recipe after all other inherit statements so that the native class is inherited last.
-
-Note
-
-When creating a recipe this way, the recipe name must follow this naming convention:
-
-```
-myrecipe-native.bb
-
-```
-
-Not using this naming convention can lead to subtle problems caused by existing code that depends on that naming convention.
-
-- Or, create a native variant of any target recipe (e.g. `myrecipe.bb`) by adding the following to the recipe:
-
-```
-BBCLASSEXTEND = "native"
-
-```
-
-Inside the recipe, use `:class-native` and `:class-target` overrides to specify any functionality specific to the respective native or target case.
-
-Although applied differently, the native class is used with both methods. The advantage of the second method is that you do not need to have two separate recipes (assuming you need both) for native and target. All common parts of the recipe are automatically shared.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-native
-
-## Class `nativesdk`
-
-The nativesdk class provides common functionality for recipes that wish to build tools to run as part of an SDK (i.e. tools that run on SDKMACHINE).
-
-You can create a recipe that builds tools that run on the SDK machine a couple different ways:
-
-- Create a `nativesdk-myrecipe.bb` recipe that inherits the nativesdk class. If you use this method, you must order the inherit statement in the recipe after all other inherit statements so that the nativesdk class is inherited last.
-
-Note
-
-When creating a recipe, you must follow this naming convention:
-
-```
-nativesdk-myrecipe.bb
-
-```
-
-Not doing so can lead to subtle problems because there is code that depends on the naming convention.
-
-- Or, create a nativesdk variant of any target recipe (e.g. `myrecipe.bb`) by adding the following to the recipe:
-
-```
-BBCLASSEXTEND = "nativesdk"
-
-```
-
-Inside the recipe, use `:class-nativesdk` and `:class-target` overrides to specify any functionality specific to the respective SDK machine or target case.
-
-Although applied differently, the nativesdk class is used with both methods. The advantage of the second method is that you do not need to have two separate recipes (assuming you need both) for the SDK machine and the target. All common parts of the recipe are automatically shared.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-nativesdk
-
-## Class `npm`
-
-Provides support for building Node.js software fetched using the node package manager (NPM).
-
-Note
-
-Currently, recipes inheriting this class must use the `npm://` fetcher to have dependencies fetched and packaged automatically.
-
-For information on how to create NPM packages, see the “Creating Node Package Manager (NPM) Packages” section in the Yocto Project Development Tasks Manual.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-npm
-
-## Class `package`
-
-The package class supports generating packages from a build’s output. The core generic functionality is in `package.bbclass`. The code specific to particular package types resides in these package-specific classes: package_deb, package_rpm, package_ipk.
-
-You can control the list of resulting package formats by using the PACKAGE_CLASSES variable defined in your `conf/local.conf` configuration file, which is located in the Build Directory. When defining the variable, you can specify one or more package types. Since images are generated from packages, a packaging class is needed to enable image generation. The first class listed in this variable is used for image generation.
-
-If you take the optional step to set up a repository (package feed) on the development host that can be used by DNF, you can install packages from the feed while you are running the image on the target (i.e. runtime installation of packages). For more information, see the “Using Runtime Package Management” section in the Yocto Project Development Tasks Manual.
-
-The package-specific class you choose can affect build-time performance and has space ramifications. In general, building a package with IPK takes about thirty percent less time as compared to using RPM to build the same or similar package. This comparison takes into account a complete build of the package with all dependencies previously built. The reason for this discrepancy is because the RPM package manager creates and processes more Metadata than the IPK package manager. Consequently, you might consider setting PACKAGE_CLASSES to “package_ipk” if you are building smaller systems.
-
-Before making your package manager decision, however, you should consider some further things about using RPM:
-
-- RPM starts to provide more abilities than IPK due to the fact that it processes more Metadata. For example, this information includes individual file types, file checksum generation and evaluation on install, sparse file support, conflict detection and resolution for Multilib systems, ACID style upgrade, and repackaging abilities for rollbacks.
-
-- For smaller systems, the extra space used for the Berkeley Database and the amount of metadata when using RPM can affect your ability to perform on-device upgrades.
-
-You can find additional information on the effects of the package class at this Yocto Project mailing list link: https://lists.yoctoproject.org/g/poky/topic/61292484#msg6286
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-package
-
-## Class `package_deb`
-
-The package_deb class provides support for creating packages that use the Debian (i.e. `.deb`) file format. The class ensures the packages are written out in a `.deb` file format to the `${`DEPLOY_DIR_DEB`}` directory.
-
-This class inherits the package class and is enabled through the PACKAGE_CLASSES variable in the `local.conf` file.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-package_deb
-
-## Class `package_ipk`
-
-The package_ipk class provides support for creating packages that use the IPK (i.e. `.ipk`) file format. The class ensures the packages are written out in a `.ipk` file format to the `${`DEPLOY_DIR_IPK`}` directory.
-
-This class inherits the package class and is enabled through the PACKAGE_CLASSES variable in the `local.conf` file.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-package_ipk
-
-## Class `package_rpm`
-
-The package_rpm class provides support for creating packages that use the RPM (i.e. `.rpm`) file format. The class ensures the packages are written out in a `.rpm` file format to the `${`DEPLOY_DIR_RPM`}` directory.
-
-This class inherits the package class and is enabled through the PACKAGE_CLASSES variable in the `local.conf` file.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-package_rpm
-
-## Class `pkgconfig`
-
-The pkgconfig class provides a standard way to get header and library information by using `pkg-config`. This class aims to smooth integration of `pkg-config` into libraries that use it.
-
-During staging, BitBake installs `pkg-config` data into the `sysroots/` directory. By making use of sysroot functionality within `pkg-config`, the pkgconfig class no longer has to manipulate the files.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-pkgconfig
-
-## Class `populate_sdk`
-
-The populate_sdk_* classes support SDK creation and consist of the following classes:
-
-- populate_sdk_base: The base class supporting SDK creation under all package managers (i.e. DEB, RPM, and opkg).
-
-- populate_sdk_deb: Supports creation of the SDK given the Debian package manager.
-
-- populate_sdk_rpm: Supports creation of the SDK given the RPM package manager.
-
-- populate_sdk_ipk: Supports creation of the SDK given the opkg (IPK format) package manager.
-
-- populate_sdk_ext: Supports extensible SDK creation under all package managers.
-
-The populate_sdk_base class inherits the appropriate `populate_sdk_*` (i.e. `deb`, `rpm`, and `ipk`) based on IMAGE_PKGTYPE.
-
-The base class ensures all source and destination directories are established and then populates the SDK. After populating the SDK, the populate_sdk_base class constructs two sysroots: `${`SDK_ARCH`}-nativesdk`, which contains the cross-compiler and associated tooling, and the target, which contains a target root filesystem that is configured for the SDK usage. These two images reside in SDK_OUTPUT, which consists of the following:
-
-```
-${SDK_OUTPUT}/${SDK_ARCH}-nativesdk-pkgs
-${SDK_OUTPUT}/${SDKTARGETSYSROOT}/target-pkgs
-
-```
-
-Finally, the base populate SDK class creates the toolchain environment setup script, the tarball of the SDK, and the installer.
-
-The respective populate_sdk_deb, populate_sdk_rpm, and populate_sdk_ipk classes each support the specific type of SDK. These classes are inherited by and used with the populate_sdk_base class.
-
-For more information on the cross-development toolchain generation, see the “Cross-Development Toolchain Generation” section in the Yocto Project Overview and Concepts Manual. For information on advantages gained when building a cross-development toolchain using the do_populate_sdk task, see the “Building an SDK Installer” section in the Yocto Project Application Development and the Extensible Software Development Kit (eSDK) manual.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-populate_sdk
-
 ## Class `ptest`
 
 The ptest class provides functionality for packaging and installing runtime tests for recipes that build software that provides these tests.
@@ -3309,156 +1258,6 @@ The ptest class provides functionality for packaging and installing runtime test
 This class is intended to be inherited by individual recipes. However, the class’ functionality is largely disabled unless “ptest” appears in DISTRO_FEATURES. See the “Testing Packages With ptest” section in the Yocto Project Test Environment Manual for more information on ptest.
 
 Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-ptest
-
-## Class `ptest-cargo`
-
-The ptest-cargo class is a class which extends the cargo class and adds `compile_ptest_cargo` and `install_ptest_cargo` steps to respectively build and install test suites defined in the `Cargo.toml` file, into a dedicated `-ptest` package.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-ptest-cargo
-
-## Class `ptest-gnome`
-
-Enables package tests (ptests) specifically for GNOME packages, which have tests intended to be executed with `gnome-desktop-testing`.
-
-For information on setting up and running ptests, see the “Testing Packages With ptest” section in the Yocto Project Test Environment Manual.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-ptest-gnome
-
-## Class `python3native`
-
-The python3native class supports using the native version of Python 3 built by the build system rather than support of the version provided by the build host.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-python3native
-
-## Class `python3targetconfig`
-
-The python3targetconfig class supports using the native version of Python 3 built by the build system rather than support of the version provided by the build host, except that the configuration for the target machine is accessible (such as correct installation directories). This also adds a dependency on target `python3`, so should only be used where appropriate in order to avoid unnecessarily lengthening builds.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-python3targetconfig
-
-## Class `python_flit_core`
-
-The python_flit_core class enables building Python modules which declare the PEP-517 compliant `flit_core.buildapi` `build-backend` in the `[build-system]` section of `pyproject.toml` (See PEP-518).
-
-Python modules built with `flit_core.buildapi` are pure Python (no `C` or `Rust` extensions).
-
-Internally this uses the python_pep517 class.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-python_flit_core
-
-## Class `python_maturin`
-
-The python_maturin class provides support for python-maturin, a replacement for setuptools_rust and another “backend” for building Python Wheels.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-python_maturin
-
-## Class `python_mesonpy`
-
-The python_mesonpy class enables building Python modules which use the meson-python build system.
-
-Internally this uses the python_pep517 class.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-python_mesonpy
-
-## Class `python_pep517`
-
-The python_pep517 class builds and installs a Python `wheel` binary archive (see PEP-517).
-
-Recipes wouldn’t inherit this directly, instead typically another class will inherit this and add the relevant native dependencies.
-
-Examples of classes which do this are python_flit_core, python_setuptools_build_meta, and python_poetry_core.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-python_pep517
-
-## Class `python_poetry_core`
-
-The python_poetry_core class enables building Python modules which use the Poetry Core build system.
-
-Internally this uses the python_pep517 class.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-python_poetry_core
-
-## Class `rm_work`
-
-The rm_work class supports deletion of temporary workspace, which can ease your hard drive demands during builds.
-
-The OpenEmbedded build system can use a substantial amount of disk space during the build process. A portion of this space is the work files under the `${TMPDIR}/work` directory for each recipe. Once the build system generates the packages for a recipe, the work files for that recipe are no longer needed. However, by default, the build system preserves these files for inspection and possible debugging purposes. If you would rather have these files deleted to save disk space as the build progresses, you can enable rm_work by adding the following to your `local.conf` file, which is found in the Build Directory:
-
-```
-INHERIT += "rm_work"
-
-```
-
-If you are modifying and building source code out of the work directory for a recipe, enabling rm_work will potentially result in your changes to the source being lost. To exclude some recipes from having their work directories deleted by rm_work, you can add the names of the recipe or recipes you are working on to the RM_WORK_EXCLUDE variable, which can also be set in your `local.conf` file. Here is an example:
-
-```
-RM_WORK_EXCLUDE += "busybox glibc"
-
-```
-
-Finally, if you are using this class for a recipe but want to prevent BitBake from deleting specific folders or files in that recipe’s WORKDIR (other than `temp`), you can preserve those folders or files with the RM_WORK_EXCLUDE_ITEMS variable as follows:
-
-```
-RM_WORK_EXCLUDE_ITEMS += "items_to_keep"
-
-```
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-rm_work
-
-## Class `scons`
-
-The scons class supports recipes that need to build software that uses the SCons build system. You can use the EXTRA_OESCONS variable to specify additional configuration options you want to pass SCons command line.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-scons
-
-## Class `setuptools3`
-
-The setuptools3 class supports Python version 3.x extensions that use build systems based on `setuptools` (e.g. only have a `setup.py` and have not migrated to the official `pyproject.toml` format). If your recipe uses these build systems, the recipe needs to inherit the setuptools3 class.
-
-Note
-
-The setuptools3 class do_compile task now calls `setup.py bdist_wheel` to build the `wheel` binary archive format (See PEP-427).
-
-A consequence of this is that legacy software still using deprecated `distutils` from the Python standard library cannot be packaged as `wheels`. A common solution is the replace `from distutils.core import setup` with `from setuptools import setup`.
-
-Note
-
-The setuptools3 class do_install task now installs the `wheel` binary archive. In current versions of `setuptools` the legacy `setup.py install` method is deprecated. If the `setup.py` cannot be used with wheels, for example it creates files outside of the Python module or standard entry points, then setuptools3_legacy should be used.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-setuptools3
-
-## Class `setuptools3-base`
-
-The setuptools3-base class provides a reusable base for other classes that support building Python version 3.x extensions. If you need functionality that is not provided by the setuptools3 class, you may want to `inherit setuptools3-base`. Some recipes do not need the tasks in the setuptools3 class and inherit this class instead.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-setuptools3-base
-
-## Class `setuptools3_legacy`
-
-The setuptools3_legacy class supports Python version 3.x extensions that use build systems based on `setuptools` (e.g. only have a `setup.py` and have not migrated to the official `pyproject.toml` format). Unlike setuptools3, this uses the traditional `setup.py` `build` and `install` commands and not wheels. This use of `setuptools` like this is deprecated but still relatively common.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-setuptools3_legacy
-
-## Class `systemd`
-
-The systemd class provides support for recipes that install systemd unit files.
-
-The functionality for this class is disabled unless you have “systemd” in DISTRO_FEATURES.
-
-Under this class, the recipe or Makefile (i.e. whatever the recipe is calling during the do_install task) installs unit files into `${`D`}${systemd_unitdir}/system`. If the unit files being installed go into packages other than the main package, you need to set SYSTEMD_PACKAGES in your recipe to identify the packages in which the files will be installed.
-
-You should set SYSTEMD_SERVICE to the name of the service file. You should also use a package name override to indicate the package to which the value applies. If the value applies to the recipe’s main package, use `${`PN`}`. Here is an example from the connman recipe:
-
-```
-SYSTEMD_SERVICE:${PN} = "connman.service"
-
-```
-
-Services are set up to start on boot automatically unless you have set SYSTEMD_AUTO_ENABLE to “disable”.
-
-For more information on systemd, see the “Selecting an Initialization Manager” section in the Yocto Project Development Tasks Manual.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-systemd
 
 ## Class `testimage`
 
@@ -3490,21 +1289,6 @@ TESTIMAGE_AUTO = "1"
 For information on how to enable, run, and create new tests, see the “Performing Automated Runtime Testing” section in the Yocto Project Test Environment Manual.
 
 Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-testimage
-
-## Class `testsdk`
-
-This class supports running automated tests against software development kits (SDKs). The testsdk class runs tests on an SDK when called using the following:
-
-```
-$ bitbake -c testsdk image
-
-```
-
-Note
-
-Best practices include using IMAGE_CLASSES rather than INHERIT to inherit the testsdk class for automated SDK testing.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-testsdk
 
 ## Class `uboot-config`
 
@@ -3571,385 +1355,125 @@ See also the description of kernel-fitimage class, which this class imitates.
 
 Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-uboot-sign
 
-## Class `update-alternatives`
+## Class `vex`
 
-The update-alternatives class helps the alternatives system when multiple sources provide the same command. This situation occurs when several programs that have the same or similar function are installed with the same name. For example, the `ar` command is available from the `busybox`, `binutils` and `elfutils` packages. The update-alternatives class handles renaming the binaries so that multiple packages can be installed without conflicts. The `ar` command still works regardless of which packages are installed or subsequently removed. The class renames the conflicting binary in each package and symlinks the highest priority binary during installation or removal of packages.
+The vex class is used to generate metadata needed by external tools to check for vulnerabilities, for example CVEs. It can be used as a replacement for cve-check.
 
-To use this class, you need to define a number of variables:
+In order to use this class, inherit the class in the `local.conf` file and it will add the `generate_vex` task for every recipe:
 
-- ALTERNATIVE
+```
+INHERIT += "vex"
 
-- ALTERNATIVE_LINK_NAME
+```
 
-- ALTERNATIVE_TARGET
+If an image is built it will generate a report in DEPLOY_DIR_IMAGE for all the packages used, it will also generate a file for all recipes used in the build.
 
-- ALTERNATIVE_PRIORITY
+Variables use the `CVE_CHECK` prefix to keep compatibility with the cve-check class.
 
-These variables list alternative commands needed by a package, provide pathnames for links, default links for targets, and so forth. For details on how to use this class, see the comments in the update-alternatives.bbclass file.
+Example usage:
+
+```
+bitbake -c generate_vex openssl
+
+```
+
+Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-vex
+
+## Task `do_fetch`
+
+Fetches the source code. This task uses the SRC_URI variable and the argument’s prefix to determine the correct fetcher module.
+
+Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-fetch
+
+## Task `do_install`
+
+Copies files that are to be packaged into the holding area `${`D`}`. This task runs with the current working directory set to `${`B`}`, which is the compilation directory. The do_install task, as well as other tasks that either directly or indirectly depend on the installed files (e.g. do_package, do_package_write_*, and do_rootfs), run under fakeroot.
 
 Note
 
-You can use the `update-alternatives` command directly in your recipes. However, this class simplifies things in most cases.
+When installing files, be careful not to set the owner and group IDs of the installed files to unintended values. Some methods of copying files, notably when using the recursive `cp` command, can preserve the UID and/or GID of the original file, which is usually not what you want. The `host-user-contaminated` QA check checks for files that probably have the wrong ownership.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-update-alternatives
+Safe methods for installing files include the following:
 
-## Class `update-rc.d`
+- The `install` utility. This utility is the preferred method.
 
-The update-rc.d class uses `update-rc.d` to safely install an initialization script on behalf of the package. The OpenEmbedded build system takes care of details such as making sure the script is stopped before a package is removed and started when the package is installed.
+- The `cp` command with the `--no-preserve=ownership` option.
 
-Three variables control this class: INITSCRIPT_PACKAGES, INITSCRIPT_NAME and INITSCRIPT_PARAMS. See the variable links for details.
+- The `tar` command with the `--no-same-owner` option. See the `bin_package.bbclass` file in the `meta/classes-recipe` subdirectory of the Source Directory for an example.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-update-rc.d
+Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-install
 
-## Class `useradd`
+## Task `do_package_qa`
 
-The useradd* classes support the addition of users or groups for usage by the package on the target. For example, if you have packages that contain system services that should be run under their own user or group, you can use these classes to enable creation of the user or group. The meta-skeleton/recipes-skeleton/useradd/useradd-example.bb recipe in the Source Directory provides a simple example that shows how to add three users and groups to two packages.
+Runs QA checks on packaged files. For more information on these checks, see the insane class.
 
-The useradd_base class provides basic functionality for user or groups settings.
+Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-package-qa
 
-The useradd* classes support the USERADD_PACKAGES, USERADD_PARAM, GROUPADD_PARAM, and GROUPMEMS_PARAM variables.
+## Task `do_patch`
 
-The useradd-staticids class supports the addition of users or groups that have static user identification (`uid`) and group identification (`gid`) values.
+Locates patch files and applies them to the source code.
 
-The default behavior of the OpenEmbedded build system for assigning `uid` and `gid` values when packages add users and groups during package install time is to add them dynamically. This works fine for programs that do not care what the values of the resulting users and groups become. In these cases, the order of the installation determines the final `uid` and `gid` values. However, if non-deterministic `uid` and `gid` values are a problem, you can override the default, dynamic application of these values by setting static values. When you set static values, the OpenEmbedded build system looks in BBPATH for `files/passwd` and `files/group` files for the values.
-
-To use static `uid` and `gid` values, you need to set some variables. See the USERADDEXTENSION, USERADD_UID_TABLES, USERADD_GID_TABLES, and USERADD_ERROR_DYNAMIC variables. You can also see the useradd* class for additional information.
+After fetching and unpacking source files, the build system uses the recipe’s SRC_URI statements to locate and apply patch files to the source code.
 
 Note
 
-You do not use the useradd-staticids class directly. You either enable or disable the class by setting the USERADDEXTENSION variable. If you enable or disable the class in a configured system, TMPDIR might contain incorrect `uid` and `gid` values. Deleting the TMPDIR directory will correct this condition.
+The build system uses the FILESPATH variable to determine the default set of directories when searching for patches.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-useradd
+Patch files, by default, are `*.patch` and `*.diff` files created and kept in a subdirectory of the directory holding the recipe file. For example, consider the bluez5 recipe from the OE-Core layer (i.e. `poky/meta`):
 
-## QA check `already-stripped`
+```
+poky/meta/recipes-connectivity/bluez5
 
-Message: `File '<file>' from <recipename> was already stripped, this will prevent future debugging! [already-stripped]`
+```
 
+This recipe has two patch files located here:
 
-Produced binaries have already been stripped prior to the build system extracting debug symbols. It is common for upstream software projects to default to stripping debug symbols for output binaries. In order for debugging to work on the target using `-dbg` packages, this stripping must be disabled.
+```
+poky/meta/recipes-connectivity/bluez5/bluez5
 
-Depending on the build system used by the software being built, disabling this stripping could be as easy as specifying an additional configure option. If not, disabling stripping might involve patching the build scripts. In the latter case, look for references to “strip” or “STRIP”, or the “-s” or “-S” command-line options being specified on the linker command line (possibly through the compiler command line if preceded with “-Wl,”).
+```
+
+In the `bluez5` recipe, the SRC_URI statements point to the source and patch files needed to build the package.
 
 Note
 
-Disabling stripping here does not mean that the final packaged binaries will be unstripped. Once the OpenEmbedded build system splits out debug symbols to the `-dbg` package, it will then strip the symbols from the binaries.
+In the case for the `bluez5_5.48.bb` recipe, the SRC_URI statements are from an include file `bluez5.inc`.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
-
-## QA check `build-deps`
-
-Message: `<packagename1> rdepends on <packagename2>, but it isn't a build dependency? [build-deps]`
-
-
-There is a runtime dependency between the two specified packages, but there is nothing explicit within the recipe to enable the OpenEmbedded build system to ensure that dependency is satisfied. This condition is usually triggered by an RDEPENDS value being added at the packaging stage rather than up front, which is usually automatic based on the contents of the package. In most cases, you should change the recipe to add an explicit RDEPENDS for the dependency.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
-
-## QA check `configure-gettext`
-
-Message: `AM_GNU_GETTEXT used but no inherit gettext [configure-gettext]`
-
-
-If a recipe is building something that uses automake and the automake files contain an `AM_GNU_GETTEXT` directive then this check will fail if there is no `inherit gettext` statement in the recipe to ensure that gettext is available during the build. Add `inherit gettext` to remove the warning.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
-
-## QA check `configure-unsafe`
-
-Message: `This autoconf log indicates errors, it looked at host include and/or library paths while determining system capabilities. Rerun configure task after fixing this. [configure-unsafe]`
-
-
-The log for the do_configure task indicates that paths on the host were searched for files, which is not appropriate when cross-compiling. Look for “is unsafe for cross-compilation” or “CROSS COMPILE Badness” in the specified log file.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
-
-## QA check `debug-deps`
-
-Message: `<packagename> rdepends on <debug_packagename> [debug-deps]`
-
-
-There is a dependency between the specified non-dbg package (i.e. a package whose name does not end in `-dbg`) and a package that is a `dbg` package. The `dbg` packages contain debug symbols and are brought in using several different methods:
-
-  - Using the `dbg-pkgs` IMAGE_FEATURES value.
-
-  - Using IMAGE_INSTALL.
-
-  - As a dependency of another `dbg` package that was brought in using one of the above methods.
-
-The dependency might have been automatically added because the `dbg` package erroneously contains files that it should not contain (e.g. a non-symlink `.so` file) or it might have been added manually (e.g. by adding to RDEPENDS).
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
-
-## QA check `debug-files`
-
-Message: `non debug package contains .debug directory: <packagename> path <path> [debug-files]`
-
-
-The specified package contains a `.debug` directory, which should not appear in anything but the `-dbg` package. This situation might occur if you add a path which contains a `.debug` directory and do not explicitly add the `.debug` directory to the `-dbg` package. If this is the case, add the `.debug` directory explicitly to `FILES:${PN}-dbg`. See FILES for additional information on FILES.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
-
-## QA check `dep-cmp`
-
-Message: `<var>:<packagename> is invalid: <comparison> (<value>) only comparisons <, =, >, <=, and >= are allowed [dep-cmp]`
-
-
-If you are adding a versioned dependency relationship to one of the dependency variables (RDEPENDS, RRECOMMENDS, RSUGGESTS, RPROVIDES, RREPLACES, or RCONFLICTS), you must only use the named comparison operators. Change the versioned dependency values you are adding to match those listed in the message.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
-
-## QA check `dev-deps`
-
-Message: `<packagename> rdepends on <dev_packagename> [dev-deps]`
-
-
-There is a dependency between the specified non-dev package (a package whose name does not end in `-dev`) and a package that is a `dev` package. The `dev` packages contain development headers and are usually brought in using several different methods:
-
-  - Using the `dev-pkgs` IMAGE_FEATURES value.
-
-  - Using IMAGE_INSTALL.
-
-  - As a dependency of another `dev` package that was brought in using one of the above methods.
-
-The dependency might have been automatically added (because the `dev` package erroneously contains files that it should not have (e.g. a non-symlink `.so` file) or it might have been added manually (e.g. by adding to RDEPENDS).
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
-
-## QA check `dev-so`
-
-Message: `non -dev/-dbg/nativesdk- package contains symlink .so: <packagename> path '<path>' [dev-so]`
-
-
-Symlink `.so` files are for development only, and should therefore go into the `-dev` package. This situation might occur if you add `*.so*` rather than `*.so.*` to a non-dev package. Change FILES (and possibly PACKAGES) such that the specified `.so` file goes into an appropriate `-dev` package.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
-
-## QA check `empty-dirs`
-
-Message: `<packagename> installs files in <path>, but it is expected to be empty [empty-dirs]`
-
-
-The specified package is installing files into a directory that is normally expected to be empty (such as `/tmp`). These files may be more appropriately installed to a different location, or perhaps alternatively not installed at all, usually by updating the do_install task/function.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
-
-## QA check `file-rdeps`
-
-Message: `<packagename> requires <files>, but no providers in its RDEPENDS [file-rdeps]`
-
-
-A file-level dependency has been identified from the specified package on the specified files, but there is no explicit corresponding entry in RDEPENDS. If particular files are required at runtime then RDEPENDS should be declared in the recipe to ensure the packages providing them are built.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
-
-## QA check `files-invalid`
-
-Message: `FILES variable for package <packagename> contains '//' which is invalid. Attempting to fix this but you should correct the metadata. [files-invalid]`
-
-
-The string “//” is invalid in a Unix path. Correct all occurrences where this string appears in a FILES variable so that there is only a single “/”.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
-
-## QA check `installed-vs-shipped`
-
-Message: `<recipename>: Files/directories were installed but not shipped in any package [installed-vs-shipped]`
-
-
-Files have been installed within the do_install task but have not been included in any package by way of the FILES variable. Files that do not appear in any package cannot be present in an image later on in the build process. You need to do one of the following:
-
-  - Add the files to FILES for the package you want them to appear in (e.g. `FILES:${`PN`}` for the main package).
-
-  - Delete the files at the end of the do_install task if the files are not needed in any package.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
-
-## QA check `mime-xdg`
-
-Message: `package contains desktop file with key 'MimeType' but does not inhert mime-xdg: <packagename> path '<file>' [mime-xdg]`
-
-
-The specified package contains a .desktop file with a ‘MimeType’ key present, but does not inherit the mime-xdg class that is required in order for that to be activated. Either add `inherit mime` to the recipe or remove the files at the do_install step if they are not needed.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
-
-## QA check `missing-update-alternatives`
-
-Message: `<recipename>: recipe defines ALTERNATIVE:<packagename> but doesn't inherit update-alternatives. This might fail during do_rootfs later! [missing-update-alternatives]`
-
-
-This check ensures that if a recipe sets the ALTERNATIVE variable that the recipe also inherits update-alternatives such that the alternative will be correctly set up. If you are seeing this message, either add `inherit update-alternatives` to your recipe or remove the reference to the variable if it is not needed.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
-
-## QA check `packages-list`
-
-Message: `<packagename> is listed in PACKAGES multiple times, this leads to packaging errors. [packages-list]`
-
-
-Package names must appear only once in the PACKAGES variable. You might receive this error if you are attempting to add a package to PACKAGES that is already in the variable’s value.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
-
-## QA check `patch-fuzz`
-
-Message: `Fuzz detected: <patch output> [patch-fuzz]`
-
-
-This check looks for evidence of “fuzz” when applying patches within the do_patch task. Patch fuzz is a situation when the `patch` tool ignores some of the context lines in order to apply the patch. Consider this example:
-
-Patch to be applied:
+As mentioned earlier, the build system treats files whose file types are `.patch` and `.diff` as patch files. However, you can use the “apply=yes” parameter with the SRC_URI statement to indicate any file as a patch file:
 
 ```
---- filename
-+++ filename
- context line 1
- context line 2
- context line 3
-+newly added line
- context line 4
- context line 5
- context line 6
+SRC_URI = " \
+    git://path_to_repo/some_package \
+    file://file;apply=yes \
+    "
 
 ```
 
-Original source code:
+Conversely, if you have a file whose file type is `.patch` or `.diff` and you want to exclude it so that the do_patch task does not apply it during the patch phase, you can use the “apply=no” parameter with the SRC_URI statement:
 
 ```
-different context line 1
-different context line 2
-context line 3
-context line 4
-different context line 5
-different context line 6
-
-```
-
-Outcome (after applying patch with fuzz):
-
-```
-different context line 1
-different context line 2
-context line 3
-newly added line
-context line 4
-different context line 5
-different context line 6
+SRC_URI = " \
+    git://path_to_repo/some_package \
+    file://file1.patch \
+    file://file2.patch;apply=no \
+    "
 
 ```
 
-Chances are, the newly added line was actually added in a completely wrong location, or it was already in the original source and was added for the second time. This is especially possible if the context line 3 and 4 are blank or have only generic things in them, such as `#endif` or `}`. Depending on the patched code, it is entirely possible for an incorrectly patched file to still compile without errors.
+In the previous example `file1.patch` would be applied as a patch by default while `file2.patch` would not be applied.
 
-*How to eliminate patch fuzz warnings*
+You can find out more about the patching process in the “Patching” section in the Yocto Project Overview and Concepts Manual and the “Patching Code” section in the Yocto Project Development Tasks Manual.
 
-Use the `devtool` command as explained by the warning. First, unpack the source into devtool workspace:
+Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-patch
 
-```
-devtool modify <recipe>
+## Task `do_populate_sdk`
 
-```
+Creates the file and directory structure for an installable SDK. See the “SDK Generation” section in the Yocto Project Overview and Concepts Manual for more information.
 
-This will apply all of the patches, and create new commits out of them in the workspace — with the patch context updated.
+Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-populate-sdk
 
-Then, replace the patches in the recipe layer:
+## Task `do_populate_sdk_ext`
 
-```
-devtool finish --force-patch-refresh <recipe> <layer_path>
+Creates the file and directory structure for an installable extensible SDK (eSDK). See the “SDK Generation” section in the Yocto Project Overview and Concepts Manual for more information.
 
-```
-
-The patch updates then need be reviewed (preferably with a side-by-side diff tool) to ensure they are indeed doing the right thing i.e.:
-
-  - they are applied in the correct location within the file;
-
-  - they do not introduce duplicate lines, or otherwise do things that are no longer necessary.
-
-To confirm these things, you can also review the patched source code in devtool’s workspace, typically in `<build_dir>/workspace/sources/<recipe>/`
-
-Once the review is done, you can create and publish a layer commit with the patch updates that modify the context. Devtool may also refresh other things in the patches, those can be discarded.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
-
-## QA check `patch-status`
-
-Message: `Missing Upstream-Status in patch <patchfile> Please add according to <url> [patch-status]`
-
-
-The `Upstream-Status` value is missing in the specified patch file’s header. This value is intended to track whether or not the patch has been sent upstream, whether or not it has been merged, etc.
-
-For more information, see the “Patch Upstream Status” section in the Yocto Project and OpenEmbedded Contributor Guide.
-
-Message: `Malformed Upstream-Status in patch <patchfile> Please correct according to <url> [patch-status]`
-
-
-The `Upstream-Status` value in the specified patch file’s header is invalid - it must be a specific format. See the “Missing Upstream-Status” entry above for more information.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
-
-## QA check `pn-overrides`
-
-Message: `Recipe <recipefile> has PN of "<recipename>" which is in OVERRIDES, this can result in unexpected behavior. [pn-overrides]`
-
-
-The specified recipe has a name (PN) value that appears in OVERRIDES. If a recipe is named such that its PN value matches something already in OVERRIDES (e.g. PN happens to be the same as MACHINE or DISTRO), it can have unexpected consequences. For example, assignments such as `FILES:${PN} = "xyz"` effectively turn into `FILES = "xyz"`. Rename your recipe (or if PN is being set explicitly, change the PN value) so that the conflict does not occur. See FILES for additional information.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
-
-## QA check `shebang-size`
-
-Message: `<packagename>: <file> maximum shebang size exceeded, the maximum size is 128. [shebang-size]`
-
-
-This check ensures that the shebang line (`#!` in the first line) for a script is not longer than 128 characters, which can cause an error at runtime depending on the operating system. If you are seeing this message then the specified script may need to be patched to have a shorter in order to avoid runtime problems.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
-
-## QA check `src-uri-bad`
-
-Message: `<recipename>: SRC_URI uses unstable GitHub archives [src-uri-bad]`
-
-
-GitHub provides “archive” tarballs, however these can be re-generated on the fly and thus the file’s signature will not necessarily match that in the SRC_URI checksums in future leading to build failures. It is recommended that you use an official release tarball or switch to pulling the corresponding revision in the actual git repository instead.
-
-Message: `SRC_URI uses PN not BPN [src-uri-bad]`
-
-
-If some part of SRC_URI needs to reference the recipe name, it should do so using ${BPN} rather than ${PN} as the latter will change for different variants of the same recipe e.g. when BBCLASSEXTEND or multilib are being used. This check will fail if a reference to `${PN}` is found within the SRC_URI value — change it to `${BPN}` instead.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
-
-## QA check `unknown-configure-option`
-
-Message: `<recipe>: configure was passed unrecognized options: <options> [unknown-configure-option]`
-
-
-The configure script is reporting that the specified options are unrecognized. This situation could be because the options were previously valid but have been removed from the configure script. Or, there was a mistake when the options were added and there is another option that should be used instead. If you are unsure, consult the upstream build documentation, the `./configure --help` output, and the upstream change log or release notes. Once you have worked out what the appropriate change is, you can update EXTRA_OECONF, PACKAGECONFIG_CONFARGS, or the individual PACKAGECONFIG option values accordingly.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
-
-## QA check `unlisted-pkg-lics`
-
-Message: `LICENSE:<packagename> includes licenses (<licenses>) that are not listed in LICENSE [unlisted-pkg-lics]`
-
-
-The LICENSE of the recipe should be a superset of all the licenses of all packages produced by this recipe. In other words, any license in `LICENSE:*` should also appear in LICENSE.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
-
-## QA check `useless-rpaths`
-
-Message: `<packagename>: <file> contains probably-redundant RPATH <rpath> [useless-rpaths]`
-
-
-The specified binary produced by the recipe contains dynamic library load paths (rpaths) that on a standard system are searched by default by the linker (e.g. `/lib` and `/usr/lib`). While these paths will not cause any breakage, they do waste space and are unnecessary. Depending on the build system used by the software being built, there might be a configure option to disable rpath usage completely within the build of the software.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
-
-## QA check `xorg-driver-abi`
-
-Message: `Package <packagename> contains Xorg driver (<driver>) but no xorg-abi- dependencies [xorg-driver-abi]`
-
-
-The specified package contains an Xorg driver, but does not have a corresponding ABI package dependency. The xserver-xorg recipe provides driver ABI names. All drivers should depend on the ABI versions that they have been built against. Driver recipes that include `xorg-driver-input.inc` or `xorg-driver-video.inc` will automatically get these versions. Consequently, you should only need to explicitly add dependencies to binary driver recipes.
-
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
+Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-populate-sdk-ext
