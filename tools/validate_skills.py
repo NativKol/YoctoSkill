@@ -53,7 +53,7 @@ FRONTMATTER_FIELD = re.compile(r"^([A-Za-z_][\w-]*):[ \t]*(.*)$")
 MARKDOWN_LINK = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
 README_SKILL = re.compile(r"^- `skills/([\w-]+)`")
 
-READMES = ("README.md", "README.ko.md")
+READMES = ("README.md",)
 
 
 def parse_frontmatter(text: str) -> dict[str, str] | None:

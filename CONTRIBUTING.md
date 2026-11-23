@@ -21,7 +21,7 @@ Thanks for improving Yocto Agent Skills.
    `skills/*/references/` — those files are generated.
 4. Add an example in `examples/` if the behavior is easy to misunderstand.
 5. Add or update eval prompts in `evals/prompts.md`.
-6. Update the skill catalog in both `README.md` and `README.ko.md`.
+6. Update the skill catalog in `README.md`, add a `keywords.txt`, and run `python tools/build_manual_refs.py`.
 7. Run validation.
 
 ## Validation
@@ -36,7 +36,7 @@ Validation must pass before opening a PR. CI runs the same checks.
 
 ## Security
 
-This is a public repository, so every commit is a publication.
+Treat every commit as a publication, even while the repository is private: forks and future publication are easy, rewriting history is not.
 
 `tools/validate_skills.py` scans for email addresses, real usernames, absolute local
 paths, and credential patterns, but it cannot catch everything. Before opening a PR,

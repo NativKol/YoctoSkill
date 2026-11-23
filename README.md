@@ -1,142 +1,130 @@
-# Yocto Agent Skills
+# YoctoSkill
 
-[![validate](https://github.com/Higangssh/yocto-agent-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/Higangssh/yocto-agent-skills/actions/workflows/validate.yml)
+Manual-grounded Yocto Project and BitBake skills for AI coding agents, targeting
+**Yocto Project 5.0 "scarthgap" (LTS) with BitBake 2.8**.
 
-Official-doc-first Yocto Project and BitBake skills for AI coding agents.
+This is a fork of [Higangssh/yocto-agent-skills](https://github.com/Higangssh/yocto-agent-skills)
+(MIT, v0.3.0). It keeps the upstream history, tooling and skill split, and changes three
+things:
 
-Yocto is release-sensitive, deeply configurable, and easy for general LLMs to hallucinate. This repository gives agents focused skills for routing to official documentation, debugging BitBake failures, reviewing recipes, reviewing layers, diagnosing image/rootfs problems, working through BSP/kernel issues, and handling security/SBOM workflows.
-
-Korean documentation: [README.ko.md](README.ko.md)
+1. **The official manuals are included.** The `yocto-manuals` skill carries the scarthgap
+   manuals and the BitBake 2.8 User Manual as Markdown. Each variable, class, task,
+   feature and QA check has its own file, and every other skill ships a generated
+   `references/keywords.md` with the verbatim manual entry for each keyword it uses. An
+   agent can look up the exact behavior of anything a skill mentions without leaving the
+   skill folder.
+2. **Fixes.** The upstream references had factual errors: the `+=` spacing rule, the
+   `PREFERRED_VERSION:` form, a class name that doesn't exist, invented QA tags, and the
+   "silently ignored" bbappend claim. They also had broken grep patterns, interactive or
+   destructive commands offered as evidence gathering, and thin references. These were
+   checked against the manuals and corrected.
+3. **Two new skills:** `yocto-image-analysis`, for what an image or distro really contains
+   and what a commit changed in it, and `yocto-change-review`, for automated review of
+   Yocto changes with a strictness setting.
 
 ## Skills
 
-- `skills/yocto-doc-router`: release-aware routing to the right Yocto, OpenEmbedded, and BitBake official documentation.
-- `skills/bitbake-debug`: task/log/rootfs/package/provider debugging for BitBake build failures.
-- `skills/yocto-recipe-review`: recipe, bbappend, bbclass, dependency, packaging, licensing, and override syntax review.
-- `skills/yocto-layer-review`: layer.conf, layer compatibility, priority, dependency, provider, and bbappend matching review.
-- `skills/yocto-image-rootfs`: image recipes, package names, `IMAGE_INSTALL`, `IMAGE_FEATURES`, `do_rootfs`, pkgdata, and package manager issues.
-- `skills/yocto-bsp-kernel`: machine config, BSP layers, kernel providers, devicetree, defconfig, U-Boot, and deploy artifacts.
-- `skills/yocto-security-sbom`: license metadata, CVE checks, SPDX/SBOM, archiver/copyleft flows, and compliance artifacts.
+- `skills/yocto-manuals`: offline scarthgap manuals split per keyword (880 variables, 166 classes, 50 tasks, 99 features, 46 QA checks) plus every manual page, with an index and a table of contents.
+- `skills/yocto-image-analysis`: walks the evaluation order (layers, local/auto.conf, distro, machine, image recipe, bbappends, overrides) and the inclusion chain (`IMAGE_INSTALL`, `IMAGE_FEATURES`, packagegroups, `RDEPENDS`/`RRECOMMENDS`, exclusions, providers) to explain what ends up in an image and what a commit changed in it. Includes `scripts/yocto_diff.py` to diff manifests, `bitbake -e` dumps and buildhistory dependency chains.
+- `skills/yocto-change-review`: automated review of diffs, commits, PRs and patch series. It covers effects (operators, overrides, dependencies, features, sstate blast radius, QA checks) and conventions (style guide, licensing, `Upstream-Status`, commit messages), and has `gentle`, `standard` and `strict` levels.
+- `skills/yocto-doc-router`: release-aware routing to the right Yocto, OpenEmbedded and BitBake documentation.
+- `skills/bitbake-debug`: debugging BitBake failures from task logs, rootfs, package and provider errors.
+- `skills/yocto-recipe-review`: review of recipes, bbappends, bbclasses, dependencies, packaging, licensing and override syntax.
+- `skills/yocto-layer-review`: review of `layer.conf`, compatibility, priority, dependencies, providers and bbappend matching.
+- `skills/yocto-image-rootfs`: image recipes, package names, `IMAGE_INSTALL`, `IMAGE_FEATURES`, `do_rootfs`, pkgdata and package manager failures.
+- `skills/yocto-bsp-kernel`: machine config, BSP layers, kernel providers, devicetree, defconfig, U-Boot and deploy artifacts.
+- `skills/yocto-security-sbom`: license metadata, CVE handling, SPDX/SBOM, archiver and copyleft flows, and compliance artifacts.
 
-The root `SKILL.md` remains as a compatibility router for hosts that install a repository as a single skill.
+The root `SKILL.md` is a compatibility router for hosts that install the whole repository
+as one skill.
 
-## What It Helps With
+## Release
 
-- Debugging BitBake task failures: `do_fetch`, `do_unpack`, `do_patch`, `do_configure`, `do_compile`, `do_install`, `do_package`, `do_package_qa`, `do_rootfs`, `do_image`
-- Writing and reviewing `.bb`, `.bbappend`, `.bbclass`, image recipes, machine config, distro config, and `layer.conf`
-- Modernizing BitBake override syntax: `VAR:append`, `FILES:${PN}`, `RDEPENDS:${PN}`, task overrides, and package overrides
-- Reviewing layers, bbappends, provider selection, package splitting, rootfs failures, QA messages, kernel/BSP metadata, and image composition
-- Reducing common AI mistakes around `DEPENDS` vs `RDEPENDS`, recipe names vs package names, `SRCREV`, `LIC_FILES_CHKSUM`, `INSANE_SKIP`, host contamination, and sstate cleanup
+Everything is written for scarthgap (5.0). Each skill tells the agent to check the
+project's release first (`LAYERSERIES_COMPAT_*`, the poky or openembedded-core branch,
+`DISTRO_VERSION`) and to flag anything that may differ on another release. To move to
+another release, regenerate the manuals (see Development) and review the facts marked as
+release-specific.
 
 ## Installation
 
-Every skill folder is self-contained: it carries the references it links to, so a skill
-keeps working when installed on its own.
+Every skill folder is self-contained, so a skill works when its folder is installed on
+its own.
 
 ### Claude Code
 
-The repository is also a Claude Code plugin. Add the marketplace and install:
+The repository is a Claude Code plugin:
 
 ```bash
-/plugin marketplace add Higangssh/yocto-agent-skills
-/plugin install yocto-agent-skills@yocto-skills
+/plugin marketplace add NativKol/YoctoSkill
+/plugin install yocto-skill@yoctoskill
 ```
 
-All seven skills load as `/yocto-agent-skills:<skill>`, and Claude invokes them
-automatically when a task matches. To try them without installing:
+Or try it without installing: `claude --plugin-dir /path/to/YoctoSkill`.
+
+### Individual skill folders
 
 ```bash
-claude --plugin-dir /path/to/yocto-agent-skills
+mkdir -p ~/.claude/skills
+for skill in skills/*/; do ln -s "$(pwd)/$skill" ~/.claude/skills/"$(basename "$skill")"; done
 ```
 
-### Codex and other collection-aware agents
+Use the same loop with `${CODEX_HOME:-$HOME/.codex}/skills` for Codex.
 
-Install the individual folders under `skills/`.
-
-```bash
-mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-for skill in yocto-doc-router bitbake-debug yocto-recipe-review yocto-layer-review yocto-image-rootfs yocto-bsp-kernel yocto-security-sbom; do
-  ln -s "$(pwd)/skills/$skill" "${CODEX_HOME:-$HOME/.codex}/skills/$skill"
-done
-```
-
-For hosts that install one folder as one skill, install the repository root:
-
-```bash
-mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-ln -s "$(pwd)" "${CODEX_HOME:-$HOME/.codex}/skills/yocto-agent-skills"
-```
-
-## Example Prompts
+## Example prompts
 
 ```text
-Use yocto-doc-router to find the current docs for this QA check on my release.
+What does our image actually install, and why is busybox-syslog in it?
 ```
 
 ```text
-Use bitbake-debug to diagnose this do_rootfs failure.
+This commit switched INIT_MANAGER to systemd. What changed in core-image-base?
 ```
 
 ```text
-Use yocto-recipe-review to review this recipe and modernize the override syntax.
+Review this patch series for meta-company. Be gentle, it's their first contribution.
 ```
 
 ```text
-Use yocto-layer-review to explain why this bbappend is not being applied.
+Review my diff to the distro conf at strict level.
 ```
 
 ```text
-Use yocto-image-rootfs to find why my package is not in the final image.
-```
-
-```text
-Use yocto-bsp-kernel to debug why my devicetree is missing from deploy/images.
-```
-
-```text
-Use yocto-security-sbom to review this license checksum and SBOM setup.
+Why does do_rootfs fail with "nothing provides" for my package?
 ```
 
 ## Contents
 
-- `SKILL.md`: root compatibility router
-- `skills/*/SKILL.md`: focused installable skills
-- `skills/*/references/`: generated per-skill copies that make each skill self-contained
+- `skills/*/SKILL.md`: the skills
+- `skills/*/keywords.txt`: the keywords each skill relies on, turned into `references/keywords.md`
+- `skills/*/references/`: skill references (shared copies are generated; see below)
+- `references/`: source of truth for the shared summary references
+- `tools/convert_manuals.py`: converts the docs.yoctoproject.org `singleindex.html` pages to Markdown
+- `tools/build_manual_refs.py`: splits the manuals per keyword and generates each skill's `keywords.md`
+- `tools/sync_references.py`: copies shared references into the skills that link them
+- `tools/validate_skills.py`: frontmatter, links, drift of both generators, README catalog, manifests and disclosure scan
+- `examples/`, `evals/`: worked examples and eval cases with graders
 - `.claude-plugin/`: Claude Code plugin and marketplace manifests
-- `tools/sync_references.py`: regenerates the per-skill reference copies
-- `tools/validate_skills.py`: validates frontmatter, links, drift, and public-repo disclosure
-- `references/shared/official-doc-map.md`: official Yocto/BitBake documentation routing by problem type
-- `references/shared/yocto-field-guide.md`: compact field guide for recipes, layers, tasks, QA, images, providers, and BSP/kernel work
-- `references/bitbake/variables-core.md`: variables agents often confuse
-- `references/bitbake/classes-core.md`: common classes and review rules
-- `references/bitbake/tasks-reference.md`: task-level debugging reference
-- `references/yocto/qa-errors.md`: common QA error patterns
-- `references/yocto/migration.md`: release-aware migration checks
-- `references/yocto/image-rootfs.md`: image and rootfs troubleshooting
-- `references/yocto/bsp-kernel.md`: BSP and kernel troubleshooting
-- `references/yocto/security-sbom.md`: security, license, CVE, and SBOM workflows
-- `examples/`: realistic failure examples and expected answer patterns
-- `evals/prompts.md`: manual forward-test prompts with pass criteria
-- `evals/cases/`: eval cases and graders for `claude plugin eval`
-- `agents/openai.yaml`: UI metadata for compatible skill hosts
-- `.claude/CLAUDE.md`: project rules, including the security rules for this public repository
-- `.github/workflows/validate.yml`: CI that runs the validator on every push and pull request
 
 ## Development
 
-References under `references/` are the source of truth. The copies under
-`skills/*/references/` are generated, so edit the source and re-run the sync script.
-
 ```bash
-python tools/sync_references.py     # regenerate the per-skill reference copies
-python tools/validate_skills.py     # frontmatter, links, drift, disclosure scan
-claude plugin validate . --strict   # Claude Code plugin manifest
+python tools/sync_references.py      # after editing references/
+python tools/build_manual_refs.py    # after editing a keywords.txt or the manuals
+python tools/validate_skills.py      # must pass before every commit
 ```
 
-This is a public repository, so the validator also scans for email addresses, real
-usernames, absolute local paths, and credential patterns. See
-[CONTRIBUTING.md](CONTRIBUTING.md) and [.claude/CLAUDE.md](.claude/CLAUDE.md).
+To refresh the manuals, download `https://docs.yoctoproject.org/<release>/singleindex.html`
+and `https://docs.yoctoproject.org/bitbake/<bitbake-version>/singleindex.html`. Then
+run `tools/convert_manuals.py` on each, writing into `skills/yocto-manuals/references/manuals`,
+and then run `tools/build_manual_refs.py`.
 
 ## License
 
-MIT
+- Code, skills and the original references: MIT (see `LICENSE`). Upstream copyright
+  Sanghee Son; fork changes by the YoctoSkill contributors.
+- Manual text under `skills/yocto-manuals/references/` and the generated
+  `skills/*/references/keywords.md` files come from the Yocto Project documentation
+  (CC BY-SA 2.0 UK) and the BitBake User Manual (CC BY 2.5). See
+  `skills/yocto-manuals/LICENSE-docs.md`. Skill references that paraphrase the manuals
+  say so at the bottom of the file.
