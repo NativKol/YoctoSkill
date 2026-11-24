@@ -2,7 +2,7 @@
 
 # Variable `SPLASH_IMAGES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This variable, used by the `psplash` recipe, allows to customize the default splashscreen image.
 
@@ -35,7 +35,7 @@ EXTRA_OECONF += "--disable-startup-msg --enable-img-fullscreen"
 
 For information on append files, see the “Appending Other Layers Metadata With Your Layer” section.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SPLASH_IMAGES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SPLASH_IMAGES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

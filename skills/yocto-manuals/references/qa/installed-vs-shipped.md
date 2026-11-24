@@ -11,7 +11,7 @@ Files have been installed within the do_install task but have not been included 
 
   - Delete the files at the end of the do_install task if the files are not needed in any package.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
+Offline source: yocto-manuals/references/manuals/ref-manual/qa-checks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

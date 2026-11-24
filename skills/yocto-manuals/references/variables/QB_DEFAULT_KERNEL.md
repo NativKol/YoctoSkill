@@ -2,11 +2,11 @@
 
 # Variable `QB_DEFAULT_KERNEL`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When using `runqemu`, the QB_DEFAULT_KERNEL variable controls the default Linux kernel image to boot, found in DEPLOY_DIR_IMAGE. For example: `bzImage`.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-QB_DEFAULT_KERNEL
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-QB_DEFAULT_KERNEL)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

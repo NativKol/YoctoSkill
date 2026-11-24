@@ -2,7 +2,7 @@
 
 # Variable `BAD_RECOMMENDATIONS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Lists “recommended-only” packages to not install. Recommended-only packages are packages installed only through the RRECOMMENDS variable. You can prevent any of these “recommended” packages from being installed by listing them with the BAD_RECOMMENDATIONS variable:
 
@@ -24,7 +24,7 @@ This variable is supported only when using the IPK and RPM packaging backends. D
 
 See the NO_RECOMMENDATIONS and the PACKAGE_EXCLUDE variables for related information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BAD_RECOMMENDATIONS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BAD_RECOMMENDATIONS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

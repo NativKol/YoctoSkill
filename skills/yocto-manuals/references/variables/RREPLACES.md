@@ -2,7 +2,7 @@
 
 # Variable `RREPLACES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A list of packages replaced by a package. The package manager uses this variable to determine which package should be installed to replace other package(s) during an upgrade. In order to also have the other package(s) removed at the same time, you must add the name of the other package to the RCONFLICTS variable.
 
@@ -39,7 +39,7 @@ RREPLACES:${PN} = "foo (>= 1.2)"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RREPLACES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RREPLACES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

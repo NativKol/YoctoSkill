@@ -2,7 +2,7 @@
 
 # Variable `SERIAL_CONSOLES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Defines a serial console (TTY) to enable using getty. Provide a value that specifies the baud rate followed by the TTY device name separated by a semicolon. Use spaces to separate multiple devices:
 
@@ -11,7 +11,7 @@ SERIAL_CONSOLES = "115200;ttyS0 115200;ttyS1"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SERIAL_CONSOLES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SERIAL_CONSOLES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

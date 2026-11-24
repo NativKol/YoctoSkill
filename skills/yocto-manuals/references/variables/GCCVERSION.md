@@ -2,7 +2,7 @@
 
 # Variable `GCCVERSION`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the default version of the GNU C Compiler (GCC) used for compilation. By default, GCCVERSION is set to “8.x” in the `meta/conf/distro/include/tcmode-default.inc` include file:
 
@@ -13,7 +13,7 @@ GCCVERSION ?= "8.%"
 
 You can override this value by setting it in a configuration file such as the `local.conf`.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-GCCVERSION
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-GCCVERSION)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

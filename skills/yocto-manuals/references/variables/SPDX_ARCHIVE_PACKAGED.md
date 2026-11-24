@@ -2,7 +2,7 @@
 
 # Variable `SPDX_ARCHIVE_PACKAGED`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This option allows to add to SPDX output compressed archives of the files in the generated target packages.
 
@@ -19,7 +19,7 @@ According to our tests on release 4.1 “langdale”, building `core-image-minim
 
 Note that this option doesn’t increase the size of SPDX files in `tmp/deploy/images/MACHINE`.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SPDX_ARCHIVE_PACKAGED
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SPDX_ARCHIVE_PACKAGED)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

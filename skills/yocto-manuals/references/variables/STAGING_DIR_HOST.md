@@ -2,7 +2,7 @@
 
 # Variable `STAGING_DIR_HOST`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the path to the recipe’s input sysroot directory, populated with files for the system on which the component is built to run (the system that hosts the component). For most recipes, this sysroot is populated by their do_populate_sysroot task (when sharing files between recipes). Exceptions include native recipes, for which the files from do_populate_sysroot task are instead copied to STAGING_DIR_NATIVE. Depending on the type of recipe and the build target, STAGING_DIR_HOST can have the following values:
 
@@ -16,7 +16,7 @@ Native recipe files are not installed into host paths such as `/usr`. Rather, su
 
 Thus, the emphasis is that the `STAGING_DIR*` variables should be viewed as input variables by tasks such as do_configure, do_compile, and do_install. Having the real system root (the build host’s root) play the role of STAGING_DIR_HOST makes conceptual sense for native recipes, as they make use of the build host’s headers and libraries.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-STAGING_DIR_HOST
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-STAGING_DIR_HOST)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

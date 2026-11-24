@@ -2,7 +2,7 @@
 
 # Variable `SYSROOT_DIRS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Directories that are staged into the sysroot by the do_populate_sysroot task. By default, the following directories are staged:
 
@@ -44,7 +44,7 @@ TARGET_LDFLAGS:append = " -L${RECIPE_SYSROOT}/opt/lib"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SYSROOT_DIRS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SYSROOT_DIRS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

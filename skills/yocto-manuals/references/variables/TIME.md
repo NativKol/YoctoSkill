@@ -2,11 +2,11 @@
 
 # Variable `TIME`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The time the build was started. Times appear using the hour, minute, and second (HMS) format (e.g. “140159” for one minute and fifty-nine seconds past 1400 hours).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TIME
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TIME)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

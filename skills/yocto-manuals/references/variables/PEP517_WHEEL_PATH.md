@@ -2,11 +2,11 @@
 
 # Variable `PEP517_WHEEL_PATH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When used by recipes that inherit the python_pep517 class, denotes the path to `dist/` (short for distribution) where the binary archive `wheel` is built.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PEP517_WHEEL_PATH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PEP517_WHEEL_PATH)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

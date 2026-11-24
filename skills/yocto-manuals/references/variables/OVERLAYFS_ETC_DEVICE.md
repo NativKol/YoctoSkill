@@ -2,7 +2,7 @@
 
 # Variable `OVERLAYFS_ETC_DEVICE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When the overlayfs-etc class is inherited, specifies the device to be mounted for the read/write layer of `/etc`. There is no default, so you must set this if you wish to enable overlayfs-etc, for example, assuming `/dev/mmcblk0p2` was the desired device:
 
@@ -11,7 +11,7 @@ OVERLAYFS_ETC_DEVICE = "/dev/mmcblk0p2"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-OVERLAYFS_ETC_DEVICE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-OVERLAYFS_ETC_DEVICE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

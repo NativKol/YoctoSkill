@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0] - 2026-11-24
+
+### Added
+
+- Offline mode. `scripts/ylookup.py` in every skill (single source `tools/ylookup.py`)
+  prints only the requested keyword entry, manual section or matching lines from the
+  offline scarthgap manuals: `--find`, `--topic`, `--section [--shallow]` and `--grep`.
+  Tests are in `tools/test_ylookup.py`, and CI runs them.
+
+### Changed
+
+- Skills, shared references and examples no longer send the agent online. Manual
+  entries cite the offline file first, with the URL only as a citation.
+- SKILL.md bodies trimmed using the skill-creator guidance. Every skill has the same
+  short "Offline lookup" block and never needs to read a whole manual or glossary.
+- The plugin and marketplace metadata name no personal account. The README installs
+  from a local clone.
+
 ## [1.0.0] - 2026-11-23
 
 First release of the YoctoSkill fork of yocto-agent-skills 0.3.0, written for Yocto

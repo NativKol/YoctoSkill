@@ -6,7 +6,7 @@ The module class provides support for building out-of-tree Linux kernel modules.
 
 For general information on out-of-tree Linux kernel modules, see the “Incorporating Out-of-Tree Modules” section in the Yocto Project Linux Kernel Development Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-module
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-module)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,7 +2,7 @@
 
 # Variable `QB_NETWORK_DEVICE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When using `runqemu`, the QB_NETWORK_DEVICE variable controls the network device instantiated by QEMU. This value needs to be compatible with the QB_TAP_OPT variable.
 
@@ -15,7 +15,7 @@ QB_NETWORK_DEVICE = "-device virtio-net-pci,netdev=net0,mac=@MAC@"
 
 `runqemu` replaces `@MAC@` with a predefined mac address.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-QB_NETWORK_DEVICE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-QB_NETWORK_DEVICE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

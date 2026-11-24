@@ -2,7 +2,7 @@
 
 # Variable `BUILDHISTORY_PUSH_REPO`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the buildhistory class, this variable optionally specifies a remote repository to which build history pushes Git changes. In order for BUILDHISTORY_PUSH_REPO to work, BUILDHISTORY_COMMIT must be set to “1”.
 
@@ -15,7 +15,7 @@ BUILDHISTORY_PUSH_REPO ?= ""
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BUILDHISTORY_PUSH_REPO
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BUILDHISTORY_PUSH_REPO)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,7 +2,7 @@
 
 # Variable `TARGET_CC_ARCH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies architecture-specific C compiler flags for the target system. TARGET_CC_ARCH is initialized from TUNE_CCARGS by default.
 
@@ -10,7 +10,7 @@ Note
 
 It is a common workaround to append LDFLAGS to TARGET_CC_ARCH in recipes that build software for the target that would not otherwise respect the exported LDFLAGS variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TARGET_CC_ARCH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TARGET_CC_ARCH)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

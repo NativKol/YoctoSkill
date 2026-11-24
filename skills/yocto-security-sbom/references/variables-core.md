@@ -2,7 +2,7 @@
 
 # BitBake Operators, Overrides, and Core Variables
 
-Release: Yocto Project 5.0 "scarthgap" with BitBake 2.8. The BitBake User Manual is the authority for operators and overrides; the Yocto Reference Manual "Variables Glossary" is the authority for variable meaning. Section numbers below are from those manuals (offline copy: `yocto-manuals` skill, `references/manuals/bitbake-user-manual/bitbake-user-manual-metadata.md` and `references/manuals/ref-manual/variables.md`).
+Release: Yocto Project 5.0 "scarthgap" with BitBake 2.8. The BitBake User Manual is the authority for operators and overrides; the Yocto Reference Manual "Variables Glossary" is the authority for variable meaning. Section numbers below are from those manuals (offline copy: `yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-metadata.md` and `yocto-manuals/references/manuals/ref-manual/variables.md`; pull one entry with `python3 scripts/ylookup.py <VAR>`, one section with `--topic`/`--section`).
 
 Contents: 1 Inspecting values - 2 Assignment operators - 3 Overrides - 4 Directives - 5 Variable flags and tasks - 6 Source and fetch - 7 Dependencies and providers - 8 Packaging - 9 Images and features - 10 Layers - 11 Machine, distro, kernel - 12 Runtime integration
 
@@ -102,7 +102,7 @@ You can still put an override after them: `PREFERRED_VERSION_linux-yocto:qemux86
 
 ### 3.6 History of the syntax
 
-Before BitBake 1.52 (Yocto 3.4 "honister") overrides used `_` (`FILES_${PN}`, `do_install_append`). From 3.4 on, `:` is the separator and the old `_append`/`_prepend`/`_remove` forms are rejected with a parse error (BitBake manual 3.3.1 note; migration notes for 3.4, online at https://docs.yoctoproject.org/migration-guides/migration-3.4.html). Scarthgap layers must use `:`. OE-Core ships `scripts/contrib/convert-overrides.py` for mechanical conversion; review its output, because it cannot know which `_suffix` names (section 3.5) must keep the underscore.
+Before BitBake 1.52 (Yocto 3.4 "honister") overrides used `_` (`FILES_${PN}`, `do_install_append`). From 3.4 on, `:` is the separator and the old `_append`/`_prepend`/`_remove` forms are rejected with a parse error (BitBake manual 3.3.1 note; the 3.4 migration notes are not in the offline copy (online only: https://docs.yoctoproject.org/migration-guides/migration-3.4.html)). Scarthgap layers must use `:`. OE-Core ships `scripts/contrib/convert-overrides.py` for mechanical conversion; review its output, because it cannot know which `_suffix` names (section 3.5) must keep the underscore.
 
 ## 4. Directives (BitBake manual 3.4)
 

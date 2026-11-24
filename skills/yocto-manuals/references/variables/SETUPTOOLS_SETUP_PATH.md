@@ -2,7 +2,7 @@
 
 # Variable `SETUPTOOLS_SETUP_PATH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When used by recipes that inherit the setuptools3 class, this variable should be used to specify the directory in which the `setup.py` file is located if it is not at the root of the source tree (as specified by S). For example, in a recipe where the sources are fetched from a Git repository and `setup.py` is in a `python/pythonmodule` subdirectory, you would have this:
 
@@ -12,7 +12,7 @@ SETUPTOOLS_SETUP_PATH = "${S}/python/pythonmodule"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SETUPTOOLS_SETUP_PATH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SETUPTOOLS_SETUP_PATH)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

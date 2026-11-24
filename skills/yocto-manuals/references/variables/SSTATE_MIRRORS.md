@@ -2,7 +2,7 @@
 
 # Variable `SSTATE_MIRRORS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Configures the OpenEmbedded build system to search other mirror locations for prebuilt cache data objects before building out the data. This variable works like fetcher MIRRORS and PREMIRRORS and points to the cache locations to check for the shared state (sstate) objects.
 
@@ -62,7 +62,7 @@ SSTATE_MIRRORS ?= "file://.* http://sstate.yoctoproject.org/all/PATH;downloadfil
 
 As such binary artifacts are built for the generic QEMU machines supported by the various Poky releases, they are less likely to be reusable in real projects building binaries optimized for a specific CPU family.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SSTATE_MIRRORS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SSTATE_MIRRORS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

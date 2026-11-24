@@ -2,11 +2,11 @@
 
 # Variable `BB_GLOBAL_PYMODULES`
 
-## BitBake User Manual
+### BitBake User Manual
 
 Specifies the list of Python modules to place in the global namespace. It is intended that only the core layer should set this and it is meant to be a very small list, typically just `os` and `sys`. BB_GLOBAL_PYMODULES is expected to be set before the first `addpylib` directive. See also “Extending Python Library Code”.
 
-Source: https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_GLOBAL_PYMODULES
+Offline source: yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_GLOBAL_PYMODULES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

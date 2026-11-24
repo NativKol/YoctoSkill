@@ -2,7 +2,7 @@
 
 # Variable `SIGGEN_EXCLUDE_SAFE_RECIPE_DEPS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A list of recipe dependencies that should not be used to determine signatures of tasks from one recipe when they depend on tasks from another recipe. For example:
 
@@ -28,7 +28,7 @@ Note
 
 If you add an inappropriate dependency for a recipe relationship, the software might break during runtime if the interface of the second recipe was changed after the first recipe had been built.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SIGGEN_EXCLUDE_SAFE_RECIPE_DEPS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SIGGEN_EXCLUDE_SAFE_RECIPE_DEPS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

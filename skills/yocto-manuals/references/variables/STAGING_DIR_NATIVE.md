@@ -2,13 +2,13 @@
 
 # Variable `STAGING_DIR_NATIVE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the path to the recipe’s input sysroot directory, populated with files provided by native recipes (recipes building components that run on the build host itself).
 
 The default value is `"${RECIPE_SYSROOT_NATIVE}"`, check RECIPE_SYSROOT_NATIVE.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-STAGING_DIR_NATIVE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-STAGING_DIR_NATIVE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

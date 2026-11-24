@@ -2,7 +2,7 @@
 
 # Variable `OVERLAYFS_WRITABLE_PATHS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the overlayfs class, specifies writable paths used at runtime for the recipe. For example:
 
@@ -11,7 +11,7 @@ OVERLAYFS_WRITABLE_PATHS[data] = "/usr/share/my-custom-application"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-OVERLAYFS_WRITABLE_PATHS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-OVERLAYFS_WRITABLE_PATHS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -4,7 +4,7 @@
 
 The ptest-cargo class is a class which extends the cargo class and adds `compile_ptest_cargo` and `install_ptest_cargo` steps to respectively build and install test suites defined in the `Cargo.toml` file, into a dedicated `-ptest` package.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-ptest-cargo
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-ptest-cargo)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

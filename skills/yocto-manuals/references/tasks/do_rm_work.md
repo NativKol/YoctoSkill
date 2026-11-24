@@ -4,7 +4,7 @@
 
 Removes work files after the OpenEmbedded build system has finished with them. You can learn more by looking at the “rm_work” section.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-rm-work
+Offline source: yocto-manuals/references/manuals/ref-manual/tasks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-rm-work)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,11 +2,11 @@
 
 # Variable `BB_GIT_SHALLOW_DEPTH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 See BB_GIT_SHALLOW_DEPTH in the BitBake manual.
 
-## BitBake User Manual
+### BitBake User Manual
 
 When used with BB_GENERATE_SHALLOW_TARBALLS, this variable sets the number of commits to include in generated shallow mirror tarballs. With a depth of 1, only the commit referenced in SRCREV is included in the shallow mirror tarball. Increasing the depth includes additional parent commits, working back through the commit history.
 
@@ -14,7 +14,7 @@ If this variable is unset, bitbake will default to a depth of 1 when generating 
 
 For example usage, see BB_GIT_SHALLOW.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_GIT_SHALLOW_DEPTH , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_GIT_SHALLOW_DEPTH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_GIT_SHALLOW_DEPTH , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_GIT_SHALLOW_DEPTH)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

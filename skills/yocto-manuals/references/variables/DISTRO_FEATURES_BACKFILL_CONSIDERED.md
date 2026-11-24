@@ -2,13 +2,13 @@
 
 # Variable `DISTRO_FEATURES_BACKFILL_CONSIDERED`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A space-separated list of features from DISTRO_FEATURES_BACKFILL that should not be backfilled (i.e. added to DISTRO_FEATURES) during the build.
 
 This corresponds to an opt-out mechanism. When new default distro features are introduced, distribution maintainers can review (consider) them and decide to exclude them from the backfilled features. Therefore, the combination of DISTRO_FEATURES_BACKFILL and DISTRO_FEATURES_BACKFILL_CONSIDERED makes it possible to add new default features without breaking existing distributions.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DISTRO_FEATURES_BACKFILL_CONSIDERED
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DISTRO_FEATURES_BACKFILL_CONSIDERED)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

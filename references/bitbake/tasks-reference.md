@@ -1,6 +1,6 @@
 # BitBake and Yocto Tasks Reference
 
-Release: Yocto Project 5.0 "scarthgap" / BitBake 2.8. Sources: ref-manual "Tasks" (chapter 6), BitBake manual "Tasks" (3.6) and "Dependencies" (3.10), dev-manual "Running Specific Tasks" (32.9). The `yocto-manuals` skill has every task entry verbatim under `references/tasks/`.
+Release: Yocto Project 5.0 "scarthgap" / BitBake 2.8. Sources: ref-manual "Tasks" (chapter 6), BitBake manual "Tasks" (3.6) and "Dependencies" (3.10), dev-manual "Running Specific Tasks" (32.9). Verbatim entry for any task, offline: `python3 scripts/ylookup.py do_<task>`.
 
 ## 1. The Normal Task Chain
 

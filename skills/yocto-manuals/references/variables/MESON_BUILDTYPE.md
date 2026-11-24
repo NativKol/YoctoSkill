@@ -2,13 +2,13 @@
 
 # Variable `MESON_BUILDTYPE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Value of the Meson `--buildtype` argument used by the meson class. It defaults to `debug` if DEBUG_BUILD is set to “1”, and `plain` otherwise.
 
 See Meson build options for the values you could set in a recipe. Values such as `plain`, `debug`, `debugoptimized`, `release` and `minsize` allow you to specify the inclusion of debugging symbols and the compiler optimizations (none, performance or size).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MESON_BUILDTYPE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MESON_BUILDTYPE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -4,7 +4,7 @@
 
 The waf class supports recipes that need to build software that uses the Waf build system. You can use the EXTRA_OECONF or PACKAGECONFIG_CONFARGS variables to specify additional configuration options to be passed on the Waf command line.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-waf
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-waf)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

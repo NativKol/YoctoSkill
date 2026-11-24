@@ -2,15 +2,15 @@
 
 # Variable `SVNDIR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The directory in which files checked out of a Subversion system are stored.
 
-## BitBake User Manual
+### BitBake User Manual
 
 The directory in which files checked out of a Subversion system are stored.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SVNDIR , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-SVNDIR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SVNDIR , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-SVNDIR)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -7,7 +7,7 @@ Message: `non -dev/-dbg/nativesdk- package contains symlink .so: <packagename> p
 
 Symlink `.so` files are for development only, and should therefore go into the `-dev` package. This situation might occur if you add `*.so*` rather than `*.so.*` to a non-dev package. Change FILES (and possibly PACKAGES) such that the specified `.so` file goes into an appropriate `-dev` package.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
+Offline source: yocto-manuals/references/manuals/ref-manual/qa-checks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

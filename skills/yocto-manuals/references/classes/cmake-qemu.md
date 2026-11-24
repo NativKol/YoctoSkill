@@ -17,7 +17,7 @@ works transparently with QEMU user-mode.
 
 If the CMake project is developed with this use case in mind this works very nicely. This also applies to an IDE configured to use `cmake-native` for cross-compiling.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-cmake-qemu
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-cmake-qemu)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

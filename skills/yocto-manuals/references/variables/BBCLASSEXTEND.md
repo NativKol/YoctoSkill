@@ -2,7 +2,7 @@
 
 # Variable `BBCLASSEXTEND`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Allows you to extend a recipe so that it builds variants of the software. There are common variants for recipes as “natives” like `quilt-native`, which is a copy of Quilt built to run on the build system; “crosses” such as `gcc-cross`, which is a compiler built to run on the build machine but produces binaries that run on the target MACHINE; “nativesdk”, which targets the SDK machine instead of MACHINE; and “mulitlibs” in the form “`multilib:`multilib_name”.
 
@@ -20,7 +20,7 @@ Internally, the BBCLASSEXTEND mechanism generates recipe variants by rewriting v
 
 Even when using BBCLASSEXTEND, the recipe is only parsed once. Parsing once adds some limitations. For example, it is not possible to include a different file depending on the variant, since `include` statements are processed when the recipe is parsed.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Allows you to extend a recipe so that it builds variants of the software. Some examples of these variants for recipes from the OpenEmbedded-Core metadata are “natives” such as `quilt-native`, which is a copy of Quilt built to run on the build system; “crosses” such as `gcc-cross`, which is a compiler built to run on the build machine but produces binaries that run on the target `MACHINE`; “nativesdk”, which targets the SDK machine instead of `MACHINE`; and “mulitlibs” in the form “`multilib:`multilib_name”.
 
@@ -38,7 +38,7 @@ Internally, the BBCLASSEXTEND mechanism generates recipe variants by rewriting v
 
 Even when using BBCLASSEXTEND, the recipe is only parsed once. Parsing once adds some limitations. For example, it is not possible to include a different file depending on the variant, since `include` statements are processed when the recipe is parsed.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBCLASSEXTEND , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBCLASSEXTEND
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBCLASSEXTEND , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBCLASSEXTEND)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

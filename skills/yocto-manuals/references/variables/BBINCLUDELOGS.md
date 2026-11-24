@@ -2,15 +2,15 @@
 
 # Variable `BBINCLUDELOGS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Variable that controls how BitBake displays logs on build failure.
 
-## BitBake User Manual
+### BitBake User Manual
 
 If set to a value, enables printing the task log when reporting a failed task.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBINCLUDELOGS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBINCLUDELOGS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBINCLUDELOGS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBINCLUDELOGS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

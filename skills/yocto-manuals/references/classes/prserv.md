@@ -6,7 +6,7 @@ The prserv class provides functionality for using a PR service in order to autom
 
 This class is enabled by default because it is inherited by the package class. However, the OpenEmbedded build system will not enable the functionality of this class unless PRSERV_HOST has been set.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-prserv
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-prserv)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

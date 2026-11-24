@@ -2,13 +2,13 @@
 
 # Variable `SDK_TARGETS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A list of targets to install from shared state as part of the standard or extensible SDK installation. The default value is “${PN}” (i.e. the image from which the SDK is built).
 
 The SDK_TARGETS variable is an internal variable and typically would not be changed.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SDK_TARGETS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SDK_TARGETS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

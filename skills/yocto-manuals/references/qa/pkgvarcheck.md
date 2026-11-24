@@ -12,7 +12,7 @@ Message: `recipe uses DEPENDS:${PN}, should use DEPENDS [pkgvarcheck]`
 
 This check looks for instances of setting `DEPENDS:${PN}` which is erroneous (DEPENDS is a recipe-wide variable and thus it is not correct to specify it for a particular package, nor will such an assignment actually work.) Set DEPENDS instead.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
+Offline source: yocto-manuals/references/manuals/ref-manual/qa-checks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

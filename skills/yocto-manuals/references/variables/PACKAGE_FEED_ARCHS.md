@@ -2,7 +2,7 @@
 
 # Variable `PACKAGE_FEED_ARCHS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Optionally specifies the package architectures used as part of the package feed URIs during the build. When used, the PACKAGE_FEED_ARCHS variable is appended to the final package feed URI, which is constructed using the PACKAGE_FEED_URIS and PACKAGE_FEED_BASE_PATHS variables.
 
@@ -34,7 +34,7 @@ https://example.com/packagerepos/updates/rpm-dev/core2-64
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGE_FEED_ARCHS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGE_FEED_ARCHS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

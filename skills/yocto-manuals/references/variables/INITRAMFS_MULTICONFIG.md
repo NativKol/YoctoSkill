@@ -2,7 +2,7 @@
 
 # Variable `INITRAMFS_MULTICONFIG`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Defines the multiconfig to create a multiconfig dependency to be used by the kernel class.
 
@@ -10,7 +10,7 @@ This allows the kernel to bundle an INITRAMFS_IMAGE coming from a separate multi
 
 For more information on how to bundle an Initramfs image from a separate multiconfig see the “Bundling an Initramfs Image From a Separate Multiconfig” section in the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INITRAMFS_MULTICONFIG
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INITRAMFS_MULTICONFIG)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

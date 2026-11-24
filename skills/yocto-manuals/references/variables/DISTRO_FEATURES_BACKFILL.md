@@ -2,13 +2,13 @@
 
 # Variable `DISTRO_FEATURES_BACKFILL`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A space-separated list of features to be added to DISTRO_FEATURES if not also present in DISTRO_FEATURES_BACKFILL_CONSIDERED.
 
 This variable is set in the `meta/conf/bitbake.conf` file. It is not intended to be user-configurable. It is best to just reference the variable to see which distro features are being backfilled for all distro configurations.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DISTRO_FEATURES_BACKFILL
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DISTRO_FEATURES_BACKFILL)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

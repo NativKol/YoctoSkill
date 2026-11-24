@@ -2,7 +2,7 @@
 
 # Variable `USERADD_ERROR_DYNAMIC`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 If set to `error`, forces the OpenEmbedded build system to produce an error if the user identification (`uid`) and group identification (`gid`) values are not defined in any of the files listed in USERADD_UID_TABLES and USERADD_GID_TABLES. If set to `warn`, a warning will be issued instead.
 
@@ -19,7 +19,7 @@ Note
 
 There is a difference in behavior between setting USERADD_ERROR_DYNAMIC to `error` and setting it to `warn`. When it is set to `warn`, the build system will report a warning for every undefined `uid` and `gid` in any recipe. But when it is set to `error`, it will only report errors for recipes that are actually built. This saves you from having to add static IDs for recipes that you know will never be built.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-USERADD_ERROR_DYNAMIC
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-USERADD_ERROR_DYNAMIC)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

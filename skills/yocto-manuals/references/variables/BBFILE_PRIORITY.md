@@ -2,7 +2,7 @@
 
 # Variable `BBFILE_PRIORITY`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Assigns the priority for recipe files in each layer.
 
@@ -14,7 +14,7 @@ Tip
 
 You can use the command `bitbake-layers show-layers` to list all configured layers along with their priorities.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Assigns the priority for recipe files in each layer.
 
@@ -26,7 +26,7 @@ Tip
 
 You can use the command bitbake-layers show-layers to list all configured layers along with their priorities.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBFILE_PRIORITY , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBFILE_PRIORITY
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBFILE_PRIORITY , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBFILE_PRIORITY)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

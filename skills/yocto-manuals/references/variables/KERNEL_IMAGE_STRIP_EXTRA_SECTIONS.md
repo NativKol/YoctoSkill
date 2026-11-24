@@ -2,7 +2,7 @@
 
 # Variable `KERNEL_IMAGE_STRIP_EXTRA_SECTIONS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 If this variable is set, it should contain the sections to be stripped from the `vmlinux` image by the kernel-related do_strip task. As a simple example:
 
@@ -11,7 +11,7 @@ KERNEL_IMAGE_STRIP_EXTRA_SECTIONS = ".comment .note.* .debug"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_IMAGE_STRIP_EXTRA_SECTIONS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_IMAGE_STRIP_EXTRA_SECTIONS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

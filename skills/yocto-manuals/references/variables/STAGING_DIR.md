@@ -2,7 +2,7 @@
 
 # Variable `STAGING_DIR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Used for constructing directory trees used during staging.
 
@@ -12,7 +12,7 @@ Note
 
 Recipes should never write files directly under the STAGING_DIR directory because the OpenEmbedded build system manages the directory automatically. Instead, files should be installed to `${`D`}` within your recipe’s do_install task and then the OpenEmbedded build system will stage a subset of those files into the sysroot.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-STAGING_DIR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-STAGING_DIR)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

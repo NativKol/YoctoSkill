@@ -2,7 +2,7 @@
 
 # Variable `KARCH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Defines the kernel architecture used when assembling the configuration. Architectures supported for this release are:
 
@@ -20,7 +20,7 @@ Defines the kernel architecture used when assembling the configuration. Architec
 
 You define the KARCH variable in the BSP Descriptions.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KARCH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KARCH)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

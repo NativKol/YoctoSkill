@@ -2,13 +2,13 @@
 
 # Variable `EXTENDPE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Used with file and pathnames to create a prefix for a recipe’s version based on the recipe’s PE value. If PE is set and greater than zero for a recipe, EXTENDPE becomes that value (e.g if PE is equal to “1” then EXTENDPE becomes “1”). If a recipe’s PE is not set (the default) or is equal to zero, EXTENDPE becomes “”.
 
 See the STAMP variable for an example.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTENDPE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTENDPE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

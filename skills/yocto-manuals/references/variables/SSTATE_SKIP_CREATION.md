@@ -2,7 +2,7 @@
 
 # Variable `SSTATE_SKIP_CREATION`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The SSTATE_SKIP_CREATION variable can be used to skip the creation of shared state tarball files. It makes sense e.g. for image creation tasks as tarring images and keeping them in sstate would consume a lot of disk space.
 
@@ -22,7 +22,7 @@ SSTATE_SKIP_CREATION = "1"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SSTATE_SKIP_CREATION
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SSTATE_SKIP_CREATION)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

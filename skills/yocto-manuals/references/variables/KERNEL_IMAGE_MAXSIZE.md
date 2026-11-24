@@ -2,7 +2,7 @@
 
 # Variable `KERNEL_IMAGE_MAXSIZE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the maximum allowable size of the kernel image file in kibibytes. If this variable is set, the sizes of all of the kernel image files listed in KERNEL_IMAGETYPES are checked against this value during the do_sizecheck task. That task will warn about any of the kernel images that exceed the maximum, and will fail only if all images are too large.
 
@@ -10,7 +10,7 @@ KERNEL_IMAGE_MAXSIZE is useful for target devices that have a limited amount of 
 
 By default, this variable is not set, which means the size of the kernel images are not checked.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_IMAGE_MAXSIZE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_IMAGE_MAXSIZE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

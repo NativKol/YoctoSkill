@@ -2,11 +2,11 @@
 
 # Variable `WKS_FILE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the location of the Wic kickstart file that is used by the OpenEmbedded build system to create a partitioned image (`image.wic`). For information on how to create a partitioned image, see the “Creating Partitioned Images Using Wic” section in the Yocto Project Development Tasks Manual. For details on the kickstart file format, see the “OpenEmbedded Kickstart (.wks) Reference” Chapter.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-WKS_FILE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-WKS_FILE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

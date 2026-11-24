@@ -2,7 +2,7 @@
 
 # Variable `INCOMPATIBLE_LICENSE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies a space-separated list of license names (as they would appear in LICENSE) that should be excluded from the build (if set globally), or from an image (if set locally in an image recipe).
 
@@ -27,7 +27,7 @@ INCOMPATIBLE_LICENSE = "GPL-3.0* LGPL-3.0* AGPL-3.0*"
 
 Although you can use other settings, you might be required to remove dependencies on (or provide alternatives to) components that are required to produce a functional system image.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INCOMPATIBLE_LICENSE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INCOMPATIBLE_LICENSE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

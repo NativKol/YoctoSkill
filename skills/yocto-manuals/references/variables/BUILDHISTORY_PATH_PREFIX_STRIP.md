@@ -2,7 +2,7 @@
 
 # Variable `BUILDHISTORY_PATH_PREFIX_STRIP`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the buildhistory class, this variable specifies a common path prefix that should be stripped off the beginning of paths in the task signature list when the `task` feature is active in BUILDHISTORY_FEATURES. This can be useful when build history is populated from multiple sources that may not all use the same top level directory.
 
@@ -15,7 +15,7 @@ BUILDHISTORY_PATH_PREFIX_STRIP ?= ""
 
 In this case, no prefixes will be stripped.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BUILDHISTORY_PATH_PREFIX_STRIP
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BUILDHISTORY_PATH_PREFIX_STRIP)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

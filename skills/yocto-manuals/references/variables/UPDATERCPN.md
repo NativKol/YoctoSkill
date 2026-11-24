@@ -2,13 +2,13 @@
 
 # Variable `UPDATERCPN`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 For recipes inheriting the update-rc.d class, UPDATERCPN specifies the package that contains the initscript that is enabled.
 
 The default value is “${PN}”. Given that almost all recipes that install initscripts package them in the main package for the recipe, you rarely need to set this variable in individual recipes.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UPDATERCPN
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UPDATERCPN)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

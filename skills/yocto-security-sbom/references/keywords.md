@@ -355,7 +355,7 @@ Verbatim entries from the official manuals for every keyword this skill relies o
 
 ## Variable `ALLOW_EMPTY`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies whether to produce an output package even if it is empty. By default, BitBake does not produce empty packages. This default behavior can cause issues when there is an RDEPENDS or some other hard runtime requirement on the existence of the package.
 
@@ -368,11 +368,11 @@ ALLOW_EMPTY:${PN}-staticdev = "1"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ALLOW_EMPTY
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ALLOW_EMPTY)
 
 ## Variable `ALTERNATIVE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Lists commands in a package that need an alternative binary naming scheme. Sometimes the same command is provided in multiple packages. When this occurs, the OpenEmbedded build system needs to use the alternatives system to create a different binary naming scheme so the commands can co-exist.
 
@@ -385,11 +385,11 @@ ALTERNATIVE:busybox = "sh sed test bracket"
 
 For more information on the alternatives system, see the “update-alternatives” section.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ALTERNATIVE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ALTERNATIVE)
 
 ## Variable `ALTERNATIVE_LINK_NAME`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Used by the alternatives system to map duplicated commands to actual locations. For example, if the `bracket` command provided by the `busybox` package is duplicated through another package, you must use the ALTERNATIVE_LINK_NAME variable to specify the actual location:
 
@@ -406,11 +406,11 @@ If ALTERNATIVE_LINK_NAME is not defined, it defaults to `${bindir}/name`.
 
 For more information on the alternatives system, see the “update-alternatives” section.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ALTERNATIVE_LINK_NAME
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ALTERNATIVE_LINK_NAME)
 
 ## Variable `ALTERNATIVE_PRIORITY`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Used by the alternatives system to create default priorities for duplicated commands. You can use the variable to create a single default regardless of the command name or package, a default for specific duplicated commands regardless of the package, or a default for specific commands tied to particular packages. Here are the available syntax forms:
 
@@ -423,11 +423,11 @@ ALTERNATIVE_PRIORITY_pkg[name] = "priority"
 
 For more information on the alternatives system, see the “update-alternatives” section.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ALTERNATIVE_PRIORITY
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ALTERNATIVE_PRIORITY)
 
 ## Variable `ALTERNATIVE_TARGET`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Used by the alternatives system to create default link locations for duplicated commands. You can use the variable to create a single default location for all duplicated commands regardless of the command name or package, a default for specific duplicated commands regardless of the package, or a default for specific commands tied to particular packages. Here are the available syntax forms:
 
@@ -448,19 +448,19 @@ Finally, if the file referenced has not been renamed, the alternatives system wi
 
 For more information on the alternatives system, see the “update-alternatives” section.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ALTERNATIVE_TARGET
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ALTERNATIVE_TARGET)
 
 ## Variable `ANY_OF_DISTRO_FEATURES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the features_check class, this variable identifies a list of distribution features where at least one must be enabled in the current configuration in order for the OpenEmbedded build system to build the recipe. In other words, if none of the features listed in ANY_OF_DISTRO_FEATURES appear in DISTRO_FEATURES within the current configuration, then the recipe will be skipped, and if the build system attempts to build the recipe then an error will be triggered.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ANY_OF_DISTRO_FEATURES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ANY_OF_DISTRO_FEATURES)
 
 ## Variable `ARCHIVER_MODE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When used with the archiver class, determines the type of information used to create a released archive. You can use this variable to create archives of patched source, original source, configured source, and so forth by employing the following variable flags (varflags):
 
@@ -478,27 +478,27 @@ ARCHIVER_MODE[srpm] = "1"                         # Uses RPM package files.
 
 For information on how the variable works, see the `meta/classes/archiver.bbclass` file in the Source Directory.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ARCHIVER_MODE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ARCHIVER_MODE)
 
 ## Variable `ASSUME_PROVIDED`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Lists recipe names (PN values) BitBake does not attempt to build. Instead, BitBake assumes these recipes have already been built.
 
 In OpenEmbedded-Core, ASSUME_PROVIDED mostly specifies native tools that should not be built. An example is `git-native`, which when specified, allows for the Git binary from the host to be used rather than building `git-native`.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Lists recipe names (PN values) BitBake does not attempt to build. Instead, BitBake assumes these recipes have already been built.
 
 In OpenEmbedded-Core, ASSUME_PROVIDED mostly specifies native tools that should not be built. An example is `git-native`, which when specified allows for the Git binary from the host to be used rather than building `git-native`.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ASSUME_PROVIDED , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-ASSUME_PROVIDED
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ASSUME_PROVIDED , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-ASSUME_PROVIDED)
 
 ## Variable `AUTOREV`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When SRCREV is set to the value of this variable, it specifies to use the latest source revision in the repository. Here is an example:
 
@@ -516,11 +516,11 @@ PV = "6.10.y+git"
 
 For more information see the “Automatically Incrementing a Package Version Number” section in the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-AUTOREV
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-AUTOREV)
 
 ## Variable `B`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The directory within the Build Directory in which the OpenEmbedded build system places generated objects during a recipe’s build process. By default, this directory is the same as the S directory, which is defined as:
 
@@ -531,15 +531,15 @@ S = "${WORKDIR}/${BP}"
 
 You can separate the (S) directory and the directory pointed to by the B variable. Most Autotools-based recipes support separating these directories. The build system defaults to using separate directories for `gcc` and some kernel recipes.
 
-## BitBake User Manual
+### BitBake User Manual
 
 The directory in which BitBake executes functions during a recipe’s build process.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-B , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-B
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-B , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-B)
 
 ## Variable `BAD_RECOMMENDATIONS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Lists “recommended-only” packages to not install. Recommended-only packages are packages installed only through the RRECOMMENDS variable. You can prevent any of these “recommended” packages from being installed by listing them with the BAD_RECOMMENDATIONS variable:
 
@@ -561,11 +561,11 @@ This variable is supported only when using the IPK and RPM packaging backends. D
 
 See the NO_RECOMMENDATIONS and the PACKAGE_EXCLUDE variables for related information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BAD_RECOMMENDATIONS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BAD_RECOMMENDATIONS)
 
 ## Variable `BB_DANGLINGAPPENDS_WARNONLY`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Defines how BitBake handles situations where an append file (`.bbappend`) has no corresponding recipe file (`.bb`). This condition often occurs when layers get out of sync (e.g. `oe-core` bumps a recipe version and the old recipe no longer exists and the other layer has not been updated to the new version of the recipe yet).
 
@@ -578,17 +578,17 @@ BB_DANGLINGAPPENDS_WARNONLY = "1"
 
 ```
 
-## BitBake User Manual
+### BitBake User Manual
 
 Defines how BitBake handles situations where an append file (`.bbappend`) has no corresponding recipe file (`.bb`). This condition often occurs when layers get out of sync (e.g. `oe-core` bumps a recipe version and the old recipe no longer exists and the other layer has not been updated to the new version of the recipe yet).
 
 The default fatal behavior is safest because it is the sane reaction given something is out of sync. It is important to realize when your changes are no longer being applied.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_DANGLINGAPPENDS_WARNONLY , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_DANGLINGAPPENDS_WARNONLY
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_DANGLINGAPPENDS_WARNONLY , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_DANGLINGAPPENDS_WARNONLY)
 
 ## Variable `BB_GENERATE_MIRROR_TARBALLS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Causes tarballs of the source control repositories (e.g. Git repositories), including metadata, to be placed in the DL_DIR directory.
 
@@ -603,7 +603,7 @@ Set this variable in your `local.conf` file in the Build Directory.
 
 Once you have the tarballs containing your source files, you can clean up your DL_DIR directory by deleting any Git or other source control work directories.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Causes tarballs of the Git repositories, including the Git metadata, to be placed in the DL_DIR directory. Anyone wishing to create a source mirror would want to enable this variable.
 
@@ -614,25 +614,25 @@ BB_GENERATE_MIRROR_TARBALLS = "1"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_GENERATE_MIRROR_TARBALLS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_GENERATE_MIRROR_TARBALLS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_GENERATE_MIRROR_TARBALLS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_GENERATE_MIRROR_TARBALLS)
 
 ## Variable `BB_NO_NETWORK`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 See BB_NO_NETWORK in the BitBake manual.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Disables network access in the BitBake fetcher modules. With this access disabled, any command that attempts to access the network becomes an error.
 
 Disabling network access is useful for testing source mirrors, running builds when not connected to the Internet, and when operating in certain kinds of firewall environments.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_NO_NETWORK , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_NO_NETWORK
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_NO_NETWORK , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_NO_NETWORK)
 
 ## Variable `BBCLASSEXTEND`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Allows you to extend a recipe so that it builds variants of the software. There are common variants for recipes as “natives” like `quilt-native`, which is a copy of Quilt built to run on the build system; “crosses” such as `gcc-cross`, which is a compiler built to run on the build machine but produces binaries that run on the target MACHINE; “nativesdk”, which targets the SDK machine instead of MACHINE; and “mulitlibs” in the form “`multilib:`multilib_name”.
 
@@ -650,7 +650,7 @@ Internally, the BBCLASSEXTEND mechanism generates recipe variants by rewriting v
 
 Even when using BBCLASSEXTEND, the recipe is only parsed once. Parsing once adds some limitations. For example, it is not possible to include a different file depending on the variant, since `include` statements are processed when the recipe is parsed.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Allows you to extend a recipe so that it builds variants of the software. Some examples of these variants for recipes from the OpenEmbedded-Core metadata are “natives” such as `quilt-native`, which is a copy of Quilt built to run on the build system; “crosses” such as `gcc-cross`, which is a compiler built to run on the build machine but produces binaries that run on the target `MACHINE`; “nativesdk”, which targets the SDK machine instead of `MACHINE`; and “mulitlibs” in the form “`multilib:`multilib_name”.
 
@@ -668,35 +668,35 @@ Internally, the BBCLASSEXTEND mechanism generates recipe variants by rewriting v
 
 Even when using BBCLASSEXTEND, the recipe is only parsed once. Parsing once adds some limitations. For example, it is not possible to include a different file depending on the variant, since `include` statements are processed when the recipe is parsed.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBCLASSEXTEND , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBCLASSEXTEND
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBCLASSEXTEND , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBCLASSEXTEND)
 
 ## Variable `BBFILE_COLLECTIONS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Lists the names of configured layers. These names are used to find the other `BBFILE_*` variables. Typically, each layer will append its name to this variable in its `conf/layer.conf` file.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Lists the names of configured layers. These names are used to find the other `BBFILE_*` variables. Typically, each layer appends its name to this variable in its `conf/layer.conf` file.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBFILE_COLLECTIONS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBFILE_COLLECTIONS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBFILE_COLLECTIONS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBFILE_COLLECTIONS)
 
 ## Variable `BBFILE_PATTERN`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Variable that expands to match files from BBFILES in a particular layer. This variable is used in the `conf/layer.conf` file and must be suffixed with the name of the specific layer (e.g. `BBFILE_PATTERN_emenlow`).
 
-## BitBake User Manual
+### BitBake User Manual
 
 Variable that expands to match files from BBFILES in a particular layer. This variable is used in the `conf/layer.conf` file and must be suffixed with the name of the specific layer (e.g. `BBFILE_PATTERN_emenlow`).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBFILE_PATTERN , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBFILE_PATTERN
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBFILE_PATTERN , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBFILE_PATTERN)
 
 ## Variable `BBFILE_PRIORITY`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Assigns the priority for recipe files in each layer.
 
@@ -708,7 +708,7 @@ Tip
 
 You can use the command `bitbake-layers show-layers` to list all configured layers along with their priorities.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Assigns the priority for recipe files in each layer.
 
@@ -720,27 +720,27 @@ Tip
 
 You can use the command bitbake-layers show-layers to list all configured layers along with their priorities.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBFILE_PRIORITY , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBFILE_PRIORITY
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBFILE_PRIORITY , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBFILE_PRIORITY)
 
 ## Variable `BBFILES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A space-separated list of recipe files BitBake uses to build software.
 
 When specifying recipe files, you can pattern match using Python’s glob syntax. For details on the syntax, see the documentation by following the previous link.
 
-## BitBake User Manual
+### BitBake User Manual
 
 A space-separated list of recipe files BitBake uses to build software.
 
 When specifying recipe files, you can pattern match using Python’s glob syntax. For details on the syntax, see the documentation by following the previous link.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBFILES , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBFILES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBFILES , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBFILES)
 
 ## Variable `BBFILES_DYNAMIC`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Activates content when identified layers are present. You identify the layers by the collections that the layers define.
 
@@ -767,7 +767,7 @@ ERROR: BBFILES_DYNAMIC entries must be of the form <collection name>:<filename p
 
 ```
 
-## BitBake User Manual
+### BitBake User Manual
 
 Activates content depending on presence of identified layers. You identify the layers by the collections that the layers define.
 
@@ -810,11 +810,11 @@ ERROR: BBFILES_DYNAMIC entries must be of the form {!}<collection name>:<filenam
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBFILES_DYNAMIC , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBFILES_DYNAMIC
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBFILES_DYNAMIC , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBFILES_DYNAMIC)
 
 ## Variable `BBLAYERS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Lists the layers to enable during the build. This variable is defined in the `bblayers.conf` configuration file in the Build Directory. Here is an example:
 
@@ -830,7 +830,7 @@ BBLAYERS = " \
 
 This example enables four layers, one of which is a custom, user-defined layer named `meta-mykernel`.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Lists the layers to enable during the build. This variable is defined in the `bblayers.conf` configuration file in the build directory. Here is an example:
 
@@ -846,11 +846,11 @@ BBLAYERS = " \
 
 This example enables four layers, one of which is a custom, user-defined layer named `meta-mykernel`.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBLAYERS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBLAYERS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBLAYERS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBLAYERS)
 
 ## Variable `BBMASK`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Prevents BitBake from processing recipes and recipe append files.
 
@@ -880,7 +880,7 @@ Note
 
 When specifying a directory name, use the trailing slash character to ensure you match just that directory name.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Prevents BitBake from processing recipes and recipe append files.
 
@@ -910,15 +910,15 @@ Note
 
 When specifying a directory name, use the trailing slash character to ensure you match just that directory name.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBMASK , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBMASK
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBMASK , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBMASK)
 
 ## Variable `BBPATH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 See BBPATH in the BitBake manual.
 
-## BitBake User Manual
+### BitBake User Manual
 
 A colon-separated list used by BitBake to locate class (`.bbclass`) and configuration (`.conf`) files. This variable is analogous to the `PATH` variable.
 
@@ -931,11 +931,11 @@ $ bitbake target
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBPATH , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBPATH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBPATH , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBPATH)
 
 ## Variable `BP`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The base recipe name and version but without any special recipe name suffix (i.e. `-native`, `lib64-`, and so forth). BP is comprised of the following:
 
@@ -944,19 +944,19 @@ ${BPN}-${PV}
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BP
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BP)
 
 ## Variable `BPN`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This variable is a version of the PN variable with common prefixes and suffixes removed, such as `nativesdk-`, `-cross`, `-native`, and multilib’s `lib64-` and `lib32-`. The exact lists of prefixes and suffixes removed are specified by the MLPREFIX and SPECIAL_PKGSUFFIX variables, respectively.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BPN
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BPN)
 
 ## Variable `BUILDHISTORY_COMMIT`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the buildhistory class, this variable specifies whether or not to commit the build history output in a local Git repository. If set to “1”, this local repository will be maintained automatically by the buildhistory class and a commit will be created on every build for changes to each top-level subdirectory of the build history output (images, packages, and sdk). If you want to track changes to build history over time, you should set this value to “1”.
 
@@ -967,11 +967,11 @@ BUILDHISTORY_COMMIT ?= "1"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BUILDHISTORY_COMMIT
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BUILDHISTORY_COMMIT)
 
 ## Variable `BUILDHISTORY_DIR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the buildhistory class, this variable specifies the directory in which build history information is kept. For more information on how the variable works, see the buildhistory class.
 
@@ -982,19 +982,19 @@ BUILDHISTORY_DIR ?= "${TOPDIR}/buildhistory"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BUILDHISTORY_DIR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BUILDHISTORY_DIR)
 
 ## Variable `CC`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The minimal command and arguments used to run the C compiler.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CC
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CC)
 
 ## Variable `CLASSOVERRIDE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 An internal variable specifying the special class override that should currently apply (e.g. “class-target”, “class-native”, and so forth). The classes that use this variable (e.g. native, nativesdk, and so forth) set the variable to appropriate values.
 
@@ -1021,19 +1021,19 @@ FOO = "other"
 
 The underlying mechanism behind CLASSOVERRIDE is simply that it is included in the default value of OVERRIDES.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CLASSOVERRIDE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CLASSOVERRIDE)
 
 ## Variable `COMBINED_FEATURES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Provides a list of hardware features that are enabled in both MACHINE_FEATURES and DISTRO_FEATURES. This select list of features contains features that make sense to be controlled both at the machine and distribution configuration level. For example, the “bluetooth” feature requires hardware support but should also be optional at the distribution level, in case the hardware supports Bluetooth but you do not ever intend to use it.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-COMBINED_FEATURES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-COMBINED_FEATURES)
 
 ## Variable `COMPATIBLE_MACHINE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A regular expression that resolves to one or more target machines with which a recipe is compatible. The regular expression is matched against MACHINEOVERRIDES. You can use the variable to stop recipes from being built for machines with which the recipes are not compatible. Stopping these builds is particularly useful with kernels. The variable also helps to increase parsing speed since the build system skips parsing recipes not compatible with the current machine.
 
@@ -1063,11 +1063,11 @@ Note
 
 When COMPATIBLE_MACHINE is set in a recipe inherits from native, the recipe is always skipped. All native recipes must be entirely target independent and should not rely on MACHINE.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-COMPATIBLE_MACHINE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-COMPATIBLE_MACHINE)
 
 ## Variable `CONFFILES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Identifies editable or configurable files that are part of a package. If the Package Management System (PMS) is being used to update packages on the target system, it is possible that configuration files you have changed after the original installation and that you now want to remain unchanged are overwritten. In other words, editable files might exist in the package that you do not want reset as part of the package update process. You can use the CONFFILES variable to list the files in the package that you wish to prevent the PMS from overwriting during this update process.
 
@@ -1085,19 +1085,19 @@ Note
 
 When specifying paths as part of the CONFFILES variable, it is good practice to use appropriate path variables. For example, `${sysconfdir}` rather than `/etc` or `${bindir}` rather than `/usr/bin`. You can find a list of these variables at the top of the `meta/conf/bitbake.conf` file in the Source Directory.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CONFFILES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CONFFILES)
 
 ## Variable `CONFLICT_DISTRO_FEATURES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the features_check class, this variable identifies distro features that would be in conflict should the recipe be built. In other words, if the CONFLICT_DISTRO_FEATURES variable lists a feature that also appears in DISTRO_FEATURES within the current configuration, then the recipe will be skipped, and if the build system attempts to build the recipe then an error will be triggered.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CONFLICT_DISTRO_FEATURES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CONFLICT_DISTRO_FEATURES)
 
 ## Variable `COPYLEFT_LICENSE_EXCLUDE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A space-separated list of licenses to exclude from the source archived by the archiver class. In other words, if a license in a recipe’s LICENSE value is in the value of COPYLEFT_LICENSE_EXCLUDE, then its source is not archived by the class.
 
@@ -1107,47 +1107,47 @@ The COPYLEFT_LICENSE_EXCLUDE variable takes precedence over the COPYLEFT_LICENSE
 
 The default value, which is “CLOSED Proprietary”, for COPYLEFT_LICENSE_EXCLUDE is set by the copyleft_filter class, which is inherited by the archiver class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-COPYLEFT_LICENSE_EXCLUDE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-COPYLEFT_LICENSE_EXCLUDE)
 
 ## Variable `COPYLEFT_LICENSE_INCLUDE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A space-separated list of licenses to include in the source archived by the archiver class. In other words, if a license in a recipe’s LICENSE value is in the value of COPYLEFT_LICENSE_INCLUDE, then its source is archived by the class.
 
 The default value is set by the copyleft_filter class, which is inherited by the archiver class. The default value includes “GPL*”, “LGPL*”, and “AGPL*”.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-COPYLEFT_LICENSE_INCLUDE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-COPYLEFT_LICENSE_INCLUDE)
 
 ## Variable `CORE_IMAGE_EXTRA_INSTALL`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the list of packages to be added to the image. You should only set this variable in the `local.conf` configuration file found in the Build Directory.
 
 This variable replaces `POKY_EXTRA_INSTALL`, which is no longer supported.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CORE_IMAGE_EXTRA_INSTALL
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CORE_IMAGE_EXTRA_INSTALL)
 
 ## Variable `CVE_CHECK_IGNORE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This variable is deprecated and should be replaced by CVE_STATUS.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CVE_CHECK_IGNORE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CVE_CHECK_IGNORE)
 
 ## Variable `CVE_CHECK_SKIP_RECIPE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The list of package names (PN) for which CVEs (Common Vulnerabilities and Exposures) are ignored.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CVE_CHECK_SKIP_RECIPE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CVE_CHECK_SKIP_RECIPE)
 
 ## Variable `CVE_CHECK_STATUSMAP`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Mapping variable for all possible reasons of CVE_STATUS: `Patched`, `Unpatched` and `Ignored`. See cve-check or `meta/conf/cve-check-map.conf` for more details:
 
@@ -1156,11 +1156,11 @@ CVE_CHECK_STATUSMAP[cpe-incorrect] = "Ignored"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CVE_CHECK_STATUSMAP
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CVE_CHECK_STATUSMAP)
 
 ## Variable `CVE_PRODUCT`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 In a recipe, defines the name used to match the recipe name against the name in the upstream NIST CVE database.
 
@@ -1180,11 +1180,11 @@ CVE_PRODUCT = "vendor:package"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CVE_PRODUCT
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CVE_PRODUCT)
 
 ## Variable `CVE_STATUS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The CVE ID which is patched or should be ignored. Here is an example from the Python3 recipe:
 
@@ -1195,11 +1195,11 @@ CVE_STATUS[CVE-2020-15523] = "not-applicable-platform: Issue only applies on Win
 
 It has the format “reason: description” and the description is optional. The Reason is mapped to the final CVE state by mapping via CVE_CHECK_STATUSMAP. See Fixing vulnerabilities in recipes for details.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CVE_STATUS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CVE_STATUS)
 
 ## Variable `CVE_STATUS_GROUPS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 If there are many CVEs with the same status and reason, they can by simplified by using this variable instead of many similar lines with CVE_STATUS:
 
@@ -1213,11 +1213,11 @@ CVE_STATUS_PATCHED[status] = "fixed-version: Fixed externally"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CVE_STATUS_GROUPS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CVE_STATUS_GROUPS)
 
 ## Variable `CVE_VERSION`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 In a recipe, defines the version used to match the recipe version against the version in the NIST CVE database when usign cve-check.
 
@@ -1228,11 +1228,11 @@ CVE_VERSION = "2.39"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CVE_VERSION
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CVE_VERSION)
 
 ## Variable `D`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The destination directory. The location in the Build Directory where components are installed by the do_install task. This location defaults to:
 
@@ -1245,21 +1245,21 @@ Note
 
 Tasks that read from or write to this directory should run under fakeroot.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-D
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-D)
 
 ## Variable `DEFAULTTUNE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The default CPU and Application Binary Interface (ABI) tunings (i.e. the “tune”) used by the OpenEmbedded build system. The DEFAULTTUNE helps define TUNE_FEATURES.
 
 The default tune is either implicitly or explicitly set by the machine (MACHINE). However, you can override the setting using available tunes as defined with AVAILTUNES.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DEFAULTTUNE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DEFAULTTUNE)
 
 ## Variable `DEPENDS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Lists a recipe’s build-time dependencies. These are dependencies on other recipes whose contents (e.g. headers and shared libraries) are needed by the recipe at build time.
 
@@ -1295,7 +1295,7 @@ Note
 
 For information on runtime dependencies, see the RDEPENDS variable. You can also see the “Tasks” and “Dependencies” sections in the BitBake User Manual for additional information on tasks and dependencies.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Lists a recipe’s build-time dependencies (i.e. other recipe files).
 
@@ -1310,21 +1310,21 @@ Here, the dependency is such that the `do_configure` task for recipe “a” dep
 
 For information on runtime dependencies, see the RDEPENDS variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DEPENDS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-DEPENDS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DEPENDS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-DEPENDS)
 
 ## Variable `DEPLOY_DIR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Points to the general area that the OpenEmbedded build system uses to place images, packages, SDKs, and other output files that are ready to be used outside of the build system. By default, this directory resides within the Build Directory as `${TMPDIR}/deploy`.
 
 For more information on the structure of the Build Directory, see “The Build Directory — build/” section. For more detail on the contents of the `deploy` directory, see the “Images”, “Package Feeds”, and “Application Development SDK” sections all in the Yocto Project Overview and Concepts Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DEPLOY_DIR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DEPLOY_DIR)
 
 ## Variable `DEPLOY_DIR_IMAGE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Points to the area that the OpenEmbedded build system uses to place images and other associated output files that are ready to be deployed onto the target machine. The directory is machine-specific as it contains the `${MACHINE}` name. By default, this directory resides within the Build Directory as `${DEPLOY_DIR}/images/${MACHINE}/`.
 
@@ -1332,11 +1332,11 @@ It must not be used directly in recipes when deploying files. Instead, it’s on
 
 For more information on the structure of the Build Directory, see “The Build Directory — build/” section. For more detail on the contents of the `deploy` directory, see the “Images” and “Application Development SDK” sections both in the Yocto Project Overview and Concepts Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DEPLOY_DIR_IMAGE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DEPLOY_DIR_IMAGE)
 
 ## Variable `DEPLOYDIR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the deploy class, the DEPLOYDIR points to a temporary work area for deployed files that is set in the deploy class as follows:
 
@@ -1347,11 +1347,11 @@ DEPLOYDIR = "${WORKDIR}/deploy-${PN}"
 
 Recipes inheriting the deploy class should copy files to be deployed into DEPLOYDIR, and the class will take care of copying them into DEPLOY_DIR_IMAGE afterwards.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DEPLOYDIR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DEPLOYDIR)
 
 ## Variable `DISTRO`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The short name of the distribution. For information on the long name of the distribution, see the DISTRO_NAME variable.
 
@@ -1370,11 +1370,11 @@ Note
 
 If the DISTRO variable is blank, a set of default configurations are used, which are specified within `meta/conf/distro/defaultsetup.conf` also in the Source Directory.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DISTRO
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DISTRO)
 
 ## Variable `DISTRO_FEATURES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The software support you want in your distribution for various features. You define your distribution features in the distribution configuration file.
 
@@ -1386,39 +1386,39 @@ Just enabling DISTRO_FEATURES alone doesn’t enable feature support for package
 
 Two more examples are Bluetooth and NFS support. For a more complete list of features that ships with the Yocto Project and that you can provide with this variable, see the “Distro Features” section.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DISTRO_FEATURES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DISTRO_FEATURES)
 
 ## Variable `DISTRO_FEATURES_BACKFILL`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A space-separated list of features to be added to DISTRO_FEATURES if not also present in DISTRO_FEATURES_BACKFILL_CONSIDERED.
 
 This variable is set in the `meta/conf/bitbake.conf` file. It is not intended to be user-configurable. It is best to just reference the variable to see which distro features are being backfilled for all distro configurations.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DISTRO_FEATURES_BACKFILL
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DISTRO_FEATURES_BACKFILL)
 
 ## Variable `DISTRO_FEATURES_BACKFILL_CONSIDERED`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A space-separated list of features from DISTRO_FEATURES_BACKFILL that should not be backfilled (i.e. added to DISTRO_FEATURES) during the build.
 
 This corresponds to an opt-out mechanism. When new default distro features are introduced, distribution maintainers can review (consider) them and decide to exclude them from the backfilled features. Therefore, the combination of DISTRO_FEATURES_BACKFILL and DISTRO_FEATURES_BACKFILL_CONSIDERED makes it possible to add new default features without breaking existing distributions.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DISTRO_FEATURES_BACKFILL_CONSIDERED
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DISTRO_FEATURES_BACKFILL_CONSIDERED)
 
 ## Variable `DISTRO_VERSION`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The version of the distribution.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DISTRO_VERSION
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DISTRO_VERSION)
 
 ## Variable `DISTROOVERRIDES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A colon-separated list of overrides specific to the current distribution. By default, this list includes the value of DISTRO.
 
@@ -1433,11 +1433,11 @@ DISTROOVERRIDES = "poky:poky-tiny"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DISTROOVERRIDES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DISTROOVERRIDES)
 
 ## Variable `DL_DIR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The central download directory used by the build process to store downloads. By default, DL_DIR gets files suitable for mirroring for everything except Git repositories. If you want tarballs of Git repositories, use the BB_GENERATE_MIRROR_TARBALLS variable.
 
@@ -1458,15 +1458,15 @@ When wiping and rebuilding, you can preserve this directory to speed up this par
 
 You can safely share this directory between multiple builds on the same development machine. For additional information on how the build process gets source files when working behind a firewall or proxy server, see this specific question in the “FAQ” chapter. You can also refer to the “Working Behind a Network Proxy” Wiki page.
 
-## BitBake User Manual
+### BitBake User Manual
 
 The central download directory used by the build process to store downloads. By default, DL_DIR gets files suitable for mirroring for everything except Git repositories. If you want tarballs of Git repositories, use the BB_GENERATE_MIRROR_TARBALLS variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DL_DIR , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-DL_DIR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DL_DIR , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-DL_DIR)
 
 ## Variable `DT_FILES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Space-separated list of device tree source files to compile using a recipe that inherits the devicetree class. These are relative to the DT_FILES_PATH.
 
@@ -1474,67 +1474,67 @@ For convenience, both `.dts` and `.dtb` extensions can be used.
 
 Use an empty string (default) to build all device tree sources within the DT_FILES_PATH directory.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DT_FILES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DT_FILES)
 
 ## Variable `DT_FILES_PATH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When compiling out-of-tree device tree sources using a recipe that inherits the devicetree class, this variable specifies the path to the directory containing dts files to build.
 
 Defaults to the S directory.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DT_FILES_PATH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DT_FILES_PATH)
 
 ## Variable `DT_PADDING_SIZE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the devicetree class, this variable specifies the size of padding appended to the device tree blob, used as extra space typically for additional properties during boot.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DT_PADDING_SIZE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DT_PADDING_SIZE)
 
 ## Variable `ERROR_QA`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the quality assurance checks whose failures are reported as errors by the OpenEmbedded build system. You set this variable in your distribution configuration file. For a list of the checks you can control with this variable, see the “insane” section.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ERROR_QA
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ERROR_QA)
 
 ## Variable `EXTENDPE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Used with file and pathnames to create a prefix for a recipe’s version based on the recipe’s PE value. If PE is set and greater than zero for a recipe, EXTENDPE becomes that value (e.g if PE is equal to “1” then EXTENDPE becomes “1”). If a recipe’s PE is not set (the default) or is equal to zero, EXTENDPE becomes “”.
 
 See the STAMP variable for an example.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTENDPE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTENDPE)
 
 ## Variable `EXTERNALSRC`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the externalsrc class, this variable points to the source tree, which is outside of the OpenEmbedded build system. When set, this variable sets the S variable, which is what the OpenEmbedded build system uses to locate unpacked recipe source code.
 
 See the “externalsrc” section for details. You can also find information on how to use this variable in the “Building Software from an External Source” section in the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTERNALSRC
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTERNALSRC)
 
 ## Variable `EXTERNALSRC_BUILD`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the externalsrc class, this variable points to the directory in which the recipe’s source code is built, which is outside of the OpenEmbedded build system. When set, this variable sets the B variable, which is what the OpenEmbedded build system uses to locate the Build Directory.
 
 See the “externalsrc” section for details. You can also find information on how to use this variable in the “Building Software from an External Source” section in the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTERNALSRC_BUILD
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTERNALSRC_BUILD)
 
 ## Variable `EXTRA_IMAGE_FEATURES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A list of additional features to include in an image. When listing more than one feature, separate them with a space.
 
@@ -1564,27 +1564,27 @@ For a complete list of image features that ships with the Yocto Project, see the
 
 For an example that shows how to customize your image by using this variable, see the “Customizing Images Using Custom IMAGE_FEATURES and EXTRA_IMAGE_FEATURES” section in the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTRA_IMAGE_FEATURES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTRA_IMAGE_FEATURES)
 
 ## Variable `EXTRA_OECMAKE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Additional CMake options. See the cmake class for additional information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTRA_OECMAKE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTRA_OECMAKE)
 
 ## Variable `EXTRA_OECONF`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Additional `configure` script options. See PACKAGECONFIG_CONFARGS for additional information on passing configure script options.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTRA_OECONF
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTRA_OECONF)
 
 ## Variable `EXTRA_OEMAKE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Additional GNU `make` options.
 
@@ -1592,11 +1592,11 @@ Because the EXTRA_OEMAKE defaults to “”, you need to set the variable to spe
 
 PARALLEL_MAKE and PARALLEL_MAKEINST also make use of EXTRA_OEMAKE to pass the required flags.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTRA_OEMAKE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTRA_OEMAKE)
 
 ## Variable `EXTRA_OEMESON`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Additional Meson options. See the meson class for additional information.
 
@@ -1609,19 +1609,19 @@ EXTRA_OEMESON = "-Dpython=disabled -Dvalgrind=disabled"
 
 Note that any custom value for the Meson `--buildtype` option should be set through the MESON_BUILDTYPE variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTRA_OEMESON
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTRA_OEMESON)
 
 ## Variable `EXTRA_OESCONS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the scons class, this variable specifies additional configuration options you want to pass to the `scons` command line.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTRA_OESCONS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTRA_OESCONS)
 
 ## Variable `EXTRA_USERS_PARAMS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the extrausers class, this variable provides image level user and group operations. This is a more global method of providing user and group configuration as compared to using the useradd* class, which ties user and group configurations to a specific recipe.
 
@@ -1685,11 +1685,11 @@ Note
 
 At present, `passwd-expire` may only work for remote logins when using OpenSSH and not dropbear as an SSH server.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTRA_USERS_PARAMS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTRA_USERS_PARAMS)
 
 ## Variable `FILES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The list of files and directories that are placed in a package. The PACKAGES variable lists the packages generated by a recipe.
 
@@ -1708,11 +1708,11 @@ Note
 
 If some of the files you provide with the FILES variable are editable and you know they should not be overwritten during the package update process by the Package Management System (PMS), you can identify these files so that the PMS will not overwrite them. See the CONFFILES variable for information on how to identify these files to the PMS.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FILES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FILES)
 
 ## Variable `FILES_SOLIBSDEV`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Defines the file specification to match SOLIBSDEV. In other words, FILES_SOLIBSDEV defines the full path name of the development symbolic link (symlink) for shared libraries on the target platform.
 
@@ -1723,11 +1723,11 @@ FILES_SOLIBSDEV ?= "${base_libdir}/lib*${SOLIBSDEV} ${libdir}/lib*${SOLIBSDEV}"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FILES_SOLIBSDEV
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FILES_SOLIBSDEV)
 
 ## Variable `FILESEXTRAPATHS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A colon-separated list to extend the search path the OpenEmbedded build system uses when looking for files and patches as it processes recipes and append files. The default directories BitBake uses when it processes recipes are initially defined by the FILESPATH variable. You can extend FILESPATH variable by using FILESEXTRAPATHS.
 
@@ -1777,27 +1777,27 @@ For a layer that supports a single BSP, the override could just be the value of 
 
 By prepending paths in `.bbappend` files, you allow multiple append files that reside in different layers but are used for the same recipe to correctly extend the path.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FILESEXTRAPATHS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FILESEXTRAPATHS)
 
 ## Variable `FIT_HASH_ALG`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the hash algorithm used in creating the FIT Image. This variable is set by default to “sha256” by the kernel-fitimage class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FIT_HASH_ALG
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FIT_HASH_ALG)
 
 ## Variable `FIT_SIGN_ALG`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the signature algorithm used in creating the FIT Image. This variable is set by default to “rsa2048” by the kernel-fitimage class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FIT_SIGN_ALG
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FIT_SIGN_ALG)
 
 ## Variable `GO_IMPORT`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the go class, this mandatory variable sets the import path for the Go package that will be created for the code to build. If you have a `go.mod` file in the source directory, this typically matches the path in the `module` line in this file.
 
@@ -1810,11 +1810,11 @@ GO_IMPORT = "golang.org/x/example"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-GO_IMPORT
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-GO_IMPORT)
 
 ## Variable `GO_INSTALL`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the go class, this optional variable specifies which packages in the sources should be compiled and installed in the Go build space by the go install command.
 
@@ -1839,11 +1839,11 @@ The `...` wildcard means that it will catch all packages found in the sources.
 
 See the GO_INSTALL_FILTEROUT variable for filtering out unwanted packages from the ones found from the GO_INSTALL value.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-GO_INSTALL
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-GO_INSTALL)
 
 ## Variable `GROUPADD_PARAM`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the useradd* class, this variable specifies for a package what parameters should be passed to the `groupadd` command if you wish to add a group to the system when the package is installed.
 
@@ -1865,21 +1865,21 @@ GROUPADD_PARAM:${PN} = "-g 880 group1; -g 890 group2"
 
 For information on the standard Linux shell command `groupadd`, see *groupadd(8)*.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-GROUPADD_PARAM
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-GROUPADD_PARAM)
 
 ## Variable `GROUPMEMS_PARAM`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the useradd* class, this variable specifies for a package what parameters should be passed to the `groupmems` command if you wish to modify the members of a group when the package is installed.
 
 For information on the standard Linux shell command `groupmems`, see https://linux.die.net/man/8/groupmems.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-GROUPMEMS_PARAM
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-GROUPMEMS_PARAM)
 
 ## Variable `IMAGE_CONTAINER_NO_DUMMY`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When an image recipe has the `container` image type in IMAGE_FSTYPES, it expects the PREFERRED_PROVIDER for the Linux kernel (`virtual/kernel`) to be set to `linux-dummy` from a configuration file. Otherwise, an error is triggered.
 
@@ -1889,11 +1889,11 @@ This variable should be set from the image recipe using the `container` image ty
 
 See the documentation of the image-container class for more information on why setting the PREFERRED_PROVIDER to `linux-dummy` is advised with this class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_CONTAINER_NO_DUMMY
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_CONTAINER_NO_DUMMY)
 
 ## Variable `IMAGE_FEATURES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The primary list of features to include in an image. Typically, you configure this variable in an image recipe. Although you can use this variable from your `local.conf` file, which is found in the Build Directory, best practices dictate that you do not.
 
@@ -1905,11 +1905,11 @@ For a list of image features that ships with the Yocto Project, see the “Image
 
 For an example that shows how to customize your image by using this variable, see the “Customizing Images Using Custom IMAGE_FEATURES and EXTRA_IMAGE_FEATURES” section in the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_FEATURES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_FEATURES)
 
 ## Variable `IMAGE_FSTYPES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the formats the OpenEmbedded build system uses during the build when creating the root filesystem. For example, setting IMAGE_FSTYPES as follows causes the build system to create root filesystems using two formats: `.ext3` and `.tar.bz2`:
 
@@ -1926,11 +1926,11 @@ Note
 
 - Due to the way the OpenEmbedded build system processes this variable, you cannot update its contents by using `:append` or `:prepend`. You must use the `+=` operator to add one or more options to the IMAGE_FSTYPES variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_FSTYPES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_FSTYPES)
 
 ## Variable `IMAGE_INSTALL`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Used by recipes to specify the packages to install into an image through the image class. Use the IMAGE_INSTALL variable with care to avoid ordering issues.
 
@@ -1951,11 +1951,11 @@ Note
 
 - Using IMAGE_INSTALL with the += BitBake operator within the `/conf/local.conf` file or from within an image recipe is not recommended. Use of this operator in these ways can cause ordering issues. Since core-image sets IMAGE_INSTALL to a default value using the ?= operator, using a `+=` operation against IMAGE_INSTALL results in unexpected behavior when used within `conf/local.conf`. Furthermore, the same operation from within an image recipe may or may not succeed depending on the specific situation. In both these cases, the behavior is contrary to how most users expect the `+=` operator to work.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_INSTALL
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_INSTALL)
 
 ## Variable `IMAGE_POSTPROCESS_COMMAND`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies a list of functions to call once the OpenEmbedded build system creates the final image output files. You can specify functions separated by spaces:
 
@@ -1966,11 +1966,11 @@ IMAGE_POSTPROCESS_COMMAND += "function"
 
 If you need to pass the root filesystem path to a command within the function, you can use `${IMAGE_ROOTFS}`, which points to the directory that becomes the root filesystem image. See the IMAGE_ROOTFS variable for more information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_POSTPROCESS_COMMAND
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_POSTPROCESS_COMMAND)
 
 ## Variable `IMAGE_PREPROCESS_COMMAND`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies a list of functions to call before the OpenEmbedded build system creates the final image output files. You can specify functions separated by spaces:
 
@@ -1981,19 +1981,19 @@ IMAGE_PREPROCESS_COMMAND += "function"
 
 If you need to pass the root filesystem path to a command within the function, you can use `${IMAGE_ROOTFS}`, which points to the directory that becomes the root filesystem image. See the IMAGE_ROOTFS variable for more information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_PREPROCESS_COMMAND
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_PREPROCESS_COMMAND)
 
 ## Variable `IMAGE_ROOTFS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The location of the root filesystem while it is under construction (i.e. during the do_rootfs task). This variable is not configurable. Do not change it.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_ROOTFS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_ROOTFS)
 
 ## Variable `INCOMPATIBLE_LICENSE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies a space-separated list of license names (as they would appear in LICENSE) that should be excluded from the build (if set globally), or from an image (if set locally in an image recipe).
 
@@ -2018,11 +2018,11 @@ INCOMPATIBLE_LICENSE = "GPL-3.0* LGPL-3.0* AGPL-3.0*"
 
 Although you can use other settings, you might be required to remove dependencies on (or provide alternatives to) components that are required to produce a functional system image.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INCOMPATIBLE_LICENSE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INCOMPATIBLE_LICENSE)
 
 ## Variable `INCOMPATIBLE_LICENSE_EXCEPTIONS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies a space-separated list of package and license pairs that are allowed to be used even if the license is specified in INCOMPATIBLE_LICENSE. The package and license pairs are separated using a colon. Example:
 
@@ -2031,27 +2031,27 @@ INCOMPATIBLE_LICENSE_EXCEPTIONS = "gdbserver:GPL-3.0-only gdbserver:LGPL-3.0-onl
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INCOMPATIBLE_LICENSE_EXCEPTIONS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INCOMPATIBLE_LICENSE_EXCEPTIONS)
 
 ## Variable `INHERIT`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Causes the named class or classes to be inherited globally. Anonymous functions in the class or classes are not executed for the base configuration and in each individual recipe. The OpenEmbedded build system ignores changes to INHERIT in individual recipes. Classes inherited using INHERIT must be located in the `classes-global/` or `classes/` subdirectories.
 
 For more information on INHERIT, see the INHERIT Configuration Directive” section in the BitBake User Manual.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Causes the named class or classes to be inherited globally. Anonymous functions in the class or classes are not executed for the base configuration and in each individual recipe. The OpenEmbedded build system ignores changes to INHERIT in individual recipes.
 
 For more information on INHERIT, see the “INHERIT Configuration Directive” section.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INHERIT , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-INHERIT
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INHERIT , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-INHERIT)
 
 ## Variable `INHERIT_DISTRO`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Lists classes that will be inherited at the distribution level. It is unlikely that you want to edit this variable.
 
@@ -2064,11 +2064,11 @@ INHERIT_DISTRO ?= "debian devshell sstate license remove-libtool create-spdx"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INHERIT_DISTRO
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INHERIT_DISTRO)
 
 ## Variable `INIT_MANAGER`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the system init manager to use. Available options are:
 
@@ -2086,31 +2086,31 @@ With `mdev-busybox`, the init manager becomes the much simpler BusyBox init, tog
 
 More concretely, this is used to include `conf/distro/include/init-manager-${INIT_MANAGER}.inc` into the global configuration. You can have a look at the meta/conf/distro/include/init-manager-*.inc files for more information, and also the “Selecting an Initialization Manager” section in the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INIT_MANAGER
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INIT_MANAGER)
 
 ## Variable `INITSCRIPT_NAME`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The filename of the initialization script as installed to `${sysconfdir}/init.d`.
 
 This variable is used in recipes when using update-rc.d. The variable is mandatory.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INITSCRIPT_NAME
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INITSCRIPT_NAME)
 
 ## Variable `INITSCRIPT_PACKAGES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A list of the packages that contain initscripts. If multiple packages are specified, you need to append the package name to the other `INITSCRIPT_*` as an override.
 
 This variable is used in recipes when using update-rc.d. The variable is optional and defaults to the PN variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INITSCRIPT_PACKAGES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INITSCRIPT_PACKAGES)
 
 ## Variable `INITSCRIPT_PARAMS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the options to pass to `update-rc.d`. Here is an example:
 
@@ -2125,11 +2125,11 @@ The variable’s default value is “defaults”, which is set in the update-rc.
 
 The value in INITSCRIPT_PARAMS is passed through to the `update-rc.d` command. For more information on valid parameters, please see the manual page: *update-rc.d*.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INITSCRIPT_PARAMS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INITSCRIPT_PARAMS)
 
 ## Variable `INSANE_SKIP`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the QA checks to skip for a specific package within a recipe. For example, to skip the check for symbolic link `.so` files in the main package of a recipe, add the following to the recipe. The package name override must be used, which in this example is `${PN}`:
 
@@ -2140,11 +2140,11 @@ INSANE_SKIP:${PN} += "dev-so"
 
 See the “insane” section for a list of the valid QA checks you can specify using this variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INSANE_SKIP
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INSANE_SKIP)
 
 ## Variable `KBRANCH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A regular expression used by the build process to explicitly identify the kernel branch that is validated, patched, and configured during a build. You must set this variable to ensure the exact kernel branch you want is being used by the build process.
 
@@ -2166,11 +2166,11 @@ KBRANCH:beaglebone-yocto = "v6.1/standard/beaglebone"
 
 The KBRANCH statements identify the kernel branch to use when building for each supported BSP.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KBRANCH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KBRANCH)
 
 ## Variable `KBUILD_DEFCONFIG`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When used with the kernel-yocto class, specifies an “in-tree” kernel configuration file for use during a kernel build.
 
@@ -2199,11 +2199,11 @@ KBUILD_DEFCONFIG:pn-linux-yocto ?= "defconfig_file"
 
 For more information on how to use the KBUILD_DEFCONFIG variable, see the “Using an “In-Tree” defconfig File” section in the Yocto Project Linux Kernel Development Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KBUILD_DEFCONFIG
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KBUILD_DEFCONFIG)
 
 ## Variable `KCONFIG_MODE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When used with the kernel-yocto class, specifies the kernel configuration values to use for options not specified in the provided `defconfig` file. Valid options are:
 
@@ -2226,19 +2226,19 @@ KCONFIG_MODE = "alldefconfig"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KCONFIG_MODE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KCONFIG_MODE)
 
 ## Variable `KERNEL_CLASSES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A list of classes defining kernel image types that the kernel class should inherit. You typically append this variable to enable extended image types. An example is “kernel-fitimage”, which enables FIT image support and resides in `meta/classes-recipe/kernel-fitimage.bbclass`. You can register custom kernel image types with the kernel class using this variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_CLASSES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_CLASSES)
 
 ## Variable `KERNEL_DEVICETREE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the name of the generated Linux kernel device tree (i.e. the `.dtb`) file.
 
@@ -2248,11 +2248,11 @@ There is legacy support for specifying the full path to the device tree. However
 
 In order to use this variable, the kernel-devicetree class must be inherited.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_DEVICETREE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_DEVICETREE)
 
 ## Variable `KERNEL_DEVICETREE_BUNDLE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When set to “1”, this variable allows to bundle the Linux kernel and the Device Tree Binary together in a single file.
 
@@ -2260,21 +2260,21 @@ This feature is currently only supported on the “arm” (32 bit) architecture.
 
 This variable is set to “0” by default by the kernel-devicetree class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_DEVICETREE_BUNDLE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_DEVICETREE_BUNDLE)
 
 ## Variable `KERNEL_DTBDEST`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This variable, used by the kernel-devicetree class, allows to change the installation directory of the DTB (Device Tree Binary) files.
 
 It is set by default to “${KERNEL_IMAGEDEST}” by the kernel class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_DTBDEST
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_DTBDEST)
 
 ## Variable `KERNEL_DTBVENDORED`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This variable, used by the kernel-devicetree, allows to ignore vendor subdirectories when installing DTB (Device Tree Binary) files, when it is set to “false”.
 
@@ -2282,21 +2282,21 @@ To keep vendor subdirectories, set this variable to “true”.
 
 It is set by default to “false” by the kernel class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_DTBVENDORED
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_DTBVENDORED)
 
 ## Variable `KERNEL_DTC_FLAGS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the `dtc` flags that are passed to the Linux kernel build system when generating the device trees (via `DTC_FLAGS` environment variable).
 
 In order to use this variable, the kernel-devicetree class must be inherited.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_DTC_FLAGS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_DTC_FLAGS)
 
 ## Variable `KERNEL_FEATURES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Includes additional kernel metadata. In the OpenEmbedded build system, the default Board Support Packages (BSPs) Metadata is provided through the KMACHINE and KBRANCH variables. You can use the KERNEL_FEATURES variable from within the kernel recipe or kernel append file to further add metadata for all BSPs or specific BSPs.
 
@@ -2313,29 +2313,29 @@ KERNEL_FEATURES:append:qemux86-64 = " cfg/sound.scc"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_FEATURES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_FEATURES)
 
 ## Variable `KERNEL_IMAGETYPE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The type of kernel to build for a device, usually set by the machine configuration files and defaults to “zImage”. This variable is used when building the kernel and is passed to `make` as the target to build.
 
 To build additional kernel image types, use KERNEL_IMAGETYPES.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_IMAGETYPE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_IMAGETYPE)
 
 ## Variable `KERNEL_IMAGETYPES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Lists additional types of kernel images to build for a device in addition to image type specified in KERNEL_IMAGETYPE. Usually set by the machine configuration files.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_IMAGETYPES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_IMAGETYPES)
 
 ## Variable `KERNEL_MODULE_AUTOLOAD`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Lists kernel modules that need to be auto-loaded during boot.
 
@@ -2361,11 +2361,11 @@ KERNEL_MODULE_AUTOLOAD += "module_name"
 
 For information on how to populate the `modname.conf` file with `modprobe.d` syntax lines, see the KERNEL_MODULE_PROBECONF variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_MODULE_AUTOLOAD
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_MODULE_AUTOLOAD)
 
 ## Variable `KMACHINE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The machine as known by the kernel. Sometimes the machine name used by the kernel does not match the machine name used by the OpenEmbedded build system. For example, the machine name that the OpenEmbedded build system understands as `core2-32-intel-common` goes by a different name in the Linux Yocto kernel. The kernel understands that machine as `intel-core2-32`. For cases like these, the KMACHINE variable maps the kernel machine name to the OpenEmbedded build system machine name.
 
@@ -2384,11 +2384,11 @@ KERNEL_FEATURES:append:core2-32-intel-common = " ${KERNEL_FEATURES_INTEL_COMMON}
 
 The KMACHINE statement says that the kernel understands the machine name as “intel-core2-32”. However, the OpenEmbedded build system understands the machine as “core2-32-intel-common”.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KMACHINE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KMACHINE)
 
 ## Variable `LAYERDEPENDS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Lists the layers, separated by spaces, on which this layer depends. Optionally, you can specify a specific layer version for a dependency by adding it to the end of the layer name. Here is an example:
 
@@ -2401,17 +2401,17 @@ In this previous example, version 3 of “anotherlayer” is compared against LA
 
 An error is produced if any dependency is missing or the version numbers (if specified) do not match exactly. This variable is used in the `conf/layer.conf` file and must be suffixed with the name of the specific layer (e.g. `LAYERDEPENDS_mylayer`).
 
-## BitBake User Manual
+### BitBake User Manual
 
 Lists the layers, separated by spaces, upon which this recipe depends. Optionally, you can specify a specific layer version for a dependency by adding it to the end of the layer name with a colon, (e.g. “anotherlayer:3” to be compared against LAYERVERSION`_anotherlayer` in this case). BitBake produces an error if any dependency is missing or the version numbers do not match exactly (if specified).
 
 You use this variable in the `conf/layer.conf` file. You must also use the specific layer name as a suffix to the variable (e.g. `LAYERDEPENDS_mylayer`).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LAYERDEPENDS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-LAYERDEPENDS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LAYERDEPENDS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-LAYERDEPENDS)
 
 ## Variable `LAYERRECOMMENDS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Lists the layers, separated by spaces, recommended for use with this layer.
 
@@ -2426,15 +2426,15 @@ In this previous example, version 3 of “anotherlayer” is compared against `L
 
 This variable is used in the `conf/layer.conf` file and must be suffixed with the name of the specific layer (e.g. `LAYERRECOMMENDS_mylayer`).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LAYERRECOMMENDS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LAYERRECOMMENDS)
 
 ## Variable `LAYERSERIES_COMPAT`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 See LAYERSERIES_COMPAT in the BitBake manual.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Lists the versions of the OpenEmbedded-Core (OE-Core) for which a layer is compatible. Using the LAYERSERIES_COMPAT variable allows the layer maintainer to indicate which combinations of the layer and OE-Core can be expected to work. The variable gives the system a way to detect when a layer has not been tested with new releases of OE-Core (e.g. the layer is not maintained).
 
@@ -2449,35 +2449,35 @@ Note
 
 Setting LAYERSERIES_COMPAT is required by the Yocto Project Compatible version 2 standard. The OpenEmbedded build system produces a warning if the variable is not set for any given layer.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LAYERSERIES_COMPAT , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-LAYERSERIES_COMPAT
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LAYERSERIES_COMPAT , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-LAYERSERIES_COMPAT)
 
 ## Variable `LAYERVERSION`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Optionally specifies the version of a layer as a single number. You can use this within LAYERDEPENDS for another layer in order to depend on a specific version of the layer. This variable is used in the `conf/layer.conf` file and must be suffixed with the name of the specific layer (e.g. `LAYERVERSION_mylayer`).
 
-## BitBake User Manual
+### BitBake User Manual
 
 Optionally specifies the version of a layer as a single number. You can use this variable within LAYERDEPENDS for another layer in order to depend on a specific version of the layer.
 
 You use this variable in the `conf/layer.conf` file. You must also use the specific layer name as a suffix to the variable (e.g. `LAYERDEPENDS_mylayer`).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LAYERVERSION , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-LAYERVERSION
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LAYERVERSION , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-LAYERVERSION)
 
 ## Variable `LEAD_SONAME`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the lead (or primary) compiled library file (i.e. `.so`) that the debian class applies its naming policy to given a recipe that packages multiple libraries.
 
 This variable works in conjunction with the debian class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LEAD_SONAME
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LEAD_SONAME)
 
 ## Variable `LIC_FILES_CHKSUM`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Checksums of the license text in the recipe source code.
 
@@ -2487,11 +2487,11 @@ This variable must be defined for all recipes (unless LICENSE is set to “CLOSE
 
 For more information, see the “Tracking License Changes” section in the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LIC_FILES_CHKSUM
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LIC_FILES_CHKSUM)
 
 ## Variable `LICENSE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This is a required field in an OpenEmbedded recipe file, and should contain a list of source licenses for the recipe. Follow these rules:
 
@@ -2529,33 +2529,33 @@ Note
 
 A recipe’s LICENSE value must be accompanied by an associated LIC_FILES_CHKSUM value, except in the special case where the LICENSE value is set to “CLOSED”.
 
-## BitBake User Manual
+### BitBake User Manual
 
 The list of source licenses for the recipe.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LICENSE , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-LICENSE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LICENSE , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-LICENSE)
 
 ## Variable `LICENSE_FLAGS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies additional flags for a recipe you must allow through LICENSE_FLAGS_ACCEPTED in order for the recipe to be built. When providing multiple flags, separate them with spaces.
 
 This value is independent of LICENSE and is typically used to mark recipes that might require additional licenses in order to be used in a commercial product. For more information, see the “Enabling Commercially Licensed Recipes” section in the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LICENSE_FLAGS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LICENSE_FLAGS)
 
 ## Variable `LICENSE_FLAGS_ACCEPTED`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Lists license flags that when specified in LICENSE_FLAGS within a recipe should not prevent that recipe from being built. For more information, see the “Enabling Commercially Licensed Recipes” section in the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LICENSE_FLAGS_ACCEPTED
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LICENSE_FLAGS_ACCEPTED)
 
 ## Variable `LICENSE_FLAGS_DETAILS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Adds details about a flag in LICENSE_FLAGS. This way, if such a flag is not accepted through LICENSE_FLAGS_ACCEPTED, the error message will be more informative, containing the specified extra details.
 
@@ -2575,11 +2575,11 @@ For further details, see https://example.com/eula.
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LICENSE_FLAGS_DETAILS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LICENSE_FLAGS_DETAILS)
 
 ## Variable `LICENSE_PATH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Path to additional licenses used during the build. By default, the OpenEmbedded build system uses COMMON_LICENSE_DIR to define the directory that holds common license text used during the build. The LICENSE_PATH variable allows you to extend that location to other areas that have additional licenses:
 
@@ -2588,21 +2588,21 @@ LICENSE_PATH += "path-to-additional-common-licenses"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LICENSE_PATH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LICENSE_PATH)
 
 ## Variable `LINUX_KERNEL_TYPE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Defines the kernel type to be used in assembling the configuration. The linux-yocto recipes define “standard”, “tiny”, and “preempt-rt” kernel types. See the “Kernel Types” section in the Yocto Project Linux Kernel Development Manual for more information on kernel types.
 
 If you do not specify a LINUX_KERNEL_TYPE, it defaults to “standard”. Together with KMACHINE, the LINUX_KERNEL_TYPE variable defines the search arguments used by the kernel tools to find the appropriate description within the kernel Metadata with which to build out the sources and configuration.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LINUX_KERNEL_TYPE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LINUX_KERNEL_TYPE)
 
 ## Variable `MACHINE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the target device for which the image is built. You define MACHINE in the `local.conf` file found in the Build Directory. By default, MACHINE is set to “qemux86”, which is an x86-based architecture machine to be emulated using QEMU:
 
@@ -2635,29 +2635,29 @@ Note
 
 Adding additional Board Support Package (BSP) layers to your configuration adds new possible settings for MACHINE.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MACHINE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MACHINE)
 
 ## Variable `MACHINE_ARCH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the name of the machine-specific architecture. This variable is set automatically from MACHINE or TUNE_PKGARCH. You should not hand-edit the MACHINE_ARCH variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MACHINE_ARCH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MACHINE_ARCH)
 
 ## Variable `MACHINE_FEATURES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the list of hardware features the MACHINE is capable of supporting. For related information on enabling features, see the DISTRO_FEATURES, COMBINED_FEATURES, and IMAGE_FEATURES variables.
 
 For a list of hardware features supported by the Yocto Project as shipped, see the “Machine Features” section.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MACHINE_FEATURES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MACHINE_FEATURES)
 
 ## Variable `MACHINEOVERRIDES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A colon-separated list of overrides that apply to the current machine. By default, this list includes the value of MACHINE.
 
@@ -2679,11 +2679,11 @@ SRC_URI:append:qemuall = " file://wired.config \
 
 The underlying mechanism behind MACHINEOVERRIDES is simply that it is included in the default value of OVERRIDES.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MACHINEOVERRIDES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MACHINEOVERRIDES)
 
 ## Variable `MIRRORS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies additional paths from which the OpenEmbedded build system gets source code. When the build system searches for source code, it first tries the local download directory. If that location fails, the build system tries locations defined by PREMIRRORS, the upstream source, and then locations specified by MIRRORS in that order.
 
@@ -2691,15 +2691,15 @@ The default value for MIRRORS is defined in the `meta/classes-global/mirrors.bbc
 
 See the definition of this variable in the BitBake Manual for more details: MIRRORS.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Specifies additional paths from which BitBake gets source code. When the build system searches for source code, it first tries the local download directory. If that location fails, the build system tries locations defined by PREMIRRORS, the upstream source, and then locations specified by MIRRORS in that order.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MIRRORS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-MIRRORS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MIRRORS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-MIRRORS)
 
 ## Variable `MULTIMACH_TARGET_SYS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Uniquely identifies the type of the target system for which packages are being built. This variable allows output for different types of target systems to be put into different subdirectories of the same output directory.
 
@@ -2714,11 +2714,11 @@ Some classes (e.g. cross-canadian) modify the MULTIMACH_TARGET_SYS value.
 
 See the STAMP variable for an example. See the STAGING_DIR_TARGET variable for more information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MULTIMACH_TARGET_SYS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MULTIMACH_TARGET_SYS)
 
 ## Variable `NO_GENERIC_LICENSE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Avoids QA errors when you use a non-common, non-CLOSED license in a recipe. There are packages, such as the linux-firmware package, with many licenses that are not in any way common. Also, new licenses are added occasionally to avoid introducing a lot of common license files, which are only applicable to a specific package. NO_GENERIC_LICENSE is used to allow copying a license that does not exist in common licenses.
 
@@ -2736,11 +2736,11 @@ NO_GENERIC_LICENSE[Firmware-Abilis] = "LICENSE.Abilis.txt"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-NO_GENERIC_LICENSE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-NO_GENERIC_LICENSE)
 
 ## Variable `NO_RECOMMENDATIONS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Prevents installation of all “recommended-only” packages. Recommended-only packages are packages installed only through the RRECOMMENDS variable). Setting the NO_RECOMMENDATIONS variable to “1” turns this feature on:
 
@@ -2766,11 +2766,11 @@ This variable is only supported when using the IPK and RPM packaging backends. D
 
 See the BAD_RECOMMENDATIONS and the PACKAGE_EXCLUDE variables for related information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-NO_RECOMMENDATIONS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-NO_RECOMMENDATIONS)
 
 ## Variable `OECMAKE_GENERATOR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A variable for the cmake class, allowing to choose which back-end will be generated by CMake to build an application.
 
@@ -2781,21 +2781,21 @@ OECMAKE_GENERATOR = "Unix Makefiles"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-OECMAKE_GENERATOR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-OECMAKE_GENERATOR)
 
 ## Variable `OLDEST_KERNEL`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Declares the oldest version of the Linux kernel that the produced binaries must support. This variable is passed into the build of the Embedded GNU C Library (`glibc`).
 
 The default for this variable comes from the `meta/conf/bitbake.conf` configuration file. You can override this default by setting the variable in a custom distribution configuration file.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-OLDEST_KERNEL
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-OLDEST_KERNEL)
 
 ## Variable `OVERRIDES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A colon-separated list of overrides that currently apply. Overrides are a BitBake mechanism that allows variables to be selectively overridden at the end of parsing. The set of overrides in OVERRIDES represents the “state” during building, which includes the current recipe being built, the machine for which it is being built, and so forth.
 
@@ -2819,17 +2819,17 @@ Note
 
 An easy way to see what overrides apply is to run the command `bitbake-getvar -r myrecipe OVERRIDES`. See the “Viewing Variable Values” section in the Yocto Project Development Tasks Manual for more information.
 
-## BitBake User Manual
+### BitBake User Manual
 
 A colon-separated list that BitBake uses to control what variables are overridden after BitBake parses recipes and configuration files.
 
 Following is a simple example that uses an overrides list based on machine architectures: OVERRIDES = “arm:x86:mips:powerpc” You can find information on how to use OVERRIDES in the “Conditional Syntax (Overrides)” section.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-OVERRIDES , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-OVERRIDES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-OVERRIDES , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-OVERRIDES)
 
 ## Variable `PACKAGE_ARCH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The architecture of the resulting package or packages.
 
@@ -2846,19 +2846,19 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGE_ARCH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGE_ARCH)
 
 ## Variable `PACKAGE_BEFORE_PN`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Enables easily adding packages to PACKAGES before `${PN}` so that those added packages can pick up files that would normally be included in the default package.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGE_BEFORE_PN
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGE_BEFORE_PN)
 
 ## Variable `PACKAGE_CLASSES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This variable, which is set in the `local.conf` configuration file found in the `conf` folder of the Build Directory, specifies the package manager the OpenEmbedded build system uses when packaging data.
 
@@ -2880,21 +2880,21 @@ The OpenEmbedded build system uses the IPK package manager to create your image 
 
 For information on packaging and build performance effects as a result of the package manager in use, see the “package” section.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGE_CLASSES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGE_CLASSES)
 
 ## Variable `PACKAGE_WRITE_DEPS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies a list of dependencies for post-installation and pre-installation scripts on native/cross tools. If your post-installation or pre-installation script can execute at root filesystem creation time rather than on the target but depends on a native tool in order to execute, you need to list the tools in PACKAGE_WRITE_DEPS.
 
 For information on running post-installation scripts, see the “Post-Installation Scripts” section in the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGE_WRITE_DEPS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGE_WRITE_DEPS)
 
 ## Variable `PACKAGECONFIG`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This variable provides a means of enabling or disabling features of a recipe on a per-recipe basis. PACKAGECONFIG blocks are defined in recipes when you specify features and then arguments that define feature behaviors. Here is the basic block structure (broken over multiple lines for readability):
 
@@ -3001,21 +3001,21 @@ PACKAGECONFIG = "${@'systemd' if d.getVar('INIT_MANAGER') == 'systemd' else ''}"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGECONFIG
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGECONFIG)
 
 ## Variable `PACKAGECONFIG_CONFARGS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A space-separated list of configuration options generated from the PACKAGECONFIG setting.
 
 Classes such as autotools* and cmake use PACKAGECONFIG_CONFARGS to pass PACKAGECONFIG options to `configure` and `cmake`, respectively. If you are using PACKAGECONFIG but not a class that handles the do_configure task, then you need to use PACKAGECONFIG_CONFARGS appropriately.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGECONFIG_CONFARGS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGECONFIG_CONFARGS)
 
 ## Variable `PACKAGES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The list of packages the recipe creates. The default value is the following:
 
@@ -3028,15 +3028,15 @@ During packaging, the do_package task goes through PACKAGES and uses the FILES v
 
 Packages in the variable’s list that are empty (i.e. where none of the patterns in `FILES:`pkg match any files installed by the do_install task) are not generated, unless generation is forced through the ALLOW_EMPTY variable.
 
-## BitBake User Manual
+### BitBake User Manual
 
 The list of packages the recipe creates.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGES , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PACKAGES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGES , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PACKAGES)
 
 ## Variable `PACKAGES_DYNAMIC`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A promise that your recipe satisfies runtime dependencies for optional modules that are found in other recipes. PACKAGES_DYNAMIC does not actually satisfy the dependencies, it only states that they should be satisfied. For example, if a hard, runtime dependency (RDEPENDS) of another package is satisfied at build time through the PACKAGES_DYNAMIC variable, but a package with the module name is never actually produced, then the other package will be broken. Thus, if you attempt to include that package in an image, you will get a dependency failure from the packaging system during the do_rootfs task.
 
@@ -3044,15 +3044,15 @@ Typically, if there is a chance that such a situation can occur and the package 
 
 For an example of how to use the PACKAGES_DYNAMIC variable when you are splitting packages, see the “Handling Optional Module Packaging” section in the Yocto Project Development Tasks Manual.
 
-## BitBake User Manual
+### BitBake User Manual
 
 A promise that your recipe satisfies runtime dependencies for optional modules that are found in other recipes. PACKAGES_DYNAMIC does not actually satisfy the dependencies, it only states that they should be satisfied. For example, if a hard, runtime dependency (RDEPENDS) of another package is satisfied during the build through the PACKAGES_DYNAMIC variable, but a package with the module name is never actually produced, then the other package will be broken.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGES_DYNAMIC , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PACKAGES_DYNAMIC
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGES_DYNAMIC , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PACKAGES_DYNAMIC)
 
 ## Variable `PARALLEL_MAKE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Extra options passed to the build tool command (`make`, `ninja` or more specific build engines, like the Go language one) during the do_compile task, to specify parallel compilation on the local build host. This variable is usually in the form “-j x”, where x represents the maximum number of parallel threads such engines can run.
 
@@ -3070,25 +3070,25 @@ For single socket systems (i.e. one CPU), you should not have to override this v
 
 For more information on speeding up builds, see the “Speeding Up a Build” section in the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PARALLEL_MAKE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PARALLEL_MAKE)
 
 ## Variable `PE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The epoch of the recipe. By default, this variable is unset. The variable is used to make upgrades possible when the versioning scheme changes in some backwards incompatible way.
 
 PE is the default value of the PKGE variable.
 
-## BitBake User Manual
+### BitBake User Manual
 
 The epoch of the recipe. By default, this variable is unset. The variable is used to make upgrades possible when the versioning scheme changes in some backwards incompatible way.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PE , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PE , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PE)
 
 ## Variable `PN`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This variable can have two separate functions depending on the context: a recipe name or a resulting package name.
 
@@ -3098,15 +3098,15 @@ The variable refers to a package name in the context of a file created or produc
 
 If applicable, the PN variable also contains any special suffix or prefix. For example, using `bash` to build packages for the native machine, PN is `bash-native`. Using `bash` to build packages for the target and for Multilib, PN would be `bash` and `lib64-bash`, respectively.
 
-## BitBake User Manual
+### BitBake User Manual
 
 The recipe name.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PN , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PN
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PN , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PN)
 
 ## Variable `PR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The revision of the recipe. The default value for this variable is “r0”. Subsequent revisions of the recipe conventionally have the values “r1”, “r2”, and so forth. When PV increases, PR is conventionally reset to “r0”.
 
@@ -3122,15 +3122,15 @@ PR does not need to be increased for changes that do not change the package cont
 
 Because manually managing PR can be cumbersome and error-prone, an automated solution exists. See the “Working With a PR Service” section in the Yocto Project Development Tasks Manual for more information.
 
-## BitBake User Manual
+### BitBake User Manual
 
 The revision of the recipe.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PR , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PR , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PR)
 
 ## Variable `PREFERRED_PROVIDER`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 If multiple recipes provide the same item, this variable determines which recipe is preferred and thus provides the item (i.e. the preferred provider). You should always suffix this variable with the name of the provided item. And, you should define the variable using the preferred recipe’s name (PN). Here is a common example:
 
@@ -3155,7 +3155,7 @@ Note
 
 If you use a `virtual/\*` item with PREFERRED_PROVIDER, then any recipe that PROVIDES that item but is not selected (defined) by PREFERRED_PROVIDER is prevented from building, which is usually desirable since this mechanism is designed to select between mutually exclusive alternative providers.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Determines which recipe should be given preference when multiple recipes provide the same item. You should always suffix the variable with the name of the provided item, and you should set it to the PN of the recipe to which you want to give precedence. Some examples:
 
@@ -3166,11 +3166,11 @@ PREFERRED_PROVIDER_virtual/libgl ?= "mesa"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PREFERRED_PROVIDER , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PREFERRED_PROVIDER
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PREFERRED_PROVIDER , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PREFERRED_PROVIDER)
 
 ## Variable `PREFERRED_VERSION`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 If there are multiple versions of a recipe available, this variable determines which version should be given preference. You must always suffix the variable with the PN you want to select (python in the first example below), and you should specify the PV accordingly (3.4.0 in the example).
 
@@ -3210,7 +3210,7 @@ The `:forcevariable` override is not handled specially. This override only works
 
 If a recipe with the specified version is not available, a warning message will be shown. See REQUIRED_VERSION if you want this to be an error instead.
 
-## BitBake User Manual
+### BitBake User Manual
 
 If there are multiple versions of a recipe available, this variable determines which version should be given preference. You must always suffix the variable with the PN you want to select, and you should set PV accordingly for precedence.
 
@@ -3228,11 +3228,11 @@ The use of the “ % “ character is limited in that it only works at the end o
 
 If a recipe with the specified version is not available, a warning message will be shown. See REQUIRED_VERSION if you want this to be an error instead.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PREFERRED_VERSION , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PREFERRED_VERSION
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PREFERRED_VERSION , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PREFERRED_VERSION)
 
 ## Variable `PREMIRRORS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies additional paths from which the OpenEmbedded build system gets source code. When the build system searches for source code, it first tries the local download directory. If that location fails, the build system tries locations defined by PREMIRRORS, the upstream source, and then locations specified by MIRRORS in that order.
 
@@ -3254,7 +3254,7 @@ These changes cause the build system to intercept Git, FTP, HTTP, and HTTPS requ
 
 See the definition of this variable in the BitBake Manual for more details: PREMIRRORS.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Specifies additional paths from which BitBake gets source code. When the build system searches for source code, it first tries the local download directory. If that location fails, the build system tries locations defined by PREMIRRORS, the upstream source, and then locations specified by MIRRORS in that order.
 
@@ -3271,11 +3271,11 @@ https://.*/.* http://downloads.yoctoproject.org/mirror/sources/"
 
 These changes cause the build system to intercept Git, FTP, HTTP, and HTTPS requests and direct them to the `http://` sources mirror. You can use `file://` URLs to point to local directories or network shares as well.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PREMIRRORS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PREMIRRORS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PREMIRRORS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PREMIRRORS)
 
 ## Variable `PRIVATE_LIBS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies libraries installed within a recipe that should be ignored by the OpenEmbedded build system’s shared library resolver. This variable is typically used when software being built by a recipe has its own private versions of a library normally provided by another recipe. In this case, you would not want the package containing the private libraries to be set as a dependency on other unrelated packages that should instead depend on the package providing the standard version of the library.
 
@@ -3294,11 +3294,11 @@ PRIVATE_LIBS = "libmozjs.so \
 
 For more information, see the “Automatically Added Runtime Dependencies” section in the Yocto Project Overview and Concepts Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PRIVATE_LIBS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PRIVATE_LIBS)
 
 ## Variable `PROVIDES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A list of aliases by which a particular recipe can be known. By default, a recipe’s own PN is implicitly already in its PROVIDES list and therefore does not need to mention that it provides itself. If a recipe uses PROVIDES, the additional aliases are synonyms for the recipe and can be useful for satisfying dependencies of other recipes during the build as specified by DEPENDS.
 
@@ -3332,7 +3332,7 @@ VIRTUAL-RUNTIME_dev_manager = "udev"
 
 ```
 
-## BitBake User Manual
+### BitBake User Manual
 
 A list of aliases by which a particular recipe can be known. By default, a recipe’s own PN is implicitly already in its PROVIDES list. If a recipe uses PROVIDES, the additional aliases are synonyms for the recipe and can be useful satisfying dependencies of other recipes during the build as specified by DEPENDS.
 
@@ -3349,25 +3349,25 @@ In addition to providing recipes under alternate names, the PROVIDES mechanism i
 
 Conventionally, virtual targets have names on the form “virtual/function” (e.g. “virtual/kernel”). The slash is simply part of the name and has no syntactical significance.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PROVIDES , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PROVIDES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PROVIDES , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PROVIDES)
 
 ## Variable `PV`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The version of the recipe. The version is normally extracted from the recipe filename. For example, if the recipe is named `expat_2.0.1.bb`, then the default value of PV will be “2.0.1”. PV is generally not overridden within a recipe unless it is building an unstable (i.e. development) version from a source code repository (e.g. Git or Subversion).
 
 PV is the default value of the PKGV variable.
 
-## BitBake User Manual
+### BitBake User Manual
 
 The version of the recipe.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PV , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PV
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PV , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PV)
 
 ## Variable `RCONFLICTS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The list of packages that conflict with packages. Note that packages will not be installed if conflicting packages are not first removed.
 
@@ -3404,11 +3404,11 @@ RCONFLICTS:${PN} = "foo (>= 1.2)"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RCONFLICTS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RCONFLICTS)
 
 ## Variable `RDEPENDS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Lists runtime dependencies of a package. These dependencies are other packages that must be installed in order for the package to function correctly. As an example, the following assignment declares that the package `foo` needs the packages `bar` and `baz` to be installed:
 
@@ -3474,7 +3474,7 @@ RDEPENDS:${PN} = "foo (>= 1.2)"
 
 For information on build-time dependencies, see the DEPENDS variable. You can also see the “Tasks” and “Dependencies” sections in the BitBake User Manual for additional information on tasks and dependencies.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Lists a package’s runtime dependencies (i.e. other packages) that must be installed in order for the built package to run correctly. If a package in this list cannot be found during the build, you will get a build error.
 
@@ -3514,43 +3514,43 @@ RDEPENDS:${PN} = "foo (>= 1.2)"
 
 For information on build-time dependencies, see the DEPENDS variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RDEPENDS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-RDEPENDS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RDEPENDS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-RDEPENDS)
 
 ## Variable `REQUIRED_DISTRO_FEATURES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the features_check class, this variable identifies distribution features that must exist in the current configuration in order for the OpenEmbedded build system to build the recipe. In other words, if the REQUIRED_DISTRO_FEATURES variable lists a feature that does not appear in DISTRO_FEATURES within the current configuration, then the recipe will be skipped, and if the build system attempts to build the recipe then an error will be triggered.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-REQUIRED_DISTRO_FEATURES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-REQUIRED_DISTRO_FEATURES)
 
 ## Variable `REQUIRED_VERSION`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 If there are multiple versions of a recipe available, this variable determines which version should be given preference. REQUIRED_VERSION works in exactly the same manner as PREFERRED_VERSION, except that if the specified version is not available then an error message is shown and the build fails immediately.
 
 If both REQUIRED_VERSION and PREFERRED_VERSION are set for the same recipe, the REQUIRED_VERSION value applies.
 
-## BitBake User Manual
+### BitBake User Manual
 
 If there are multiple versions of a recipe available, this variable determines which version should be given preference. REQUIRED_VERSION works in exactly the same manner as PREFERRED_VERSION, except that if the specified version is not available then an error message is shown and the build fails immediately.
 
 If both REQUIRED_VERSION and PREFERRED_VERSION are set for the same recipe, the REQUIRED_VERSION value applies.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-REQUIRED_VERSION , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-REQUIRED_VERSION
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-REQUIRED_VERSION , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-REQUIRED_VERSION)
 
 ## Variable `RM_WORK_EXCLUDE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 With rm_work enabled, this variable specifies a list of recipes whose work directories should not be removed. See the “rm_work” section for more details.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RM_WORK_EXCLUDE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RM_WORK_EXCLUDE)
 
 ## Variable `ROOTFS_POSTPROCESS_COMMAND`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies a list of functions to call once the OpenEmbedded build system has created the root filesystem. You can specify functions separated by spaces:
 
@@ -3561,11 +3561,11 @@ ROOTFS_POSTPROCESS_COMMAND += "function"
 
 If you need to pass the root filesystem path to a command within a function, you can use `${IMAGE_ROOTFS}`, which points to the directory that becomes the root filesystem image. See the IMAGE_ROOTFS variable for more information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ROOTFS_POSTPROCESS_COMMAND
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ROOTFS_POSTPROCESS_COMMAND)
 
 ## Variable `RPROVIDES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A list of package name aliases that a package also provides. These aliases are useful for satisfying runtime dependencies of other packages both during the build and on the target (as specified by RDEPENDS).
 
@@ -3580,7 +3580,7 @@ RPROVIDES:${PN} = "widget-abi-2"
 
 ```
 
-## BitBake User Manual
+### BitBake User Manual
 
 A list of package name aliases that a package also provides. These aliases are useful for satisfying runtime dependencies of other packages both during the build and on the target (as specified by RDEPENDS).
 
@@ -3591,11 +3591,11 @@ RPROVIDES:${PN} = "widget-abi-2"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RPROVIDES , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-RPROVIDES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RPROVIDES , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-RPROVIDES)
 
 ## Variable `RRECOMMENDS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A list of packages that extends the usability of a package being built. The package being built does not depend on this list of packages in order to successfully build, but rather uses them for extended usability. To specify runtime dependencies for packages, see the RDEPENDS variable.
 
@@ -3638,7 +3638,7 @@ RRECOMMENDS:${PN} = "foo (>= 1.2)"
 
 ```
 
-## BitBake User Manual
+### BitBake User Manual
 
 A list of packages that extends the usability of a package being built. The package being built does not depend on this list of packages in order to successfully build, but needs them for the extended usability. To specify runtime dependencies for packages, see the RDEPENDS variable.
 
@@ -3667,11 +3667,11 @@ RRECOMMENDS:${PN} = "foo (>= 1.2)"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RRECOMMENDS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-RRECOMMENDS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RRECOMMENDS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-RRECOMMENDS)
 
 ## Variable `RREPLACES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A list of packages replaced by a package. The package manager uses this variable to determine which package should be installed to replace other package(s) during an upgrade. In order to also have the other package(s) removed at the same time, you must add the name of the other package to the RCONFLICTS variable.
 
@@ -3708,11 +3708,11 @@ RREPLACES:${PN} = "foo (>= 1.2)"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RREPLACES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RREPLACES)
 
 ## Variable `RSUGGESTS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A list of additional packages that you can suggest for installation by the package manager at the time a package is installed. Not all package managers support this functionality. This feature takes effect only when the package manager is being used to install packages on the target system from a package feed.
 
@@ -3725,11 +3725,11 @@ RSUGGESTS:${PN} = "useful_package another_package"
 
 For more information on package management, see the Using Runtime Package Management section of the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RSUGGESTS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RSUGGESTS)
 
 ## Variable `S`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The location in the Build Directory where unpacked recipe source code resides. By default, this directory is `${`WORKDIR`}/${`BPN`}-${`PV`}`, where `${BPN}` is the base recipe name and `${PV}` is the recipe version. If the source tarball extracts the code to a directory named anything other than `${BPN}-${PV}`, or if the source code is fetched from an SCM such as Git or Subversion, then you must set S in the recipe so that the OpenEmbedded build system knows where to find the unpacked source.
 
@@ -3750,11 +3750,11 @@ S = "${WORKDIR}/git"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-S
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-S)
 
 ## Variable `SERIAL_CONSOLES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Defines a serial console (TTY) to enable using getty. Provide a value that specifies the baud rate followed by the TTY device name separated by a semicolon. Use spaces to separate multiple devices:
 
@@ -3763,31 +3763,31 @@ SERIAL_CONSOLES = "115200;ttyS0 115200;ttyS1"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SERIAL_CONSOLES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SERIAL_CONSOLES)
 
 ## Variable `SOLIBS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Defines the suffix for shared libraries used on the target platform. By default, this suffix is “.so.*” for all Linux-based systems and is defined in the `meta/conf/bitbake.conf` configuration file.
 
 You will see this variable referenced in the default values of `FILES:${PN}`.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SOLIBS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SOLIBS)
 
 ## Variable `SOLIBSDEV`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Defines the suffix for the development symbolic link (symlink) for shared libraries on the target platform. By default, this suffix is “.so” for Linux-based systems and is defined in the `meta/conf/bitbake.conf` configuration file.
 
 You will see this variable referenced in the default values of `FILES:${PN}-dev`.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SOLIBSDEV
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SOLIBSDEV)
 
 ## Variable `SPDX_ARCHIVE_PACKAGED`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This option allows to add to SPDX output compressed archives of the files in the generated target packages.
 
@@ -3804,11 +3804,11 @@ According to our tests on release 4.1 “langdale”, building `core-image-minim
 
 Note that this option doesn’t increase the size of SPDX files in `tmp/deploy/images/MACHINE`.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SPDX_ARCHIVE_PACKAGED
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SPDX_ARCHIVE_PACKAGED)
 
 ## Variable `SPDX_ARCHIVE_SOURCES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This option allows to add to SPDX output compressed archives of the sources for packages installed on the target. It currently only works when SPDX_INCLUDE_SOURCES is set.
 
@@ -3828,11 +3828,11 @@ According to our tests on release 4.1 “langdale”, building `core-image-minim
 
 Note that using this option only marginally increases the size of the SPDX output in `tmp/deploy/images/MACHINE/` (+ 0.07% with the tested image), compared to just enabling SPDX_INCLUDE_SOURCES.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SPDX_ARCHIVE_SOURCES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SPDX_ARCHIVE_SOURCES)
 
 ## Variable `SPDX_CUSTOM_ANNOTATION_VARS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This option allows to associate SPDX annotations to a recipe, using the values of variables in the recipe:
 
@@ -3863,11 +3863,11 @@ This will add a new block to the recipe `.sdpx.json` output:
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SPDX_CUSTOM_ANNOTATION_VARS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SPDX_CUSTOM_ANNOTATION_VARS)
 
 ## Variable `SPDX_INCLUDE_SOURCES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This option allows to add a description of the source files used to build the host tools and the target packages, to the `spdx.json` files in `tmp/deploy/spdx/MACHINE/recipes/` under the Build Directory. As a consequence, the `spdx.json` files under the `by-namespace` and `packages` subdirectories in `tmp/deploy/spdx/MACHINE` are also modified to include references to such source file descriptions.
 
@@ -3880,11 +3880,11 @@ SPDX_INCLUDE_SOURCES = "1"
 
 According to our tests on release 4.1 “langdale”, building `core-image-minimal` for the `qemux86-64` machine, enabling this option multiplied the total size of the `tmp/deploy/spdx` directory by a factor of 3 (+291 MiB for this image), and the size of the `IMAGE-MACHINE.spdx.tar.zst` in `tmp/deploy/images/MACHINE` by a factor of 130 (+15 MiB for this image), compared to just using the create-spdx class with no option.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SPDX_INCLUDE_SOURCES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SPDX_INCLUDE_SOURCES)
 
 ## Variable `SPDX_PRETTY`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This option makes the SPDX output more human-readable, using identation and newlines, instead of the default output in a single line:
 
@@ -3895,37 +3895,37 @@ SPDX_PRETTY = "1"
 
 The generated SPDX files are approximately 20% bigger, but this option is recommended if you want to inspect the SPDX output files with a text editor.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SPDX_PRETTY
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SPDX_PRETTY)
 
 ## Variable `SPDXLICENSEMAP`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Maps commonly used license names to their SPDX counterparts found in `meta/files/common-licenses/`. For the default SPDXLICENSEMAP mappings, see the `meta/conf/licenses.conf` file.
 
 For additional information, see the LICENSE variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SPDXLICENSEMAP
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SPDXLICENSEMAP)
 
 ## Variable `SPL_SIGN_ENABLE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Enable signing of the U-Boot FIT image. The default value is “0”. This variable is used by the uboot-sign class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SPL_SIGN_ENABLE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SPL_SIGN_ENABLE)
 
 ## Variable `SPL_SIGN_KEYDIR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Location of the directory containing the RSA key and certificate used for signing the U-Boot FIT image, used by the uboot-sign class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SPL_SIGN_KEYDIR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SPL_SIGN_KEYDIR)
 
 ## Variable `SRC_URI`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 See the BitBake manual for the initial description for this variable: SRC_URI.
 
@@ -3957,7 +3957,7 @@ Note
 
 If you want the build system to pick up files specified through a SRC_URI statement from your append file, you need to be sure to extend the FILESPATH variable by also using the FILESEXTRAPATHS variable from within your append file.
 
-## BitBake User Manual
+### BitBake User Manual
 
 The list of source files — local or remote. This variable tells BitBake which bits to pull for the build and how to pull them. For example, if the recipe or append file needs to fetch a single tarball from the Internet, the recipe or append file uses a SRC_URI entry that specifies that tarball. On the other hand, if the recipe or append file needs to fetch a tarball, apply two patches, and include a custom file, the recipe or append file needs an SRC_URI variable that specifies all those sources.
 
@@ -4026,11 +4026,11 @@ SRC_URI[third.sha256sum] = "13550350a8681c84c861aac2e5b440161c2b33a3e4f302ac680c
 
 - `unpack`: Controls whether or not to unpack the file if it is an archive. The default action is to unpack the file.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SRC_URI , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-SRC_URI
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SRC_URI , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-SRC_URI)
 
 ## Variable `SRCREV`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The revision of the source code used to build the package. This variable applies to Subversion, Git, Mercurial, and Bazaar only. Note that if you want to build a fixed revision and you want to avoid performing a query on the remote repository every time BitBake parses your recipe, you should specify a SRCREV that is a full revision identifier (e.g. the full SHA hash in git) and not just a tag.
 
@@ -4038,37 +4038,37 @@ Note
 
 For information on limitations when inheriting the latest revision of software using SRCREV, see the AUTOREV variable description and the “Automatically Incrementing a Package Version Number” section, which is in the Yocto Project Development Tasks Manual.
 
-## BitBake User Manual
+### BitBake User Manual
 
 The revision of the source code used to build the package. This variable applies only when using Subversion, Git, Mercurial and Bazaar. If you want to build a fixed revision and you want to avoid performing a query on the remote repository every time BitBake parses your recipe, you should specify a SRCREV that is a full revision identifier and not just a tag.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SRCREV , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-SRCREV
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SRCREV , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-SRCREV)
 
 ## Variable `SRCREV_FORMAT`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 See SRCREV_FORMAT in the BitBake manual.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Helps construct valid SRCREV values when multiple source controlled URLs are used in SRC_URI.
 
 The system needs help constructing these values under these circumstances. Each component in the SRC_URI is assigned a name and these are referenced in the SRCREV_FORMAT variable. Consider an example with URLs named “machine” and “meta”. In this case, SRCREV_FORMAT could look like “machine_meta” and those names would have the SCM versions substituted into each position. Only one `AUTOINC` placeholder is added and if needed. And, this placeholder is placed at the start of the returned string.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SRCREV_FORMAT , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-SRCREV_FORMAT
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SRCREV_FORMAT , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-SRCREV_FORMAT)
 
 ## Variable `STAGING_KERNEL_DIR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The directory with kernel headers that are required to build out-of-tree modules.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-STAGING_KERNEL_DIR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-STAGING_KERNEL_DIR)
 
 ## Variable `SYSTEMD_AUTO_ENABLE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the systemd class, this variable specifies whether the specified service in SYSTEMD_SERVICE should start automatically or not. By default, the service is enabled to automatically start at boot time. The default setting is in the systemd class as follows:
 
@@ -4079,11 +4079,11 @@ SYSTEMD_AUTO_ENABLE ??= "enable"
 
 You can disable the service by setting the variable to “disable”.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SYSTEMD_AUTO_ENABLE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SYSTEMD_AUTO_ENABLE)
 
 ## Variable `SYSTEMD_PACKAGES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the systemd class, this variable locates the systemd unit files when they are not found in the main recipe’s package. By default, the SYSTEMD_PACKAGES variable is set such that the systemd unit files are assumed to reside in the recipes main package:
 
@@ -4094,11 +4094,11 @@ SYSTEMD_PACKAGES ?= "${PN}"
 
 If these unit files are not in this recipe’s main package, you need to use SYSTEMD_PACKAGES to list the package or packages in which the build system can find the systemd unit files.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SYSTEMD_PACKAGES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SYSTEMD_PACKAGES)
 
 ## Variable `SYSTEMD_SERVICE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the systemd class, this variable specifies the systemd service name for a package.
 
@@ -4113,27 +4113,27 @@ SYSTEMD_SERVICE:${PN} = "connman.service"
 
 The package overrides that can be specified are directly related to the value of SYSTEMD_PACKAGES. Overrides not included in SYSTEMD_PACKAGES will be silently ignored.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SYSTEMD_SERVICE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SYSTEMD_SERVICE)
 
 ## Variable `TARGET_DBGSRC_DIR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the target path to debug source files. The default is `/usr/src/debug/${PN}/${PV}`.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TARGET_DBGSRC_DIR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TARGET_DBGSRC_DIR)
 
 ## Variable `THISDIR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The directory in which the file BitBake is currently parsing is located. Do not manually set this variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-THISDIR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-THISDIR)
 
 ## Variable `TMPDIR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This variable is the base directory the OpenEmbedded build system uses for all build output and intermediate files (other than the shared state cache). By default, the TMPDIR variable points to `tmp` within the Build Directory.
 
@@ -4148,23 +4148,23 @@ An example use for this scenario is to set TMPDIR to a local disk, which does no
 
 The filesystem used by TMPDIR must have standard filesystem semantics (i.e. mixed-case files are unique, POSIX file locking, and persistent inodes). Due to various issues with NFS and bugs in some implementations, NFS does not meet this minimum requirement. Consequently, TMPDIR cannot be on NFS.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TMPDIR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TMPDIR)
 
 ## Variable `TOPDIR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 See TOPDIR in the BitBake manual.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Points to the build directory. BitBake automatically sets this variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TOPDIR , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-TOPDIR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TOPDIR , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-TOPDIR)
 
 ## Variable `TUNE_FEATURES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Features used to “tune” a compiler for optimal use given a specific processor. The features are defined within the tune files and allow arguments (i.e. `TUNE_*ARGS`) to be dynamically generated based on the features.
 
@@ -4179,19 +4179,19 @@ TUNE_FEATURES ??= "${TUNE_FEATURES:tune-${DEFAULTTUNE}}"
 
 See the DEFAULTTUNE variable for more information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TUNE_FEATURES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TUNE_FEATURES)
 
 ## Variable `UBOOT_BINARY`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the name of the binary build by U-Boot.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_BINARY
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_BINARY)
 
 ## Variable `UBOOT_CONFIG`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Configures one or more U-Boot configurations to build. Each configuration can define the UBOOT_MACHINE and optionally the IMAGE_FSTYPES and the UBOOT_BINARY.
 
@@ -4213,19 +4213,19 @@ In this example, all possible seven configurations are selected. Each configurat
 
 For more information on how the UBOOT_CONFIG is handled, see the uboot-config class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_CONFIG
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_CONFIG)
 
 ## Variable `UBOOT_DTB_LOADADDRESS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the load address for the dtb image used by U-Boot. During FIT image creation, the UBOOT_DTB_LOADADDRESS variable is used in kernel-fitimage class to specify the load address to be used in creating the dtb sections of Image Tree Source for the FIT image.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_DTB_LOADADDRESS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_DTB_LOADADDRESS)
 
 ## Variable `UBOOT_ENTRYPOINT`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the entry point for the U-Boot image. During U-Boot image creation, the UBOOT_ENTRYPOINT variable is passed as a command-line parameter to the `uboot-mkimage` utility.
 
@@ -4233,11 +4233,11 @@ To pass a 64 bit address for FIT image creation, you will need to set: - The FIT
 
 This variable is used by the kernel-fitimage, kernel-uimage, kernel, uboot-config and uboot-sign classes.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_ENTRYPOINT
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_ENTRYPOINT)
 
 ## Variable `UBOOT_FITIMAGE_ENABLE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This variable allows to generate a FIT image for U-Boot, which is one of the ways to implement a verified boot process.
 
@@ -4250,11 +4250,11 @@ UBOOT_FITIMAGE_ENABLE = "1"
 
 See the uboot-sign class for details.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_FITIMAGE_ENABLE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_FITIMAGE_ENABLE)
 
 ## Variable `UBOOT_LOADADDRESS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the load address for the U-Boot image. During U-Boot image creation, the UBOOT_LOADADDRESS variable is passed as a command-line parameter to the `uboot-mkimage` utility.
 
@@ -4266,65 +4266,65 @@ To pass a 64 bit address, you will also need to set:
 
 This variable is used by the kernel-fitimage, kernel-uimage, kernel, uboot-config and uboot-sign classes.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_LOADADDRESS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_LOADADDRESS)
 
 ## Variable `UBOOT_MACHINE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the value passed on the `make` command line when building a U-Boot image. The value indicates the target platform configuration. You typically set this variable from the machine configuration file (i.e. `conf/machine/machine_name.conf`).
 
 Please see the “Selection of Processor Architecture and Board Type” section in the U-Boot README for valid values for this variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_MACHINE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_MACHINE)
 
 ## Variable `UBOOT_MKIMAGE_DTCOPTS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Options for the device tree compiler passed to `mkimage -D` feature while creating a FIT image with the kernel-fitimage class. If UBOOT_MKIMAGE_DTCOPTS is not set then the kernel-fitimage class will not pass the `-D` option to `mkimage`.
 
 This variable is also used by the uboot-sign class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_MKIMAGE_DTCOPTS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_MKIMAGE_DTCOPTS)
 
 ## Variable `UBOOT_RD_LOADADDRESS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the load address for the RAM disk image. During FIT image creation, the UBOOT_RD_LOADADDRESS variable is used in kernel-fitimage class to specify the load address to be used in creating the Image Tree Source for the FIT image.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_RD_LOADADDRESS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_RD_LOADADDRESS)
 
 ## Variable `UBOOT_SIGN_ENABLE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Enable signing of FIT image. The default value is “0”.
 
 This variable is used by the kernel-fitimage, uboot-config and uboot-sign classes.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_SIGN_ENABLE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_SIGN_ENABLE)
 
 ## Variable `UBOOT_SIGN_KEYDIR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Location of the directory containing the RSA key and certificate used for signing FIT image, used by the kernel-fitimage and uboot-sign classes.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_SIGN_KEYDIR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_SIGN_KEYDIR)
 
 ## Variable `UBOOT_SIGN_KEYNAME`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The name of keys used by the kernel-fitimage class for signing U-Boot FIT image stored in the UBOOT_SIGN_KEYDIR directory. If we have for example a `dev.key` key and a `dev.crt` certificate stored in the UBOOT_SIGN_KEYDIR directory, you will have to set UBOOT_SIGN_KEYNAME to `dev`.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_SIGN_KEYNAME
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_SIGN_KEYNAME)
 
 ## Variable `USER_CLASSES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A list of classes to globally inherit. These classes are used by the OpenEmbedded build system to enable extra features.
 
@@ -4339,11 +4339,11 @@ USER_CLASSES ?= "buildstats"
 
 For more information, see `meta-poky/conf/templates/default/local.conf.sample` in the Source Directory.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-USER_CLASSES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-USER_CLASSES)
 
 ## Variable `USERADD_GID_TABLES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies a password file to use for obtaining static group identification (`gid`) values when the OpenEmbedded build system adds a group to the system during package installation.
 
@@ -4358,11 +4358,11 @@ Note
 
 Setting the USERADDEXTENSION variable to “useradd-staticids” causes the build system to use static `gid` values.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-USERADD_GID_TABLES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-USERADD_GID_TABLES)
 
 ## Variable `USERADD_PACKAGES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the useradd* class, this variable specifies the individual packages within the recipe that require users and/or groups to be added.
 
@@ -4377,11 +4377,11 @@ Note
 
 It follows that if you are going to use the USERADD_PACKAGES variable, you need to set one or more of the USERADD_PARAM, GROUPADD_PARAM, or GROUPMEMS_PARAM variables.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-USERADD_PACKAGES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-USERADD_PACKAGES)
 
 ## Variable `USERADD_PARAM`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the useradd* class, this variable specifies for a package what parameters should pass to the `useradd` command if you add a user to the system when the package is installed.
 
@@ -4396,11 +4396,11 @@ USERADD_PARAM:${PN} = "--system --home ${localstatedir}/lib/dbus \
 
 For information on the standard Linux shell command `useradd`, see *useradd(8)*.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-USERADD_PARAM
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-USERADD_PARAM)
 
 ## Variable `USERADD_UID_TABLES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies a password file to use for obtaining static user identification (`uid`) values when the OpenEmbedded build system adds a user to the system during package installation.
 
@@ -4415,11 +4415,11 @@ Note
 
 Setting the USERADDEXTENSION variable to “useradd-staticids” causes the build system to use static `uid` values.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-USERADD_UID_TABLES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-USERADD_UID_TABLES)
 
 ## Variable `USERADDEXTENSION`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When set to “useradd-staticids”, causes the OpenEmbedded build system to base all user and group additions on a static `passwd` and `group` files found in BBPATH.
 
@@ -4431,11 +4431,11 @@ Setting this variable to use static `uid` and `gid` values causes the OpenEmbedd
 
 If you use static `uid` and `gid` information, you must also specify the `files/passwd` and `files/group` files by setting the USERADD_UID_TABLES and USERADD_GID_TABLES variables. Additionally, you should also set the USERADD_ERROR_DYNAMIC variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-USERADDEXTENSION
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-USERADDEXTENSION)
 
 ## Variable `VIRTUAL-RUNTIME`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 VIRTUAL-RUNTIME is a commonly used prefix for defining virtual packages for runtime usage, typically for use in RDEPENDS or in image definitions.
 
@@ -4467,19 +4467,19 @@ PACKAGE_INSTALL = "${INITRAMFS_SCRIPTS} ${VIRTUAL-RUNTIME_base-utils} base-passw
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-VIRTUAL-RUNTIME
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-VIRTUAL-RUNTIME)
 
 ## Variable `WARN_QA`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the quality assurance checks whose failures are reported as warnings by the OpenEmbedded build system. You set this variable in your distribution configuration file. For a list of the checks you can control with this variable, see the “insane” section.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-WARN_QA
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-WARN_QA)
 
 ## Variable `WORKDIR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The pathname of the work directory in which the OpenEmbedded build system builds a recipe. This directory is located within the TMPDIR directory structure and is specific to the recipe being built and the system for which it is being built.
 
@@ -4511,7 +4511,7 @@ poky/build/tmp/work/qemux86-poky-linux/foo/1.3.0-r0
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-WORKDIR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-WORKDIR)
 
 ## Class `allarch`
 
@@ -4525,7 +4525,7 @@ Configuring such recipes for all architectures causes the do_package_write_* tas
 
 By default, all recipes inherit the base and package classes, which enable functionality needed for recipes that produce executable output. If your recipe, for example, only produces packages that contain configuration files, media files, or scripts (e.g. Python and Perl), then it should inherit the allarch class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-allarch
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-allarch)
 
 ## Class `archiver`
 
@@ -4533,7 +4533,7 @@ The archiver class supports releasing source code and other materials with the b
 
 For more details on the source archiver, see the “Maintaining Open Source License Compliance During Your Product’s Lifecycle” section in the Yocto Project Development Tasks Manual. You can also see the ARCHIVER_MODE variable for information about the variable flags (varflags) that help control archive creation.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-archiver
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-archiver)
 
 ## Class `autotools`
 
@@ -4557,7 +4557,7 @@ It’s useful to have some idea of how the tasks defined by the autotools* class
 
 - do_install — runs `make install` and passes in `${`D`}` as `DESTDIR`.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-autotools
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-autotools)
 
 ## Class `base`
 
@@ -4565,7 +4565,7 @@ The base class is special in that every `.bb` file implicitly inherits the class
 
 The class also contains some commonly used functions such as `oe_runmake`, which runs `make` with the arguments specified in EXTRA_OEMAKE variable as well as the arguments passed directly to `oe_runmake`.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-base
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-base)
 
 ## Class `bin_package`
 
@@ -4593,13 +4593,13 @@ Note
 
 The extraction of the package passed in SRC_URI is not handled by the bin_package class, but rather by the appropriate fetcher depending on the file extension.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-bin_package
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-bin_package)
 
 ## Class `buildhistory`
 
 The buildhistory class records a history of build output metadata, which can be used to detect possible regressions as well as used for analysis of the build output. For more information on using Build History, see the “Maintaining Build Output Quality” section in the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-buildhistory
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-buildhistory)
 
 ## Class `buildstats`
 
@@ -4609,7 +4609,7 @@ When you use this class, the output goes into the BUILDSTATS_BASE directory, whi
 
 Collecting build statistics is enabled by default through the USER_CLASSES variable from your `local.conf` file. Consequently, you do not have to do anything to enable the class. However, if you want to disable the class, simply remove “buildstats” from the USER_CLASSES list.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-buildstats
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-buildstats)
 
 ## Class `cargo`
 
@@ -4623,7 +4623,7 @@ You will find an example (that show also how to handle possible git source depen
 
 This class inherits the cargo_common class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-cargo
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-cargo)
 
 ## Class `cargo-update-recipe-crates`
 
@@ -4645,7 +4645,7 @@ require ${BPN}-crates.inc
 
 That’s also something you can achieve by using the cargo-bitbake tool.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-cargo-update-recipe-crates
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-cargo-update-recipe-crates)
 
 ## Class `cargo_c`
 
@@ -4653,7 +4653,7 @@ The cargo_c class can be inherited by a recipe to generate a Rust library that c
 
 See the rust-c-lib-example_git.bb example recipe.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-cargo_c
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-cargo_c)
 
 ## Class `cargo_common`
 
@@ -4661,7 +4661,7 @@ The cargo_common class is an internal class that is not intended to be used dire
 
 An exception is the “rust” recipe, to build the Rust compiler and runtime library, which is built by Cargo but cannot use the cargo class. This is why this class was introduced.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-cargo_common
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-cargo_common)
 
 ## Class `ccache`
 
@@ -4673,7 +4673,7 @@ Recipes can also explicitly disable Ccache support even when the ccache class is
 
 Using the ccache class can lead to unexpected side-effects. Using this class is not recommended.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-ccache
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-ccache)
 
 ## Class `cmake`
 
@@ -4683,7 +4683,7 @@ By default, the cmake class uses Ninja instead of GNU make for building, which o
 
 If you need to install custom CMake toolchain files supplied by the application being built, you should install them (during do_install) to the preferred CMake Module directory: `${D}${datadir}/cmake/modules/`.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-cmake
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-cmake)
 
 ## Class `cmake-qemu`
 
@@ -4702,25 +4702,25 @@ works transparently with QEMU user-mode.
 
 If the CMake project is developed with this use case in mind this works very nicely. This also applies to an IDE configured to use `cmake-native` for cross-compiling.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-cmake-qemu
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-cmake-qemu)
 
 ## Class `copyleft_compliance`
 
 The copyleft_compliance class preserves source code for the purposes of license compliance. This class is an alternative to the archiver class and is still used by some users even though it has been deprecated in favor of the archiver class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-copyleft_compliance
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-copyleft_compliance)
 
 ## Class `copyleft_filter`
 
 A class used by the archiver and copyleft_compliance classes for filtering licenses. The `copyleft_filter` class is an internal class and is not intended to be used directly.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-copyleft_filter
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-copyleft_filter)
 
 ## Class `core-image`
 
 The core-image class provides common definitions for the `core-image-*` image recipes, such as support for additional IMAGE_FEATURES.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-core-image
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-core-image)
 
 ## Class `cpan`
 
@@ -4734,7 +4734,7 @@ Recipes for Perl modules are simple. These recipes usually only need to point to
 
 Both build methods inherit the cpan-base class for basic Perl support.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-cpan
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-cpan)
 
 ## Class `create-spdx`
 
@@ -4753,7 +4753,7 @@ The exact behaviour of this class, and the amount of output can be controlled by
 
 See the description of these variables and the “Creating a Software Bill of Materials” section in the Yocto Project Development Tasks Manual for more details.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-create-spdx
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-create-spdx)
 
 ## Class `cve-check`
 
@@ -4810,7 +4810,7 @@ Users should note that security is a process, not a product, and thus also CVE c
 
 You will find some more details in the “Checking for Vulnerabilities” section in the Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-cve-check
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-cve-check)
 
 ## Class `debian`
 
@@ -4818,13 +4818,13 @@ The debian class renames output packages so that they follow the Debian naming p
 
 If a recipe creates packages for multiple libraries (shared object files of `.so` type), use the LEAD_SONAME variable in the recipe to specify the library on which to apply the naming scheme.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-debian
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-debian)
 
 ## Class `deploy`
 
 The deploy class handles deploying files to the DEPLOY_DIR_IMAGE directory. The main function of this class is to allow the deploy step to be accelerated by shared state. Recipes that inherit this class should define their own do_deploy function to copy the files to be deployed to DEPLOYDIR, and use `addtask` to add the task at the appropriate place, which is usually after do_compile or do_install. The class then takes care of staging the files from DEPLOYDIR to DEPLOY_DIR_IMAGE.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-deploy
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-deploy)
 
 ## Class `devicetree`
 
@@ -4855,13 +4855,13 @@ SRC_URI:mymachine = "file://mymachine.dts"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-devicetree
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-devicetree)
 
 ## Class `devshell`
 
 The devshell class adds the do_devshell task. Distribution policy dictates whether to include this class. See the “Using a Development Shell” section in the Yocto Project Development Tasks Manual for more information about using devshell.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-devshell
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-devshell)
 
 ## Class `externalsrc`
 
@@ -4880,7 +4880,7 @@ See these variables for more information: WORKDIR, BPN, and PV,
 
 For more information on the externalsrc class, see the comments in `meta/classes/externalsrc.bbclass` in the Source Directory. For information on how to use the externalsrc class, see the “Building Software from an External Source” section in the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-externalsrc
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-externalsrc)
 
 ## Class `extrausers`
 
@@ -4938,7 +4938,7 @@ Note
 
 From a security perspective, hardcoding a default password is not generally a good idea or even legal in some jurisdictions. It is recommended that you do not do this if you are building a production image.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-extrausers
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-extrausers)
 
 ## Class `features_check`
 
@@ -4966,7 +4966,7 @@ This class provides support for the following variables:
 
 If any conditions specified in the recipe using the above variables are not met, the recipe will be skipped, and if the build system attempts to build the recipe then an error will be triggered.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-features_check
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-features_check)
 
 ## Class `fontcache`
 
@@ -4974,7 +4974,7 @@ The fontcache class generates the proper post-install and post-remove (postinst 
 
 If the fonts being installed are in packages other than the main package, set FONT_PACKAGES to specify the packages containing the fonts.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-fontcache
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-fontcache)
 
 ## Class `gettext`
 
@@ -4986,7 +4986,7 @@ This class will configure recipes to build translations *unless*:
 
 - the INHIBIT_DEFAULT_DEPS variable is set and the recipe inheriting the gettext class does not also inherit the cross-canadian class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-gettext
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-gettext)
 
 ## Class `go`
 
@@ -4994,7 +4994,7 @@ The go class supports building Go programs. The behavior of this class is contro
 
 To build a Go program with the Yocto Project, you can use the go-helloworld_0.1.bb recipe as an example.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-go
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-go)
 
 ## Class `go-mod`
 
@@ -5002,7 +5002,7 @@ The go-mod class allows to use Go modules, and inherits the go class.
 
 See the associated GO_WORKDIR variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-go-mod
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-go-mod)
 
 ## Class `go-vendor`
 
@@ -5010,19 +5010,19 @@ The go-vendor class implements support for offline builds, also known as Go vend
 
 The dependencies are unpacked into the modules’ `vendor` directory, where a manifest file is generated.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-go-vendor
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-go-vendor)
 
 ## Class `gsettings`
 
 The gsettings class provides common functionality for recipes that need to install GSettings (glib) schemas. The schemas are assumed to be part of the main package. Appropriate post-install and post-remove (postinst/postrm) scriptlets are added to register and unregister the schemas in the target image.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-gsettings
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-gsettings)
 
 ## Class `gtk-icon-cache`
 
 The gtk-icon-cache class generates the proper post-install and post-remove (postinst/postrm) scriptlets for packages that use GTK+ and install icons. These scriptlets call `gtk-update-icon-cache` to add the fonts to GTK+’s icon cache. Since the cache files are architecture-specific, `gtk-update-icon-cache` is run using QEMU if the postinst scriptlets need to be run on the build host during image creation.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-gtk-icon-cache
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-gtk-icon-cache)
 
 ## Class `image`
 
@@ -5034,7 +5034,7 @@ The image class helps support creating images in different formats. First, the r
 
 For information on customizing images, see the “Customizing Images” section in the Yocto Project Development Tasks Manual. For information on how images are created, see the “Images” section in the Yocto Project Overview and Concepts Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-image
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-image)
 
 ## Class `image-buildinfo`
 
@@ -5046,7 +5046,7 @@ The image-buildinfo class writes a plain text file containing build information 
 
 Additionally, when building an SDK it will write the same contents to `/buildinfo` by default (as specified by SDK_BUILDINFO_FILE).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-image-buildinfo
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-image-buildinfo)
 
 ## Class `image-container`
 
@@ -5078,7 +5078,7 @@ ENTRYPOINT /bin/sh
 
 This is suitable to build a container using our generated root filesystem image.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-image-container
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-image-container)
 
 ## Class `image-live`
 
@@ -5086,7 +5086,7 @@ This class controls building “live” (i.e. HDDIMG and ISO) images. Live image
 
 Normally, you do not use this class directly. Instead, you add “live” to IMAGE_FSTYPES.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-image-live
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-image-live)
 
 ## Class `image_types`
 
@@ -5097,7 +5097,7 @@ By default, the image class automatically enables the image_types class. The ima
 ```
 IMGCLASSES = "rootfs_${IMAGE_PKGTYPE} image_types ${IMAGE_CLASSES}"
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-image_types
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-image_types)
 
 ## Class `insane`
 
@@ -5241,7 +5241,7 @@ This is only relevant when you are using runtime package management on your targ
 
 - `xorg-driver-abi:` Checks that all packages containing Xorg drivers have ABI dependencies. The `xserver-xorg` recipe provides driver ABI names. All drivers should depend on the ABI versions that they have been built against. Driver recipes that include `xorg-driver-input.inc` or `xorg-driver-video.inc` will automatically get these versions. Consequently, you should only need to explicitly add dependencies to binary driver recipes.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-insane
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-insane)
 
 ## Class `kernel`
 
@@ -5255,13 +5255,13 @@ The kernel class contains logic that allows you to embed an initial RAM filesyst
 
 Various other classes are used by the kernel and module classes internally including the kernel-arch, module-base, and linux-kernel-base classes.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-kernel
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-kernel)
 
 ## Class `kernel-arch`
 
 The kernel-arch class sets the `ARCH` environment variable for Linux kernel compilation (including modules).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-kernel-arch
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-kernel-arch)
 
 ## Class `kernel-devicetree`
 
@@ -5279,7 +5279,7 @@ Its behavior is mainly controlled by the following variables:
 
 - KERNEL_PACKAGE_NAME: base name of the kernel packages
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-kernel-devicetree
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-kernel-devicetree)
 
 ## Class `kernel-fitimage`
 
@@ -5301,61 +5301,61 @@ Only a single U-boot boot script can be added to the FIT image created by kernel
 
 The FIT image generated by the kernel-fitimage class is signed when the variables UBOOT_SIGN_ENABLE, UBOOT_MKIMAGE_DTCOPTS, UBOOT_SIGN_KEYDIR and UBOOT_SIGN_KEYNAME are set appropriately. The default values used for FIT_HASH_ALG and FIT_SIGN_ALG in kernel-fitimage are “sha256” and “rsa2048” respectively. The keys for signing the FIT image can be generated using the kernel-fitimage class when both FIT_GENERATE_KEYS and UBOOT_SIGN_ENABLE are set to “1”.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-kernel-fitimage
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-kernel-fitimage)
 
 ## Class `kernel-grub`
 
 The kernel-grub class updates the boot area and the boot menu with the kernel as the priority boot mechanism while installing a RPM to update the kernel on a deployed target.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-kernel-grub
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-kernel-grub)
 
 ## Class `kernel-module-split`
 
 The kernel-module-split class provides common functionality for splitting Linux kernel modules into separate packages.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-kernel-module-split
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-kernel-module-split)
 
 ## Class `kernel-uboot`
 
 The kernel-uboot class provides support for building from vmlinux-style kernel sources.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-kernel-uboot
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-kernel-uboot)
 
 ## Class `kernel-uimage`
 
 The kernel-uimage class provides support to pack uImage.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-kernel-uimage
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-kernel-uimage)
 
 ## Class `kernel-yocto`
 
 The kernel-yocto class provides common functionality for building from linux-yocto style kernel source repositories.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-kernel-yocto
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-kernel-yocto)
 
 ## Class `lib_package`
 
 The lib_package class supports recipes that build libraries and produce executable binaries, where those binaries should not be installed by default along with the library. Instead, the binaries are added to a separate `${`PN`}-bin` package to make their installation optional.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-lib_package
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-lib_package)
 
 ## Class `license`
 
 The license class provides license manifest creation and license exclusion. This class is enabled by default using the default value for the INHERIT_DISTRO variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-license
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-license)
 
 ## Class `meson`
 
 The meson class allows to create recipes that build software using the Meson build system. You can use the MESON_BUILDTYPE, MESON_TARGET and EXTRA_OEMESON variables to specify additional configuration options to be passed using the `meson` command line.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-meson
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-meson)
 
 ## Class `mime`
 
 The mime class generates the proper post-install and post-remove (postinst/postrm) scriptlets for packages that install MIME type files. These scriptlets call `update-mime-database` to add the MIME types to the shared database.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-mime
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-mime)
 
 ## Class `mime-xdg`
 
@@ -5365,7 +5365,7 @@ Thanks to this class, when users open a file through a file browser on recently 
 
 If you have recipes installing their `.desktop` files as absolute symbolic links, the detection of such files cannot be done by the current implementation of this class. In this case, you have to add the corresponding package names to the MIME_XDG_PACKAGES variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-mime-xdg
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-mime-xdg)
 
 ## Class `module`
 
@@ -5373,7 +5373,7 @@ The module class provides support for building out-of-tree Linux kernel modules.
 
 For general information on out-of-tree Linux kernel modules, see the “Incorporating Out-of-Tree Modules” section in the Yocto Project Linux Kernel Development Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-module
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-module)
 
 ## Class `native`
 
@@ -5405,7 +5405,7 @@ Inside the recipe, use `:class-native` and `:class-target` overrides to specify 
 
 Although applied differently, the native class is used with both methods. The advantage of the second method is that you do not need to have two separate recipes (assuming you need both) for native and target. All common parts of the recipe are automatically shared.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-native
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-native)
 
 ## Class `nativesdk`
 
@@ -5437,7 +5437,7 @@ Inside the recipe, use `:class-nativesdk` and `:class-target` overrides to speci
 
 Although applied differently, the nativesdk class is used with both methods. The advantage of the second method is that you do not need to have two separate recipes (assuming you need both) for the SDK machine and the target. All common parts of the recipe are automatically shared.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-nativesdk
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-nativesdk)
 
 ## Class `npm`
 
@@ -5449,7 +5449,7 @@ Currently, recipes inheriting this class must use the `npm://` fetcher to have d
 
 For information on how to create NPM packages, see the “Creating Node Package Manager (NPM) Packages” section in the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-npm
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-npm)
 
 ## Class `overlayfs`
 
@@ -5508,7 +5508,7 @@ Note
 
 The class does not support the `/etc` directory itself, because `systemd` depends on it. In order to get `/etc` in overlayfs, see overlayfs-etc.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-overlayfs
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-overlayfs)
 
 ## Class `overlayfs-etc`
 
@@ -5554,7 +5554,7 @@ OVERLAYFS_ETC_USE_ORIG_INIT_NAME = "0"
 
 Then the generated init will be named `/sbin/preinit` and you would need to extend your kernel parameters manually in your bootloader configuration.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-overlayfs-etc
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-overlayfs-etc)
 
 ## Class `package`
 
@@ -5574,7 +5574,7 @@ Before making your package manager decision, however, you should consider some f
 
 You can find additional information on the effects of the package class at this Yocto Project mailing list link: https://lists.yoctoproject.org/g/poky/topic/61292484#msg6286
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-package
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-package)
 
 ## Class `package_deb`
 
@@ -5582,7 +5582,7 @@ The package_deb class provides support for creating packages that use the Debian
 
 This class inherits the package class and is enabled through the PACKAGE_CLASSES variable in the `local.conf` file.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-package_deb
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-package_deb)
 
 ## Class `package_ipk`
 
@@ -5590,7 +5590,7 @@ The package_ipk class provides support for creating packages that use the IPK (i
 
 This class inherits the package class and is enabled through the PACKAGE_CLASSES variable in the `local.conf` file.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-package_ipk
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-package_ipk)
 
 ## Class `package_rpm`
 
@@ -5598,7 +5598,7 @@ The package_rpm class provides support for creating packages that use the RPM (i
 
 This class inherits the package class and is enabled through the PACKAGE_CLASSES variable in the `local.conf` file.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-package_rpm
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-package_rpm)
 
 ## Class `packagedata`
 
@@ -5606,7 +5606,7 @@ The packagedata class provides common functionality for reading `pkgdata` files 
 
 This class is enabled by default because it is inherited by the package class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-packagedata
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-packagedata)
 
 ## Class `packagegroup`
 
@@ -5627,7 +5627,7 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 for the packagegroup, you need to do that *before* the `inherit packagegroup` line in the recipe file. Setting it afterward can break BitBake parsing, result in an “allarch” architecture mismatch error, or allow architecture-independent defaults to override your intent.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-packagegroup
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-packagegroup)
 
 ## Class `patch`
 
@@ -5635,7 +5635,7 @@ The patch class provides all functionality for applying patches during the do_pa
 
 This class is enabled by default because it is inherited by the base class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-patch
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-patch)
 
 ## Class `pixbufcache`
 
@@ -5643,7 +5643,7 @@ The pixbufcache class generates the proper post-install and post-remove (postins
 
 If the pixbuf loaders being installed are in packages other than the recipe’s main package, set PIXBUF_PACKAGES to specify the packages containing the loaders.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-pixbufcache
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-pixbufcache)
 
 ## Class `pkgconfig`
 
@@ -5651,7 +5651,7 @@ The pkgconfig class provides a standard way to get header and library informatio
 
 During staging, BitBake installs `pkg-config` data into the `sysroots/` directory. By making use of sysroot functionality within `pkg-config`, the pkgconfig class no longer has to manipulate the files.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-pkgconfig
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-pkgconfig)
 
 ## Class `populate_sdk`
 
@@ -5683,7 +5683,7 @@ The respective populate_sdk_deb, populate_sdk_rpm, and populate_sdk_ipk classes 
 
 For more information on the cross-development toolchain generation, see the “Cross-Development Toolchain Generation” section in the Yocto Project Overview and Concepts Manual. For information on advantages gained when building a cross-development toolchain using the do_populate_sdk task, see the “Building an SDK Installer” section in the Yocto Project Application Development and the Extensible Software Development Kit (eSDK) manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-populate_sdk
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-populate_sdk)
 
 ## Class `ptest`
 
@@ -5691,13 +5691,13 @@ The ptest class provides functionality for packaging and installing runtime test
 
 This class is intended to be inherited by individual recipes. However, the class’ functionality is largely disabled unless “ptest” appears in DISTRO_FEATURES. See the “Testing Packages With ptest” section in the Yocto Project Test Environment Manual for more information on ptest.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-ptest
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-ptest)
 
 ## Class `ptest-cargo`
 
 The ptest-cargo class is a class which extends the cargo class and adds `compile_ptest_cargo` and `install_ptest_cargo` steps to respectively build and install test suites defined in the `Cargo.toml` file, into a dedicated `-ptest` package.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-ptest-cargo
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-ptest-cargo)
 
 ## Class `ptest-gnome`
 
@@ -5705,7 +5705,7 @@ Enables package tests (ptests) specifically for GNOME packages, which have tests
 
 For information on setting up and running ptests, see the “Testing Packages With ptest” section in the Yocto Project Test Environment Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-ptest-gnome
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-ptest-gnome)
 
 ## Class `pypi`
 
@@ -5713,7 +5713,7 @@ The pypi class sets variables appropriately for recipes that build Python module
 
 Variables set by the pypi class include SRC_URI, SECTION, HOMEPAGE, UPSTREAM_CHECK_URI, UPSTREAM_CHECK_REGEX and CVE_PRODUCT.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-pypi
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-pypi)
 
 ## Class `python-setuptools3_rust`
 
@@ -5721,19 +5721,19 @@ The python-setuptools3_rust class enables building Python extensions implemented
 
 This class inherits the setuptools3 and python_pyo3 classes.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-python-setuptools3_rust
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-python-setuptools3_rust)
 
 ## Class `python3native`
 
 The python3native class supports using the native version of Python 3 built by the build system rather than support of the version provided by the build host.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-python3native
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-python3native)
 
 ## Class `python3targetconfig`
 
 The python3targetconfig class supports using the native version of Python 3 built by the build system rather than support of the version provided by the build host, except that the configuration for the target machine is accessible (such as correct installation directories). This also adds a dependency on target `python3`, so should only be used where appropriate in order to avoid unnecessarily lengthening builds.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-python3targetconfig
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-python3targetconfig)
 
 ## Class `python_flit_core`
 
@@ -5743,13 +5743,13 @@ Python modules built with `flit_core.buildapi` are pure Python (no `C` or `Rust`
 
 Internally this uses the python_pep517 class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-python_flit_core
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-python_flit_core)
 
 ## Class `python_maturin`
 
 The python_maturin class provides support for python-maturin, a replacement for setuptools_rust and another “backend” for building Python Wheels.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-python_maturin
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-python_maturin)
 
 ## Class `python_mesonpy`
 
@@ -5757,7 +5757,7 @@ The python_mesonpy class enables building Python modules which use the meson-pyt
 
 Internally this uses the python_pep517 class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-python_mesonpy
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-python_mesonpy)
 
 ## Class `python_pep517`
 
@@ -5767,7 +5767,7 @@ Recipes wouldn’t inherit this directly, instead typically another class will i
 
 Examples of classes which do this are python_flit_core, python_setuptools_build_meta, and python_poetry_core.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-python_pep517
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-python_pep517)
 
 ## Class `python_poetry_core`
 
@@ -5775,7 +5775,7 @@ The python_poetry_core class enables building Python modules which use the Poetr
 
 Internally this uses the python_pep517 class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-python_poetry_core
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-python_poetry_core)
 
 ## Class `python_pyo3`
 
@@ -5783,7 +5783,7 @@ The python_pyo3 class helps make sure that Python extensions written in Rust and
 
 This class is internal to the python-setuptools3_rust class and is not meant to be used directly in recipes.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-python_pyo3
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-python_pyo3)
 
 ## Class `python_setuptools_build_meta`
 
@@ -5793,7 +5793,7 @@ Python modules built with `setuptools.build_meta` can be pure Python or include 
 
 Internally this uses the python_pep517 class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-python_setuptools_build_meta
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-python_setuptools_build_meta)
 
 ## Class `rm_work`
 
@@ -5820,13 +5820,13 @@ RM_WORK_EXCLUDE_ITEMS += "items_to_keep"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-rm_work
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-rm_work)
 
 ## Class `scons`
 
 The scons class supports recipes that need to build software that uses the SCons build system. You can use the EXTRA_OESCONS variable to specify additional configuration options you want to pass SCons command line.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-scons
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-scons)
 
 ## Class `setuptools3`
 
@@ -5842,13 +5842,13 @@ Note
 
 The setuptools3 class do_install task now installs the `wheel` binary archive. In current versions of `setuptools` the legacy `setup.py install` method is deprecated. If the `setup.py` cannot be used with wheels, for example it creates files outside of the Python module or standard entry points, then setuptools3_legacy should be used.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-setuptools3
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-setuptools3)
 
 ## Class `setuptools3_legacy`
 
 The setuptools3_legacy class supports Python version 3.x extensions that use build systems based on `setuptools` (e.g. only have a `setup.py` and have not migrated to the official `pyproject.toml` format). Unlike setuptools3, this uses the traditional `setup.py` `build` and `install` commands and not wheels. This use of `setuptools` like this is deprecated but still relatively common.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-setuptools3_legacy
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-setuptools3_legacy)
 
 ## Class `sstate`
 
@@ -5856,7 +5856,7 @@ The sstate class provides support for Shared State (sstate). By default, the cla
 
 For more information on sstate, see the “Shared State Cache” section in the Yocto Project Overview and Concepts Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-sstate
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-sstate)
 
 ## Class `staging`
 
@@ -5896,7 +5896,7 @@ When installing dependencies into the sysroot, the code traverses the dependency
 
 The build system is careful to maintain manifests of the files it installs so that any given dependency can be installed as needed. The sstate hash of the installed item is also stored so that if it changes, the build system can reinstall it.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-staging
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-staging)
 
 ## Class `systemd`
 
@@ -5917,7 +5917,7 @@ Services are set up to start on boot automatically unless you have set SYSTEMD_A
 
 For more information on systemd, see the “Selecting an Initialization Manager” section in the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-systemd
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-systemd)
 
 ## Class `testimage`
 
@@ -5948,7 +5948,7 @@ TESTIMAGE_AUTO = "1"
 
 For information on how to enable, run, and create new tests, see the “Performing Automated Runtime Testing” section in the Yocto Project Test Environment Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-testimage
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-testimage)
 
 ## Class `testsdk`
 
@@ -5963,7 +5963,7 @@ Note
 
 Best practices include using IMAGE_CLASSES rather than INHERIT to inherit the testsdk class for automated SDK testing.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-testsdk
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-testsdk)
 
 ## Class `uboot-config`
 
@@ -5984,7 +5984,7 @@ UBOOT_MACHINE = "config"
 
 See the UBOOT_CONFIG and UBOOT_MACHINE variables for additional information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-uboot-config
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-uboot-config)
 
 ## Class `uboot-sign`
 
@@ -6028,7 +6028,7 @@ See U-Boot’s documentation for details about verified boot and the signature p
 
 See also the description of kernel-fitimage class, which this class imitates.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-uboot-sign
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-uboot-sign)
 
 ## Class `update-alternatives`
 
@@ -6050,7 +6050,7 @@ Note
 
 You can use the `update-alternatives` command directly in your recipes. However, this class simplifies things in most cases.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-update-alternatives
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-update-alternatives)
 
 ## Class `update-rc.d`
 
@@ -6058,7 +6058,7 @@ The update-rc.d class uses `update-rc.d` to safely install an initialization scr
 
 Three variables control this class: INITSCRIPT_PACKAGES, INITSCRIPT_NAME and INITSCRIPT_PARAMS. See the variable links for details.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-update-rc.d
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-update-rc.d)
 
 ## Class `useradd`
 
@@ -6078,7 +6078,7 @@ Note
 
 You do not use the useradd-staticids class directly. You either enable or disable the class by setting the USERADDEXTENSION variable. If you enable or disable the class in a configured system, TMPDIR might contain incorrect `uid` and `gid` values. Deleting the TMPDIR directory will correct this condition.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-useradd
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-useradd)
 
 ## Class `utility-tasks`
 
@@ -6086,7 +6086,7 @@ The utility-tasks class provides support for various “utility” type tasks th
 
 This class is enabled by default because it is inherited by the base class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-utility-tasks
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-utility-tasks)
 
 ## Class `utils`
 
@@ -6094,7 +6094,7 @@ The utils class provides some useful Python functions that are typically used in
 
 This class is enabled by default because it is inherited by the base class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-utils
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-utils)
 
 ## Class `vex`
 
@@ -6118,13 +6118,13 @@ bitbake -c generate_vex openssl
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-vex
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-vex)
 
 ## Class `waf`
 
 The waf class supports recipes that need to build software that uses the Waf build system. You can use the EXTRA_OECONF or PACKAGECONFIG_CONFARGS variables to specify additional configuration options to be passed on the Waf command line.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-waf
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-waf)
 
 ## Task `do_compile`
 
@@ -6132,7 +6132,7 @@ Compiles the source code. This task runs with the current working directory set 
 
 The default behavior of this task is to run the `oe_runmake` function if a makefile (`Makefile`, `makefile`, or `GNUmakefile`) is found. If no such file is found, the do_compile task does nothing.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-compile
+Offline source: yocto-manuals/references/manuals/ref-manual/tasks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-compile)
 
 ## Task `do_configure`
 
@@ -6140,7 +6140,7 @@ Configures the source by enabling and disabling any build-time and configuration
 
 The default behavior of this task is to run `oe_runmake clean` if a makefile (`Makefile`, `makefile`, or `GNUmakefile`) is found and CLEANBROKEN is not set to “1”. If no such file is found or the CLEANBROKEN variable is set to “1”, the do_configure task does nothing.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-configure
+Offline source: yocto-manuals/references/manuals/ref-manual/tasks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-configure)
 
 ## Task `do_deploy`
 
@@ -6174,19 +6174,19 @@ See the “Dependencies” section in the BitBake User Manual for more informati
 
 If the do_deploy task re-executes, any previous output is removed (i.e. “cleaned”).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-deploy
+Offline source: yocto-manuals/references/manuals/ref-manual/tasks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-deploy)
 
 ## Task `do_devshell`
 
 Starts a shell whose environment is set up for development, debugging, or both. See the “Using a Development Shell” section in the Yocto Project Development Tasks Manual for more information about using `devshell`.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-devshell
+Offline source: yocto-manuals/references/manuals/ref-manual/tasks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-devshell)
 
 ## Task `do_fetch`
 
 Fetches the source code. This task uses the SRC_URI variable and the argument’s prefix to determine the correct fetcher module.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-fetch
+Offline source: yocto-manuals/references/manuals/ref-manual/tasks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-fetch)
 
 ## Task `do_install`
 
@@ -6204,7 +6204,7 @@ Safe methods for installing files include the following:
 
 - The `tar` command with the `--no-same-owner` option. See the `bin_package.bbclass` file in the `meta/classes-recipe` subdirectory of the Source Directory for an example.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-install
+Offline source: yocto-manuals/references/manuals/ref-manual/tasks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-install)
 
 ## Task `do_package`
 
@@ -6212,19 +6212,19 @@ Analyzes the content of the holding area `${`D`}` and splits the content into su
 
 The do_package task, in conjunction with the do_packagedata task, also saves some important package metadata. For additional information, see the PKGDESTWORK variable and the “Automatically Added Runtime Dependencies” section in the Yocto Project Overview and Concepts Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-package
+Offline source: yocto-manuals/references/manuals/ref-manual/tasks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-package)
 
 ## Task `do_package_qa`
 
 Runs QA checks on packaged files. For more information on these checks, see the insane class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-package-qa
+Offline source: yocto-manuals/references/manuals/ref-manual/tasks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-package-qa)
 
 ## Task `do_packagedata`
 
 Saves package metadata generated by the do_package task in PKGDATA_DIR to make it available globally.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-packagedata
+Offline source: yocto-manuals/references/manuals/ref-manual/tasks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-packagedata)
 
 ## Task `do_patch`
 
@@ -6281,25 +6281,25 @@ In the previous example `file1.patch` would be applied as a patch by default whi
 
 You can find out more about the patching process in the “Patching” section in the Yocto Project Overview and Concepts Manual and the “Patching Code” section in the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-patch
+Offline source: yocto-manuals/references/manuals/ref-manual/tasks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-patch)
 
 ## Task `do_populate_lic`
 
 Writes license information for the recipe that is collected later when the image is constructed.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-populate-lic
+Offline source: yocto-manuals/references/manuals/ref-manual/tasks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-populate-lic)
 
 ## Task `do_populate_sdk`
 
 Creates the file and directory structure for an installable SDK. See the “SDK Generation” section in the Yocto Project Overview and Concepts Manual for more information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-populate-sdk
+Offline source: yocto-manuals/references/manuals/ref-manual/tasks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-populate-sdk)
 
 ## Task `do_populate_sdk_ext`
 
 Creates the file and directory structure for an installable extensible SDK (eSDK). See the “SDK Generation” section in the Yocto Project Overview and Concepts Manual for more information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-populate-sdk-ext
+Offline source: yocto-manuals/references/manuals/ref-manual/tasks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-populate-sdk-ext)
 
 ## Task `do_populate_sysroot`
 
@@ -6309,19 +6309,19 @@ For information on what directories are copied by default, see the SYSROOT_DIRS*
 
 The do_populate_sysroot task is a shared state (sstate) task, which means that the task can be accelerated through sstate use. Realize also that if the task is re-executed, any previous output is removed (i.e. “cleaned”).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-populate-sysroot
+Offline source: yocto-manuals/references/manuals/ref-manual/tasks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-populate-sysroot)
 
 ## Task `do_prepare_recipe_sysroot`
 
 Installs the files into the individual recipe specific sysroots (i.e. `recipe-sysroot` and `recipe-sysroot-native` under `${`WORKDIR`}` based upon the dependencies specified by DEPENDS). See the “staging” class for more information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-prepare-recipe-sysroot
+Offline source: yocto-manuals/references/manuals/ref-manual/tasks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-prepare-recipe-sysroot)
 
 ## Task `do_rootfs`
 
 Creates the root filesystem (file and directory structure) for an image. See the “Image Generation” section in the Yocto Project Overview and Concepts Manual for more information on how the root filesystem is created.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-rootfs
+Offline source: yocto-manuals/references/manuals/ref-manual/tasks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-rootfs)
 
 ## QA check `build-deps`
 
@@ -6330,7 +6330,7 @@ Message: `<packagename1> rdepends on <packagename2>, but it isn't a build depend
 
 There is a runtime dependency between the two specified packages, but there is nothing explicit within the recipe to enable the OpenEmbedded build system to ensure that dependency is satisfied. This condition is usually triggered by an RDEPENDS value being added at the packaging stage rather than up front, which is usually automatic based on the contents of the package. In most cases, you should change the recipe to add an explicit RDEPENDS for the dependency.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
+Offline source: yocto-manuals/references/manuals/ref-manual/qa-checks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html)
 
 ## QA check `configure-gettext`
 
@@ -6339,7 +6339,7 @@ Message: `AM_GNU_GETTEXT used but no inherit gettext [configure-gettext]`
 
 If a recipe is building something that uses automake and the automake files contain an `AM_GNU_GETTEXT` directive then this check will fail if there is no `inherit gettext` statement in the recipe to ensure that gettext is available during the build. Add `inherit gettext` to remove the warning.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
+Offline source: yocto-manuals/references/manuals/ref-manual/qa-checks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html)
 
 ## QA check `file-rdeps`
 
@@ -6348,7 +6348,7 @@ Message: `<packagename> requires <files>, but no providers in its RDEPENDS [file
 
 A file-level dependency has been identified from the specified package on the specified files, but there is no explicit corresponding entry in RDEPENDS. If particular files are required at runtime then RDEPENDS should be declared in the recipe to ensure the packages providing them are built.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
+Offline source: yocto-manuals/references/manuals/ref-manual/qa-checks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html)
 
 ## QA check `mime`
 
@@ -6357,7 +6357,7 @@ Message: `package contains mime types but does not inherit mime: <packagename> p
 
 The specified package contains mime type files (`.xml` files in `${datadir}/mime/packages`) and yet does not inherit the mime class which will ensure that these get properly installed. Either add `inherit mime` to the recipe or remove the files at the do_install step if they are not needed.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
+Offline source: yocto-manuals/references/manuals/ref-manual/qa-checks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html)
 
 ## QA check `mime-xdg`
 
@@ -6366,7 +6366,7 @@ Message: `package contains desktop file with key 'MimeType' but does not inhert 
 
 The specified package contains a .desktop file with a ‘MimeType’ key present, but does not inherit the mime-xdg class that is required in order for that to be activated. Either add `inherit mime` to the recipe or remove the files at the do_install step if they are not needed.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
+Offline source: yocto-manuals/references/manuals/ref-manual/qa-checks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html)
 
 ## QA check `missing-update-alternatives`
 
@@ -6375,7 +6375,7 @@ Message: `<recipename>: recipe defines ALTERNATIVE:<packagename> but doesn't inh
 
 This check ensures that if a recipe sets the ALTERNATIVE variable that the recipe also inherits update-alternatives such that the alternative will be correctly set up. If you are seeing this message, either add `inherit update-alternatives` to your recipe or remove the reference to the variable if it is not needed.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
+Offline source: yocto-manuals/references/manuals/ref-manual/qa-checks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html)
 
 ## QA check `pkgconfig`
 
@@ -6384,7 +6384,7 @@ Message: `<file> failed sanity test (tmpdir) in path <path> [pkgconfig]`
 
 The specified `.pc` file contains TMPDIR`/`WORKDIR paths. Any `.pc` file containing these paths is incorrect since `pkg-config` itself adds the correct sysroot prefix when the files are accessed.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
+Offline source: yocto-manuals/references/manuals/ref-manual/qa-checks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html)
 
 ## QA check `pkgvarcheck`
 
@@ -6398,7 +6398,7 @@ Message: `recipe uses DEPENDS:${PN}, should use DEPENDS [pkgvarcheck]`
 
 This check looks for instances of setting `DEPENDS:${PN}` which is erroneous (DEPENDS is a recipe-wide variable and thus it is not correct to specify it for a particular package, nor will such an assignment actually work.) Set DEPENDS instead.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
+Offline source: yocto-manuals/references/manuals/ref-manual/qa-checks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html)
 
 ## QA check `unhandled-features-check`
 
@@ -6407,7 +6407,7 @@ Message: `<recipename>: recipe doesn't inherit features_check [unhandled-feature
 
 This check ensures that if one of the variables that the features_check class supports (e.g. REQUIRED_DISTRO_FEATURES) is used, then the recipe inherits features_check in order for the requirement to actually work. If you are seeing this message, either add `inherit features_check` to your recipe or remove the reference to the variable if it is not needed.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
+Offline source: yocto-manuals/references/manuals/ref-manual/qa-checks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html)
 
 ## QA check `unknown-configure-option`
 
@@ -6416,7 +6416,7 @@ Message: `<recipe>: configure was passed unrecognized options: <options> [unknow
 
 The configure script is reporting that the specified options are unrecognized. This situation could be because the options were previously valid but have been removed from the configure script. Or, there was a mistake when the options were added and there is another option that should be used instead. If you are unsure, consult the upstream build documentation, the `./configure --help` output, and the upstream change log or release notes. Once you have worked out what the appropriate change is, you can update EXTRA_OECONF, PACKAGECONFIG_CONFARGS, or the individual PACKAGECONFIG option values accordingly.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
+Offline source: yocto-manuals/references/manuals/ref-manual/qa-checks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html)
 
 ## QA check `unlisted-pkg-lics`
 
@@ -6425,7 +6425,7 @@ Message: `LICENSE:<packagename> includes licenses (<licenses>) that are not list
 
 The LICENSE of the recipe should be a superset of all the licenses of all packages produced by this recipe. In other words, any license in `LICENSE:*` should also appear in LICENSE.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
+Offline source: yocto-manuals/references/manuals/ref-manual/qa-checks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html)
 
 ## QA check `usrmerge`
 
@@ -6434,7 +6434,7 @@ Message: `<packagename> package is not obeying usrmerge distro feature. /<path> 
 
 If `usrmerge` is in DISTRO_FEATURES, this check will ensure that no package installs files to root (`/bin`, `/sbin`, `/lib`, `/lib64`) directories. If you are seeing this message, it indicates that the do_install step (or perhaps the build process that do_install is calling into, e.g. `make install` is using hardcoded paths instead of the variables set up for this (`bindir`, `sbindir`, etc.), and should be changed so that it does.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
+Offline source: yocto-manuals/references/manuals/ref-manual/qa-checks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html)
 
 ## Feature `distro:ptest`
 
@@ -6442,7 +6442,7 @@ Distro feature `ptest`:
 
 Enables building the package tests where supported by individual recipes. For more information on package tests, see the “Testing Packages With ptest” section in the Yocto Project Test Environment Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#distro-features
+Offline source: yocto-manuals/references/manuals/ref-manual/features.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#distro-features)
 
 ## Feature `distro:systemd`
 
@@ -6450,7 +6450,7 @@ Distro feature `systemd`:
 
 Include support for this `init` manager, which is a full replacement of for `init` with parallel starting of services, reduced shell overhead, and other features. This `init` manager is used by many distributions.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#distro-features
+Offline source: yocto-manuals/references/manuals/ref-manual/features.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#distro-features)
 
 ## Feature `image:dev-pkgs`
 
@@ -6458,7 +6458,7 @@ Image feature `dev-pkgs`:
 
 Installs development packages (headers and extra library links) for all packages installed in a given image.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#image-features
+Offline source: yocto-manuals/references/manuals/ref-manual/features.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#image-features)
 
 ## Feature `image:overlayfs-etc`
 
@@ -6466,7 +6466,7 @@ Image feature `overlayfs-etc`:
 
 Configures the `/etc` directory to be in `overlayfs`. This allows to store device specific information elsewhere, especially if the root filesystem is configured to be read-only.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#image-features
+Offline source: yocto-manuals/references/manuals/ref-manual/features.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#image-features)
 
 ## Feature `image:package-management`
 
@@ -6474,7 +6474,7 @@ Image feature `package-management`:
 
 Installs package management tools and preserves the package manager database.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#image-features
+Offline source: yocto-manuals/references/manuals/ref-manual/features.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#image-features)
 
 ## Feature `image:read-only-rootfs`
 
@@ -6482,7 +6482,7 @@ Image feature `read-only-rootfs`:
 
 Creates an image whose root filesystem is read-only. See the “Creating a Read-Only Root Filesystem” section in the Yocto Project Development Tasks Manual for more information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#image-features
+Offline source: yocto-manuals/references/manuals/ref-manual/features.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#image-features)
 
 ## Feature `image:ssh-server-openssh`
 
@@ -6490,7 +6490,7 @@ Image feature `ssh-server-openssh`:
 
 Installs the OpenSSH SSH server, which is more full-featured than Dropbear. Note that if both the OpenSSH SSH server and the Dropbear minimal SSH server are present in IMAGE_FEATURES, then OpenSSH will take precedence and Dropbear will not be installed.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#image-features
+Offline source: yocto-manuals/references/manuals/ref-manual/features.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#image-features)
 
 ## Feature `image:tools-debug`
 
@@ -6498,7 +6498,7 @@ Image feature `tools-debug`:
 
 Installs debugging tools such as `strace` and `gdb`. For information on GDB, see the “Debugging With the GNU Project Debugger (GDB) Remotely” section in the Yocto Project Development Tasks Manual. For information on tracing and profiling, see the Yocto Project Profiling and Tracing Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#image-features
+Offline source: yocto-manuals/references/manuals/ref-manual/features.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#image-features)
 
 ## Feature `image:x11`
 
@@ -6506,7 +6506,7 @@ Image feature `x11`:
 
 Installs the X server.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#image-features
+Offline source: yocto-manuals/references/manuals/ref-manual/features.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#image-features)
 
 ## Feature `image:x11-base`
 
@@ -6514,7 +6514,7 @@ Image feature `x11-base`:
 
 Installs the X server with a minimal environment.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#image-features
+Offline source: yocto-manuals/references/manuals/ref-manual/features.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#image-features)
 
 ## Feature `machine:qemu-usermode`
 
@@ -6522,4 +6522,4 @@ Machine feature `qemu-usermode`:
 
 QEMU can support user-mode emulation for this machine
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#machine-features
+Offline source: yocto-manuals/references/manuals/ref-manual/features.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#machine-features)

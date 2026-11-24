@@ -2,7 +2,7 @@
 
 # Variable `QB_DRIVE_TYPE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When using `runqemu`, the QB_DRIVE_TYPE variable specifies the type of drive to emulate when starting the emulated machine. Valid values are:
 
@@ -16,7 +16,7 @@ When using `runqemu`, the QB_DRIVE_TYPE variable specifies the type of drive to 
 
 - `/dev/vdb`: emulates a block VirtIO drive.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-QB_DRIVE_TYPE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-QB_DRIVE_TYPE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

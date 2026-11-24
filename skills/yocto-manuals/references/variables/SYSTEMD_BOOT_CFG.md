@@ -2,7 +2,7 @@
 
 # Variable `SYSTEMD_BOOT_CFG`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When EFI_PROVIDER is set to “systemd-boot”, the SYSTEMD_BOOT_CFG variable specifies the configuration file that should be used. By default, the systemd-boot class sets the SYSTEMD_BOOT_CFG as follows:
 
@@ -13,7 +13,7 @@ SYSTEMD_BOOT_CFG ?= "${S}/loader.conf"
 
 For information on Systemd-boot, see the Systemd-boot documentation.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SYSTEMD_BOOT_CFG
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SYSTEMD_BOOT_CFG)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

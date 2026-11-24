@@ -2,13 +2,13 @@
 
 # Variable `TOOLCHAIN_TARGET_TASK`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This variable lists packages the OpenEmbedded build system uses when it creates the target part of an SDK (i.e. the part built for the target hardware), which includes libraries and headers. Use this variable to add individual packages to the part of the SDK that runs on the target. See the “Adding Individual Packages to the Standard SDK” section in the Yocto Project Application Development and the Extensible Software Development Kit (eSDK) manual for more information.
 
 For background information on cross-development toolchains in the Yocto Project development environment, see the “The Cross-Development Toolchain” section in the Yocto Project Application Development and Software Development Kits (SDK/eSDK) Manual. For information on setting up a cross-development environment, see the Yocto Project Application Development and the Extensible Software Development Kit (eSDK) manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TOOLCHAIN_TARGET_TASK
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TOOLCHAIN_TARGET_TASK)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

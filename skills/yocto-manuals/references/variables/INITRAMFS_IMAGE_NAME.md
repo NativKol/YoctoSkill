@@ -2,7 +2,7 @@
 
 # Variable `INITRAMFS_IMAGE_NAME`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This value needs to stay in sync with IMAGE_LINK_NAME, but with INITRAMFS_IMAGE instead of IMAGE_BASENAME. The default value is set as follows:
 
@@ -10,7 +10,7 @@ INITRAMFS_IMAGE_NAME ?= “${@[‘${INITRAMFS_IMAGE}${IMAGE_MACHINE_SUFFIX}’, 
 
 That is, if INITRAMFS_IMAGE is set, the value of INITRAMFS_IMAGE_NAME will be set based upon INITRAMFS_IMAGE and IMAGE_MACHINE_SUFFIX.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INITRAMFS_IMAGE_NAME
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INITRAMFS_IMAGE_NAME)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,11 +2,11 @@
 
 # Variable `LICENSE_FLAGS_ACCEPTED`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Lists license flags that when specified in LICENSE_FLAGS within a recipe should not prevent that recipe from being built. For more information, see the “Enabling Commercially Licensed Recipes” section in the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LICENSE_FLAGS_ACCEPTED
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LICENSE_FLAGS_ACCEPTED)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

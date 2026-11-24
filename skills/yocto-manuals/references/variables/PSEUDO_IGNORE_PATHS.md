@@ -2,11 +2,11 @@
 
 # Variable `PSEUDO_IGNORE_PATHS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A comma-separated (without spaces) list of path prefixes that should be ignored by pseudo when monitoring and recording file operations, in order to avoid problems with files being written to outside of the pseudo context and reduce pseudo’s overhead. A path is ignored if it matches any prefix in the list and can include partial directory (or file) names.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PSEUDO_IGNORE_PATHS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PSEUDO_IGNORE_PATHS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

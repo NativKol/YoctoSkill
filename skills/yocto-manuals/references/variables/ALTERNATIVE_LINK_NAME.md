@@ -2,7 +2,7 @@
 
 # Variable `ALTERNATIVE_LINK_NAME`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Used by the alternatives system to map duplicated commands to actual locations. For example, if the `bracket` command provided by the `busybox` package is duplicated through another package, you must use the ALTERNATIVE_LINK_NAME variable to specify the actual location:
 
@@ -19,7 +19,7 @@ If ALTERNATIVE_LINK_NAME is not defined, it defaults to `${bindir}/name`.
 
 For more information on the alternatives system, see the “update-alternatives” section.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ALTERNATIVE_LINK_NAME
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ALTERNATIVE_LINK_NAME)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

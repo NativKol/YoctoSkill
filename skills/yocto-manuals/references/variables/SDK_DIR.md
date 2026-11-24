@@ -2,7 +2,7 @@
 
 # Variable `SDK_DIR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The parent directory used by the OpenEmbedded build system when creating SDK output. The populate_sdk_base class defines the variable as follows:
 
@@ -15,7 +15,7 @@ Note
 
 The SDK_DIR directory is a temporary directory as it is part of WORKDIR. The final output directory is SDK_DEPLOY.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SDK_DIR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SDK_DIR)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

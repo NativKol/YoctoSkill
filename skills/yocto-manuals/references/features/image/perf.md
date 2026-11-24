@@ -6,7 +6,7 @@ Image feature `perf`:
 
 Installs profiling tools such as `perf`, `systemtap`, and `LTTng`. For general information on user-space tools, see the Yocto Project Application Development and the Extensible Software Development Kit (eSDK) manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#image-features
+Offline source: yocto-manuals/references/manuals/ref-manual/features.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#image-features)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

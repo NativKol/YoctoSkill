@@ -17,6 +17,7 @@ We are moving a layer from dunfell to scarthgap. Convert this: FILES_${PN} += "$
 
 - Converting blindly, including underscore-suffixed variable names (`PREFERRED_VERSION:linux-yocto` is wrong).
 - Adding or removing spaces in `:append` values (changes behavior; `:append` adds no space).
+- Quoting variable behavior from memory, or reading a whole manual page instead of the one entry.
 
 ## Expected Answer Pattern
 
@@ -24,6 +25,7 @@ We are moving a layer from dunfell to scarthgap. Convert this: FILES_${PN} += "$
 - Run `scripts/contrib/convert-overrides.py <layer>` and review the diff.
 - Result: `FILES:${PN} += "${bindir}/foo"`, `do_install:append() { ... }`, `PREFERRED_VERSION_linux-yocto:mymachine = "6.6%"` (the variable name keeps `_linux-yocto`; only the machine override uses `:`; scarthgap ships linux-yocto 6.6).
 - Update `LAYERSERIES_COMPAT_<col>` to `scarthgap` after testing.
+- Grounds each keyword claim in the offline manual entry (`python3 scripts/ylookup.py --topic "Conditional Syntax"`, run from the skill folder) and cites it; it does not fetch docs online.
 
 ## Validation
 

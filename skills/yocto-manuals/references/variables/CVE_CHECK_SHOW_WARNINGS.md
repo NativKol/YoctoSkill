@@ -2,11 +2,11 @@
 
 # Variable `CVE_CHECK_SHOW_WARNINGS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies whether or not the cve-check class should generate warning messages on the console when unpatched CVEs are found. The default is “1”, but you may wish to set it to “0” if you are already examining/processing the logs after the build has completed and thus do not need the warning messages.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CVE_CHECK_SHOW_WARNINGS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CVE_CHECK_SHOW_WARNINGS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

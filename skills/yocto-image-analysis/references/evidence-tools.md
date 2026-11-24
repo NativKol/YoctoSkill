@@ -9,7 +9,8 @@ tiers; say which tier a conclusion came from.
 | 1 — parse | an initialized Build Directory (`source oe-init-build-env`), no build | final variable values with history, chosen recipes and appends, the task graph | automatic runtime dependencies, package splitting results, package manager resolution, file lists |
 | 2 — build | a completed build of the image (ideally with buildhistory) | the installed package list, versions, files, sizes, why-chains, licenses | — |
 
-Citations: local scarthgap manuals as `<manual>/<page>.md: <section>`; **source** = read
+Citations: offline scarthgap manuals as `<manual>/<page>.md: <section>` (under
+`yocto-manuals/references/manuals/`; `python3 scripts/ylookup.py --section ...`); **source** = read
 from the scarthgap/BitBake 2.8 tool sources.
 
 ## Contents

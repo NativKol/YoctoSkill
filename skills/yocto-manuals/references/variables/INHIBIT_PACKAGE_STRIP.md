@@ -2,13 +2,13 @@
 
 # Variable `INHIBIT_PACKAGE_STRIP`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 If set to “1”, causes the build to not strip binaries in resulting packages and prevents the `-dbg` package from containing the source files.
 
 By default, the OpenEmbedded build system strips binaries and puts the debugging symbols into `${`PN`}-dbg`. Consequently, you should not set INHIBIT_PACKAGE_STRIP when you plan to debug in general.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INHIBIT_PACKAGE_STRIP
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INHIBIT_PACKAGE_STRIP)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

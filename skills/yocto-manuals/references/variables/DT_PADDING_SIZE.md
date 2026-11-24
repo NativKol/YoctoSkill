@@ -2,11 +2,11 @@
 
 # Variable `DT_PADDING_SIZE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the devicetree class, this variable specifies the size of padding appended to the device tree blob, used as extra space typically for additional properties during boot.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DT_PADDING_SIZE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DT_PADDING_SIZE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,7 +2,7 @@
 
 # Variable `MACHINE_EXTRA_RRECOMMENDS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A list of machine-specific packages to install as part of the image being built that are not essential for booting the machine. The image being built has no build dependency on this list of packages.
 
@@ -17,7 +17,7 @@ MACHINE_EXTRA_RRECOMMENDS += "kernel-module-examplewifi"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MACHINE_EXTRA_RRECOMMENDS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MACHINE_EXTRA_RRECOMMENDS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

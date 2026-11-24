@@ -2,7 +2,7 @@
 
 # Variable `RDEPENDS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Lists runtime dependencies of a package. These dependencies are other packages that must be installed in order for the package to function correctly. As an example, the following assignment declares that the package `foo` needs the packages `bar` and `baz` to be installed:
 
@@ -68,7 +68,7 @@ RDEPENDS:${PN} = "foo (>= 1.2)"
 
 For information on build-time dependencies, see the DEPENDS variable. You can also see the “Tasks” and “Dependencies” sections in the BitBake User Manual for additional information on tasks and dependencies.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Lists a package’s runtime dependencies (i.e. other packages) that must be installed in order for the built package to run correctly. If a package in this list cannot be found during the build, you will get a build error.
 
@@ -108,7 +108,7 @@ RDEPENDS:${PN} = "foo (>= 1.2)"
 
 For information on build-time dependencies, see the DEPENDS variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RDEPENDS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-RDEPENDS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RDEPENDS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-RDEPENDS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

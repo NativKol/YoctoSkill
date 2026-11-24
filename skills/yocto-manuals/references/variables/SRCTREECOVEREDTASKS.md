@@ -2,7 +2,7 @@
 
 # Variable `SRCTREECOVEREDTASKS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A list of tasks that are typically not relevant (and therefore skipped) when building using the externalsrc class. The default value as set in that class file is the set of tasks that are rarely needed when using external source:
 
@@ -27,7 +27,7 @@ SRCTREECOVEREDTASKS += "\
 
 See the associated EXTERNALSRC and EXTERNALSRC_BUILD variables for more information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SRCTREECOVEREDTASKS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SRCTREECOVEREDTASKS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

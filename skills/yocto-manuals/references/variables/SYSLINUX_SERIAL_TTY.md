@@ -2,7 +2,7 @@
 
 # Variable `SYSLINUX_SERIAL_TTY`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the alternate console=tty… kernel boot argument. The variable’s default value is set in the syslinux class as follows:
 
@@ -13,7 +13,7 @@ SYSLINUX_SERIAL_TTY ?= "console=ttyS0,115200"
 
 The class checks for and uses the variable as needed.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SYSLINUX_SERIAL_TTY
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SYSLINUX_SERIAL_TTY)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

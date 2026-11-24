@@ -2,7 +2,7 @@
 
 # Variable `USERADD_PACKAGES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the useradd* class, this variable specifies the individual packages within the recipe that require users and/or groups to be added.
 
@@ -17,7 +17,7 @@ Note
 
 It follows that if you are going to use the USERADD_PACKAGES variable, you need to set one or more of the USERADD_PARAM, GROUPADD_PARAM, or GROUPMEMS_PARAM variables.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-USERADD_PACKAGES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-USERADD_PACKAGES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

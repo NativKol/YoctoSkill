@@ -2,7 +2,7 @@
 
 # Variable `PACKAGE_EXCLUDE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Lists packages that should not be installed into an image. For example:
 
@@ -24,7 +24,7 @@ This variable is supported by all of the RPM, DEB and IPK packaging backends.
 
 See the NO_RECOMMENDATIONS and the BAD_RECOMMENDATIONS variables for related information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGE_EXCLUDE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGE_EXCLUDE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

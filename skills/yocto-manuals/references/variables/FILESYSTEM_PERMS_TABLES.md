@@ -2,7 +2,7 @@
 
 # Variable `FILESYSTEM_PERMS_TABLES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Allows you to define your own file permissions settings table as part of your configuration for the packaging process. For example, suppose you need a consistent set of custom permissions for a set of groups and users across an entire work project. It is best to do this in the packages themselves but this is not always possible.
 
@@ -12,7 +12,7 @@ You define the FILESYSTEM_PERMS_TABLES variable in the `conf/local.conf` file, w
 
 For guidance on how to create your own file permissions settings table file, examine the existing `fs-perms.txt`.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FILESYSTEM_PERMS_TABLES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FILESYSTEM_PERMS_TABLES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -20,7 +20,7 @@ Compatibility router for hosts that install the repository as one skill. When th
 ## Ground Rules
 
 1. **Release first.** Detect it from the build: `bitbake --version` (2.8.x = scarthgap), `bitbake-getvar --value DISTRO_VERSION`, `LAYERSERIES_COMPAT_*` in each `conf/layer.conf`, the poky/oe-core branch. If unknown, say you assume scarthgap.
-2. **Docs and metadata over memory.** Route with [references/shared/official-doc-map.md](references/shared/official-doc-map.md); verify names in the manuals.
+2. **Docs and metadata over memory.** Route with [references/shared/official-doc-map.md](references/shared/official-doc-map.md); verify names in the offline manuals (see Offline lookup).
 3. **Smallest useful evidence:** the failing task and its first error, `tmp/work/<arch>/<pn>/<pv>/temp/log.do_<task>`, the recipe or append, `bitbake-getvar -r <recipe> VAR`.
 4. **Map every fix to BitBake terms** (variable, task, class, package, layer); a generic Linux fix is not a Yocto fix.
 5. **Modern syntax.** Scarthgap requires `:` overrides (`FILES:${PN}`, `do_install:append`); old `_append` fails to parse since 3.4 honister. Variables such as `PREFERRED_PROVIDER_virtual/kernel` and `LAYERSERIES_COMPAT_<col>` keep their underscore.
@@ -60,6 +60,14 @@ tmp/log/cooker/<machine>/console-latest.log
 1. Classify: build failure, recipe, layer, image, machine/kernel, compliance, release/migration.
 2. Use the per-task playbook in [references/shared/yocto-field-guide.md](references/shared/yocto-field-guide.md) (the only copy of it).
 3. Look up semantics in the references below, cite the manual section, propose a minimal change, give the validation command.
+
+## Offline lookup
+
+Everything this skill needs is in the repository; it works without internet. Pull only the text you need instead of reading whole files (pages run to thousands of lines). From the repository root:
+
+- `python3 skills/yocto-manuals/scripts/ylookup.py <NAME>...` prints the scarthgap manual entry for any variable, class, task, feature or QA check (`--kind var|class|task|feature|qa` to disambiguate, `--find TEXT` when unsure of the name). The references write this as `scripts/ylookup.py`.
+- `--topic TEXT` lists manual sections, `--section <manual/page.md> "<heading>"` prints one, `--grep REGEX [--in ref-manual]` finds anything else. Manual paths such as `yocto-manuals/references/manuals/...` are under `skills/`.
+- URLs in these files are citations for the user, not lookups. The manuals are scarthgap 5.0: if the project is on another release, tell the user rather than going online. Without Python: `grep -n "<NAME>" skills/yocto-manuals/references/INDEX.md`, then read the file it names.
 
 ## References
 

@@ -2,11 +2,11 @@
 
 # Variable `DISTRO_EXTRA_RRECOMMENDS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies a list of distro-specific packages to add to all images if the packages exist. The packages might not exist or be empty (e.g. kernel modules). The list of packages are automatically installed but you can remove them.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DISTRO_EXTRA_RRECOMMENDS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DISTRO_EXTRA_RRECOMMENDS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

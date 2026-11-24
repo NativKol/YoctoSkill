@@ -2,11 +2,11 @@
 
 # Variable `STAGING_KERNEL_BUILDDIR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Points to the directory containing the kernel build artifacts. Recipes building software that needs to access kernel build artifacts (e.g. `systemtap-uprobes`) can look in the directory specified with the STAGING_KERNEL_BUILDDIR variable to find these artifacts after the kernel has been built.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-STAGING_KERNEL_BUILDDIR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-STAGING_KERNEL_BUILDDIR)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

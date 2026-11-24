@@ -4,7 +4,7 @@
 
 Boots an image and performs runtime tests within the image. For information on automatically testing images, see the “Performing Automated Runtime Testing” section in the Yocto Project Test Environment Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-testimage
+Offline source: yocto-manuals/references/manuals/ref-manual/tasks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-testimage)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

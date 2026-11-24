@@ -2,11 +2,11 @@
 
 # Variable `RUST_CHANNEL`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies which version of Rust to build - “stable”, “beta” or “nightly”. The default value is “stable”. Set this at your own risk, as values other than “stable” are not guaranteed to work at a given time.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RUST_CHANNEL
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RUST_CHANNEL)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

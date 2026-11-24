@@ -2,13 +2,13 @@
 
 # Variable `UBOOT_MACHINE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the value passed on the `make` command line when building a U-Boot image. The value indicates the target platform configuration. You typically set this variable from the machine configuration file (i.e. `conf/machine/machine_name.conf`).
 
 Please see the “Selection of Processor Architecture and Board Type” section in the U-Boot README for valid values for this variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_MACHINE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_MACHINE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

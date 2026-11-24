@@ -2,11 +2,11 @@
 
 # Variable `SDK_UPDATE_URL`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 An optional URL for an update server for the extensible SDK. If set, the value is used as the default update server when running `devtool sdk-update` within the extensible SDK.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SDK_UPDATE_URL
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SDK_UPDATE_URL)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

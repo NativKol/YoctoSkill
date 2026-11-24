@@ -2,7 +2,7 @@
 
 # Variable `AVAILTUNES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The list of defined CPU and Application Binary Interface (ABI) tunings (i.e. “tunes”) available for use by the OpenEmbedded build system.
 
@@ -10,7 +10,7 @@ The list simply presents the tunes that are available. Not all tunes may be comp
 
 To add a tune to the list, be sure to append it with spaces using the “+=” BitBake operator. Do not simply replace the list by using the “=” operator. See the “Basic Syntax” section in the BitBake User Manual for more information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-AVAILTUNES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-AVAILTUNES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

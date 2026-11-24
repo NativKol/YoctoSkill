@@ -2,7 +2,7 @@
 
 # Variable `IMAGE_LINGUAS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the list of locales to install into the image during the root filesystem construction process. The OpenEmbedded build system automatically splits locale files, which are used for localization, into separate packages. Setting the IMAGE_LINGUAS variable ensures that any locale packages that correspond to packages already selected for installation into the image are also installed. Here is an example:
 
@@ -15,7 +15,7 @@ In this example, the build system ensures any Brazilian Portuguese and German lo
 
 See the GLIBC_GENERATE_LOCALES variable for information on generating GLIBC locales.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_LINGUAS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_LINGUAS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

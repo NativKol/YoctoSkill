@@ -6,7 +6,7 @@ The ptest class provides functionality for packaging and installing runtime test
 
 This class is intended to be inherited by individual recipes. However, the class’ functionality is largely disabled unless “ptest” appears in DISTRO_FEATURES. See the “Testing Packages With ptest” section in the Yocto Project Test Environment Manual for more information on ptest.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-ptest
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-ptest)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

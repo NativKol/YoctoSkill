@@ -2,7 +2,7 @@
 
 # Variable `BB_DISKMON_DIRS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Monitors disk space and available inodes during the build and allows you to control the build based on these parameters.
 
@@ -60,7 +60,7 @@ The second example stops the build after all currently executing tasks complete 
 
 The final example immediately stops the build when the number of free inodes in the `${TMPDIR}` directory drops below 100 Kbytes. No disk space monitoring for the directory itself occurs in this case.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Monitors disk space and available inodes during the build and allows you to control the build based on these parameters.
 
@@ -118,7 +118,7 @@ The second example stops the build after all currently executing tasks complete 
 
 The final example immediately halts the build when the number of free inodes in the `${TMPDIR}` directory drops below 100 Kbytes. No disk space monitoring for the directory itself occurs in this case.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_DISKMON_DIRS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_DISKMON_DIRS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_DISKMON_DIRS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_DISKMON_DIRS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

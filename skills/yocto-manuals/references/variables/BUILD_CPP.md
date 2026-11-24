@@ -2,7 +2,7 @@
 
 # Variable `BUILD_CPP`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the C preprocessor command (to both the C and the C++ compilers) when building for the build host, and its default definition is derived in part from BUILD_PREFIX and BUILD_CC_ARCH:
 
@@ -15,7 +15,7 @@ When building a native recipe, CPP is set to the value of this variable by defau
 
 The BUILD_CPP variable should not be set manually, and is rarely used in recipes as CPP contains the appropriate value depending on the context (native or target recipes). Exception be made for target recipes that need to use the preprocessor from the build host at some point during the build.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BUILD_CPP
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BUILD_CPP)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

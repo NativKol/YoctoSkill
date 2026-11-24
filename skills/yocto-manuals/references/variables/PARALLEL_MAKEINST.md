@@ -2,7 +2,7 @@
 
 # Variable `PARALLEL_MAKEINST`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Extra options passed to the build tool install command (`make install`, `ninja install` or more specific ones) during the do_install task in order to specify parallel installation. This variable defaults to the value of PARALLEL_MAKE.
 
@@ -12,7 +12,7 @@ For software compiled by `make`, in order for PARALLEL_MAKEINST to be effective,
 
 If the software being built experiences dependency issues during the do_install task that result in race conditions, you can clear the PARALLEL_MAKEINST variable within the recipe as a workaround. For information on addressing race conditions, see the “Debugging Parallel Make Races” section in the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PARALLEL_MAKEINST
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PARALLEL_MAKEINST)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

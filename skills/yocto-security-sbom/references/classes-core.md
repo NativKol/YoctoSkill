@@ -2,7 +2,7 @@
 
 # Core Yocto Classes (Scarthgap)
 
-Release: Yocto Project 5.0 "scarthgap". Source: ref-manual "Classes" (chapter 5; section numbers below). Every class named here exists in the scarthgap Classes chapter unless marked otherwise. Verbatim entries: `yocto-manuals` skill, `references/classes/<name>.md`.
+Release: Yocto Project 5.0 "scarthgap". Source: ref-manual "Classes" (chapter 5; section numbers below). Every class named here exists in the scarthgap Classes chapter unless marked otherwise. Verbatim entry for any class, offline: `python3 scripts/ylookup.py --kind class <name>`.
 
 How classes arrive: `inherit foo` in a recipe or class; `INHERIT += "foo"` in a `.conf` (global); `INHERIT_DISTRO` for distro defaults (scarthgap: `debian devshell sstate license remove-libtool create-spdx`); `USER_CLASSES` in `local.conf` (default includes `buildstats`). Every recipe inherits `base` (which pulls `utility-tasks`, `utils`, `patch`, `staging`, ...) and `package`. Check what a recipe really inherits: the top of `bitbake -e <recipe>` lists every included and inherited file.
 

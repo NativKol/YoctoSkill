@@ -2,7 +2,7 @@
 
 # Variable `SDK_TARGET_MANIFEST`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The manifest file for the target part of the SDK. This file lists all the installed packages that make up the target part of the SDK. The file contains package information on a line-per-package basis as follows:
 
@@ -20,7 +20,7 @@ SDK_TARGET_MANIFEST = "${SDK_DEPLOY}/${TOOLCHAIN_OUTPUTNAME}.target.manifest"
 
 The location is derived using the SDK_DEPLOY and TOOLCHAIN_OUTPUTNAME variables.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SDK_TARGET_MANIFEST
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SDK_TARGET_MANIFEST)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

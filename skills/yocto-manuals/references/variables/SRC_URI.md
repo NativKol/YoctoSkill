@@ -2,7 +2,7 @@
 
 # Variable `SRC_URI`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 See the BitBake manual for the initial description for this variable: SRC_URI.
 
@@ -34,7 +34,7 @@ Note
 
 If you want the build system to pick up files specified through a SRC_URI statement from your append file, you need to be sure to extend the FILESPATH variable by also using the FILESEXTRAPATHS variable from within your append file.
 
-## BitBake User Manual
+### BitBake User Manual
 
 The list of source files — local or remote. This variable tells BitBake which bits to pull for the build and how to pull them. For example, if the recipe or append file needs to fetch a single tarball from the Internet, the recipe or append file uses a SRC_URI entry that specifies that tarball. On the other hand, if the recipe or append file needs to fetch a tarball, apply two patches, and include a custom file, the recipe or append file needs an SRC_URI variable that specifies all those sources.
 
@@ -103,7 +103,7 @@ SRC_URI[third.sha256sum] = "13550350a8681c84c861aac2e5b440161c2b33a3e4f302ac680c
 
 - `unpack`: Controls whether or not to unpack the file if it is an archive. The default action is to unpack the file.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SRC_URI , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-SRC_URI
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SRC_URI , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-SRC_URI)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,7 +2,7 @@
 
 # Variable `DEPENDS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Lists a recipe’s build-time dependencies. These are dependencies on other recipes whose contents (e.g. headers and shared libraries) are needed by the recipe at build time.
 
@@ -38,7 +38,7 @@ Note
 
 For information on runtime dependencies, see the RDEPENDS variable. You can also see the “Tasks” and “Dependencies” sections in the BitBake User Manual for additional information on tasks and dependencies.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Lists a recipe’s build-time dependencies (i.e. other recipe files).
 
@@ -53,7 +53,7 @@ Here, the dependency is such that the `do_configure` task for recipe “a” dep
 
 For information on runtime dependencies, see the RDEPENDS variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DEPENDS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-DEPENDS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DEPENDS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-DEPENDS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

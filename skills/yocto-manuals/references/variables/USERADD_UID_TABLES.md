@@ -2,7 +2,7 @@
 
 # Variable `USERADD_UID_TABLES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies a password file to use for obtaining static user identification (`uid`) values when the OpenEmbedded build system adds a user to the system during package installation.
 
@@ -17,7 +17,7 @@ Note
 
 Setting the USERADDEXTENSION variable to “useradd-staticids” causes the build system to use static `uid` values.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-USERADD_UID_TABLES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-USERADD_UID_TABLES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

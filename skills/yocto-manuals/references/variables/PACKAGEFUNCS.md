@@ -2,11 +2,11 @@
 
 # Variable `PACKAGEFUNCS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The PACKAGEFUNCS variable holds a list of functions which are executed to process metadata based on split packages found in the PKGDEST directory. These functions are executed in the package class in the order found in the list.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGEFUNCS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGEFUNCS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

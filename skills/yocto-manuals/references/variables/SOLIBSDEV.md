@@ -2,13 +2,13 @@
 
 # Variable `SOLIBSDEV`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Defines the suffix for the development symbolic link (symlink) for shared libraries on the target platform. By default, this suffix is “.so” for Linux-based systems and is defined in the `meta/conf/bitbake.conf` configuration file.
 
 You will see this variable referenced in the default values of `FILES:${PN}-dev`.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SOLIBSDEV
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SOLIBSDEV)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,7 +2,7 @@
 
 # Variable `BBLAYERS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Lists the layers to enable during the build. This variable is defined in the `bblayers.conf` configuration file in the Build Directory. Here is an example:
 
@@ -18,7 +18,7 @@ BBLAYERS = " \
 
 This example enables four layers, one of which is a custom, user-defined layer named `meta-mykernel`.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Lists the layers to enable during the build. This variable is defined in the `bblayers.conf` configuration file in the build directory. Here is an example:
 
@@ -34,7 +34,7 @@ BBLAYERS = " \
 
 This example enables four layers, one of which is a custom, user-defined layer named `meta-mykernel`.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBLAYERS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBLAYERS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBLAYERS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBLAYERS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

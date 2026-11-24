@@ -6,7 +6,7 @@ Image feature `serial-autologin-root`:
 
 when specified in conjunction with `empty-root-password` will automatically login as root on the serial console. This of course opens up a security hole if the serial console is potentially accessible to an attacker, so use with caution.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#image-features
+Offline source: yocto-manuals/references/manuals/ref-manual/features.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#image-features)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

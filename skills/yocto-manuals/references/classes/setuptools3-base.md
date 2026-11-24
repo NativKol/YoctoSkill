@@ -4,7 +4,7 @@
 
 The setuptools3-base class provides a reusable base for other classes that support building Python version 3.x extensions. If you need functionality that is not provided by the setuptools3 class, you may want to `inherit setuptools3-base`. Some recipes do not need the tasks in the setuptools3 class and inherit this class instead.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-setuptools3-base
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-setuptools3-base)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

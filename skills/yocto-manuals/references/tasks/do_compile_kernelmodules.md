@@ -4,7 +4,7 @@
 
 Runs the step that builds the kernel modules (if needed). Building a kernel consists of two steps: 1) the kernel (`vmlinux`) is built, and 2) the modules are built (i.e. `make modules`).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-compile-kernelmodules
+Offline source: yocto-manuals/references/manuals/ref-manual/tasks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-compile-kernelmodules)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,7 +2,7 @@
 
 # Variable `DEBUG_PREFIX_MAP`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Allows to set C compiler options, such as `-fdebug-prefix-map`, `-fmacro-prefix-map`, and `-ffile-prefix-map`, which allow to replace build-time paths by install-time ones in the debugging sections of binaries. This makes compiler output files location independent, at the cost of having to pass an extra command to tell the debugger where source files are.
 
@@ -10,7 +10,7 @@ This is used by the Yocto Project to guarantee Reproducible Builds even when the
 
 This variable is set in the `meta/conf/bitbake.conf` file. It is not intended to be user-configurable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DEBUG_PREFIX_MAP
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DEBUG_PREFIX_MAP)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

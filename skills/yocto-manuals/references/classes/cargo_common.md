@@ -6,7 +6,7 @@ The cargo_common class is an internal class that is not intended to be used dire
 
 An exception is the “rust” recipe, to build the Rust compiler and runtime library, which is built by Cargo but cannot use the cargo class. This is why this class was introduced.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-cargo_common
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-cargo_common)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

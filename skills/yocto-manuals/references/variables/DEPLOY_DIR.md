@@ -2,13 +2,13 @@
 
 # Variable `DEPLOY_DIR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Points to the general area that the OpenEmbedded build system uses to place images, packages, SDKs, and other output files that are ready to be used outside of the build system. By default, this directory resides within the Build Directory as `${TMPDIR}/deploy`.
 
 For more information on the structure of the Build Directory, see “The Build Directory — build/” section. For more detail on the contents of the `deploy` directory, see the “Images”, “Package Feeds”, and “Application Development SDK” sections all in the Yocto Project Overview and Concepts Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DEPLOY_DIR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DEPLOY_DIR)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

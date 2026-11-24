@@ -2,13 +2,13 @@
 
 # Variable `ICECC_ENV_EXEC`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Points to the `icecc-create-env` script that you provide. This variable is used by the icecc class. You set this variable in your `local.conf` file.
 
 If you do not point to a script that you provide, the OpenEmbedded build system uses the default script provided by the icecc-create-env_0.1.bb recipe, which is a modified version and not the one that comes with `icecream`.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ICECC_ENV_EXEC
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ICECC_ENV_EXEC)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

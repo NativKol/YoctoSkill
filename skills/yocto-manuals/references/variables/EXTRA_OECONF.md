@@ -2,11 +2,11 @@
 
 # Variable `EXTRA_OECONF`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Additional `configure` script options. See PACKAGECONFIG_CONFARGS for additional information on passing configure script options.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTRA_OECONF
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTRA_OECONF)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

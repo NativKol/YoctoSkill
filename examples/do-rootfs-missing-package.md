@@ -21,6 +21,7 @@ I added foo to IMAGE_INSTALL but do_rootfs says nothing provides foo. There is a
 - Assuming the recipe name equals the package name.
 - `IMAGE_INSTALL += "foo"` in `local.conf` (skips the image's `?=` default list).
 - Deleting `tmp/`.
+- Quoting variable behavior from memory, or reading a whole manual page instead of the one entry.
 
 ## Expected Answer Pattern
 
@@ -28,6 +29,7 @@ I added foo to IMAGE_INSTALL but do_rootfs says nothing provides foo. There is a
 - If the recipe emits `foo-bin`, `foo-utils` or a Debian-renamed library package, put that name in `IMAGE_INSTALL`.
 - If no package contains the files, check `PACKAGES`/`FILES:*` (empty packages are not created unless `ALLOW_EMPTY`).
 - In `local.conf` use `IMAGE_INSTALL:append = " foo-utils"` (leading space).
+- Grounds each keyword claim in the offline manual entry (`python3 scripts/ylookup.py IMAGE_INSTALL do_rootfs`, run from the skill folder) and cites it; it does not fetch docs online.
 
 ## Validation
 

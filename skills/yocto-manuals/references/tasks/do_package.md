@@ -6,7 +6,7 @@ Analyzes the content of the holding area `${`D`}` and splits the content into su
 
 The do_package task, in conjunction with the do_packagedata task, also saves some important package metadata. For additional information, see the PKGDESTWORK variable and the “Automatically Added Runtime Dependencies” section in the Yocto Project Overview and Concepts Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-package
+Offline source: yocto-manuals/references/manuals/ref-manual/tasks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-package)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

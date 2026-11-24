@@ -2,11 +2,11 @@
 
 # Variable `CCACHE_DISABLE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the ccache class, the CCACHE_DISABLE variable can be set to “1” in a recipe to disable Ccache support. This is useful when the recipe is known to not support it.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CCACHE_DISABLE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CCACHE_DISABLE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

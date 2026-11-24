@@ -2,13 +2,13 @@
 
 # Variable `SYSLINUX_OPTS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Lists additional options to add to the syslinux file. You need to set this variable in your recipe. If you want to list multiple options, separate the options with a semicolon character (`;`).
 
 The syslinux class uses this variable to create a set of options.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SYSLINUX_OPTS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SYSLINUX_OPTS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

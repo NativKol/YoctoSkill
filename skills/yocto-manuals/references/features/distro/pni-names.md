@@ -6,7 +6,7 @@ Distro feature `pni-names`:
 
 Enable generation of persistent network interface names, i.e. the system tries hard to have the same but unique names for the network interfaces even after a reinstall.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#distro-features
+Offline source: yocto-manuals/references/manuals/ref-manual/features.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#distro-features)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

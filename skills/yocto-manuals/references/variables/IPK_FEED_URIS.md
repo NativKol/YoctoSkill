@@ -2,11 +2,11 @@
 
 # Variable `IPK_FEED_URIS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When the IPK backend is in use and package management is enabled on the target, you can use this variable to set up `opkg` in the target image to point to package feeds on a nominated server. Once the feed is established, you can perform installations or upgrades using the package manager at runtime.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IPK_FEED_URIS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IPK_FEED_URIS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

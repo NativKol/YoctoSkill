@@ -2,7 +2,7 @@
 
 # Variable `MACHINE_ESSENTIAL_EXTRA_RDEPENDS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A list of required machine-specific packages to install as part of the image being built. The build process depends on these packages being present. Furthermore, because this is a “machine-essential” variable, the list of packages are essential for the machine to boot. The impact of this variable affects images based on `packagegroup-core-boot`, including the `core-image-minimal` image.
 
@@ -15,7 +15,7 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "example-init"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MACHINE_ESSENTIAL_EXTRA_RDEPENDS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MACHINE_ESSENTIAL_EXTRA_RDEPENDS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

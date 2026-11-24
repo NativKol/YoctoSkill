@@ -2,7 +2,7 @@
 
 # Variable `QB_NFSROOTFS_EXTRA_OPT`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When using `runqemu`, the QB_NFSROOTFS_EXTRA_OPT variable controls extra options to be appended to the NFS rootfs options in the Linux kernel command-line.
 
@@ -13,7 +13,7 @@ QB_NFSROOTFS_EXTRA_OPT = "wsize=4096,rsize=4096"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-QB_NFSROOTFS_EXTRA_OPT
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-QB_NFSROOTFS_EXTRA_OPT)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

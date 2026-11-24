@@ -2,11 +2,11 @@
 
 # Variable `UBOOT_TARGET`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the target used for building U-Boot. The target is passed directly as part of the “make” command (e.g. SPL and AIS). If you do not specifically set this variable, the OpenEmbedded build process passes and uses “all” for the target during the U-Boot building process.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_TARGET
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_TARGET)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

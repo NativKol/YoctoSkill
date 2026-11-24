@@ -2,7 +2,7 @@
 
 # Variable `USER_CLASSES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A list of classes to globally inherit. These classes are used by the OpenEmbedded build system to enable extra features.
 
@@ -17,7 +17,7 @@ USER_CLASSES ?= "buildstats"
 
 For more information, see `meta-poky/conf/templates/default/local.conf.sample` in the Source Directory.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-USER_CLASSES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-USER_CLASSES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

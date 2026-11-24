@@ -167,3 +167,5 @@ feature image:ssh-server-openssh
 feature image:tools-debug
 feature image:tools-sdk
 feature image:x11-base
+var SRC_URI
+var SRCREV

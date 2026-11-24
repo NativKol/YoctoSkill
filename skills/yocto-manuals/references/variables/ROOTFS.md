@@ -2,13 +2,13 @@
 
 # Variable `ROOTFS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Indicates a filesystem image to include as the root filesystem.
 
 The ROOTFS variable is an optional variable used with the image-live class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ROOTFS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ROOTFS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

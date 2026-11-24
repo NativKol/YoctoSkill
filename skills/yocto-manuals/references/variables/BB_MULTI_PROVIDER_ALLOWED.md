@@ -2,11 +2,11 @@
 
 # Variable `BB_MULTI_PROVIDER_ALLOWED`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 See BB_MULTI_PROVIDER_ALLOWED in the BitBake manual.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Allows you to suppress BitBake warnings caused when building two separate recipes that provide the same output.
 
@@ -14,7 +14,7 @@ BitBake normally issues a warning when building two different recipes where each
 
 To use the variable, list provider names (e.g. recipe names, `virtual/kernel`, and so forth).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_MULTI_PROVIDER_ALLOWED , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_MULTI_PROVIDER_ALLOWED
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_MULTI_PROVIDER_ALLOWED , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_MULTI_PROVIDER_ALLOWED)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

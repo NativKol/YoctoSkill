@@ -2,11 +2,11 @@
 
 # Variable `PACKAGEGROUP_DISABLE_COMPLEMENTARY`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 For recipes inheriting the packagegroup class, setting PACKAGEGROUP_DISABLE_COMPLEMENTARY to “1” specifies that the normal complementary packages (i.e. `-dev`, `-dbg`, and so forth) should not be automatically created by the `packagegroup` recipe, which is the default behavior.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGEGROUP_DISABLE_COMPLEMENTARY
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGEGROUP_DISABLE_COMPLEMENTARY)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

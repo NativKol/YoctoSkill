@@ -2,7 +2,7 @@
 
 # Variable `KERNEL_DEVICETREE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the name of the generated Linux kernel device tree (i.e. the `.dtb`) file.
 
@@ -12,7 +12,7 @@ There is legacy support for specifying the full path to the device tree. However
 
 In order to use this variable, the kernel-devicetree class must be inherited.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_DEVICETREE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_DEVICETREE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

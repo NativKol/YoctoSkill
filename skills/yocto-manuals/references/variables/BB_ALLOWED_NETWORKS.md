@@ -2,7 +2,7 @@
 
 # Variable `BB_ALLOWED_NETWORKS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies a space-delimited list of hosts that the fetcher is allowed to use to obtain the required source code. Here are considerations surrounding this variable:
 
@@ -27,7 +27,7 @@ For example, `*.foo.bar` is supported, while `*aa.foo.bar` is not.
 
 Using BB_ALLOWED_NETWORKS in conjunction with PREMIRRORS is very useful. Adding the host you want to use to PREMIRRORS results in the source code being fetched from an allowed location and avoids raising an error when a host that is not allowed is in a SRC_URI statement. This is because the fetcher does not attempt to use the host listed in SRC_URI after a successful fetch from the PREMIRRORS occurs.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Specifies a space-delimited list of hosts that the fetcher is allowed to use to obtain the required source code. Following are considerations surrounding this variable:
 
@@ -52,7 +52,7 @@ For example, `*.foo.bar` is supported, while `*aa.foo.bar` is not.
 
 Using BB_ALLOWED_NETWORKS in conjunction with PREMIRRORS is very useful. Adding the host you want to use to PREMIRRORS results in the source code being fetched from an allowed location and avoids raising an error when a host that is not allowed is in a SRC_URI statement. This is because the fetcher does not attempt to use the host listed in SRC_URI after a successful fetch from the PREMIRRORS occurs.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_ALLOWED_NETWORKS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_ALLOWED_NETWORKS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_ALLOWED_NETWORKS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_ALLOWED_NETWORKS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

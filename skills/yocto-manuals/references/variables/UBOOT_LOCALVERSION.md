@@ -2,7 +2,7 @@
 
 # Variable `UBOOT_LOCALVERSION`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Appends a string to the name of the local version of the U-Boot image. For example, assuming the version of the U-Boot image built was “2013.10”, the full version string reported by U-Boot would be “2013.10-yocto” given the following statement:
 
@@ -11,7 +11,7 @@ UBOOT_LOCALVERSION = "-yocto"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_LOCALVERSION
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_LOCALVERSION)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

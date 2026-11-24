@@ -2,7 +2,7 @@
 
 # Variable `BUILDHISTORY_COMMIT`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the buildhistory class, this variable specifies whether or not to commit the build history output in a local Git repository. If set to “1”, this local repository will be maintained automatically by the buildhistory class and a commit will be created on every build for changes to each top-level subdirectory of the build history output (images, packages, and sdk). If you want to track changes to build history over time, you should set this value to “1”.
 
@@ -13,7 +13,7 @@ BUILDHISTORY_COMMIT ?= "1"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BUILDHISTORY_COMMIT
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BUILDHISTORY_COMMIT)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

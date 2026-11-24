@@ -2,11 +2,11 @@
 
 # Variable `IMAGE_BUILDINFO_FILE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When using the image-buildinfo class, specifies the file in the image to write the build information into. The default value is “`${sysconfdir}/buildinfo`”.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_BUILDINFO_FILE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_BUILDINFO_FILE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

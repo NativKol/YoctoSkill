@@ -2,13 +2,13 @@
 
 # Variable `COPYLEFT_RECIPE_TYPES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A space-separated list of recipe types to include in the source archived by the archiver class. Recipe types are `target`, native, nativesdk, cross, crosssdk, and cross-canadian.
 
 The default value, which is “target*”, for COPYLEFT_RECIPE_TYPES is set by the copyleft_filter class, which is inherited by the archiver class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-COPYLEFT_RECIPE_TYPES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-COPYLEFT_RECIPE_TYPES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

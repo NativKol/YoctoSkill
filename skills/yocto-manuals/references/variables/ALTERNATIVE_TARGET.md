@@ -2,7 +2,7 @@
 
 # Variable `ALTERNATIVE_TARGET`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Used by the alternatives system to create default link locations for duplicated commands. You can use the variable to create a single default location for all duplicated commands regardless of the command name or package, a default for specific duplicated commands regardless of the package, or a default for specific commands tied to particular packages. Here are the available syntax forms:
 
@@ -23,7 +23,7 @@ Finally, if the file referenced has not been renamed, the alternatives system wi
 
 For more information on the alternatives system, see the “update-alternatives” section.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ALTERNATIVE_TARGET
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ALTERNATIVE_TARGET)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

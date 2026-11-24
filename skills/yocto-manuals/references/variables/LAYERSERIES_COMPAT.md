@@ -2,11 +2,11 @@
 
 # Variable `LAYERSERIES_COMPAT`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 See LAYERSERIES_COMPAT in the BitBake manual.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Lists the versions of the OpenEmbedded-Core (OE-Core) for which a layer is compatible. Using the LAYERSERIES_COMPAT variable allows the layer maintainer to indicate which combinations of the layer and OE-Core can be expected to work. The variable gives the system a way to detect when a layer has not been tested with new releases of OE-Core (e.g. the layer is not maintained).
 
@@ -21,7 +21,7 @@ Note
 
 Setting LAYERSERIES_COMPAT is required by the Yocto Project Compatible version 2 standard. The OpenEmbedded build system produces a warning if the variable is not set for any given layer.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LAYERSERIES_COMPAT , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-LAYERSERIES_COMPAT
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LAYERSERIES_COMPAT , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-LAYERSERIES_COMPAT)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

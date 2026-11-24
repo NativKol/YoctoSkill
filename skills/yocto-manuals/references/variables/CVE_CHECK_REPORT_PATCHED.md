@@ -2,11 +2,11 @@
 
 # Variable `CVE_CHECK_REPORT_PATCHED`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies whether or not the cve-check class should report patched or ignored CVEs. The default is “1”, but you may wish to set it to “0” if you do not need patched or ignored CVEs in the logs.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CVE_CHECK_REPORT_PATCHED
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CVE_CHECK_REPORT_PATCHED)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

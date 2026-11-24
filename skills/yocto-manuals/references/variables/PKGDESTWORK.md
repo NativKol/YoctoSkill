@@ -2,7 +2,7 @@
 
 # Variable `PKGDESTWORK`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Points to a temporary work area where the do_package task saves package metadata. The PKGDESTWORK location defaults to the following:
 
@@ -15,7 +15,7 @@ Do not change this default.
 
 The do_packagedata task copies the package metadata from PKGDESTWORK to PKGDATA_DIR to make it available globally.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PKGDESTWORK
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PKGDESTWORK)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

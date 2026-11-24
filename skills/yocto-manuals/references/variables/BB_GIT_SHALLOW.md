@@ -2,11 +2,11 @@
 
 # Variable `BB_GIT_SHALLOW`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 See BB_GIT_SHALLOW in the BitBake manual.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Setting this variable to “1” enables the support for fetching, using and generating mirror tarballs of shallow git repositories. The external git-make-shallow script is used for shallow mirror tarball creation.
 
@@ -30,7 +30,7 @@ BB_GENERATE_SHALLOW_TARBALLS ?= "1"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_GIT_SHALLOW , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_GIT_SHALLOW
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_GIT_SHALLOW , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_GIT_SHALLOW)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

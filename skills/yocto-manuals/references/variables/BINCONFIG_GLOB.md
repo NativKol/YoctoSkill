@@ -2,7 +2,7 @@
 
 # Variable `BINCONFIG_GLOB`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the binconfig class, this variable specifies a wildcard for configuration scripts that need editing. The scripts are edited to correct any paths that have been set up during compilation so that they are correct for use when installed into the sysroot and called by the build processes of other recipes.
 
@@ -12,7 +12,7 @@ The BINCONFIG_GLOB variable uses shell globbing, which is recognition and expans
 
 For more information on how this variable works, see `meta/classes-recipe/binconfig.bbclass` in the Source Directory. You can also find general information on the class in the “binconfig” section.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BINCONFIG_GLOB
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BINCONFIG_GLOB)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

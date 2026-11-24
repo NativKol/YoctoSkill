@@ -8,7 +8,7 @@ The do_image_complete task performs post-processing on the image through the IMA
 
 For more information on image creation, see the “Image Generation” section in the Yocto Project Overview and Concepts Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-image-complete
+Offline source: yocto-manuals/references/manuals/ref-manual/tasks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-image-complete)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

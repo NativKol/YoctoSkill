@@ -2,11 +2,11 @@
 
 # Variable `IMAGE_GEN_DEBUGFS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When set to “1” in an image recipe, the OpenEmbedded Build System will generate a companion image that contains the debug symbols and source code for the packages installed on the image. The OpenEmbedded Build System does this by adding all the available `-dbg` and `-src` packages available in the package feed, which are automatically generated during Package Splitting.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_GEN_DEBUGFS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_GEN_DEBUGFS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

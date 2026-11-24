@@ -6,7 +6,7 @@ Configures the source by enabling and disabling any build-time and configuration
 
 The default behavior of this task is to run `oe_runmake clean` if a makefile (`Makefile`, `makefile`, or `GNUmakefile`) is found and CLEANBROKEN is not set to “1”. If no such file is found or the CLEANBROKEN variable is set to “1”, the do_configure task does nothing.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-configure
+Offline source: yocto-manuals/references/manuals/ref-manual/tasks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-configure)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

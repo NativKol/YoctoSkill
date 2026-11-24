@@ -2,7 +2,7 @@
 
 # Variable `SDK_INCLUDE_PKGDATA`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When set to “1”, specifies to include the packagedata for all recipes in the “world” target in the extensible SDK. Including this data allows the `devtool search` command to find these recipes in search results, as well as allows the `devtool add` command to map dependencies more effectively.
 
@@ -10,7 +10,7 @@ Note
 
 Enabling the SDK_INCLUDE_PKGDATA variable significantly increases build time because all of world needs to be built. Enabling the variable also slightly increases the size of the extensible SDK.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SDK_INCLUDE_PKGDATA
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SDK_INCLUDE_PKGDATA)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,11 +2,11 @@
 
 # Variable `MODULE_TARBALL_DEPLOY`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Controls creation of the `modules-*.tgz` file. Set this variable to “0” to disable creation of this file, which contains all of the kernel modules resulting from a kernel build.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MODULE_TARBALL_DEPLOY
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MODULE_TARBALL_DEPLOY)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

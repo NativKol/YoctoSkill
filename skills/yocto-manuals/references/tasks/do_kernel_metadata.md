@@ -4,7 +4,7 @@
 
 Collects all the features required for a given kernel build, whether the features come from SRC_URI or from Git repositories. After collection, the do_kernel_metadata task processes the features into a series of config fragments and patches, which can then be applied by subsequent tasks such as do_patch and do_kernel_configme.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-kernel-metadata
+Offline source: yocto-manuals/references/manuals/ref-manual/tasks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-kernel-metadata)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

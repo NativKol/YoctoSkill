@@ -2,13 +2,13 @@
 
 # Variable `KERNEL_DTBDEST`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This variable, used by the kernel-devicetree class, allows to change the installation directory of the DTB (Device Tree Binary) files.
 
 It is set by default to “${KERNEL_IMAGEDEST}” by the kernel class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_DTBDEST
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_DTBDEST)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

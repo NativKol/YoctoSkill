@@ -2,7 +2,7 @@
 
 # Variable `BUILD_OBJDUMP`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the architecture-specific utility to display object files information for the build host, and its default definition is derived in part from BUILD_PREFIX:
 
@@ -15,7 +15,7 @@ When building a native recipe, OBJDUMP is set to the value of this variable by d
 
 The BUILD_OBJDUMP variable should not be set manually, and is rarely used in recipes as OBJDUMP contains the appropriate value depending on the context (native or target recipes). Exception be made for target recipes that need to use the utility from the build host at some point during the build.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BUILD_OBJDUMP
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BUILD_OBJDUMP)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

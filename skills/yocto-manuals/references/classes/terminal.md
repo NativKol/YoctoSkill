@@ -6,7 +6,7 @@ The terminal class provides support for starting a terminal session. The OE_TERM
 
 Other classes use the terminal class anywhere a separate terminal session needs to be started. For example, the patch class assuming PATCHRESOLVE is set to “user”, the cml1 class, and the devshell class all use the terminal class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-terminal
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-terminal)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

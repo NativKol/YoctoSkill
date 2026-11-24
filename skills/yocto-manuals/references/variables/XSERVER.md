@@ -2,13 +2,13 @@
 
 # Variable `XSERVER`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the packages that should be installed to provide an X server and drivers for the current machine, assuming your image directly includes `packagegroup-core-x11-xserver` or, perhaps indirectly, includes “x11-base” in IMAGE_FEATURES.
 
 The default value of XSERVER, if not specified in the machine configuration, is “xserver-xorg xf86-video-fbdev xf86-input-evdev”.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-XSERVER
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-XSERVER)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

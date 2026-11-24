@@ -2,7 +2,7 @@
 
 # Variable `INITRAMFS_IMAGE_BUNDLE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Controls whether or not the image recipe specified by INITRAMFS_IMAGE is run through an extra pass (do_bundle_initramfs) during kernel compilation in order to build a single binary that contains both the kernel image and the initial RAM filesystem (Initramfs) image. This makes use of the CONFIG_INITRAMFS_SOURCE kernel feature.
 
@@ -36,7 +36,7 @@ You must set the INITRAMFS_IMAGE_BUNDLE variable in a configuration file. You ca
 
 See the local.conf.sample.extended file for additional information. Also, for information on creating an Initramfs, see the “Building an Initial RAM Filesystem (Initramfs) Image” section in the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INITRAMFS_IMAGE_BUNDLE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INITRAMFS_IMAGE_BUNDLE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

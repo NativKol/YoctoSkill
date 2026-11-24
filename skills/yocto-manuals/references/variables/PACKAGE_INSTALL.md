@@ -2,13 +2,13 @@
 
 # Variable `PACKAGE_INSTALL`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The final list of packages passed to the package manager for installation into the image.
 
 Because the package manager controls actual installation of all packages, the list of packages passed using PACKAGE_INSTALL is not the final list of packages that are actually installed. This variable is internal to the image construction code. Consequently, in general, you should use the IMAGE_INSTALL variable to specify packages for installation. The exception to this is when working with the core-image-minimal-initramfs image. When working with an initial RAM filesystem (Initramfs) image, use the PACKAGE_INSTALL variable. For information on creating an Initramfs, see the “Building an Initial RAM Filesystem (Initramfs) Image” section in the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGE_INSTALL
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGE_INSTALL)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

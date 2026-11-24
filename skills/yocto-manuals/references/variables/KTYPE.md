@@ -2,13 +2,13 @@
 
 # Variable `KTYPE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Defines the kernel type to be used in assembling the configuration. The linux-yocto recipes define “standard”, “tiny”, and “preempt-rt” kernel types. See the “Kernel Types” section in the Yocto Project Linux Kernel Development Manual for more information on kernel types.
 
 You define the KTYPE variable in the BSP Descriptions. The value you use must match the value used for the LINUX_KERNEL_TYPE value used by the kernel recipe.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KTYPE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KTYPE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

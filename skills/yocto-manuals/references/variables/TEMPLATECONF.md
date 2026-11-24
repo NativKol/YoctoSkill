@@ -2,7 +2,7 @@
 
 # Variable `TEMPLATECONF`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the directory used by the build system to find templates from which to build the `bblayers.conf` and `local.conf` files. Use this variable if you wish to customize such files, and the default BitBake targets shown when sourcing the `oe-init-build-env` script.
 
@@ -12,7 +12,7 @@ Note
 
 You must set this variable in the external environment in order for it to work.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TEMPLATECONF
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TEMPLATECONF)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -4,7 +4,7 @@
 
 The meson class allows to create recipes that build software using the Meson build system. You can use the MESON_BUILDTYPE, MESON_TARGET and EXTRA_OEMESON variables to specify additional configuration options to be passed using the `meson` command line.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-meson
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-meson)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

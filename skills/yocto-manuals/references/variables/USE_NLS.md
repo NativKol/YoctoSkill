@@ -2,7 +2,7 @@
 
 # Variable `USE_NLS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Determine if language translations should be built for recipes that can build them. This variable can be equal to:
 
@@ -12,7 +12,7 @@ Determine if language translations should be built for recipes that can build th
 
 Recipes can use the value of this variable to enable language translations in their build. Classes such as gettext use the value of this variable to enable Gettext support.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-USE_NLS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-USE_NLS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

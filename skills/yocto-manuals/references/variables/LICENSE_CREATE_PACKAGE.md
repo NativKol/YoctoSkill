@@ -2,7 +2,7 @@
 
 # Variable `LICENSE_CREATE_PACKAGE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Setting LICENSE_CREATE_PACKAGE to “1” causes the OpenEmbedded build system to create an extra package (i.e. `${`PN`}-lic`) for each recipe and to add those packages to the RRECOMMENDS`:${PN}`.
 
@@ -10,7 +10,7 @@ The `${PN}-lic` package installs a directory in `/usr/share/licenses` named `${P
 
 For related information on providing license text, see the COPY_LIC_DIRS variable, the COPY_LIC_MANIFEST variable, and the “Providing License Text” section in the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LICENSE_CREATE_PACKAGE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LICENSE_CREATE_PACKAGE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

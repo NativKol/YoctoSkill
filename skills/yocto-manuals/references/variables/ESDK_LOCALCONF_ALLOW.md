@@ -2,7 +2,7 @@
 
 # Variable `ESDK_LOCALCONF_ALLOW`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A list of variables allowed through from the OpenEmbedded build system configuration into the extensible SDK configuration. By default, the list of variables is empty and is set in the populate-sdk-ext class.
 
@@ -10,7 +10,7 @@ This list overrides the variables specified using the ESDK_LOCALCONF_REMOVE vari
 
 For additional information on how to customize the extensible SDK’s configuration, see the “Configuring the Extensible SDK” section in the Yocto Project Application Development and the Extensible Software Development Kit (eSDK) manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ESDK_LOCALCONF_ALLOW
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ESDK_LOCALCONF_ALLOW)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

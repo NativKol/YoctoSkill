@@ -10,7 +10,7 @@ The image-buildinfo class writes a plain text file containing build information 
 
 Additionally, when building an SDK it will write the same contents to `/buildinfo` by default (as specified by SDK_BUILDINFO_FILE).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-image-buildinfo
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-image-buildinfo)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

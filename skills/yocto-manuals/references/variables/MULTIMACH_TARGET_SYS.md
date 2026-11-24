@@ -2,7 +2,7 @@
 
 # Variable `MULTIMACH_TARGET_SYS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Uniquely identifies the type of the target system for which packages are being built. This variable allows output for different types of target systems to be put into different subdirectories of the same output directory.
 
@@ -17,7 +17,7 @@ Some classes (e.g. cross-canadian) modify the MULTIMACH_TARGET_SYS value.
 
 See the STAMP variable for an example. See the STAGING_DIR_TARGET variable for more information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MULTIMACH_TARGET_SYS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MULTIMACH_TARGET_SYS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

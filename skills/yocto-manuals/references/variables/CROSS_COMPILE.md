@@ -2,7 +2,7 @@
 
 # Variable `CROSS_COMPILE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The toolchain binary prefix for the target tools. The CROSS_COMPILE variable is the same as the TARGET_PREFIX variable.
 
@@ -10,7 +10,7 @@ Note
 
 The OpenEmbedded build system sets the CROSS_COMPILE variable only in certain contexts (e.g. when building for kernel and kernel module recipes).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CROSS_COMPILE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CROSS_COMPILE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,7 +2,7 @@
 
 # Variable `OVERLAYFS_MOUNT_POINT`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the overlayfs class, specifies mount point(s) to be used. For example:
 
@@ -17,7 +17,7 @@ Note
 
 Although the overlayfs class is inherited by individual recipes, OVERLAYFS_MOUNT_POINT should be set in your machine configuration.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-OVERLAYFS_MOUNT_POINT
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-OVERLAYFS_MOUNT_POINT)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

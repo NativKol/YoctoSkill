@@ -35,12 +35,19 @@ Separate the namespaces first: recipe names, package names, package groups and i
 - Wic images: `IMAGE_FSTYPES += "wic"`, `WKS_FILE`, `IMAGE_BOOT_FILES`; boot-file content questions go to `yocto-bsp-kernel`.
 - SDK: `bitbake -c populate_sdk <image>`, eSDK `-c populate_sdk_ext`.
 
+## Offline lookup
+
+Everything this skill needs is in the repository; it works without internet. Pull only the text you need instead of reading whole files (pages run to thousands of lines). From this skill's folder:
+
+- `python3 scripts/ylookup.py <NAME>...` prints the scarthgap manual entry for any variable, class, task, feature or QA check (`--kind var|class|task|feature|qa` to disambiguate, `--find TEXT` when unsure of the name).
+- `--topic TEXT` lists manual sections, `--section <manual/page.md> "<heading>"` prints one, `--grep REGEX [--in ref-manual]` finds anything else.
+- URLs in these files are citations for the user, not lookups. The manuals are scarthgap 5.0: if the project is on another release, tell the user rather than going online. Without Python: `` grep -n -A30 '^## Variable `NAME`' references/keywords.md ``.
+
 ## References
 
 - [references/image-rootfs.md](references/image-rootfs.md): adding packages, image feature table, exclusion variables, postinsts, rootfs debug flow, image types, wic, feeds, multiconfig, buildhistory.
 - [references/variables-core.md](references/variables-core.md): operators (why `:append` beats `+=`), package and image variables.
 - [references/tasks-reference.md](references/tasks-reference.md): `do_rootfs`, `do_image_*`, `do_populate_sdk`, `do_package_index`.
-- [references/keywords.md](references/keywords.md): official scarthgap manual entry for every keyword named here; grep `` ## Variable `NAME` `` or `` ## Feature `image:<name>` ``. Others: `yocto-manuals` skill.
 
 ## Output
 

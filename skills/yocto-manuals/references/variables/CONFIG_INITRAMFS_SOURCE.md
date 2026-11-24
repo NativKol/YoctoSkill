@@ -2,7 +2,7 @@
 
 # Variable `CONFIG_INITRAMFS_SOURCE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Identifies the initial RAM filesystem (Initramfs) source files. The OpenEmbedded build system receives and uses this kernel Kconfig variable as an environment variable. By default, the variable is set to null (“”).
 
@@ -12,7 +12,7 @@ If you specify multiple directories and files, the Initramfs image will be the a
 
 For information on creating an Initramfs, see the “Building an Initial RAM Filesystem (Initramfs) Image” section in the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CONFIG_INITRAMFS_SOURCE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CONFIG_INITRAMFS_SOURCE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

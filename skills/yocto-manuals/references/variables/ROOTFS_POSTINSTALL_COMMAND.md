@@ -2,7 +2,7 @@
 
 # Variable `ROOTFS_POSTINSTALL_COMMAND`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies a list of functions to call after the OpenEmbedded build system has installed packages. You can specify functions separated by spaces:
 
@@ -13,7 +13,7 @@ ROOTFS_POSTINSTALL_COMMAND += "function"
 
 If you need to pass the root filesystem path to a command within a function, you can use `${IMAGE_ROOTFS}`, which points to the directory that becomes the root filesystem image. See the IMAGE_ROOTFS variable for more information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ROOTFS_POSTINSTALL_COMMAND
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ROOTFS_POSTINSTALL_COMMAND)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,19 +2,19 @@
 
 # Variable `BBFILES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A space-separated list of recipe files BitBake uses to build software.
 
 When specifying recipe files, you can pattern match using Python’s glob syntax. For details on the syntax, see the documentation by following the previous link.
 
-## BitBake User Manual
+### BitBake User Manual
 
 A space-separated list of recipe files BitBake uses to build software.
 
 When specifying recipe files, you can pattern match using Python’s glob syntax. For details on the syntax, see the documentation by following the previous link.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBFILES , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBFILES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBFILES , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBFILES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,7 +2,7 @@
 
 # Variable `PATCHRESOLVE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Determines the action to take when a patch fails. You can set this variable to one of two values: “noop” and “user”.
 
@@ -10,7 +10,7 @@ The default value of “noop” causes the build to simply fail when the OpenEmb
 
 Set this variable in your `local.conf` file.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PATCHRESOLVE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PATCHRESOLVE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

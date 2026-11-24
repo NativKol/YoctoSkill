@@ -2,7 +2,7 @@
 
 # Variable `TEST_LOG_DIR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Holds the SSH log and the boot log for QEMU machines. The TEST_LOG_DIR variable defaults to `"${WORKDIR}/testimage"`.
 
@@ -10,7 +10,7 @@ Note
 
 Actual test results reside in the task log (`log.do_testimage`), which is in the `${WORKDIR}/temp/` directory.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TEST_LOG_DIR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TEST_LOG_DIR)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

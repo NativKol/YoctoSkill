@@ -2,13 +2,13 @@
 
 # Variable `FIT_KERNEL_COMP_ALG`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The compression algorithm to use for the kernel image inside the FIT Image. At present, the only supported values are “gzip” (default), “lzo” or “none”. If you set this variable to anything other than “none” you may also need to set FIT_KERNEL_COMP_ALG_EXTENSION.
 
 This variable is used in the kernel-uboot class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FIT_KERNEL_COMP_ALG
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FIT_KERNEL_COMP_ALG)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,7 +2,7 @@
 
 # Variable `LAYERRECOMMENDS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Lists the layers, separated by spaces, recommended for use with this layer.
 
@@ -17,7 +17,7 @@ In this previous example, version 3 of “anotherlayer” is compared against `L
 
 This variable is used in the `conf/layer.conf` file and must be suffixed with the name of the specific layer (e.g. `LAYERRECOMMENDS_mylayer`).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LAYERRECOMMENDS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LAYERRECOMMENDS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

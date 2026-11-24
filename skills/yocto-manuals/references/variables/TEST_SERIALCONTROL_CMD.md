@@ -2,7 +2,7 @@
 
 # Variable `TEST_SERIALCONTROL_CMD`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 For automated hardware testing, specifies the command to use to connect to the serial console of the target machine under test. This command simply needs to connect to the serial console and forward that connection to standard input and output as any normal terminal program does.
 
@@ -13,7 +13,7 @@ TEST_SERIALCONTROL_CMD = "picocom /dev/ttyUSB0 -b 115200"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TEST_SERIALCONTROL_CMD
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TEST_SERIALCONTROL_CMD)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

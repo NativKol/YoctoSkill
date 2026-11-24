@@ -2,7 +2,7 @@
 
 # Variable `HOST_ARCH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The name of the target architecture, which is normally the same as TARGET_ARCH. The OpenEmbedded build system supports many architectures. Here is an example list of architectures supported. This list is by no means complete as the architecture is configurable:
 
@@ -20,7 +20,7 @@ The name of the target architecture, which is normally the same as TARGET_ARCH. 
 
 - mipsel
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-HOST_ARCH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-HOST_ARCH)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,7 +2,7 @@
 
 # Variable `TEST_TARGET_IP`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The IP address of your hardware under test. The TEST_TARGET_IP variable has no effect when TEST_TARGET is set to “qemu”.
 
@@ -15,7 +15,7 @@ TEST_TARGET_IP = "192.168.1.4:2201"
 
 Specifying a port is useful when SSH is started on a non-standard port or in cases when your hardware under test is behind a firewall or network that is not directly accessible from your host and you need to do port address translation.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TEST_TARGET_IP
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TEST_TARGET_IP)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

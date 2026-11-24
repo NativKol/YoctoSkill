@@ -2,11 +2,11 @@
 
 # Variable `OVERLAYFS_ETC_EXPOSE_LOWER`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When the overlayfs-etc class is inherited, if set to “1” then a read-only access to the original `/etc` content will be provided as a `lower/` subdirectory of OVERLAYFS_ETC_MOUNT_POINT. The default value is “0”.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-OVERLAYFS_ETC_EXPOSE_LOWER
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-OVERLAYFS_ETC_EXPOSE_LOWER)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,7 +2,7 @@
 
 # Variable `ARCHIVER_MODE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When used with the archiver class, determines the type of information used to create a released archive. You can use this variable to create archives of patched source, original source, configured source, and so forth by employing the following variable flags (varflags):
 
@@ -20,7 +20,7 @@ ARCHIVER_MODE[srpm] = "1"                         # Uses RPM package files.
 
 For information on how the variable works, see the `meta/classes/archiver.bbclass` file in the Source Directory.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ARCHIVER_MODE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ARCHIVER_MODE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,7 +2,7 @@
 
 # Variable `PKG`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The name of the resulting package created by the OpenEmbedded build system.
 
@@ -12,7 +12,7 @@ When using the PKG variable, you must use a package name override.
 
 For example, when the debian class renames the output package, it does so by setting `PKG:packagename`.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PKG
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PKG)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

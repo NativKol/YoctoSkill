@@ -33,7 +33,7 @@ because after step 1 there is a stamp file for the do_fetch task of `recipe`, an
 
 Note that this also applies to BitBake from concurrent processes when a shared download directory (DL_DIR) is setup.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-cleanall
+Offline source: yocto-manuals/references/manuals/ref-manual/tasks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-cleanall)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

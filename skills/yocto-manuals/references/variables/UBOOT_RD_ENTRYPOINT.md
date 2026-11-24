@@ -2,11 +2,11 @@
 
 # Variable `UBOOT_RD_ENTRYPOINT`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the entrypoint for the RAM disk image. During FIT image creation, the UBOOT_RD_ENTRYPOINT variable is used in kernel-fitimage class to specify the entrypoint to be used in creating the Image Tree Source for the FIT image.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_RD_ENTRYPOINT
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_RD_ENTRYPOINT)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

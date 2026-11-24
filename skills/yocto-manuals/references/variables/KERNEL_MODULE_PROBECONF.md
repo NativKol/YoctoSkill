@@ -2,11 +2,11 @@
 
 # Variable `KERNEL_MODULE_PROBECONF`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Provides a list of modules for which the OpenEmbedded build system expects to find `module_conf_`modname values that specify configuration for each of the modules. For information on how to provide those module configurations, see the module_conf_* variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_MODULE_PROBECONF
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_MODULE_PROBECONF)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

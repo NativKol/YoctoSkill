@@ -2,7 +2,7 @@
 
 # Variable `DEPLOY_DIR_RPM`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Points to the area that the OpenEmbedded build system uses to place RPM packages that are ready to be used outside of the build system. This variable applies only when PACKAGE_CLASSES contains “package_rpm”.
 
@@ -15,7 +15,7 @@ DEPLOY_DIR_RPM = "${DEPLOY_DIR}/rpm"
 
 The package_rpm class uses the DEPLOY_DIR_RPM variable to make sure the do_package_write_rpm task writes RPM packages into the appropriate folder. For more information on how packaging works, see the “Package Feeds” section in the Yocto Project Overview and Concepts Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DEPLOY_DIR_RPM
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DEPLOY_DIR_RPM)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

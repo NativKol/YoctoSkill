@@ -2,7 +2,7 @@
 
 # Variable `INHIBIT_PACKAGE_DEBUG_SPLIT`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Prevents the OpenEmbedded build system from splitting out debug information during packaging. By default, the build system splits out debugging information during the do_package task. For more information on how debug information is split out, see the PACKAGE_DEBUG_SPLIT_STYLE variable.
 
@@ -13,7 +13,7 @@ INHIBIT_PACKAGE_DEBUG_SPLIT = "1"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INHIBIT_PACKAGE_DEBUG_SPLIT
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INHIBIT_PACKAGE_DEBUG_SPLIT)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

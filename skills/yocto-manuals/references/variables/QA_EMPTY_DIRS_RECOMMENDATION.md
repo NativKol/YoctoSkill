@@ -2,7 +2,7 @@
 
 # Variable `QA_EMPTY_DIRS_RECOMMENDATION`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies a recommendation for why a directory must be empty, which will be included in the error message if a specific directory is found to contain files. Must be overridden with the directory path to match on.
 
@@ -15,7 +15,7 @@ QA_EMPTY_DIRS_RECOMMENDATION:/dev = "but all devices must be created at runtime"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-QA_EMPTY_DIRS_RECOMMENDATION
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-QA_EMPTY_DIRS_RECOMMENDATION)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

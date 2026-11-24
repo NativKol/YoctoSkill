@@ -2,7 +2,7 @@
 
 # Variable `UPSTREAM_CHECK_URI`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 You can perform a per-recipe check for what the latest upstream source code version is by calling `devtool latest-version recipe`. If the source code is provided from tarballs, the latest version is determined by fetching the directory listing where the tarball is and attempting to find a later tarball. When this approach does not work, you can use UPSTREAM_CHECK_URI to provide a different URI that contains the link to the latest tarball:
 
@@ -11,7 +11,7 @@ UPSTREAM_CHECK_URI = "recipe_url"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UPSTREAM_CHECK_URI
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UPSTREAM_CHECK_URI)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -4,7 +4,7 @@
 
 Starts a shell in which an interactive Python interpreter allows you to interact with the BitBake build environment. From within this shell, you can directly examine and set bits from the data store and execute functions as if within the BitBake environment. See the “Using a Python Development Shell” section in the Yocto Project Development Tasks Manual for more information about using `pydevshell`.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-pydevshell
+Offline source: yocto-manuals/references/manuals/ref-manual/tasks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-pydevshell)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,13 +2,13 @@
 
 # Variable `LABELS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Provides a list of targets for automatic configuration.
 
 See the grub-efi class for more information on how this variable is used.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LABELS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LABELS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

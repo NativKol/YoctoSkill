@@ -2,11 +2,11 @@
 
 # Variable `CVE_DB_UPDATE_INTERVAL`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the CVE database update interval in seconds, as used by `cve-update-db-native`. The default value is “86400” i.e. once a day (24*60*60). If the value is set to “0” then the update will be forced every time. Alternatively, a negative value e.g. “-1” will disable updates entirely.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CVE_DB_UPDATE_INTERVAL
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CVE_DB_UPDATE_INTERVAL)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

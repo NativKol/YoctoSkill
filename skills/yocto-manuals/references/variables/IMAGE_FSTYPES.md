@@ -2,7 +2,7 @@
 
 # Variable `IMAGE_FSTYPES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the formats the OpenEmbedded build system uses during the build when creating the root filesystem. For example, setting IMAGE_FSTYPES as follows causes the build system to create root filesystems using two formats: `.ext3` and `.tar.bz2`:
 
@@ -19,7 +19,7 @@ Note
 
 - Due to the way the OpenEmbedded build system processes this variable, you cannot update its contents by using `:append` or `:prepend`. You must use the `+=` operator to add one or more options to the IMAGE_FSTYPES variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_FSTYPES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_FSTYPES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

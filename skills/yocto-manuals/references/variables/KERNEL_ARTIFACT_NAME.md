@@ -2,7 +2,7 @@
 
 # Variable `KERNEL_ARTIFACT_NAME`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the name of all of the build artifacts. You can change the name of the artifacts by changing the KERNEL_ARTIFACT_NAME variable.
 
@@ -15,7 +15,7 @@ KERNEL_ARTIFACT_NAME ?= "${PKGE}-${PKGV}-${PKGR}${IMAGE_MACHINE_SUFFIX}${IMAGE_V
 
 See the PKGE, PKGV, PKGR, IMAGE_MACHINE_SUFFIX and IMAGE_VERSION_SUFFIX variables for additional information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_ARTIFACT_NAME
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_ARTIFACT_NAME)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

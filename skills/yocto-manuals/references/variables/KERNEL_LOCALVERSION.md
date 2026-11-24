@@ -2,13 +2,13 @@
 
 # Variable `KERNEL_LOCALVERSION`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This variable allows to append a string to the version of the kernel image. This corresponds to the `CONFIG_LOCALVERSION` kernel configuration parameter.
 
 Using this variable is only useful when you are using a kernel recipe inheriting the kernel class, and which doesn’t already set a local version. Therefore, setting this variable has no impact on `linux-yocto` kernels.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_LOCALVERSION
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_LOCALVERSION)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,7 +2,7 @@
 
 # Variable `BUILD_CCLD`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the *linker* command to be used for the build host when the C compiler is being used as the linker, and its default definition is derived in part from BUILD_PREFIX and BUILD_CC_ARCH:
 
@@ -15,7 +15,7 @@ When building a native recipe, CCLD is set to the value of this variable by defa
 
 The BUILD_CCLD variable should not be set manually, and is rarely used in recipes as CCLD contains the appropriate value depending on the context (native or target recipes). Exception be made for target recipes that need to use the *linker* from the build host at some point during the build.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BUILD_CCLD
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BUILD_CCLD)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,7 +2,7 @@
 
 # Variable `EXTRANATIVEPATH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A list of subdirectories of `${`STAGING_BINDIR_NATIVE`}` added to the beginning of the environment variable `PATH`. As an example, the following prepends “${STAGING_BINDIR_NATIVE}/foo:${STAGING_BINDIR_NATIVE}/bar:” to `PATH`:
 
@@ -11,7 +11,7 @@ EXTRANATIVEPATH = "foo bar"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTRANATIVEPATH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTRANATIVEPATH)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

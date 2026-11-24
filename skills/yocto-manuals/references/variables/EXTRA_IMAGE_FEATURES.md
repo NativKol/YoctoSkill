@@ -2,7 +2,7 @@
 
 # Variable `EXTRA_IMAGE_FEATURES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A list of additional features to include in an image. When listing more than one feature, separate them with a space.
 
@@ -32,7 +32,7 @@ For a complete list of image features that ships with the Yocto Project, see the
 
 For an example that shows how to customize your image by using this variable, see the “Customizing Images Using Custom IMAGE_FEATURES and EXTRA_IMAGE_FEATURES” section in the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTRA_IMAGE_FEATURES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTRA_IMAGE_FEATURES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

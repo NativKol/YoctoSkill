@@ -2,7 +2,7 @@
 
 # Variable `OVERRIDES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A colon-separated list of overrides that currently apply. Overrides are a BitBake mechanism that allows variables to be selectively overridden at the end of parsing. The set of overrides in OVERRIDES represents the “state” during building, which includes the current recipe being built, the machine for which it is being built, and so forth.
 
@@ -26,13 +26,13 @@ Note
 
 An easy way to see what overrides apply is to run the command `bitbake-getvar -r myrecipe OVERRIDES`. See the “Viewing Variable Values” section in the Yocto Project Development Tasks Manual for more information.
 
-## BitBake User Manual
+### BitBake User Manual
 
 A colon-separated list that BitBake uses to control what variables are overridden after BitBake parses recipes and configuration files.
 
 Following is a simple example that uses an overrides list based on machine architectures: OVERRIDES = “arm:x86:mips:powerpc” You can find information on how to use OVERRIDES in the “Conditional Syntax (Overrides)” section.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-OVERRIDES , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-OVERRIDES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-OVERRIDES , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-OVERRIDES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

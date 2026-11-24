@@ -2,15 +2,15 @@
 
 # Variable `BB_LOADFACTOR_MAX`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The system load threshold above which BitBake will stop runnig extra tasks.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Setting this to a value will cause BitBake to check the system load average before executing new tasks. If the load average is above the the number of CPUs multipled by this factor, no new task will be started unless there is no task executing. A value of “1.5” has been found to work reasonably. This is helpful for systems which don’t have pressure regulation enabled, which is more granular. Pressure values take precedence over loadfactor.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_LOADFACTOR_MAX , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_LOADFACTOR_MAX
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_LOADFACTOR_MAX , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_LOADFACTOR_MAX)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

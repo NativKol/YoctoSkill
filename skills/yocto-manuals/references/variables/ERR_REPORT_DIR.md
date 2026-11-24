@@ -2,7 +2,7 @@
 
 # Variable `ERR_REPORT_DIR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When used with the report-error class, specifies the path used for storing the debug files created by the error reporting tool, which allows you to submit build errors you encounter to a central database. By default, the value of this variable is `${`LOG_DIR`}/error-report`.
 
@@ -13,7 +13,7 @@ ERR_REPORT_DIR = "path"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ERR_REPORT_DIR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ERR_REPORT_DIR)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,7 +2,7 @@
 
 # Variable `ROOT_HOME`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Defines the root home directory. By default, this directory is set as follows in the BitBake configuration file:
 
@@ -24,7 +24,7 @@ ROOT_HOME ?= "/root"
 
 You can also override the default by setting the variable in your distro configuration or in the `local.conf` file.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ROOT_HOME
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ROOT_HOME)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,7 +2,7 @@
 
 # Variable `CVE_STATUS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The CVE ID which is patched or should be ignored. Here is an example from the Python3 recipe:
 
@@ -13,7 +13,7 @@ CVE_STATUS[CVE-2020-15523] = "not-applicable-platform: Issue only applies on Win
 
 It has the format “reason: description” and the description is optional. The Reason is mapped to the final CVE state by mapping via CVE_CHECK_STATUSMAP. See Fixing vulnerabilities in recipes for details.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CVE_STATUS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CVE_STATUS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

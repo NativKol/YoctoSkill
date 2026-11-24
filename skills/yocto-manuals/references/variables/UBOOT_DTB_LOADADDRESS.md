@@ -2,11 +2,11 @@
 
 # Variable `UBOOT_DTB_LOADADDRESS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the load address for the dtb image used by U-Boot. During FIT image creation, the UBOOT_DTB_LOADADDRESS variable is used in kernel-fitimage class to specify the load address to be used in creating the dtb sections of Image Tree Source for the FIT image.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_DTB_LOADADDRESS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_DTB_LOADADDRESS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

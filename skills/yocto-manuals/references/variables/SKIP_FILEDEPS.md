@@ -2,7 +2,7 @@
 
 # Variable `SKIP_FILEDEPS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Enables removal of all files from the “Provides” section of an RPM package. Removal of these files is required for packages containing prebuilt binaries and libraries such as `libstdc++` and `glibc`.
 
@@ -13,7 +13,7 @@ SKIP_FILEDEPS = "1"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SKIP_FILEDEPS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SKIP_FILEDEPS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

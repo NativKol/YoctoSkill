@@ -2,11 +2,11 @@
 
 # Variable `LOCALE_PATHS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The LOCALE_PATHS variable holds a whitespace separated list of paths that are scanned to construct `-locale` packages during Package Splitting. The list contains `${datadir}/locale` by default.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LOCALE_PATHS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LOCALE_PATHS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

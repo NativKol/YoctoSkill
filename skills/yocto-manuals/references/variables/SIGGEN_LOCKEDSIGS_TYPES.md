@@ -2,7 +2,7 @@
 
 # Variable `SIGGEN_LOCKEDSIGS_TYPES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Allowed overrides for SIGGEN_LOCKEDSIGS. This is mainly used for architecture specific locks. A common value for SIGGEN_LOCKEDSIGS_TYPES is `${PACKAGE_ARCHS}`:
 
@@ -16,7 +16,7 @@ SIGGEN_LOCKEDSIGS_cortexa57 += "bc:do_compile:12178eb6d55ef602a8fe638e49862fd247
 
 Here, the `do_compile` task from `bc` will be locked only for `core2-64` and `cortexa57` but not for other architectures such as `mips32r2`.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SIGGEN_LOCKEDSIGS_TYPES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SIGGEN_LOCKEDSIGS_TYPES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

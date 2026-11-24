@@ -2,13 +2,13 @@
 
 # Variable `USE_VT`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When using SysVinit, determines whether or not to run a getty on any virtual terminals in order to enable logging in through those terminals.
 
 The default value used for USE_VT is “1” when no default value is specifically set. Typically, you would set USE_VT to “0” in the machine configuration file for machines that do not have a graphical display attached and therefore do not need virtual terminal functionality.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-USE_VT
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-USE_VT)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

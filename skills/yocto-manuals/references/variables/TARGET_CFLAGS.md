@@ -2,13 +2,13 @@
 
 # Variable `TARGET_CFLAGS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the flags to pass to the C compiler when building for the target. When building in the target context, CFLAGS is set to the value of this variable by default.
 
 Additionally, the SDK’s environment setup script sets the CFLAGS variable in the environment to the TARGET_CFLAGS value so that executables built using the SDK also have the flags applied.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TARGET_CFLAGS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TARGET_CFLAGS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,7 +2,7 @@
 
 # Variable `MACHINE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the target device for which the image is built. You define MACHINE in the `local.conf` file found in the Build Directory. By default, MACHINE is set to “qemux86”, which is an x86-based architecture machine to be emulated using QEMU:
 
@@ -35,7 +35,7 @@ Note
 
 Adding additional Board Support Package (BSP) layers to your configuration adds new possible settings for MACHINE.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MACHINE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MACHINE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

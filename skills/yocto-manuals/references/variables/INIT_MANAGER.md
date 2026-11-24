@@ -2,7 +2,7 @@
 
 # Variable `INIT_MANAGER`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the system init manager to use. Available options are:
 
@@ -20,7 +20,7 @@ With `mdev-busybox`, the init manager becomes the much simpler BusyBox init, tog
 
 More concretely, this is used to include `conf/distro/include/init-manager-${INIT_MANAGER}.inc` into the global configuration. You can have a look at the meta/conf/distro/include/init-manager-*.inc files for more information, and also the “Selecting an Initialization Manager” section in the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INIT_MANAGER
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INIT_MANAGER)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

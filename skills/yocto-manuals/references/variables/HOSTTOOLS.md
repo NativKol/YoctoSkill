@@ -2,13 +2,13 @@
 
 # Variable `HOSTTOOLS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A space-separated list (filter) of tools on the build host that should be allowed to be called from within build tasks. Using this filter helps reduce the possibility of host contamination. If a tool specified in the value of HOSTTOOLS is not found on the build host, the OpenEmbedded build system produces an error and the build is not started.
 
 For additional information, see HOSTTOOLS_NONFATAL.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-HOSTTOOLS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-HOSTTOOLS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,7 +2,7 @@
 
 # Variable `SDKEXTPATH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The default installation directory for the Extensible SDK. By default, this directory is based on the DISTRO variable and is set in the populate_sdk_base class as follows:
 
@@ -15,7 +15,7 @@ For the default distribution “poky”, the SDKEXTPATH is set to “poky_sdk”
 
 For information on how to change this default directory, see the “Changing the Default SDK Installation Directory” section in the Yocto Project Application Development and the Extensible Software Development Kit (eSDK) manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SDKEXTPATH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SDKEXTPATH)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

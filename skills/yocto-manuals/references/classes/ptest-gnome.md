@@ -6,7 +6,7 @@ Enables package tests (ptests) specifically for GNOME packages, which have tests
 
 For information on setting up and running ptests, see the “Testing Packages With ptest” section in the Yocto Project Test Environment Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-ptest-gnome
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-ptest-gnome)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

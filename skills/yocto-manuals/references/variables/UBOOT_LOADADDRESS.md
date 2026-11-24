@@ -2,7 +2,7 @@
 
 # Variable `UBOOT_LOADADDRESS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the load address for the U-Boot image. During U-Boot image creation, the UBOOT_LOADADDRESS variable is passed as a command-line parameter to the `uboot-mkimage` utility.
 
@@ -14,7 +14,7 @@ To pass a 64 bit address, you will also need to set:
 
 This variable is used by the kernel-fitimage, kernel-uimage, kernel, uboot-config and uboot-sign classes.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_LOADADDRESS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_LOADADDRESS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

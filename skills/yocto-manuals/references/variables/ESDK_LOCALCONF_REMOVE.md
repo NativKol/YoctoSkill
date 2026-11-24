@@ -2,7 +2,7 @@
 
 # Variable `ESDK_LOCALCONF_REMOVE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A list of variables not allowed through from the OpenEmbedded build system configuration into the extensible SDK configuration. Usually, these are variables that are specific to the machine on which the build system is running and thus would be potentially problematic within the extensible SDK.
 
@@ -26,7 +26,7 @@ By default, ESDK_LOCALCONF_REMOVE is set in the populate-sdk-ext class and exclu
 
 For additional information on how to customize the extensible SDK’s configuration, see the “Configuring the Extensible SDK” section in the Yocto Project Application Development and the Extensible Software Development Kit (eSDK) manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ESDK_LOCALCONF_REMOVE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ESDK_LOCALCONF_REMOVE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

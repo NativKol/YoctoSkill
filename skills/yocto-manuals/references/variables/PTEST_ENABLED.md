@@ -2,11 +2,11 @@
 
 # Variable `PTEST_ENABLED`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies whether or not Package Test (ptest) functionality is enabled when building a recipe. You should not set this variable directly. Enabling and disabling building Package Tests at build time should be done by adding “ptest” to (or removing it from) DISTRO_FEATURES.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PTEST_ENABLED
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PTEST_ENABLED)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

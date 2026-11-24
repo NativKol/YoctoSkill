@@ -2,7 +2,7 @@
 
 # Variable `INITRAMFS_IMAGE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the PROVIDES name of an image recipe that is used to build an initial RAM filesystem (Initramfs) image. In other words, the INITRAMFS_IMAGE variable causes an additional recipe to be built as a dependency to whatever root filesystem recipe you might be using (e.g. `core-image-sato`). The Initramfs image recipe you provide should set IMAGE_FSTYPES to INITRAMFS_FSTYPES.
 
@@ -18,7 +18,7 @@ If INITRAMFS_IMAGE is empty, which is the default, then no Initramfs image is bu
 
 For more information, you can also see the INITRAMFS_IMAGE_BUNDLE variable, which allows the generated image to be bundled inside the kernel image. Additionally, for information on creating an Initramfs image, see the “Building an Initial RAM Filesystem (Initramfs) Image” section in the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INITRAMFS_IMAGE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INITRAMFS_IMAGE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

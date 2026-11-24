@@ -2,11 +2,11 @@
 
 # Variable `BB_GENERATE_SHALLOW_TARBALLS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 See BB_GENERATE_SHALLOW_TARBALLS in the BitBake manual.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Setting this variable to “1” when BB_GIT_SHALLOW is also set to “1” causes bitbake to generate shallow mirror tarballs when fetching git repositories. The number of commits included in the shallow mirror tarballs is controlled by BB_GIT_SHALLOW_DEPTH.
 
@@ -14,7 +14,7 @@ If both BB_GIT_SHALLOW and BB_GENERATE_MIRROR_TARBALLS are enabled, bitbake will
 
 For example usage, see BB_GIT_SHALLOW.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_GENERATE_SHALLOW_TARBALLS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_GENERATE_SHALLOW_TARBALLS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_GENERATE_SHALLOW_TARBALLS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_GENERATE_SHALLOW_TARBALLS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

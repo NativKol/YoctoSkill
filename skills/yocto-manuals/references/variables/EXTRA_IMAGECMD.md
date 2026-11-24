@@ -2,7 +2,7 @@
 
 # Variable `EXTRA_IMAGECMD`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies additional options for the image creation command that has been specified in IMAGE_CMD. When setting this variable, use an override for the associated image type. Here is an example:
 
@@ -11,7 +11,7 @@ EXTRA_IMAGECMD:ext3 ?= "-i 4096"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTRA_IMAGECMD
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTRA_IMAGECMD)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

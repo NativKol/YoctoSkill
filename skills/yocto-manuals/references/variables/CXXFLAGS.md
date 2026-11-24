@@ -2,7 +2,7 @@
 
 # Variable `CXXFLAGS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the flags to pass to the C++ compiler. This variable is exported to an environment variable and thus made visible to the software being built during the compilation step.
 
@@ -14,7 +14,7 @@ Default initialization for CXXFLAGS varies depending on what is being built:
 
 - BUILDSDK_CXXFLAGS when building for an SDK (i.e. `nativesdk-`)
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CXXFLAGS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CXXFLAGS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

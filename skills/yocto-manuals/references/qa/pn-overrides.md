@@ -7,7 +7,7 @@ Message: `Recipe <recipefile> has PN of "<recipename>" which is in OVERRIDES, th
 
 The specified recipe has a name (PN) value that appears in OVERRIDES. If a recipe is named such that its PN value matches something already in OVERRIDES (e.g. PN happens to be the same as MACHINE or DISTRO), it can have unexpected consequences. For example, assignments such as `FILES:${PN} = "xyz"` effectively turn into `FILES = "xyz"`. Rename your recipe (or if PN is being set explicitly, change the PN value) so that the conflict does not occur. See FILES for additional information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
+Offline source: yocto-manuals/references/manuals/ref-manual/qa-checks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,7 +2,7 @@
 
 # Variable `PATCHTOOL`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the utility used to apply patches for a recipe during the do_patch task. You can specify one of three utilities: “patch”, “quilt”, or “git”. The default utility used is “quilt” except for the quilt-native recipe itself. Because the quilt tool is not available at the time quilt-native is being patched, it uses “patch”.
 
@@ -15,7 +15,7 @@ PATCHTOOL = "git"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PATCHTOOL
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PATCHTOOL)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

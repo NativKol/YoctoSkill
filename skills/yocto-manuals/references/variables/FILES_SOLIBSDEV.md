@@ -2,7 +2,7 @@
 
 # Variable `FILES_SOLIBSDEV`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Defines the file specification to match SOLIBSDEV. In other words, FILES_SOLIBSDEV defines the full path name of the development symbolic link (symlink) for shared libraries on the target platform.
 
@@ -13,7 +13,7 @@ FILES_SOLIBSDEV ?= "${base_libdir}/lib*${SOLIBSDEV} ${libdir}/lib*${SOLIBSDEV}"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FILES_SOLIBSDEV
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FILES_SOLIBSDEV)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

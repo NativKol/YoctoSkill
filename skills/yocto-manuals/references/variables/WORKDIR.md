@@ -2,7 +2,7 @@
 
 # Variable `WORKDIR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The pathname of the work directory in which the OpenEmbedded build system builds a recipe. This directory is located within the TMPDIR directory structure and is specific to the recipe being built and the system for which it is being built.
 
@@ -34,7 +34,7 @@ poky/build/tmp/work/qemux86-poky-linux/foo/1.3.0-r0
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-WORKDIR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-WORKDIR)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

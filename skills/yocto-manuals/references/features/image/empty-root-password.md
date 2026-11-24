@@ -10,7 +10,7 @@ Note
 
 `empty-root-password` doesn’t set an empty root password by itself. You get an initial empty root password thanks to the base-passwd and shadow recipes, and the presence of `empty-root-password` or `debug-tweaks` just disables the mechanism which forces an non-empty password for the root user.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#image-features
+Offline source: yocto-manuals/references/manuals/ref-manual/features.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#image-features)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

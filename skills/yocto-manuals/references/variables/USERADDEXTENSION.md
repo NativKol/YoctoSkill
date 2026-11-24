@@ -2,7 +2,7 @@
 
 # Variable `USERADDEXTENSION`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When set to “useradd-staticids”, causes the OpenEmbedded build system to base all user and group additions on a static `passwd` and `group` files found in BBPATH.
 
@@ -14,7 +14,7 @@ Setting this variable to use static `uid` and `gid` values causes the OpenEmbedd
 
 If you use static `uid` and `gid` information, you must also specify the `files/passwd` and `files/group` files by setting the USERADD_UID_TABLES and USERADD_GID_TABLES variables. Additionally, you should also set the USERADD_ERROR_DYNAMIC variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-USERADDEXTENSION
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-USERADDEXTENSION)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

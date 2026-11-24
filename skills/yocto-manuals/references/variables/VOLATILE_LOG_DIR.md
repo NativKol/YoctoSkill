@@ -2,13 +2,13 @@
 
 # Variable `VOLATILE_LOG_DIR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the persistence of the target’s `/var/log` directory, which is used to house postinstall target log files.
 
 By default, VOLATILE_LOG_DIR is set to “yes”, which means the file is not persistent. You can override this setting by setting the variable to “no” to make the log directory persistent.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-VOLATILE_LOG_DIR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-VOLATILE_LOG_DIR)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,7 +2,7 @@
 
 # Variable `IMAGE_OVERHEAD_FACTOR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Defines a multiplier that the build system applies to the initial image size for cases when the multiplier times the returned disk usage value for the image is greater than the sum of IMAGE_ROOTFS_SIZE and IMAGE_ROOTFS_EXTRA_SPACE. The result of the multiplier applied to the initial image size creates free disk space in the image as overhead. By default, the build process uses a multiplier of 1.3 for this variable. This default value results in 30% free disk space added to the image when this method is used to determine the final generated image size. You should be aware that post install scripts and the package management system uses disk space inside this overhead area. Consequently, the multiplier does not produce an image with all the theoretical free disk space. See IMAGE_ROOTFS_SIZE for information on how the build system determines the overall image size.
 
@@ -17,7 +17,7 @@ Alternatively, you can ensure a specific amount of free disk space is added to t
 
 When using Wic tool, beware that a second overhead factor is also applied. This overhead value is defined by the `--overhead-factor` option, which defaults to “1.3” when omitted. See the Command: part chapter in OpenEmbedded Kickstart (.wks) Reference for details.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_OVERHEAD_FACTOR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_OVERHEAD_FACTOR)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

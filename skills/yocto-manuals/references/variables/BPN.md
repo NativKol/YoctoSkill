@@ -2,11 +2,11 @@
 
 # Variable `BPN`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This variable is a version of the PN variable with common prefixes and suffixes removed, such as `nativesdk-`, `-cross`, `-native`, and multilib’s `lib64-` and `lib32-`. The exact lists of prefixes and suffixes removed are specified by the MLPREFIX and SPECIAL_PKGSUFFIX variables, respectively.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BPN
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BPN)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

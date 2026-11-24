@@ -2,11 +2,11 @@
 
 # Variable `RM_WORK_EXCLUDE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 With rm_work enabled, this variable specifies a list of recipes whose work directories should not be removed. See the “rm_work” section for more details.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RM_WORK_EXCLUDE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RM_WORK_EXCLUDE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

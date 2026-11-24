@@ -2,7 +2,7 @@
 
 # Variable `TEST_SERVER_IP`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The IP address of the build machine (host machine). This IP address is usually automatically detected. However, if detection fails, this variable needs to be set to the IP address of the build machine (i.e. where the build is taking place).
 
@@ -10,7 +10,7 @@ Note
 
 The TEST_SERVER_IP variable is only used for a small number of tests such as the “dnf” test suite, which needs to download packages from `WORKDIR/oe-rootfs-repo`.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TEST_SERVER_IP
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TEST_SERVER_IP)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

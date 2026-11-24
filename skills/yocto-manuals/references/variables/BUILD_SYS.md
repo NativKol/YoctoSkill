@@ -2,13 +2,13 @@
 
 # Variable `BUILD_SYS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the system, including the architecture and the operating system, to use when building for the build host (i.e. when building native recipes).
 
 The OpenEmbedded build system automatically sets this variable based on BUILD_ARCH, BUILD_VENDOR, and BUILD_OS. You do not need to set the BUILD_SYS variable yourself.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BUILD_SYS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BUILD_SYS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

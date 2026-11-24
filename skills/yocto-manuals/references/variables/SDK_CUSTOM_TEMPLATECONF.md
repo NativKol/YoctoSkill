@@ -2,11 +2,11 @@
 
 # Variable `SDK_CUSTOM_TEMPLATECONF`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When building the extensible SDK, if SDK_CUSTOM_TEMPLATECONF is set to “1” and a `conf/templateconf.cfg` file exists in the Build Directory (TOPDIR) then this will be copied into the SDK.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SDK_CUSTOM_TEMPLATECONF
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SDK_CUSTOM_TEMPLATECONF)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

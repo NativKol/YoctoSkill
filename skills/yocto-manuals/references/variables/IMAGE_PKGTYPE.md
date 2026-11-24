@@ -2,7 +2,7 @@
 
 # Variable `IMAGE_PKGTYPE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Defines the package type (i.e. DEB, RPM or IPK) used by the OpenEmbedded build system. The variable is defined appropriately by one of the package_deb, package_rpm, or package_ipk classes.
 
@@ -10,7 +10,7 @@ The populate_sdk_* and image classes use the IMAGE_PKGTYPE for packaging images 
 
 You should not set the IMAGE_PKGTYPE manually. Rather, the variable is set indirectly through the appropriate package_* class using the PACKAGE_CLASSES variable. The OpenEmbedded build system uses the first package type (e.g. DEB, RPM, or IPK) that appears with the variable
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_PKGTYPE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_PKGTYPE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

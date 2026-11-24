@@ -2,7 +2,7 @@
 
 # Variable `DISTRO_FEATURES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The software support you want in your distribution for various features. You define your distribution features in the distribution configuration file.
 
@@ -14,7 +14,7 @@ Just enabling DISTRO_FEATURES alone doesn’t enable feature support for package
 
 Two more examples are Bluetooth and NFS support. For a more complete list of features that ships with the Yocto Project and that you can provide with this variable, see the “Distro Features” section.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DISTRO_FEATURES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DISTRO_FEATURES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

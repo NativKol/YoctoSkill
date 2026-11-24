@@ -16,9 +16,9 @@ Route to the smallest correct piece of official documentation for the user's rel
    bitbake-getvar --value LAYERSERIES_CORENAMES
    grep -h LAYERSERIES_COMPAT */conf/layer.conf
    ```
-   If none is available, say you assume scarthgap (this collection's baseline) and use the scarthgap docs URLs.
-2. **Route by problem** with [references/official-doc-map.md](references/official-doc-map.md): it gives the manual, the section and the offline path in the `yocto-manuals` skill.
-3. **Release status and upgrades:** [references/migration.md](references/migration.md) has the LTS policy, the releases named in the scarthgap manuals, the syntax boundaries (3.4 override syntax, 5.1 `UNPACKDIR`) and the kirkstone-to-scarthgap checklist. For anything newer than the manuals, check https://wiki.yoctoproject.org/wiki/Releases and say that you did; do not invent codenames or dates.
+   If none is available, say you assume scarthgap (this collection's baseline, and the release of the offline manuals).
+2. **Route by problem** with [references/official-doc-map.md](references/official-doc-map.md): it gives the offline page, the section and the `ylookup.py` command that prints it. Quote the section, not the whole page.
+3. **Release status and upgrades:** [references/migration.md](references/migration.md) has the LTS policy, the releases named in the scarthgap manuals, the syntax boundaries (3.4 override syntax, 5.1 `UNPACKDIR`) and the kirkstone-to-scarthgap checklist. For anything newer than the manuals, say the offline copy does not cover it and let the user confirm; do not invent codenames or dates.
 4. **Hand off** to the focused skill once the user needs a fix.
 
 ## Facts Worth Stating Directly
@@ -28,15 +28,22 @@ Route to the smallest correct piece of official documentation for the user's rel
 - The latest scarthgap manuals name 6.0 "wrynose" (May 2026, to April 2030) as the other supported LTS.
 - `bitbake-setup` is not part of scarthgap; scarthgap builds start with `oe-init-build-env`.
 
+## Offline lookup
+
+Everything this skill needs is in the repository; it works without internet. Pull only the text you need instead of reading whole files (pages run to thousands of lines). From this skill's folder:
+
+- `python3 scripts/ylookup.py <NAME>...` prints the scarthgap manual entry for any variable, class, task, feature or QA check (`--kind var|class|task|feature|qa` to disambiguate, `--find TEXT` when unsure of the name).
+- `--topic TEXT` lists manual sections, `--section <manual/page.md> "<heading>"` prints one, `--grep REGEX [--in ref-manual]` finds anything else.
+- URLs in these files are citations for the user, not lookups. The manuals are scarthgap 5.0: if the project is on another release, tell the user rather than going online. Without Python: `` grep -n -A30 '^## Variable `NAME`' references/keywords.md ``.
+
 ## References
 
 - [references/official-doc-map.md](references/official-doc-map.md): manuals table and problem-to-section routing.
 - [references/migration.md](references/migration.md): release facts, detection, migration checklist.
-- [references/keywords.md](references/keywords.md): official scarthgap manual entry for every keyword named here; grep `` ## Variable `NAME` ``. Other keywords and full pages: `yocto-manuals` skill.
 
 ## Output
 
 1. detected or assumed release (and how it was detected)
-2. manual and section, with URL for that release
+2. manual and section, with the offline path (URL only as a citation)
 3. the local file, log or command that confirms the issue
 4. the focused skill to use next, if any

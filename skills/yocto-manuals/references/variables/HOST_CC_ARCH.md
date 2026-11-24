@@ -2,7 +2,7 @@
 
 # Variable `HOST_CC_ARCH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies architecture-specific compiler flags that are passed to the C compiler.
 
@@ -14,7 +14,7 @@ Default initialization for HOST_CC_ARCH varies depending on what is being built:
 
 - SDK_CC_ARCH when building for an SDK (i.e. `nativesdk-`)
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-HOST_CC_ARCH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-HOST_CC_ARCH)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

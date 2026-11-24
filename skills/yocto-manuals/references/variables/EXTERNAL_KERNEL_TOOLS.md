@@ -2,13 +2,13 @@
 
 # Variable `EXTERNAL_KERNEL_TOOLS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When set, the EXTERNAL_KERNEL_TOOLS variable indicates that these tools are not in the source tree.
 
 When kernel tools are available in the tree, they are preferred over any externally installed tools. Setting the EXTERNAL_KERNEL_TOOLS variable tells the OpenEmbedded build system to prefer the installed external tools. See the kernel-yocto class in `meta/classes-recipe` to see how the variable is used.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTERNAL_KERNEL_TOOLS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTERNAL_KERNEL_TOOLS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

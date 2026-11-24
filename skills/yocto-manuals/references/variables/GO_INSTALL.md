@@ -2,7 +2,7 @@
 
 # Variable `GO_INSTALL`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the go class, this optional variable specifies which packages in the sources should be compiled and installed in the Go build space by the go install command.
 
@@ -27,7 +27,7 @@ The `...` wildcard means that it will catch all packages found in the sources.
 
 See the GO_INSTALL_FILTEROUT variable for filtering out unwanted packages from the ones found from the GO_INSTALL value.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-GO_INSTALL
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-GO_INSTALL)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

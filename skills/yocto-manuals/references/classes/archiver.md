@@ -6,7 +6,7 @@ The archiver class supports releasing source code and other materials with the b
 
 For more details on the source archiver, see the “Maintaining Open Source License Compliance During Your Product’s Lifecycle” section in the Yocto Project Development Tasks Manual. You can also see the ARCHIVER_MODE variable for information about the variable flags (varflags) that help control archive creation.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-archiver
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-archiver)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

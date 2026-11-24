@@ -2,7 +2,7 @@
 
 # Variable `SSTATE_SCAN_FILES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Controls the list of files the OpenEmbedded build system scans for hardcoded installation paths. The variable uses a space-separated list of filenames (not paths) with standard wildcard characters allowed.
 
@@ -10,7 +10,7 @@ During a build, the OpenEmbedded build system creates a shared state (sstate) ob
 
 For details on the process, see the staging class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SSTATE_SCAN_FILES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SSTATE_SCAN_FILES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

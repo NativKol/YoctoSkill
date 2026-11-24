@@ -2,7 +2,7 @@
 
 # Variable `GITHUB_BASE_URI`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the github-releases class, specifies the base URL for fetching releases for the github project you wish to fetch sources from. The default value is as follows:
 
@@ -11,7 +11,7 @@ GITHUB_BASE_URI ?= "https://github.com/${BPN}/${BPN}/releases/"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-GITHUB_BASE_URI
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-GITHUB_BASE_URI)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

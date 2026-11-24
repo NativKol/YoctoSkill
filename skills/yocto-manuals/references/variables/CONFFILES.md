@@ -2,7 +2,7 @@
 
 # Variable `CONFFILES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Identifies editable or configurable files that are part of a package. If the Package Management System (PMS) is being used to update packages on the target system, it is possible that configuration files you have changed after the original installation and that you now want to remain unchanged are overwritten. In other words, editable files might exist in the package that you do not want reset as part of the package update process. You can use the CONFFILES variable to list the files in the package that you wish to prevent the PMS from overwriting during this update process.
 
@@ -20,7 +20,7 @@ Note
 
 When specifying paths as part of the CONFFILES variable, it is good practice to use appropriate path variables. For example, `${sysconfdir}` rather than `/etc` or `${bindir}` rather than `/usr/bin`. You can find a list of these variables at the top of the `meta/conf/bitbake.conf` file in the Source Directory.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CONFFILES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CONFFILES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

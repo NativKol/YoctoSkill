@@ -2,11 +2,11 @@
 
 # Variable `SANITY_REQUIRED_UTILITIES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies a list of command-line utilities that should be checked for during the initial sanity checking process when running BitBake. If any of the utilities are not installed on the build host, then BitBake immediately exits with an error.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SANITY_REQUIRED_UTILITIES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SANITY_REQUIRED_UTILITIES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,7 +2,7 @@
 
 # Variable `IMAGE_CONTAINER_NO_DUMMY`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When an image recipe has the `container` image type in IMAGE_FSTYPES, it expects the PREFERRED_PROVIDER for the Linux kernel (`virtual/kernel`) to be set to `linux-dummy` from a configuration file. Otherwise, an error is triggered.
 
@@ -12,7 +12,7 @@ This variable should be set from the image recipe using the `container` image ty
 
 See the documentation of the image-container class for more information on why setting the PREFERRED_PROVIDER to `linux-dummy` is advised with this class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_CONTAINER_NO_DUMMY
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_CONTAINER_NO_DUMMY)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

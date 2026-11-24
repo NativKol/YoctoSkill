@@ -2,7 +2,7 @@
 
 # Variable `LICENSE_PATH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Path to additional licenses used during the build. By default, the OpenEmbedded build system uses COMMON_LICENSE_DIR to define the directory that holds common license text used during the build. The LICENSE_PATH variable allows you to extend that location to other areas that have additional licenses:
 
@@ -11,7 +11,7 @@ LICENSE_PATH += "path-to-additional-common-licenses"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LICENSE_PATH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LICENSE_PATH)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

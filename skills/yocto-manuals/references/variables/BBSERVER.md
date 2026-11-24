@@ -2,7 +2,7 @@
 
 # Variable `BBSERVER`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 If defined in the BitBake environment, BBSERVER points to the BitBake remote server.
 
@@ -15,11 +15,11 @@ export BBSERVER=localhost:$port
 
 By default, BBSERVER also appears in BB_BASEHASH_IGNORE_VARS. Consequently, BBSERVER is excluded from checksum and dependency data.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Points to the server that runs memory-resident BitBake. The variable is only used when you employ memory-resident BitBake.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBSERVER , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBSERVER
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBSERVER , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBSERVER)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

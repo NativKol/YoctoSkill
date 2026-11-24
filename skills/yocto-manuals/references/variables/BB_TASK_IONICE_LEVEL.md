@@ -2,11 +2,11 @@
 
 # Variable `BB_TASK_IONICE_LEVEL`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 See BB_TASK_IONICE_LEVEL in the BitBake manual.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Allows adjustment of a task’s Input/Output priority. During Autobuilder testing, random failures can occur for tasks due to I/O starvation. These failures occur during various QEMU runtime timeouts. You can use the BB_TASK_IONICE_LEVEL variable to adjust the I/O priority of these tasks.
 
@@ -34,7 +34,7 @@ $ sudo sh -c "echo cfq > /sys/block/device/queu/scheduler"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_TASK_IONICE_LEVEL , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_TASK_IONICE_LEVEL
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_TASK_IONICE_LEVEL , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_TASK_IONICE_LEVEL)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,7 +2,7 @@
 
 # Variable `SYSLINUX_DEFAULT_CONSOLE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the kernel boot default console. If you want to use a console other than the default, set this variable in your recipe as follows where “X” is the console number you want to use:
 
@@ -13,7 +13,7 @@ SYSLINUX_DEFAULT_CONSOLE = "console=ttyX"
 
 The syslinux class initially sets this variable to null but then checks for a value later.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SYSLINUX_DEFAULT_CONSOLE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SYSLINUX_DEFAULT_CONSOLE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

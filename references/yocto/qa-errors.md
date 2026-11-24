@@ -1,6 +1,6 @@
 # Yocto QA Checks (insane class) for Scarthgap
 
-Release: Yocto Project 5.0 "scarthgap". Sources: ref-manual "Classes > insane" (5.61, the list of every check name) and ref-manual "QA Error and Warning Messages" (chapter 9, the message text). The per-check manual text is in the `yocto-manuals` skill under `references/qa/<check>.md` (46 checks have a documented message) and `references/classes/insane.md`.
+Release: Yocto Project 5.0 "scarthgap". Sources: ref-manual "Classes > insane" (5.61, the list of every check name) and ref-manual "QA Error and Warning Messages" (chapter 9, the message text). Verbatim manual text for a check, offline: `python3 scripts/ylookup.py --kind qa <check>` (46 checks have a documented message; the class entry is `--kind class insane`).
 
 ## 1. How QA Works
 

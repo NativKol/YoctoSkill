@@ -2,7 +2,7 @@
 
 # Variable `NO_RECOMMENDATIONS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Prevents installation of all “recommended-only” packages. Recommended-only packages are packages installed only through the RRECOMMENDS variable). Setting the NO_RECOMMENDATIONS variable to “1” turns this feature on:
 
@@ -28,7 +28,7 @@ This variable is only supported when using the IPK and RPM packaging backends. D
 
 See the BAD_RECOMMENDATIONS and the PACKAGE_EXCLUDE variables for related information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-NO_RECOMMENDATIONS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-NO_RECOMMENDATIONS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

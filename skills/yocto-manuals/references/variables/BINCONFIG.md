@@ -2,7 +2,7 @@
 
 # Variable `BINCONFIG`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the binconfig-disabled class, this variable specifies binary configuration scripts to disable in favor of using `pkg-config` to query the information. The binconfig-disabled class will modify the specified scripts to return an error so that calls to them can be easily found and replaced.
 
@@ -13,7 +13,7 @@ BINCONFIG = "${bindir}/libpng-config ${bindir}/libpng16-config"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BINCONFIG
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BINCONFIG)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

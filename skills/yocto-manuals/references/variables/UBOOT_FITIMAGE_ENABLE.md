@@ -2,7 +2,7 @@
 
 # Variable `UBOOT_FITIMAGE_ENABLE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This variable allows to generate a FIT image for U-Boot, which is one of the ways to implement a verified boot process.
 
@@ -15,7 +15,7 @@ UBOOT_FITIMAGE_ENABLE = "1"
 
 See the uboot-sign class for details.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_FITIMAGE_ENABLE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_FITIMAGE_ENABLE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

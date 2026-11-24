@@ -2,11 +2,11 @@
 
 # Variable `COMBINED_FEATURES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Provides a list of hardware features that are enabled in both MACHINE_FEATURES and DISTRO_FEATURES. This select list of features contains features that make sense to be controlled both at the machine and distribution configuration level. For example, the “bluetooth” feature requires hardware support but should also be optional at the distribution level, in case the hardware supports Bluetooth but you do not ever intend to use it.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-COMBINED_FEATURES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-COMBINED_FEATURES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,13 +2,13 @@
 
 # Variable `INITRD_IMAGE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When building a “live” bootable image (i.e. when IMAGE_FSTYPES contains “live”), INITRD_IMAGE specifies the image recipe that should be built to provide the initial RAM disk image. The default value is “core-image-minimal-initramfs”.
 
 See the image-live class for more information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INITRD_IMAGE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INITRD_IMAGE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,13 +2,13 @@
 
 # Variable `LINUX_KERNEL_TYPE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Defines the kernel type to be used in assembling the configuration. The linux-yocto recipes define “standard”, “tiny”, and “preempt-rt” kernel types. See the “Kernel Types” section in the Yocto Project Linux Kernel Development Manual for more information on kernel types.
 
 If you do not specify a LINUX_KERNEL_TYPE, it defaults to “standard”. Together with KMACHINE, the LINUX_KERNEL_TYPE variable defines the search arguments used by the kernel tools to find the appropriate description within the kernel Metadata with which to build out the sources and configuration.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LINUX_KERNEL_TYPE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LINUX_KERNEL_TYPE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

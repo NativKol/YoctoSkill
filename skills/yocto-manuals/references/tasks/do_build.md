@@ -4,7 +4,7 @@
 
 The default task for all recipes. This task depends on all other normal tasks required to build a recipe.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-build
+Offline source: yocto-manuals/references/manuals/ref-manual/tasks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-build)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

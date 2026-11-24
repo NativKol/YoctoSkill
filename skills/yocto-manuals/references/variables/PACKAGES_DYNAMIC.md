@@ -2,7 +2,7 @@
 
 # Variable `PACKAGES_DYNAMIC`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A promise that your recipe satisfies runtime dependencies for optional modules that are found in other recipes. PACKAGES_DYNAMIC does not actually satisfy the dependencies, it only states that they should be satisfied. For example, if a hard, runtime dependency (RDEPENDS) of another package is satisfied at build time through the PACKAGES_DYNAMIC variable, but a package with the module name is never actually produced, then the other package will be broken. Thus, if you attempt to include that package in an image, you will get a dependency failure from the packaging system during the do_rootfs task.
 
@@ -10,11 +10,11 @@ Typically, if there is a chance that such a situation can occur and the package 
 
 For an example of how to use the PACKAGES_DYNAMIC variable when you are splitting packages, see the “Handling Optional Module Packaging” section in the Yocto Project Development Tasks Manual.
 
-## BitBake User Manual
+### BitBake User Manual
 
 A promise that your recipe satisfies runtime dependencies for optional modules that are found in other recipes. PACKAGES_DYNAMIC does not actually satisfy the dependencies, it only states that they should be satisfied. For example, if a hard, runtime dependency (RDEPENDS) of another package is satisfied during the build through the PACKAGES_DYNAMIC variable, but a package with the module name is never actually produced, then the other package will be broken.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGES_DYNAMIC , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PACKAGES_DYNAMIC
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGES_DYNAMIC , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PACKAGES_DYNAMIC)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

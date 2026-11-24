@@ -2,7 +2,7 @@
 
 # Variable `PACKAGE_DEBUG_SPLIT_STYLE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Determines how to split up and package debug and source information when creating debugging packages to be used with the GNU Project Debugger (GDB). In general, based on the value of this variable, you can combine the source and debug info in a single package, you can break out the source into a separate package that can be installed independently, or you can choose to not have the source packaged at all.
 
@@ -22,7 +22,7 @@ Much of the above package splitting can be overridden via use of the INHIBIT_PAC
 
 You can find out more about debugging using GDB by reading the “Debugging With the GNU Project Debugger (GDB) Remotely” section in the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGE_DEBUG_SPLIT_STYLE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGE_DEBUG_SPLIT_STYLE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

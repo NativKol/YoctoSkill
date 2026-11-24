@@ -2,13 +2,13 @@
 
 # Variable `COREBASE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the parent directory of the OpenEmbedded-Core Metadata layer (i.e. `meta`).
 
 It is an important distinction that COREBASE points to the parent of this layer and not the layer itself. Consider an example where you have cloned the Poky Git repository and retained the `poky` name for your local copy of the repository. In this case, COREBASE points to the `poky` folder because it is the parent directory of the `poky/meta` layer.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-COREBASE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-COREBASE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

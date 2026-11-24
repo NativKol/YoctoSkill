@@ -2,7 +2,7 @@
 
 # Variable `FILESEXTRAPATHS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A colon-separated list to extend the search path the OpenEmbedded build system uses when looking for files and patches as it processes recipes and append files. The default directories BitBake uses when it processes recipes are initially defined by the FILESPATH variable. You can extend FILESPATH variable by using FILESEXTRAPATHS.
 
@@ -52,7 +52,7 @@ For a layer that supports a single BSP, the override could just be the value of 
 
 By prepending paths in `.bbappend` files, you allow multiple append files that reside in different layers but are used for the same recipe to correctly extend the path.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FILESEXTRAPATHS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FILESEXTRAPATHS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

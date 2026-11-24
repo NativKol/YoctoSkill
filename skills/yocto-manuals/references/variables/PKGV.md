@@ -2,7 +2,7 @@
 
 # Variable `PKGV`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The version of the package(s) built by the recipe. By default, PKGV is set to PV.
 
@@ -12,7 +12,7 @@ Warning
 
 Since source control information is included in a late stage by the package class, it cannot be seen from the BitBake environment with `bitbake -e` or `bitbake-getvar`. Instead, after the package is built, the version information can be retrieved with `oe-pkgdata-util package-info <package name>`. See the Viewing Package Information with oe-pkgdata-util section of the Yocto Project Development Tasks Manual for more information on `oe-pkgdata-util`.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PKGV
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PKGV)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -4,7 +4,7 @@
 
 The recipe_sanity class checks for the presence of any host system recipe prerequisites that might affect the build (e.g. variables that are set or software that is present).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-recipe_sanity
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-recipe_sanity)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

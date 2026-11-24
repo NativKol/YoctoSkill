@@ -2,7 +2,7 @@
 
 # Variable `TUNE_ASARGS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies architecture-specific assembler flags for the target system. The set of flags is based on the selected tune features. TUNE_ASARGS is set using the tune include files, which are typically under `meta/conf/machine/include/` and are influenced through TUNE_FEATURES. For example, the `meta/conf/machine/include/x86/arch-x86.inc` file defines the flags for the x86 architecture as follows:
 
@@ -15,7 +15,7 @@ Note
 
 Board Support Packages (BSPs) select the tune. The selected tune, in turn, affects the tune variables themselves (i.e. the tune can supply its own set of flags).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TUNE_ASARGS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TUNE_ASARGS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

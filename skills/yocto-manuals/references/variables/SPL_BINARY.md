@@ -2,7 +2,7 @@
 
 # Variable `SPL_BINARY`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The file type for the Secondary Program Loader (SPL). Some devices use an SPL from which to boot (e.g. the BeagleBone development board). For such cases, you can declare the file type of the SPL binary in the `u-boot.inc` include file, which is used in the U-Boot recipe.
 
@@ -24,7 +24,7 @@ The SPL_BINARY variable helps form various `SPL_*` variables used by the OpenEmb
 
 See the BeagleBone machine configuration example in the “Adding a Layer Using the bitbake-layers Script” section in the Yocto Project Board Support Package Developer’s Guide for additional information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SPL_BINARY
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SPL_BINARY)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,11 +2,11 @@
 
 # Variable `TARGET_FPU`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the method for handling FPU code. For FPU-less targets, which include most ARM CPUs, the variable must be set to “soft”. If not, the kernel emulation gets used, which results in a performance penalty.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TARGET_FPU
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TARGET_FPU)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

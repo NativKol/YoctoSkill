@@ -2,11 +2,11 @@
 
 # Variable `PREFERRED_PROVIDERS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 See PREFERRED_PROVIDERS in the BitBake manual.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Determines which recipe should be given preference for cases where multiple recipes provide the same item. Functionally, PREFERRED_PROVIDERS is identical to PREFERRED_PROVIDER. However, the PREFERRED_PROVIDERS variable lets you define preferences for multiple situations using the following form:
 
@@ -23,7 +23,7 @@ PREFERRED_PROVIDER_aaa = "bbb"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PREFERRED_PROVIDERS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PREFERRED_PROVIDERS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PREFERRED_PROVIDERS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PREFERRED_PROVIDERS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,11 +2,11 @@
 
 # Variable `BUILD_CC_ARCH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the architecture-specific C compiler flags for the build host. By default, the value of BUILD_CC_ARCH is empty.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BUILD_CC_ARCH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BUILD_CC_ARCH)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

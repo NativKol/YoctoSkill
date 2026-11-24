@@ -2,7 +2,7 @@
 
 # Variable `IMAGE_MANIFEST`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The manifest file for the image. This file lists all the installed packages that make up the image. The file contains package information on a line-per-package basis as follows:
 
@@ -20,7 +20,7 @@ IMAGE_MANIFEST ="${IMGDEPLOYDIR}/${IMAGE_NAME}${IMAGE_NAME_SUFFIX}.manifest"
 
 The location is derived using the IMGDEPLOYDIR and IMAGE_NAME variables. You can find information on how the image is created in the “Image Generation” section in the Yocto Project Overview and Concepts Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_MANIFEST
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_MANIFEST)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

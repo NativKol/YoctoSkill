@@ -2,7 +2,7 @@
 
 # Variable `UNINATIVE_CHECKSUM`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the uninative class, the UNINATIVE_CHECKSUM variable flags contain the checksums of the uninative tarball as specified by the UNINATIVE_URL variable. There should be one checksum per tarballs published at UNINATIVE_URL, which match architectures. For example:
 
@@ -13,7 +13,7 @@ UNINATIVE_CHECKSUM[x86_64] ?= "4c03d1ed2b7b4e823aca4a1a23d8f2e322f1770fc10e859ad
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UNINATIVE_CHECKSUM
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UNINATIVE_CHECKSUM)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

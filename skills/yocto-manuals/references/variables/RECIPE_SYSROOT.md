@@ -2,7 +2,7 @@
 
 # Variable `RECIPE_SYSROOT`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This variable points to the directory populated with all files provided by recipes specified in DEPENDS. As the name indicates, think of this variable as a custom root (`/`) for the recipe, that will be used by the compiler in order to find headers and other files needed to complete its job.
 
@@ -16,7 +16,7 @@ To better understand this variable, consider the following examples:
 
 The default value is `"${WORKDIR}/recipe-sysroot"`. Do not modify it.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RECIPE_SYSROOT
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RECIPE_SYSROOT)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

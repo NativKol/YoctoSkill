@@ -2,7 +2,7 @@
 
 # Variable `PROVIDES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A list of aliases by which a particular recipe can be known. By default, a recipe’s own PN is implicitly already in its PROVIDES list and therefore does not need to mention that it provides itself. If a recipe uses PROVIDES, the additional aliases are synonyms for the recipe and can be useful for satisfying dependencies of other recipes during the build as specified by DEPENDS.
 
@@ -36,7 +36,7 @@ VIRTUAL-RUNTIME_dev_manager = "udev"
 
 ```
 
-## BitBake User Manual
+### BitBake User Manual
 
 A list of aliases by which a particular recipe can be known. By default, a recipe’s own PN is implicitly already in its PROVIDES list. If a recipe uses PROVIDES, the additional aliases are synonyms for the recipe and can be useful satisfying dependencies of other recipes during the build as specified by DEPENDS.
 
@@ -53,7 +53,7 @@ In addition to providing recipes under alternate names, the PROVIDES mechanism i
 
 Conventionally, virtual targets have names on the form “virtual/function” (e.g. “virtual/kernel”). The slash is simply part of the name and has no syntactical significance.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PROVIDES , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PROVIDES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PROVIDES , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PROVIDES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

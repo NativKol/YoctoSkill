@@ -2,7 +2,7 @@
 
 # Variable `UPSTREAM_VERSION_UNKNOWN`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 You can perform a per-recipe check for what the latest upstream source code version is by calling `devtool latest-version recipe`. If no combination of the UPSTREAM_CHECK_URI, UPSTREAM_CHECK_REGEX, UPSTREAM_CHECK_GITTAGREGEX and UPSTREAM_CHECK_COMMITS variables in the recipe allows to determine what the latest upstream version is, you can set UPSTREAM_VERSION_UNKNOWN to `1` in the recipe to acknowledge that the check cannot be performed:
 
@@ -11,7 +11,7 @@ UPSTREAM_VERSION_UNKNOWN = "1"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UPSTREAM_VERSION_UNKNOWN
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UPSTREAM_VERSION_UNKNOWN)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

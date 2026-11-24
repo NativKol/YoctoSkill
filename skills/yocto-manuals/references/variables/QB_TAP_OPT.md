@@ -2,7 +2,7 @@
 
 # Variable `QB_TAP_OPT`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When using `runqemu`, the QB_TAP_OPT variable controls the network option for “tap” mode.
 
@@ -15,7 +15,7 @@ QB_TAP_OPT = "-netdev tap,id=net0,ifname=@TAP@,script=no,downscript=no"
 
 Note that `runqemu` will replace `@TAP@` with the tap interface in use, such as `tap0`, `tap1`, etc.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-QB_TAP_OPT
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-QB_TAP_OPT)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

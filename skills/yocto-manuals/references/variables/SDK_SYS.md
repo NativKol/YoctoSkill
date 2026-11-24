@@ -2,13 +2,13 @@
 
 # Variable `SDK_SYS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the system, including the architecture and the operating system, for which the SDK will be built.
 
 The OpenEmbedded build system automatically sets this variable based on SDK_ARCH, SDK_VENDOR, and SDK_OS. You do not need to set the SDK_SYS variable yourself.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SDK_SYS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SDK_SYS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -31,6 +31,9 @@ jobs:
           python tools/build_manual_refs.py
           git diff --exit-code
 
+      - name: Test the offline lookup script
+        run: python -m unittest discover -s tools -p "test_*.py"
+
       - name: Test yocto-image-analysis helper
         working-directory: skills/yocto-image-analysis/scripts
         run: python -m unittest test_yocto_diff

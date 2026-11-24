@@ -2,7 +2,7 @@
 
 # Variable `PREFERRED_VERSION`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 If there are multiple versions of a recipe available, this variable determines which version should be given preference. You must always suffix the variable with the PN you want to select (python in the first example below), and you should specify the PV accordingly (3.4.0 in the example).
 
@@ -42,7 +42,7 @@ The `:forcevariable` override is not handled specially. This override only works
 
 If a recipe with the specified version is not available, a warning message will be shown. See REQUIRED_VERSION if you want this to be an error instead.
 
-## BitBake User Manual
+### BitBake User Manual
 
 If there are multiple versions of a recipe available, this variable determines which version should be given preference. You must always suffix the variable with the PN you want to select, and you should set PV accordingly for precedence.
 
@@ -60,7 +60,7 @@ The use of the “ % “ character is limited in that it only works at the end o
 
 If a recipe with the specified version is not available, a warning message will be shown. See REQUIRED_VERSION if you want this to be an error instead.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PREFERRED_VERSION , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PREFERRED_VERSION
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PREFERRED_VERSION , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PREFERRED_VERSION)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

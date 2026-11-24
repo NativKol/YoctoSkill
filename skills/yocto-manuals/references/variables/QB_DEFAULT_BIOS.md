@@ -2,7 +2,7 @@
 
 # Variable `QB_DEFAULT_BIOS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The QB_DEFAULT_BIOS variable can be used to provide a default value for the path of a file located in DEPLOY_DIR_IMAGE and used by `runqemu` to specify the -bios option of QEMU. For example, this variable can be set as follows to emulate U-Boot for the qemuarm64 machine:
 
@@ -17,7 +17,7 @@ Note
 
 When using `runqemu`, the `BIOS` environment variable takes precedence over this variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-QB_DEFAULT_BIOS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-QB_DEFAULT_BIOS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,15 +2,15 @@
 
 # Variable `SRCDATE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The date of the source code used to build the package. This variable applies only if the source was fetched from a Source Code Manager (SCM).
 
-## BitBake User Manual
+### BitBake User Manual
 
 The date of the source code used to build the package. This variable applies only if the source was fetched from a Source Code Manager (SCM).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SRCDATE , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-SRCDATE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SRCDATE , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-SRCDATE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

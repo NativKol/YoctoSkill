@@ -2,7 +2,7 @@
 
 # Variable `INHIBIT_SYSROOT_STRIP`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 If set to “1”, causes the build to not strip binaries in the resulting sysroot.
 
@@ -14,7 +14,7 @@ Note
 
 Use of the INHIBIT_SYSROOT_STRIP variable occurs in rare and special circumstances. For example, suppose you are building bare-metal firmware by using an external GCC toolchain. Furthermore, even if the toolchain’s binaries are strippable, there are other files needed for the build that are not strippable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INHIBIT_SYSROOT_STRIP
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INHIBIT_SYSROOT_STRIP)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

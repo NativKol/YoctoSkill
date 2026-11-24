@@ -2,7 +2,7 @@
 
 # Variable `SDK_NAME`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The base name for SDK output files. The default value (as set in `meta-poky/conf/distro/poky.conf`) is derived from the DISTRO, TCLIBC, SDKMACHINE, IMAGE_BASENAME, TUNE_PKGARCH, and MACHINE variables:
 
@@ -11,7 +11,7 @@ SDK_NAME = "${DISTRO}-${TCLIBC}-${SDKMACHINE}-${IMAGE_BASENAME}-${TUNE_PKGARCH}-
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SDK_NAME
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SDK_NAME)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

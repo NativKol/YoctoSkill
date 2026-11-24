@@ -2,13 +2,13 @@
 
 # Variable `TCLIBCAPPEND`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies a suffix to be appended onto the TMPDIR value. The suffix identifies the `libc` variant for building. When you are building for multiple variants with the same Build Directory, this mechanism ensures that output for different `libc` variants is kept separate to avoid potential conflicts.
 
 In the `defaultsetup.conf` file, the default value of TCLIBCAPPEND is “-${TCLIBC}”. However, distros such as poky, which normally only support one `libc` variant, set TCLIBCAPPEND to “” in their distro configuration file resulting in no suffix being applied.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TCLIBCAPPEND
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TCLIBCAPPEND)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

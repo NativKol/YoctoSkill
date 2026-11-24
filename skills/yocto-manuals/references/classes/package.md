@@ -18,7 +18,7 @@ Before making your package manager decision, however, you should consider some f
 
 You can find additional information on the effects of the package class at this Yocto Project mailing list link: https://lists.yoctoproject.org/g/poky/topic/61292484#msg6286
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-package
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-package)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

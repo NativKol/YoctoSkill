@@ -2,7 +2,7 @@
 
 # Variable `BB_HASH_CODEPARSER_VALS`
 
-## BitBake User Manual
+### BitBake User Manual
 
 Specifies values for variables to use when populating the codeparser cache. This can be used selectively to set dummy values for variables to avoid the codeparser cache growing on every parse. Variables that would typically be included are those where the value is not significant for where the codeparser cache is used (i.e. when calculating variable dependencies for code fragments.) The value is space-separated without quoting values, for example:
 
@@ -11,7 +11,7 @@ BB_HASH_CODEPARSER_VALS = "T=/ WORKDIR=/ DATE=1234 TIME=1234"
 
 ```
 
-Source: https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_HASH_CODEPARSER_VALS
+Offline source: yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_HASH_CODEPARSER_VALS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

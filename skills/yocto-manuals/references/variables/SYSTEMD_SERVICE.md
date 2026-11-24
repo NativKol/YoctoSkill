@@ -2,7 +2,7 @@
 
 # Variable `SYSTEMD_SERVICE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the systemd class, this variable specifies the systemd service name for a package.
 
@@ -17,7 +17,7 @@ SYSTEMD_SERVICE:${PN} = "connman.service"
 
 The package overrides that can be specified are directly related to the value of SYSTEMD_PACKAGES. Overrides not included in SYSTEMD_PACKAGES will be silently ignored.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SYSTEMD_SERVICE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SYSTEMD_SERVICE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,7 +2,7 @@
 
 # Variable `SYSTEMD_AUTO_ENABLE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the systemd class, this variable specifies whether the specified service in SYSTEMD_SERVICE should start automatically or not. By default, the service is enabled to automatically start at boot time. The default setting is in the systemd class as follows:
 
@@ -13,7 +13,7 @@ SYSTEMD_AUTO_ENABLE ??= "enable"
 
 You can disable the service by setting the variable to “disable”.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SYSTEMD_AUTO_ENABLE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SYSTEMD_AUTO_ENABLE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

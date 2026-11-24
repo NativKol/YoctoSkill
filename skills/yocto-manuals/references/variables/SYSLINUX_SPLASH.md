@@ -2,13 +2,13 @@
 
 # Variable `SYSLINUX_SPLASH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 An `.LSS` file used as the background for the VGA boot menu when you use the boot menu. You need to set this variable in your recipe.
 
 The syslinux class checks for this variable and if found, the OpenEmbedded build system installs the splash screen.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SYSLINUX_SPLASH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SYSLINUX_SPLASH)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

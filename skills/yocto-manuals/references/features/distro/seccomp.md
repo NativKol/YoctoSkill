@@ -6,7 +6,7 @@ Distro feature `seccomp`:
 
 Enables building applications with seccomp support, to allow them to strictly restrict the system calls that they are allowed to invoke.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#distro-features
+Offline source: yocto-manuals/references/manuals/ref-manual/features.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/features.html#distro-features)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

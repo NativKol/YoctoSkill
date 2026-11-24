@@ -2,13 +2,13 @@
 
 # Variable `EXTERNALSRC`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the externalsrc class, this variable points to the source tree, which is outside of the OpenEmbedded build system. When set, this variable sets the S variable, which is what the OpenEmbedded build system uses to locate unpacked recipe source code.
 
 See the “externalsrc” section for details. You can also find information on how to use this variable in the “Building Software from an External Source” section in the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTERNALSRC
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTERNALSRC)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

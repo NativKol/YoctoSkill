@@ -2,13 +2,13 @@
 
 # Variable `OEROOT`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The directory from which the top-level build environment setup script is sourced. The Yocto Project provides a top-level build environment setup script: oe-init-build-env. When you run this script, the OEROOT variable resolves to the directory that contains the script.
 
 For additional information on how this variable is used, see the initialization script.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-OEROOT
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-OEROOT)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

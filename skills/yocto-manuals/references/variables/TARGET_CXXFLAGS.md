@@ -2,13 +2,13 @@
 
 # Variable `TARGET_CXXFLAGS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the flags to pass to the C++ compiler when building for the target. When building in the target context, CXXFLAGS is set to the value of this variable by default.
 
 Additionally, the SDK’s environment setup script sets the CXXFLAGS variable in the environment to the TARGET_CXXFLAGS value so that executables built using the SDK also have the flags applied.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TARGET_CXXFLAGS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TARGET_CXXFLAGS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

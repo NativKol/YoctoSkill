@@ -2,13 +2,13 @@
 
 # Variable `INITRAMFS_FSTYPES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Defines the format for the output image of an initial RAM filesystem (Initramfs), which is used during boot. Supported formats are the same as those supported by the IMAGE_FSTYPES variable.
 
 The default value of this variable, which is set in the `meta/conf/bitbake.conf` configuration file in the Source Directory, is “cpio.gz”. The Linux kernel’s Initramfs mechanism, as opposed to the initial RAM filesystem initrd mechanism, expects an optionally compressed cpio archive.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INITRAMFS_FSTYPES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INITRAMFS_FSTYPES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

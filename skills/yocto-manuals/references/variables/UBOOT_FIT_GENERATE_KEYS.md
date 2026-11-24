@@ -2,7 +2,7 @@
 
 # Variable `UBOOT_FIT_GENERATE_KEYS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Decides whether to generate the keys for signing the U-Boot fitImage if they don’t already exist. The keys are created in SPL_SIGN_KEYDIR. The default value is “0”.
 
@@ -15,7 +15,7 @@ UBOOT_FIT_GENERATE_KEYS = "1"
 
 This variable is used in the uboot-sign class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_FIT_GENERATE_KEYS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_FIT_GENERATE_KEYS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

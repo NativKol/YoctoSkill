@@ -2,11 +2,11 @@
 
 # Variable `IMAGE_VERSION_SUFFIX`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Version suffix that is part of the default IMAGE_NAME and KERNEL_ARTIFACT_NAME values. Defaults to `"-${DATETIME}"`, however you could set this to a version string that comes from your external build environment if desired, and this suffix would then be used consistently across the build artifacts.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_VERSION_SUFFIX
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_VERSION_SUFFIX)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

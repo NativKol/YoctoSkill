@@ -2,13 +2,13 @@
 
 # Variable `GRUB_GFXSERIAL`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Configures the GNU GRand Unified Bootloader (GRUB) to have graphics and serial in the boot menu. Set this variable to “1” in your `local.conf` or distribution configuration file to enable graphics and serial in the menu.
 
 See the grub-efi class for more information on how this variable is used.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-GRUB_GFXSERIAL
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-GRUB_GFXSERIAL)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

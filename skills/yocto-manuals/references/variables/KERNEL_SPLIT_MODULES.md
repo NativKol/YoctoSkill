@@ -2,7 +2,7 @@
 
 # Variable `KERNEL_SPLIT_MODULES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the kernel-module-split class, this variable controls whether kernel modules are split into separate packages or bundled into a single package.
 
@@ -14,7 +14,7 @@ Note
 
 If KERNEL_SPLIT_MODULES is set to 0, it is still possible to install all kernel modules at once by adding `kernel-modules` (assuming KERNEL_PACKAGE_NAME is `kernel-modules`) to IMAGE_INSTALL. The way it works is that a placeholder “kernel-modules” package will be created and will depend on every other individual kernel module packages.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_SPLIT_MODULES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_SPLIT_MODULES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

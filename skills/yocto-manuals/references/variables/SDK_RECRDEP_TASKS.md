@@ -2,7 +2,7 @@
 
 # Variable `SDK_RECRDEP_TASKS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A list of shared state tasks added to the extensible SDK. By default, the following tasks are added:
 
@@ -16,7 +16,7 @@ A list of shared state tasks added to the extensible SDK. By default, the follow
 
 Despite the default value of “” for the SDK_RECRDEP_TASKS variable, the above four tasks are always added to the SDK. To specify tasks beyond these four, you need to use the SDK_RECRDEP_TASKS variable (e.g. you are defining additional tasks that are needed in order to build SDK_TARGETS).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SDK_RECRDEP_TASKS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SDK_RECRDEP_TASKS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

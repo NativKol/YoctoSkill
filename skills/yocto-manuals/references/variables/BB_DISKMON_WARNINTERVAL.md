@@ -2,7 +2,7 @@
 
 # Variable `BB_DISKMON_WARNINTERVAL`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Defines the disk space and free inode warning intervals. To set these intervals, define the variable in your `conf/local.conf` file in the Build Directory.
 
@@ -44,7 +44,7 @@ BB_DISKMON_WARNINTERVAL = "50M,5K"
 
 These variables cause the OpenEmbedded build system to issue subsequent warnings each time the available disk space further reduces by 50 Mbytes or the number of free inodes further reduces by 5 Kbytes in the `${SSTATE_DIR}` directory. Subsequent warnings based on the interval occur each time a respective interval is reached beyond the initial warning (i.e. 1 Gbytes and 100 Kbytes).
 
-## BitBake User Manual
+### BitBake User Manual
 
 Defines the disk space and free inode warning intervals.
 
@@ -81,7 +81,7 @@ BB_DISKMON_WARNINTERVAL = "50M,5K"
 
 These variables cause BitBake to issue subsequent warnings each time the available disk space further reduces by 50 Mbytes or the number of free inodes further reduces by 5 Kbytes in the `${SSTATE_DIR}` directory. Subsequent warnings based on the interval occur each time a respective interval is reached beyond the initial warning (i.e. 1 Gbytes and 100 Kbytes).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_DISKMON_WARNINTERVAL , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_DISKMON_WARNINTERVAL
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_DISKMON_WARNINTERVAL , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_DISKMON_WARNINTERVAL)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

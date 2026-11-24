@@ -2,7 +2,7 @@
 
 # Variable `MACHINEOVERRIDES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A colon-separated list of overrides that apply to the current machine. By default, this list includes the value of MACHINE.
 
@@ -24,7 +24,7 @@ SRC_URI:append:qemuall = " file://wired.config \
 
 The underlying mechanism behind MACHINEOVERRIDES is simply that it is included in the default value of OVERRIDES.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MACHINEOVERRIDES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MACHINEOVERRIDES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

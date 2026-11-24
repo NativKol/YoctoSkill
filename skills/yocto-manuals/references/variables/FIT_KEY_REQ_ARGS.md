@@ -2,11 +2,11 @@
 
 # Variable `FIT_KEY_REQ_ARGS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Arguments to `openssl req` for generating a certificate for signing the FIT image. The default value is “-batch -new” by the kernel-fitimage class, “batch” for non interactive mode and “new” for generating new keys.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FIT_KEY_REQ_ARGS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FIT_KEY_REQ_ARGS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

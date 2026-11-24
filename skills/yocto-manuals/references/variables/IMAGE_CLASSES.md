@@ -2,13 +2,13 @@
 
 # Variable `IMAGE_CLASSES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A list of classes that all images should inherit. This is typically used to enable functionality across all image recipes.
 
 Classes specified in IMAGE_CLASSES must be located in the `classes-recipe/` or `classes/` subdirectories.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_CLASSES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_CLASSES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

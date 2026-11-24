@@ -2,13 +2,13 @@
 
 # Variable `EFI_PROVIDER`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When building bootable images (i.e. where `hddimg`, `iso`, or `wic.vmdk` is in IMAGE_FSTYPES), the EFI_PROVIDER variable specifies the EFI bootloader to use. The default is “grub-efi”, but “systemd-boot” can be used instead.
 
 See the systemd-boot and image-live classes for more information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EFI_PROVIDER
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EFI_PROVIDER)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

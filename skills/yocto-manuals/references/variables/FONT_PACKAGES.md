@@ -2,11 +2,11 @@
 
 # Variable `FONT_PACKAGES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the fontcache class, this variable identifies packages containing font files that need to be cached by Fontconfig. By default, the fontcache class assumes that fonts are in the recipe’s main package (i.e. `${`PN`}`). Use this variable if fonts you need are in a package other than that main package.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FONT_PACKAGES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FONT_PACKAGES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

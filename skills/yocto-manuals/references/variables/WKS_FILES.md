@@ -2,7 +2,7 @@
 
 # Variable `WKS_FILES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies a list of candidate Wic kickstart files to be used by the OpenEmbedded build system to create a partitioned image. Only the first one that is found, from left to right, will be used.
 
@@ -10,7 +10,7 @@ This is only useful when there are multiple `.wks` files that can be used to pro
 
 If only one `.wks` file is used, set WKS_FILE instead.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-WKS_FILES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-WKS_FILES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

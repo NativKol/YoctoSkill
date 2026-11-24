@@ -2,11 +2,11 @@
 
 # Variable `IMAGE_NAME_SUFFIX`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Suffix used for the image output filename — defaults to `".rootfs"` to distinguish the image file from other files created during image building; however if this suffix is redundant or not desired you can clear the value of this variable (set the value to “”). For example, this is typically cleared in Initramfs image recipes.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_NAME_SUFFIX
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_NAME_SUFFIX)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

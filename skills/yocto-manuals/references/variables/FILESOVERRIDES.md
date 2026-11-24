@@ -2,7 +2,7 @@
 
 # Variable `FILESOVERRIDES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A colon-separated list to specify a subset of OVERRIDES used by the OpenEmbedded build system for creating FILESPATH. The FILESOVERRIDES variable uses overrides to automatically extend the FILESPATH variable. For an example of how that works, see the FILESPATH variable description. Additionally, you find more information on how overrides are handled in the “Conditional Syntax (Overrides)” section of the BitBake User Manual.
 
@@ -17,7 +17,7 @@ Note
 
 Do not hand-edit the FILESOVERRIDES variable. The values match up with expected overrides and are used in an expected manner by the build system.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FILESOVERRIDES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FILESOVERRIDES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,13 +2,13 @@
 
 # Variable `KERNEL_PACKAGE_NAME`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the base name of the kernel packages, such as “kernel” in the kernel packages such as “kernel-modules”, “kernel-image” and “kernel-dbg”.
 
 The default value for this variable is set to “kernel” by the kernel class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_PACKAGE_NAME
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_PACKAGE_NAME)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

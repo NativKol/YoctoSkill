@@ -2,11 +2,11 @@
 
 # Variable `OVERLAYFS_ETC_MOUNT_OPTIONS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When the overlayfs-etc class is inherited, specifies the mount options for the read-write layer. The default value is “defaults”.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-OVERLAYFS_ETC_MOUNT_OPTIONS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-OVERLAYFS_ETC_MOUNT_OPTIONS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

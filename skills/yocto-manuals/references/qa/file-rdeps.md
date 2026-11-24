@@ -7,7 +7,7 @@ Message: `<packagename> requires <files>, but no providers in its RDEPENDS [file
 
 A file-level dependency has been identified from the specified package on the specified files, but there is no explicit corresponding entry in RDEPENDS. If particular files are required at runtime then RDEPENDS should be declared in the recipe to ensure the packages providing them are built.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
+Offline source: yocto-manuals/references/manuals/ref-manual/qa-checks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

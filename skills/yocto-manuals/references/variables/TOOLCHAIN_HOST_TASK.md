@@ -2,7 +2,7 @@
 
 # Variable `TOOLCHAIN_HOST_TASK`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This variable lists packages the OpenEmbedded build system uses when building an SDK, which contains a cross-development environment. The packages specified by this variable are part of the toolchain set that runs on the SDKMACHINE, and each package should usually have the prefix `nativesdk-`. For example, consider the following command when building an SDK:
 
@@ -17,7 +17,7 @@ For background information on cross-development toolchains in the Yocto Project 
 
 Note that this variable applies to building an SDK, not an eSDK, in which case the TOOLCHAIN_HOST_TASK_ESDK setting should be used instead.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TOOLCHAIN_HOST_TASK
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TOOLCHAIN_HOST_TASK)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

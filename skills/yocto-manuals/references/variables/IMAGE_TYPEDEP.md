@@ -2,7 +2,7 @@
 
 # Variable `IMAGE_TYPEDEP`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies a dependency from one image type on another. Here is an example from the image-live class:
 
@@ -13,7 +13,7 @@ IMAGE_TYPEDEP:live = "ext3"
 
 In the previous example, the variable ensures that when “live” is listed with the IMAGE_FSTYPES variable, the OpenEmbedded build system produces an `ext3` image first since one of the components of the live image is an `ext3` formatted partition containing the root filesystem.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_TYPEDEP
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_TYPEDEP)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

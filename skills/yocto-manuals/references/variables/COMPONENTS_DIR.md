@@ -2,13 +2,13 @@
 
 # Variable `COMPONENTS_DIR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Stores sysroot components provided by each recipe. The OpenEmbedded build system uses COMPONENTS_DIR when constructing recipe-specific sysroots for other recipes.
 
 The default is “`${`STAGING_DIR`}-components`.” (i.e. “`${`TMPDIR`}/sysroots-components`”).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-COMPONENTS_DIR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-COMPONENTS_DIR)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

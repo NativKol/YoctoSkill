@@ -2,7 +2,7 @@
 
 # Variable `KERNEL_MODULE_AUTOLOAD`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Lists kernel modules that need to be auto-loaded during boot.
 
@@ -28,7 +28,7 @@ KERNEL_MODULE_AUTOLOAD += "module_name"
 
 For information on how to populate the `modname.conf` file with `modprobe.d` syntax lines, see the KERNEL_MODULE_PROBECONF variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_MODULE_AUTOLOAD
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_MODULE_AUTOLOAD)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

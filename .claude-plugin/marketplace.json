@@ -2,8 +2,7 @@
   "name": "yoctoskill",
   "description": "Manual-grounded Yocto Project 5.0 (scarthgap) and BitBake 2.8 skills: the official manuals split per keyword, image and distro content analysis, automated change review with strictness levels, build failure debugging, and recipe, layer, image, BSP/kernel and security/SBOM review.",
   "owner": {
-    "name": "NativKol",
-    "url": "https://github.com/NativKol"
+    "name": "YoctoSkill contributors"
   },
   "plugins": [
     {
@@ -11,8 +10,6 @@
       "source": "./",
       "displayName": "YoctoSkill",
       "description": "Manual-grounded Yocto Project 5.0 (scarthgap) and BitBake 2.8 skills: the official manuals split per keyword, image and distro content analysis, automated change review with strictness levels, build failure debugging, and recipe, layer, image, BSP/kernel and security/SBOM review.",
-      "homepage": "https://github.com/NativKol/YoctoSkill",
-      "repository": "https://github.com/NativKol/YoctoSkill",
       "license": "MIT",
       "category": "development",
       "keywords": [

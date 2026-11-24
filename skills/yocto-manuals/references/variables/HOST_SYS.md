@@ -2,7 +2,7 @@
 
 # Variable `HOST_SYS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the system, including the architecture and the operating system, for which the build is occurring in the context of the current recipe.
 
@@ -18,7 +18,7 @@ Consider these two examples:
 
 - Given a recipe being built for a little-endian MIPS target running Linux, the value might be “mipsel-linux”.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-HOST_SYS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-HOST_SYS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

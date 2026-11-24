@@ -18,7 +18,7 @@ Note
 
 You do not use the useradd-staticids class directly. You either enable or disable the class by setting the USERADDEXTENSION variable. If you enable or disable the class in a configured system, TMPDIR might contain incorrect `uid` and `gid` values. Deleting the TMPDIR directory will correct this condition.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-useradd
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-useradd)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

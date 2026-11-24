@@ -2,7 +2,7 @@
 
 # Variable `ICECC_PARALLEL_MAKE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Extra options passed to the `make` command during the do_compile task that specify parallel compilation. This variable usually takes the form of “-j x”, where x represents the maximum number of parallel threads `make` can run.
 
@@ -14,7 +14,7 @@ If your enabled machines support multiple cores, coming up with the maximum numb
 
 If you do not set ICECC_PARALLEL_MAKE, the build system does not use it (i.e. the system does not detect and assign the number of cores as is done with PARALLEL_MAKE).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ICECC_PARALLEL_MAKE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ICECC_PARALLEL_MAKE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

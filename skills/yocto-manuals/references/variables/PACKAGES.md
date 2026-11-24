@@ -2,7 +2,7 @@
 
 # Variable `PACKAGES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The list of packages the recipe creates. The default value is the following:
 
@@ -15,11 +15,11 @@ During packaging, the do_package task goes through PACKAGES and uses the FILES v
 
 Packages in the variable’s list that are empty (i.e. where none of the patterns in `FILES:`pkg match any files installed by the do_install task) are not generated, unless generation is forced through the ALLOW_EMPTY variable.
 
-## BitBake User Manual
+### BitBake User Manual
 
 The list of packages the recipe creates.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGES , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PACKAGES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGES , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PACKAGES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

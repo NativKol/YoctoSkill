@@ -2,11 +2,11 @@
 
 # Variable `KERNELDEPMODDEPEND`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies whether the data referenced through PKGDATA_DIR is needed or not. KERNELDEPMODDEPEND does not control whether or not that data exists, but simply whether or not it is used. If you do not need to use the data, set the KERNELDEPMODDEPEND variable in your Initramfs recipe. Setting the variable there when the data is not needed avoids a potential dependency loop.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNELDEPMODDEPEND
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNELDEPMODDEPEND)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

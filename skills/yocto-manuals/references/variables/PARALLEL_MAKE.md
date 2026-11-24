@@ -2,7 +2,7 @@
 
 # Variable `PARALLEL_MAKE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Extra options passed to the build tool command (`make`, `ninja` or more specific build engines, like the Go language one) during the do_compile task, to specify parallel compilation on the local build host. This variable is usually in the form “-j x”, where x represents the maximum number of parallel threads such engines can run.
 
@@ -20,7 +20,7 @@ For single socket systems (i.e. one CPU), you should not have to override this v
 
 For more information on speeding up builds, see the “Speeding Up a Build” section in the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PARALLEL_MAKE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PARALLEL_MAKE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

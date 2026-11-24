@@ -2,7 +2,7 @@
 
 # Variable `SRCREV`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The revision of the source code used to build the package. This variable applies to Subversion, Git, Mercurial, and Bazaar only. Note that if you want to build a fixed revision and you want to avoid performing a query on the remote repository every time BitBake parses your recipe, you should specify a SRCREV that is a full revision identifier (e.g. the full SHA hash in git) and not just a tag.
 
@@ -10,11 +10,11 @@ Note
 
 For information on limitations when inheriting the latest revision of software using SRCREV, see the AUTOREV variable description and the “Automatically Incrementing a Package Version Number” section, which is in the Yocto Project Development Tasks Manual.
 
-## BitBake User Manual
+### BitBake User Manual
 
 The revision of the source code used to build the package. This variable applies only when using Subversion, Git, Mercurial and Bazaar. If you want to build a fixed revision and you want to avoid performing a query on the remote repository every time BitBake parses your recipe, you should specify a SRCREV that is a full revision identifier and not just a tag.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SRCREV , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-SRCREV
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SRCREV , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-SRCREV)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

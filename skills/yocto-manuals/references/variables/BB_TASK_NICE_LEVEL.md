@@ -2,17 +2,17 @@
 
 # Variable `BB_TASK_NICE_LEVEL`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 See BB_TASK_NICE_LEVEL in the BitBake manual.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Allows specific tasks to change their priority (i.e. nice level).
 
 You can use this variable in combination with task overrides to raise or lower priorities of specific tasks. For example, on the Yocto Project autobuilder, QEMU emulation in images is given a higher priority as compared to build tasks to ensure that images do not suffer timeouts on loaded systems.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_TASK_NICE_LEVEL , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_TASK_NICE_LEVEL
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_TASK_NICE_LEVEL , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_TASK_NICE_LEVEL)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

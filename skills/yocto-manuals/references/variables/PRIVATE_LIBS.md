@@ -2,7 +2,7 @@
 
 # Variable `PRIVATE_LIBS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies libraries installed within a recipe that should be ignored by the OpenEmbedded build system’s shared library resolver. This variable is typically used when software being built by a recipe has its own private versions of a library normally provided by another recipe. In this case, you would not want the package containing the private libraries to be set as a dependency on other unrelated packages that should instead depend on the package providing the standard version of the library.
 
@@ -21,7 +21,7 @@ PRIVATE_LIBS = "libmozjs.so \
 
 For more information, see the “Automatically Added Runtime Dependencies” section in the Yocto Project Overview and Concepts Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PRIVATE_LIBS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PRIVATE_LIBS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

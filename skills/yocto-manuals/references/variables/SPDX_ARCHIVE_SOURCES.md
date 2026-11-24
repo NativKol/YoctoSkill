@@ -2,7 +2,7 @@
 
 # Variable `SPDX_ARCHIVE_SOURCES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This option allows to add to SPDX output compressed archives of the sources for packages installed on the target. It currently only works when SPDX_INCLUDE_SOURCES is set.
 
@@ -22,7 +22,7 @@ According to our tests on release 4.1 “langdale”, building `core-image-minim
 
 Note that using this option only marginally increases the size of the SPDX output in `tmp/deploy/images/MACHINE/` (+ 0.07% with the tested image), compared to just enabling SPDX_INCLUDE_SOURCES.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SPDX_ARCHIVE_SOURCES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SPDX_ARCHIVE_SOURCES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

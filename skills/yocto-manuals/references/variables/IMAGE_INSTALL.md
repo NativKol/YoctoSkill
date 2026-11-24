@@ -2,7 +2,7 @@
 
 # Variable `IMAGE_INSTALL`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Used by recipes to specify the packages to install into an image through the image class. Use the IMAGE_INSTALL variable with care to avoid ordering issues.
 
@@ -23,7 +23,7 @@ Note
 
 - Using IMAGE_INSTALL with the += BitBake operator within the `/conf/local.conf` file or from within an image recipe is not recommended. Use of this operator in these ways can cause ordering issues. Since core-image sets IMAGE_INSTALL to a default value using the ?= operator, using a `+=` operation against IMAGE_INSTALL results in unexpected behavior when used within `conf/local.conf`. Furthermore, the same operation from within an image recipe may or may not succeed depending on the specific situation. In both these cases, the behavior is contrary to how most users expect the `+=` operator to work.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_INSTALL
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_INSTALL)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

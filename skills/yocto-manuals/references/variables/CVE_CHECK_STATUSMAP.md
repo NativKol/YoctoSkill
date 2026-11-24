@@ -2,7 +2,7 @@
 
 # Variable `CVE_CHECK_STATUSMAP`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Mapping variable for all possible reasons of CVE_STATUS: `Patched`, `Unpatched` and `Ignored`. See cve-check or `meta/conf/cve-check-map.conf` for more details:
 
@@ -11,7 +11,7 @@ CVE_CHECK_STATUSMAP[cpe-incorrect] = "Ignored"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CVE_CHECK_STATUSMAP
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CVE_CHECK_STATUSMAP)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,11 +2,11 @@
 
 # Variable `IMAGE_FSTYPES_DEBUGFS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The IMAGE_FSTYPES_DEBUGFS holds a list of filesystem image types to generate when the IMAGE_GEN_DEBUGFS variable is set to “1”. The content of this variable is the same as what is supported by the IMAGE_FSTYPES variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_FSTYPES_DEBUGFS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_FSTYPES_DEBUGFS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

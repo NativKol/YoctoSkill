@@ -2,7 +2,7 @@
 
 # Variable `BBMULTICONFIG`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies each additional separate configuration when you are building targets with multiple configurations. Use this variable in your `conf/local.conf` configuration file. Specify a multiconfig name for each configuration file you are using. For example, the following line specifies three configuration files:
 
@@ -15,7 +15,7 @@ Each configuration file you use must reside in a `multiconfig` subdirectory of a
 
 For information on how to use BBMULTICONFIG in an environment that supports building targets with multiple configurations, see the “Building Images for Multiple Targets Using Multiple Configurations” section in the Yocto Project Development Tasks Manual.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Enables BitBake to perform multiple configuration builds and lists each separate configuration (multiconfig). You can use this variable to cause BitBake to build multiple targets where each target has a separate configuration. Define BBMULTICONFIG in your `conf/local.conf` configuration file.
 
@@ -30,7 +30,7 @@ Each configuration file you use must reside in the build directory within a dire
 
 For information on how to use BBMULTICONFIG in an environment that supports building targets with multiple configurations, see the “Executing a Multiple Configuration Build” section.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBMULTICONFIG , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBMULTICONFIG
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBMULTICONFIG , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBMULTICONFIG)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

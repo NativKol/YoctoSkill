@@ -2,11 +2,11 @@
 
 # Variable `BUGTRACKER`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies a URL for an upstream bug tracking website for a recipe. The OpenEmbedded build system does not use this variable. Rather, the variable is a useful pointer in case a bug in the software being built needs to be manually reported.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BUGTRACKER
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BUGTRACKER)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

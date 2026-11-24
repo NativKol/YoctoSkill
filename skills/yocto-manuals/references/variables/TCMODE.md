@@ -2,7 +2,7 @@
 
 # Variable `TCMODE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the toolchain selector. TCMODE controls the characteristics of the generated packages and images by telling the OpenEmbedded build system which toolchain profile to use. By default, the OpenEmbedded build system builds its own internal toolchain. The variable’s default value is “default”, which uses that internal toolchain.
 
@@ -20,7 +20,7 @@ The fundamentals used for this example apply to any external toolchain. You can 
 
 In addition to toolchain configuration, you will also need a corresponding toolchain recipe file. This recipe file needs to package up any pre-built objects in the toolchain such as `libgcc`, `libstdcc++`, any locales, and `libc`.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TCMODE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TCMODE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

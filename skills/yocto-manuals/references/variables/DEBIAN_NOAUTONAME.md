@@ -2,7 +2,7 @@
 
 # Variable `DEBIAN_NOAUTONAME`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When the debian class is inherited, which is the default behavior, DEBIAN_NOAUTONAME specifies a particular package should not be renamed according to Debian library package naming. You must use the package name as an override when you set this variable. Here is an example from the `fontconfig` recipe:
 
@@ -11,7 +11,7 @@ DEBIAN_NOAUTONAME:fontconfig-utils = "1"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DEBIAN_NOAUTONAME
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DEBIAN_NOAUTONAME)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

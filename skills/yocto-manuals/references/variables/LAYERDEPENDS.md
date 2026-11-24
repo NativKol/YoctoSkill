@@ -2,7 +2,7 @@
 
 # Variable `LAYERDEPENDS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Lists the layers, separated by spaces, on which this layer depends. Optionally, you can specify a specific layer version for a dependency by adding it to the end of the layer name. Here is an example:
 
@@ -15,13 +15,13 @@ In this previous example, version 3 of “anotherlayer” is compared against LA
 
 An error is produced if any dependency is missing or the version numbers (if specified) do not match exactly. This variable is used in the `conf/layer.conf` file and must be suffixed with the name of the specific layer (e.g. `LAYERDEPENDS_mylayer`).
 
-## BitBake User Manual
+### BitBake User Manual
 
 Lists the layers, separated by spaces, upon which this recipe depends. Optionally, you can specify a specific layer version for a dependency by adding it to the end of the layer name with a colon, (e.g. “anotherlayer:3” to be compared against LAYERVERSION`_anotherlayer` in this case). BitBake produces an error if any dependency is missing or the version numbers do not match exactly (if specified).
 
 You use this variable in the `conf/layer.conf` file. You must also use the specific layer name as a suffix to the variable (e.g. `LAYERDEPENDS_mylayer`).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LAYERDEPENDS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-LAYERDEPENDS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LAYERDEPENDS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-LAYERDEPENDS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

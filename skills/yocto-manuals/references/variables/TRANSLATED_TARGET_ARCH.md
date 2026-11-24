@@ -2,13 +2,13 @@
 
 # Variable `TRANSLATED_TARGET_ARCH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A sanitized version of TARGET_ARCH. This variable is used where the architecture is needed in a value where underscores are not allowed, for example within package filenames. In this case, dash characters replace any underscore characters used in TARGET_ARCH.
 
 Do not edit this variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TRANSLATED_TARGET_ARCH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TRANSLATED_TARGET_ARCH)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

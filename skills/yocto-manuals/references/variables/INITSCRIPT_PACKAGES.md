@@ -2,13 +2,13 @@
 
 # Variable `INITSCRIPT_PACKAGES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A list of the packages that contain initscripts. If multiple packages are specified, you need to append the package name to the other `INITSCRIPT_*` as an override.
 
 This variable is used in recipes when using update-rc.d. The variable is optional and defaults to the PN variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INITSCRIPT_PACKAGES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INITSCRIPT_PACKAGES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

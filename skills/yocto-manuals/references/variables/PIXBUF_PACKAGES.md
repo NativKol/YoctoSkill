@@ -2,11 +2,11 @@
 
 # Variable `PIXBUF_PACKAGES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the pixbufcache class, this variable identifies packages that contain the pixbuf loaders used with `gdk-pixbuf`. By default, the pixbufcache class assumes that the loaders are in the recipe’s main package (i.e. `${`PN`}`). Use this variable if the loaders you need are in a package other than that main package.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PIXBUF_PACKAGES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PIXBUF_PACKAGES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

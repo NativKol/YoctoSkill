@@ -2,15 +2,15 @@
 
 # Variable `PF`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the recipe or package name and includes all version and revision numbers (i.e. `glibc-2.13-r20+svnr15508/` and `bash-4.2-r1/`). This variable is comprised of the following: ${PN}-${EXTENDPE}${PV}-${PR}
 
-## BitBake User Manual
+### BitBake User Manual
 
 Specifies the recipe or package name and includes all version and revision numbers (i.e. `eglibc-2.13-r20+svnr15508/` and `bash-4.2-r1/`).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PF , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PF
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PF , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PF)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

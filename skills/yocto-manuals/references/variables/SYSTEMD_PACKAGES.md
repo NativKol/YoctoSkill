@@ -2,7 +2,7 @@
 
 # Variable `SYSTEMD_PACKAGES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the systemd class, this variable locates the systemd unit files when they are not found in the main recipe’s package. By default, the SYSTEMD_PACKAGES variable is set such that the systemd unit files are assumed to reside in the recipes main package:
 
@@ -13,7 +13,7 @@ SYSTEMD_PACKAGES ?= "${PN}"
 
 If these unit files are not in this recipe’s main package, you need to use SYSTEMD_PACKAGES to list the package or packages in which the build system can find the systemd unit files.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SYSTEMD_PACKAGES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SYSTEMD_PACKAGES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

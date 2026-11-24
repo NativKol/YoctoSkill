@@ -2,11 +2,11 @@
 
 # Variable `ICECC_PATH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The location of the `icecc` binary. You can set this variable in your `local.conf` file. If your `local.conf` file does not define this variable, the icecc class attempts to define it by locating `icecc` using `which`.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ICECC_PATH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ICECC_PATH)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

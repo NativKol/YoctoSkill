@@ -2,7 +2,7 @@
 
 # Variable `EXTRA_OEMAKE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Additional GNU `make` options.
 
@@ -10,7 +10,7 @@ Because the EXTRA_OEMAKE defaults to “”, you need to set the variable to spe
 
 PARALLEL_MAKE and PARALLEL_MAKEINST also make use of EXTRA_OEMAKE to pass the required flags.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTRA_OEMAKE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXTRA_OEMAKE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

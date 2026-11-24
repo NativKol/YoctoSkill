@@ -2,7 +2,7 @@
 
 # Variable `SDK_POSTPROCESS_COMMAND`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies a list of functions to call once the OpenEmbedded build system creates the SDK. You can specify functions separated by spaces:
 
@@ -10,7 +10,7 @@ SDK_POSTPROCESS_COMMAND += “function”
 
 If you need to pass an SDK path to a command within a function, you can use `${SDK_DIR}`, which points to the parent directory used by the OpenEmbedded build system when creating SDK output. See the SDK_DIR variable for more information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SDK_POSTPROCESS_COMMAND
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SDK_POSTPROCESS_COMMAND)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

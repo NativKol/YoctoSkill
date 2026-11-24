@@ -2,7 +2,7 @@
 
 # Variable `KFEATURE_DESCRIPTION`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Provides a short description of a configuration fragment. You use this variable in the `.scc` file that describes a configuration fragment file. Here is the variable used in a file named `smp.scc` to describe SMP being enabled:
 
@@ -11,7 +11,7 @@ define KFEATURE_DESCRIPTION "Enable SMP"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KFEATURE_DESCRIPTION
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KFEATURE_DESCRIPTION)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

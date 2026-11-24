@@ -2,7 +2,7 @@
 
 # Variable `DISTRO_FEATURES_DEFAULT`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A convenience variable that gives you the default list of distro features with the exception of any features specific to the C library (`libc`).
 
@@ -13,7 +13,7 @@ DISTRO_FEATURES ?= "${DISTRO_FEATURES_DEFAULT} myfeature"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DISTRO_FEATURES_DEFAULT
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DISTRO_FEATURES_DEFAULT)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

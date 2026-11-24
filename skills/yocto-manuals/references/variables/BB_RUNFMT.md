@@ -2,11 +2,11 @@
 
 # Variable `BB_RUNFMT`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 See BB_RUNFMT in the BitBake manual.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Specifies the name of the executable script files (i.e. run files) saved into `${`T`}`. By default, the BB_RUNFMT variable is undefined and the run filenames get created using the following form:
 
@@ -17,7 +17,7 @@ run.{func}.{pid}
 
 If you want to force run files to take a specific name, you can set this variable in a configuration file.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_RUNFMT , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_RUNFMT
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_RUNFMT , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_RUNFMT)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -6,107 +6,58 @@ description: Analyze what a Yocto/OpenEmbedded distro and image actually contain
 # Yocto Image and Distro Analysis
 
 Answer two questions with evidence: **what ends up in this image/distro and why**, and
-**what did this change do to it**. Target release: Yocto Project 5.0 "scarthgap" /
-BitBake 2.8 (still check the project's release first — `LAYERSERIES_COMPAT_*` in
-`conf/layer.conf`, the poky/openembedded-core branch, or `DISTRO_VERSION`). Facts that
-differ in other releases are flagged "scarthgap" in the references.
+**what did this change do to it**. Target: Yocto Project 5.0 "scarthgap" / BitBake 2.8;
+check the project's release first (`LAYERSERIES_COMPAT_*` in `conf/layer.conf`, the
+poky/openembedded-core branch, or `DISTRO_VERSION`). Release-specific facts are flagged
+"scarthgap" in the references.
 
 The central idea: a line in a `.conf`, `.bb`, `.bbclass` or `.bbappend` has an effect only
 relative to every other assignment of the same variable, in parse order, under the
 operator and override rules. Most wrong Yocto answers come from reading a line in
-isolation. So reconstruct the order first, then reason, then prove it with a tool.
+isolation, so reconstruct the order first, then reason, then prove it with a tool.
 
 ## Workflow
 
-### 1. Pin down the target
+1. **Pin down the target**: image recipe, `MACHINE`, `DISTRO`, multiconfig, release, layer
+   list and revisions, and the Build Directory `conf/` files (`local.conf`, `auto.conf`,
+   `site.conf`, `bblayers.conf`). Ask for missing ones; the answer depends on all of them.
+   For a commit question, get the diff for every layer repository involved.
+2. **Reconstruct the evaluation order** with
+   [references/evaluation-order.md](references/evaluation-order.md) (jump to the section
+   you need from its Contents). Short form: `bblayers.conf` -> each `layer.conf` ->
+   `bitbake.conf` (`site.conf`, `auto.conf`, `local.conf`, then machine and distro conf
+   with their includes) -> global classes -> per recipe: recipe lines, then bbappends
+   (lowest layer priority first) -> finalization (anonymous Python, backfill) -> overrides,
+   then `:append`/`:prepend`/`:remove`. Because `local.conf` is parsed **before** machine and
+   distro files, its `?=` and `+=` beat the distro's `?=`, its `=` loses to the distro's
+   `=`, and only `:append`/`:remove` behave additively.
+3. **Walk the inclusion chain** with [references/inclusion-chain.md](references/inclusion-chain.md):
+   `IMAGE_INSTALL` + `IMAGE_FEATURES`/`EXTRA_IMAGE_FEATURES` (`FEATURE_PACKAGES_<f>`) ->
+   `PACKAGE_INSTALL` -> package manager resolves `RDEPENDS`/`RRECOMMENDS` (including
+   automatic shlib/pkgconfig dependencies), minus `BAD_RECOMMENDATIONS`/`PACKAGE_EXCLUDE`
+   -> complementary and locale packages -> manifest. At each packagegroup or recipe, note
+   which `DISTRO_FEATURES`, `MACHINE_FEATURES`, `PACKAGECONFIG`, `VIRTUAL-RUNTIME_*` or
+   `PREFERRED_PROVIDER_*` decides the content, and keep recipe names and package names apart
+   (`oe-pkgdata-util lookup-pkg`, `lookup-recipe`).
+4. **Prove it, and say how far you got**
+   ([references/evidence-tools.md](references/evidence-tools.md)). Label every conclusion:
+   - **Tier 0, static** (sources only): reasoning from the diff and the order. Hypothesis.
+   - **Tier 1, parse** (Build Directory, no build): `bitbake-getvar -r <image> VAR` (value
+     plus `file:line` history), `bitbake -e`, `bitbake-layers show-*`, `bitbake -g`.
+   - **Tier 2, build**: image manifest, buildhistory, `buildhistory-diff`,
+     `oe-pkgdata-util`, license manifest, SPDX. The only proof of the installed package list.
 
-Image recipe, `MACHINE`, `DISTRO`, multiconfig, release, layer list and revisions, and the
-Build Directory `conf/` files (`local.conf`, `auto.conf`, `site.conf`, `bblayers.conf`).
-Ask for them if missing — the answer depends on all of them. For a commit question, get the
-diff for every layer repository involved, not just one.
+   Do not state package-list conclusions as fact from tier 0 or 1; give the command and
+   the output that would confirm or refute each hypothesis.
+5. **For a commit, branch or upgrade** follow
+   [references/commit-impact.md](references/commit-impact.md): classify each changed file
+   by parse stage, find competitors and consumers of each changed variable, run its
+   indirect-effect checklist, diff the parse (and build) output, tie every difference to a
+   diff line through the history, and list diff lines that had no effect.
 
-### 2. Reconstruct the evaluation order
-
-Read [references/evaluation-order.md](references/evaluation-order.md). In short, for
-scarthgap:
-
-```text
-bblayers.conf -> each layer.conf (BBPATH, BBFILES, BBFILE_PRIORITY, LAYERSERIES_COMPAT)
--> bitbake.conf: site.conf, auto.conf, local.conf, machine/${MACHINE}.conf (+ its require'd tune/include files),
-   distro/${DISTRO}.conf (+ includes), distro/defaultsetup.conf (+ init-manager-${INIT_MANAGER}.inc)
--> base.bbclass + INHERIT classes (PACKAGE_CLASSES, USER_CLASSES, INHERIT_DISTRO, buildhistory...)
--> per recipe: fresh copy, recipe lines in order (inherit/require/include inline), bbappends (lowest layer priority first)
--> finalize: inherit_defer, key expansion, anonymous Python (feature backfill, IMAGE_FEATURES checks, packagegroup PACKAGES)
--> reading a variable: value from immediate ops (or ??= default) -> active override wins -> :append, :prepend, :remove -> expand ${}
-```
-
-`local.conf` is parsed **before** the machine and distro files: its `?=` and `+=` beat the
-distro's `?=`, its `=` loses to the distro's `=`, and only `:append`/`:remove` behave
-"additively" from there. Keep that in mind for every conf change.
-
-### 3. Walk the inclusion chain
-
-Read [references/inclusion-chain.md](references/inclusion-chain.md). Trace from the image
-recipe outward:
-
-`IMAGE_INSTALL` (core-image default `packagegroup-core-boot packagegroup-base-extended ${CORE_IMAGE_EXTRA_INSTALL}`)
-+ `IMAGE_FEATURES`/`EXTRA_IMAGE_FEATURES` → `FEATURE_PACKAGES_<f>` + `run-postinsts`
-→ `PACKAGE_INSTALL` → package manager resolves `RDEPENDS`/`RRECOMMENDS` (including
-automatic shlib/pkgconfig dependencies), `RPROVIDES`, conflicts, minus
-`BAD_RECOMMENDATIONS`/`NO_RECOMMENDATIONS`/`PACKAGE_EXCLUDE` → complementary
-(`dev-pkgs`…) and locale packages → manifest.
-
-At each packagegroup or recipe, note which `DISTRO_FEATURES`, `MACHINE_FEATURES`,
-`COMBINED_FEATURES`, `PACKAGECONFIG`, `VIRTUAL-RUNTIME_*` or `PREFERRED_PROVIDER_*`
-decides the content. Keep recipe names, recipe-space package names and runtime package
-names apart (`oe-pkgdata-util lookup-pkg`, `lookup-recipe`).
-
-### 4. Prove it — and say how far you got
-
-Read [references/evidence-tools.md](references/evidence-tools.md). Label every conclusion
-with its tier:
-
-- **Tier 0, static** (only sources): reasoning from the diff and the order. Hypothesis.
-- **Tier 1, parse** (Build Directory, no build): `bitbake-getvar -r <image> VAR` (value
-  plus history with `file:line` of each operation), `bitbake -e <image>`,
-  `bitbake-layers show-layers|show-appends|show-overlayed|show-recipes`,
-  `bitbake -g <image>` (`pn-buildlist`, `task-depends.dot`). Confirms values, recipe and
-  append selection, and the recipe set.
-- **Tier 2, build**: image manifest in `DEPLOY_DIR_IMAGE`, buildhistory
-  (`installed-package-names.txt`, `depends.dot`, `image-info.txt`, `files-in-image.txt`),
-  `buildhistory-diff`, `oe-pkgdata-util`, license manifest, SPDX. The only proof of the
-  installed package list, automatic dependencies and file contents.
-
-Do not state package-list conclusions as fact from tier 0 or 1; give the command that
-would confirm them. When you cannot run commands, give the user the exact commands and
-what output would confirm or refute each hypothesis.
-
-### 5. For a commit, branch or upgrade
-
-Follow [references/commit-impact.md](references/commit-impact.md): classify each changed
-file by parse stage, find competitors and consumers of each changed variable, run the
-indirect-effect checklist (features and backfill, operator/position changes, weak
-defaults, `:remove`, overrides, layer priority/`BBMASK`, providers, packagegroups,
-packaging, version bumps with new shlib dependencies, image features, exclusions,
-package backend), then diff the parse output and, if possible, the build output. Tie every
-observed difference to a diff line through the `file:line` history, and list diff lines
-that had no effect.
-
-## Helper script
-
-`scripts/yocto_diff.py` (Python 3 standard library only; tests in
-`scripts/test_yocto_diff.py`):
-
-```bash
-python3 scripts/yocto_diff.py env before.env after.env --only '^(IMAGE_|DISTRO_FEATURES|PACKAGE_INSTALL|PREFERRED_)'
-python3 scripts/yocto_diff.py manifest old.manifest new.manifest      # or installed-package-names.txt
-python3 scripts/yocto_diff.py why <buildhistory image dir>/depends.dot <package>
-```
-
-`env` diffs two `bitbake -e` dumps and prints, for each changed variable, the words
-added/removed and the last history operations (`op file:line`). `manifest` diffs package
-lists. `why` prints the chains that pull a package in (`->` RDEPENDS, `~>` RRECOMMENDS,
-`=>` via RPROVIDES). All accept `--json`.
+`scripts/yocto_diff.py` (standard library only) diffs two `bitbake -e` dumps (`env`), two
+manifests (`manifest`), and prints why-chains from buildhistory `depends.dot` (`why`);
+usage in evidence-tools.md section 8.
 
 ## Traps to check every time
 
@@ -122,19 +73,18 @@ lists. `why` prints the chains that pull a package in (`->` RDEPENDS, `~>` RRECO
   `RDEPENDS` on (and do nothing with DEB); `PACKAGE_EXCLUDE` then fails the build.
 - `DEPENDS` never installs anything; but a library found at build time becomes an
   automatic `RDEPENDS`.
-- Underscore names are not overrides: `PREFERRED_PROVIDER_virtual/kernel`,
-  `PREFERRED_VERSION_<pn>`, `FEATURE_PACKAGES_<f>`; colon is the override/operator syntax
-  since honister (3.4), and scarthgap rejects `_append`.
+- Underscore names are not overrides (`PREFERRED_PROVIDER_virtual/kernel`,
+  `PREFERRED_VERSION_<pn>`, `FEATURE_PACKAGES_<f>`); scarthgap rejects `_append`.
 - Query the right datastore: `bitbake-getvar -r <image>` for image variables; the global
   value can differ.
 
-## Keyword reference
+## Offline lookup
 
-[references/keywords.md](references/keywords.md) holds the verbatim scarthgap manual
-glossary entries for every variable, class, task and feature used here. Look a keyword up
-there before relying on memory; if it is missing, use the `yocto-manuals` skill, or
-`https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html` and
-`https://docs.yoctoproject.org/bitbake/2.8/`.
+Everything this skill needs is in the repository; it works without internet. Pull only the text you need instead of reading whole files (pages run to thousands of lines). From this skill's folder:
+
+- `python3 scripts/ylookup.py <NAME>...` prints the scarthgap manual entry for any variable, class, task, feature or QA check (`--kind var|class|task|feature|qa` to disambiguate, `--find TEXT` when unsure of the name).
+- `--topic TEXT` lists manual sections, `--section <manual/page.md> "<heading>"` prints one, `--grep REGEX [--in ref-manual]` finds anything else.
+- URLs in these files are citations for the user, not lookups. The manuals are scarthgap 5.0: if the project is on another release, tell the user rather than going online. Without Python: `` grep -n -A30 '^## Variable `NAME`' references/keywords.md ``.
 
 ## Output
 
@@ -146,9 +96,7 @@ For "what is in it / why":
 3. the inclusion chain for the package(s) in question (`image -> packagegroup -> pkg`, with
    the variable or condition at each edge)
 4. commands that confirm each unproven step, and the output that would confirm it
-5. manual sections that define the keywords involved
+5. manual sections that define the keywords involved (offline path)
 
 For "what did this change do": use the report template in
-[references/commit-impact.md](references/commit-impact.md) — effective changes with
-`file:line`, image content changes with why-chains, lines with no effect, open risks with
-confirming commands.
+[references/commit-impact.md](references/commit-impact.md) section 7.

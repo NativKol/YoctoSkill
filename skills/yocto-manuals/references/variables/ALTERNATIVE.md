@@ -2,7 +2,7 @@
 
 # Variable `ALTERNATIVE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Lists commands in a package that need an alternative binary naming scheme. Sometimes the same command is provided in multiple packages. When this occurs, the OpenEmbedded build system needs to use the alternatives system to create a different binary naming scheme so the commands can co-exist.
 
@@ -15,7 +15,7 @@ ALTERNATIVE:busybox = "sh sed test bracket"
 
 For more information on the alternatives system, see the “update-alternatives” section.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ALTERNATIVE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ALTERNATIVE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

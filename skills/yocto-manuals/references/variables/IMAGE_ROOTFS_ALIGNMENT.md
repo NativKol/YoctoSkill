@@ -2,11 +2,11 @@
 
 # Variable `IMAGE_ROOTFS_ALIGNMENT`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the alignment for the output image file in Kbytes. If the size of the image is not a multiple of this value, then the size is rounded up to the nearest multiple of the value. The default value is “1”. See IMAGE_ROOTFS_SIZE for additional information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_ROOTFS_ALIGNMENT
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_ROOTFS_ALIGNMENT)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,7 +2,7 @@
 
 # Variable `TUNE_ARCH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The GNU canonical architecture for a specific architecture (i.e. `arm`, `armeb`, `mips`, `mips64`, and so forth). BitBake uses this value to setup configuration.
 
@@ -31,7 +31,7 @@ The following list, which is by no means complete since architectures are config
 
 - mipsel
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TUNE_ARCH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TUNE_ARCH)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

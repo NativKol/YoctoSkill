@@ -2,7 +2,7 @@
 
 # Variable `KERNEL_DTBVENDORED`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This variable, used by the kernel-devicetree, allows to ignore vendor subdirectories when installing DTB (Device Tree Binary) files, when it is set to “false”.
 
@@ -10,7 +10,7 @@ To keep vendor subdirectories, set this variable to “true”.
 
 It is set by default to “false” by the kernel class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_DTBVENDORED
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_DTBVENDORED)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

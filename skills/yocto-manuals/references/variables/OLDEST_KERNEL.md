@@ -2,13 +2,13 @@
 
 # Variable `OLDEST_KERNEL`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Declares the oldest version of the Linux kernel that the produced binaries must support. This variable is passed into the build of the Embedded GNU C Library (`glibc`).
 
 The default for this variable comes from the `meta/conf/bitbake.conf` configuration file. You can override this default by setting the variable in a custom distribution configuration file.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-OLDEST_KERNEL
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-OLDEST_KERNEL)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

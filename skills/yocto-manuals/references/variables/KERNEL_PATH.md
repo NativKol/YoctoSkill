@@ -2,13 +2,13 @@
 
 # Variable `KERNEL_PATH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The location of the kernel sources. This variable is set to the value of the STAGING_KERNEL_DIR within the module class. For information on how this variable is used, see the “Incorporating Out-of-Tree Modules” section in the Yocto Project Linux Kernel Development Manual.
 
 To help maximize compatibility with out-of-tree drivers used to build modules, the OpenEmbedded build system also recognizes and uses the KERNEL_SRC variable, which is identical to the KERNEL_PATH variable. Both variables are common variables used by external Makefiles to point to the kernel source directory.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_PATH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_PATH)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

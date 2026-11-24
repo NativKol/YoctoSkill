@@ -2,11 +2,11 @@
 
 # Variable `XZ_MEMLIMIT`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the maximum memory the xz compression should use as a percentage of system memory. If unconstrained the xz compressor can use large amounts of memory and become problematic with parallelism elsewhere in the build. “50%” has been found to be a good value.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-XZ_MEMLIMIT
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-XZ_MEMLIMIT)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

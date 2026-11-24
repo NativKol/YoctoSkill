@@ -2,11 +2,11 @@
 
 # Variable `CVE_CHECK_MANIFEST_JSON`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the path to the CVE manifest in JSON format. See CVE_CHECK_CREATE_MANIFEST.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CVE_CHECK_MANIFEST_JSON
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CVE_CHECK_MANIFEST_JSON)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,7 +2,7 @@
 
 # Variable `OE_TERMINAL`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Controls how the OpenEmbedded build system spawns interactive terminals on the host development system (e.g. using the BitBake command with the `-c devshell` command-line option). For more information, see the “Using a Development Shell” section in the Yocto Project Development Tasks Manual.
 
@@ -22,7 +22,7 @@ You can use the following values for the OE_TERMINAL variable:
 
 - none
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-OE_TERMINAL
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-OE_TERMINAL)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

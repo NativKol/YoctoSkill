@@ -2,7 +2,7 @@
 
 # Variable `NON_MULTILIB_RECIPES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A list of recipes that should not be built for multilib. OE-Core’s `multilib.conf` file defines a reasonable starting point for this list with:
 
@@ -11,7 +11,7 @@ NON_MULTILIB_RECIPES = "grub grub-efi make-mod-scripts ovmf u-boot"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-NON_MULTILIB_RECIPES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-NON_MULTILIB_RECIPES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,13 +2,13 @@
 
 # Variable `GO_WORKDIR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When using Go Modules, the current working directory must be the directory containing the `go.mod` file, or one of its subdirectories. When the `go` tool is used, it will automatically look for the `go.mod` file in the Go working directory or in any parent directory, but not in subdirectories.
 
 When using the go-mod class to use Go modules, the optional GO_WORKDIR variable, defaulting to the value of GO_IMPORT, allows to specify a different Go working directory.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-GO_WORKDIR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-GO_WORKDIR)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

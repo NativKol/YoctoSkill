@@ -2,7 +2,7 @@
 
 # Variable `MIRRORS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies additional paths from which the OpenEmbedded build system gets source code. When the build system searches for source code, it first tries the local download directory. If that location fails, the build system tries locations defined by PREMIRRORS, the upstream source, and then locations specified by MIRRORS in that order.
 
@@ -10,11 +10,11 @@ The default value for MIRRORS is defined in the `meta/classes-global/mirrors.bbc
 
 See the definition of this variable in the BitBake Manual for more details: MIRRORS.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Specifies additional paths from which BitBake gets source code. When the build system searches for source code, it first tries the local download directory. If that location fails, the build system tries locations defined by PREMIRRORS, the upstream source, and then locations specified by MIRRORS in that order.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MIRRORS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-MIRRORS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MIRRORS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-MIRRORS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

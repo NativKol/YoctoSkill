@@ -2,11 +2,11 @@
 
 # Variable `SPL_DTB_BINARY`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the uboot-sign class, the SPL_DTB_BINARY variable contains the name of the SPL binary to be compiled.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SPL_DTB_BINARY
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SPL_DTB_BINARY)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

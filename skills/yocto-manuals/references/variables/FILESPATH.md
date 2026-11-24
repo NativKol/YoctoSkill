@@ -2,7 +2,7 @@
 
 # Variable `FILESPATH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A colon-separated list specifying the default set of directories the OpenEmbedded build system uses when searching for patches and files.
 
@@ -37,11 +37,11 @@ Also in the example, the SRC_URI statement contains “file://defconfig”. Give
 
 You can find out more about the patching process in the “Patching” section in the Yocto Project Overview and Concepts Manual and the “Patching Code” section in the Yocto Project Development Tasks Manual. See the do_patch task as well.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Specifies directories BitBake uses when searching for patches and files. The “local” fetcher module uses these directories when handling `file://` URLs. The variable behaves like a shell `PATH` environment variable. The value is a colon-separated list of directories that are searched left-to-right in order.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FILESPATH , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-FILESPATH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FILESPATH , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-FILESPATH)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

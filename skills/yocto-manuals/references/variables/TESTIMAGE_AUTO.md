@@ -2,7 +2,7 @@
 
 # Variable `TESTIMAGE_AUTO`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Automatically runs the series of automated tests for images when an image is successfully built. Setting TESTIMAGE_AUTO to “1” causes any image that successfully builds to automatically boot under QEMU. Using the variable also adds in dependencies so that any SDK for which testing is requested is automatically built first.
 
@@ -12,7 +12,7 @@ TESTIMAGE_AUTO = “1”
 
 For more information on enabling, running, and writing these tests, see the “Performing Automated Runtime Testing” section in the Yocto Project Test Environment Manual and the “testimage” section.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TESTIMAGE_AUTO
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TESTIMAGE_AUTO)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

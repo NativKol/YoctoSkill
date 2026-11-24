@@ -2,13 +2,13 @@
 
 # Variable `MACHINE_FEATURES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the list of hardware features the MACHINE is capable of supporting. For related information on enabling features, see the DISTRO_FEATURES, COMBINED_FEATURES, and IMAGE_FEATURES variables.
 
 For a list of hardware features supported by the Yocto Project as shipped, see the “Machine Features” section.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MACHINE_FEATURES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MACHINE_FEATURES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

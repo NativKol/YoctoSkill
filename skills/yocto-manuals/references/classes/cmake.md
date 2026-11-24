@@ -8,7 +8,7 @@ By default, the cmake class uses Ninja instead of GNU make for building, which o
 
 If you need to install custom CMake toolchain files supplied by the application being built, you should install them (during do_install) to the preferred CMake Module directory: `${D}${datadir}/cmake/modules/`.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-cmake
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-cmake)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

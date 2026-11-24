@@ -2,11 +2,11 @@
 
 # Variable `SSTATE_MIRROR_ALLOW_NETWORK`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 If set to “1”, allows fetches from mirrors that are specified in SSTATE_MIRRORS to work even when fetching from the network is disabled by setting BB_NO_NETWORK to “1”. Using the SSTATE_MIRROR_ALLOW_NETWORK variable is useful if you have set SSTATE_MIRRORS to point to an internal server for your shared state cache, but you want to disable any other fetching from the network.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SSTATE_MIRROR_ALLOW_NETWORK
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SSTATE_MIRROR_ALLOW_NETWORK)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

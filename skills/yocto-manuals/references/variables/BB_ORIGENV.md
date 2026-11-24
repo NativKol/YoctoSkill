@@ -2,11 +2,11 @@
 
 # Variable `BB_ORIGENV`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 See BB_ORIGENV in the BitBake manual.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Contains a copy of the original external environment in which BitBake was run. The copy is taken before any variable values configured to pass through from the external environment are filtered into BitBake’s datastore.
 
@@ -14,7 +14,7 @@ Note
 
 The contents of this variable is a datastore object that can be queried using the normal datastore operations.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_ORIGENV , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_ORIGENV
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_ORIGENV , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_ORIGENV)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

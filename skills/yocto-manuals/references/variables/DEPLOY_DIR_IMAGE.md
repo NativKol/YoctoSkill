@@ -2,7 +2,7 @@
 
 # Variable `DEPLOY_DIR_IMAGE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Points to the area that the OpenEmbedded build system uses to place images and other associated output files that are ready to be deployed onto the target machine. The directory is machine-specific as it contains the `${MACHINE}` name. By default, this directory resides within the Build Directory as `${DEPLOY_DIR}/images/${MACHINE}/`.
 
@@ -10,7 +10,7 @@ It must not be used directly in recipes when deploying files. Instead, it’s on
 
 For more information on the structure of the Build Directory, see “The Build Directory — build/” section. For more detail on the contents of the `deploy` directory, see the “Images” and “Application Development SDK” sections both in the Yocto Project Overview and Concepts Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DEPLOY_DIR_IMAGE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DEPLOY_DIR_IMAGE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

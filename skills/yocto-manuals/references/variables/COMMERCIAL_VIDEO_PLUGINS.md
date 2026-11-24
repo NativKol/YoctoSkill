@@ -2,13 +2,13 @@
 
 # Variable `COMMERCIAL_VIDEO_PLUGINS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This variable is specific to the GStreamer recipes. It allows to build the GStreamer “ugly” and “bad” video plugins.
 
 See the Other Variables Related to Commercial Licenses section for usage details.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-COMMERCIAL_VIDEO_PLUGINS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-COMMERCIAL_VIDEO_PLUGINS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

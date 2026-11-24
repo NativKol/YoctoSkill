@@ -2,11 +2,11 @@
 
 # Variable `IMAGE_BASENAME`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The base name of image output files. This variable defaults to the recipe name (`${`PN`}`).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_BASENAME
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_BASENAME)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

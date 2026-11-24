@@ -4,7 +4,7 @@
 
 The deploy class handles deploying files to the DEPLOY_DIR_IMAGE directory. The main function of this class is to allow the deploy step to be accelerated by shared state. Recipes that inherit this class should define their own do_deploy function to copy the files to be deployed to DEPLOYDIR, and use `addtask` to add the task at the appropriate place, which is usually after do_compile or do_install. The class then takes care of staging the files from DEPLOYDIR to DEPLOY_DIR_IMAGE.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-deploy
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-deploy)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

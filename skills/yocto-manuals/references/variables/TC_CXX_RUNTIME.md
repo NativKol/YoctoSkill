@@ -2,13 +2,13 @@
 
 # Variable `TC_CXX_RUNTIME`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the C/C++ STL and runtime variant to use during the build process. Default value is ‘gnu’
 
 You can select “gnu”, “llvm”, or “android”.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TC_CXX_RUNTIME
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TC_CXX_RUNTIME)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,13 +2,13 @@
 
 # Variable `ICECC_CLASS_DISABLE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Identifies user classes that you do not want the Icecream distributed compile support to consider. This variable is used by the icecc class. You set this variable in your `local.conf` file.
 
 When you list classes using this variable, the recipes inheriting those classes will not benefit from distributed compilation across remote hosts. Instead they will be built locally.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ICECC_CLASS_DISABLE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ICECC_CLASS_DISABLE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

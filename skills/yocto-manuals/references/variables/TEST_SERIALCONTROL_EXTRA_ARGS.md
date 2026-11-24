@@ -2,11 +2,11 @@
 
 # Variable `TEST_SERIALCONTROL_EXTRA_ARGS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 For automated hardware testing, specifies additional arguments to pass through to the command specified in TEST_SERIALCONTROL_CMD. Setting TEST_SERIALCONTROL_EXTRA_ARGS is optional. You can use it if you wish, for example, to separate the machine-specific and non-machine-specific parts of the command.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TEST_SERIALCONTROL_EXTRA_ARGS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TEST_SERIALCONTROL_EXTRA_ARGS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

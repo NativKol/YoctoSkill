@@ -2,7 +2,7 @@
 
 # Variable `TUNE_CCARGS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies architecture-specific C compiler flags for the target system. The set of flags is based on the selected tune features. TUNE_CCARGS is set using the tune include files, which are typically under `meta/conf/machine/include/` and are influenced through TUNE_FEATURES.
 
@@ -10,7 +10,7 @@ Note
 
 Board Support Packages (BSPs) select the tune. The selected tune, in turn, affects the tune variables themselves (i.e. the tune can supply its own set of flags).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TUNE_CCARGS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TUNE_CCARGS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

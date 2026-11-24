@@ -7,7 +7,7 @@ Message: `package contains mime types but does not inherit mime: <packagename> p
 
 The specified package contains mime type files (`.xml` files in `${datadir}/mime/packages`) and yet does not inherit the mime class which will ensure that these get properly installed. Either add `inherit mime` to the recipe or remove the files at the do_install step if they are not needed.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
+Offline source: yocto-manuals/references/manuals/ref-manual/qa-checks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

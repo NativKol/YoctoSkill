@@ -2,13 +2,13 @@
 
 # Variable `COPYLEFT_LICENSE_INCLUDE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A space-separated list of licenses to include in the source archived by the archiver class. In other words, if a license in a recipe’s LICENSE value is in the value of COPYLEFT_LICENSE_INCLUDE, then its source is archived by the class.
 
 The default value is set by the copyleft_filter class, which is inherited by the archiver class. The default value includes “GPL*”, “LGPL*”, and “AGPL*”.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-COPYLEFT_LICENSE_INCLUDE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-COPYLEFT_LICENSE_INCLUDE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

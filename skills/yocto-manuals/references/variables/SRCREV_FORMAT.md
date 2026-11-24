@@ -2,17 +2,17 @@
 
 # Variable `SRCREV_FORMAT`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 See SRCREV_FORMAT in the BitBake manual.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Helps construct valid SRCREV values when multiple source controlled URLs are used in SRC_URI.
 
 The system needs help constructing these values under these circumstances. Each component in the SRC_URI is assigned a name and these are referenced in the SRCREV_FORMAT variable. Consider an example with URLs named “machine” and “meta”. In this case, SRCREV_FORMAT could look like “machine_meta” and those names would have the SCM versions substituted into each position. Only one `AUTOINC` placeholder is added and if needed. And, this placeholder is placed at the start of the returned string.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SRCREV_FORMAT , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-SRCREV_FORMAT
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SRCREV_FORMAT , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-SRCREV_FORMAT)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

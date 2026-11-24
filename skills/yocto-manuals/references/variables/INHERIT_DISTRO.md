@@ -2,7 +2,7 @@
 
 # Variable `INHERIT_DISTRO`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Lists classes that will be inherited at the distribution level. It is unlikely that you want to edit this variable.
 
@@ -15,7 +15,7 @@ INHERIT_DISTRO ?= "debian devshell sstate license remove-libtool create-spdx"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INHERIT_DISTRO
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INHERIT_DISTRO)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,7 +2,7 @@
 
 # Variable `OPKGBUILDCMD`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The variable OPKGBUILDCMD specifies the command used to build opkg packages when using the package_ipk class. It is defined in package_ipk as:
 
@@ -11,7 +11,7 @@ OPKGBUILDCMD ??= 'opkg-build -Z zstd -a "${ZSTD_DEFAULTS}"'
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-OPKGBUILDCMD
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-OPKGBUILDCMD)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

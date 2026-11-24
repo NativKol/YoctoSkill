@@ -2,7 +2,7 @@
 
 # Variable `MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A list of recommended machine-specific packages to install as part of the image being built. The build process does not depend on these packages being present. However, because this is a “machine-essential” variable, the list of packages are essential for the machine to boot. The impact of this variable affects images based on `packagegroup-core-boot`, including the `core-image-minimal` image.
 
@@ -21,7 +21,7 @@ In this example, the `kernel-module-ab123` recipe needs to explicitly set its PA
 
 Some examples of these machine essentials are flash, screen, keyboard, mouse, or touchscreen drivers (depending on the machine).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

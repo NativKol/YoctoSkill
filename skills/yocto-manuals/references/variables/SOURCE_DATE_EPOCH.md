@@ -2,7 +2,7 @@
 
 # Variable `SOURCE_DATE_EPOCH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This defines a date expressed in number of seconds since the UNIX EPOCH (01 Jan 1970 00:00:00 UTC), which is used by multiple build systems to force a timestamp in built binaries. Many upstream projects already support this variable.
 
@@ -17,7 +17,7 @@ SOURCE_DATE_EPOCH = "1613559011"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SOURCE_DATE_EPOCH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SOURCE_DATE_EPOCH)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

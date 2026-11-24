@@ -2,13 +2,13 @@
 
 # Variable `STAGING_DIR_TARGET`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the path to the sysroot used for the system for which the component generates code. For components that do not generate code, which is the majority, STAGING_DIR_TARGET is set to match STAGING_DIR_HOST.
 
 Some recipes build binaries that can run on the target system but those binaries in turn generate code for another different system (e.g. cross-canadian recipes). Using terminology from GNU, the primary system is referred to as the “HOST” and the secondary, or different, system is referred to as the “TARGET”. Thus, the binaries run on the “HOST” system and generate binaries for the “TARGET” system. The STAGING_DIR_HOST variable points to the sysroot used for the “HOST” system, while STAGING_DIR_TARGET points to the sysroot used for the “TARGET” system.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-STAGING_DIR_TARGET
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-STAGING_DIR_TARGET)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

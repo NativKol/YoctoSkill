@@ -4,7 +4,7 @@
 
 The cml1 class provides basic support for the Linux kernel style build configuration system. “cml” stands for “Configuration Menu Language”, which originates from the Linux kernel but is also used in other projects such as U-Boot and BusyBox. It could have been called “kconfig” too.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-cml1
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-cml1)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

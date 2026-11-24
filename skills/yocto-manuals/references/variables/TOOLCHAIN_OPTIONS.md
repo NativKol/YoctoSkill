@@ -2,7 +2,7 @@
 
 # Variable `TOOLCHAIN_OPTIONS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This variable holds extra options passed to the compiler and the linker for non `-native` recipes as they have to point to their custom `sysroot` folder pointed to by RECIPE_SYSROOT:
 
@@ -13,7 +13,7 @@ TOOLCHAIN_OPTIONS = " --sysroot=${RECIPE_SYSROOT}"
 
 Native recipes don’t need this variable to be set, as they are built for the host machine with the native compiler.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TOOLCHAIN_OPTIONS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TOOLCHAIN_OPTIONS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

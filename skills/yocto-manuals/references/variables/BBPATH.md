@@ -2,11 +2,11 @@
 
 # Variable `BBPATH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 See BBPATH in the BitBake manual.
 
-## BitBake User Manual
+### BitBake User Manual
 
 A colon-separated list used by BitBake to locate class (`.bbclass`) and configuration (`.conf`) files. This variable is analogous to the `PATH` variable.
 
@@ -19,7 +19,7 @@ $ bitbake target
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBPATH , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBPATH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BBPATH , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BBPATH)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

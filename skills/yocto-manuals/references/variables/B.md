@@ -2,7 +2,7 @@
 
 # Variable `B`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The directory within the Build Directory in which the OpenEmbedded build system places generated objects during a recipe’s build process. By default, this directory is the same as the S directory, which is defined as:
 
@@ -13,11 +13,11 @@ S = "${WORKDIR}/${BP}"
 
 You can separate the (S) directory and the directory pointed to by the B variable. Most Autotools-based recipes support separating these directories. The build system defaults to using separate directories for `gcc` and some kernel recipes.
 
-## BitBake User Manual
+### BitBake User Manual
 
 The directory in which BitBake executes functions during a recipe’s build process.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-B , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-B
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-B , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-B)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

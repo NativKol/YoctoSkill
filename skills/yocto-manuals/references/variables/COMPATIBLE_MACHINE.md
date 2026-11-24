@@ -2,7 +2,7 @@
 
 # Variable `COMPATIBLE_MACHINE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A regular expression that resolves to one or more target machines with which a recipe is compatible. The regular expression is matched against MACHINEOVERRIDES. You can use the variable to stop recipes from being built for machines with which the recipes are not compatible. Stopping these builds is particularly useful with kernels. The variable also helps to increase parsing speed since the build system skips parsing recipes not compatible with the current machine.
 
@@ -32,7 +32,7 @@ Note
 
 When COMPATIBLE_MACHINE is set in a recipe inherits from native, the recipe is always skipped. All native recipes must be entirely target independent and should not rely on MACHINE.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-COMPATIBLE_MACHINE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-COMPATIBLE_MACHINE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

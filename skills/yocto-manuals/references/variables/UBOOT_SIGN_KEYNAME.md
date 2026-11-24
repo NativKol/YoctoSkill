@@ -2,11 +2,11 @@
 
 # Variable `UBOOT_SIGN_KEYNAME`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The name of keys used by the kernel-fitimage class for signing U-Boot FIT image stored in the UBOOT_SIGN_KEYDIR directory. If we have for example a `dev.key` key and a `dev.crt` certificate stored in the UBOOT_SIGN_KEYDIR directory, you will have to set UBOOT_SIGN_KEYNAME to `dev`.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_SIGN_KEYNAME
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_SIGN_KEYNAME)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

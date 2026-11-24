@@ -2,7 +2,7 @@
 
 # Variable `EXCLUDE_FROM_WORLD`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Directs BitBake to exclude a recipe from world builds (i.e. `bitbake world`). During world builds, BitBake locates, parses and builds all recipes found in every layer exposed in the `bblayers.conf` configuration file.
 
@@ -12,7 +12,7 @@ Note
 
 Recipes added to EXCLUDE_FROM_WORLD may still be built during a world build in order to satisfy dependencies of other recipes. Adding a recipe to EXCLUDE_FROM_WORLD only ensures that the recipe is not explicitly added to the list of build targets in a world build.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Directs BitBake to exclude a recipe from world builds (i.e. `bitbake world`). During world builds, BitBake locates, parses and builds all recipes found in every layer exposed in the `bblayers.conf` configuration file.
 
@@ -22,7 +22,7 @@ Note
 
 Recipes added to EXCLUDE_FROM_WORLD may still be built during a world build in order to satisfy dependencies of other recipes. Adding a recipe to EXCLUDE_FROM_WORLD only ensures that the recipe is not explicitly added to the list of build targets in a world build.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXCLUDE_FROM_WORLD , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-EXCLUDE_FROM_WORLD
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-EXCLUDE_FROM_WORLD , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-EXCLUDE_FROM_WORLD)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

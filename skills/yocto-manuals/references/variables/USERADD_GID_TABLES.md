@@ -2,7 +2,7 @@
 
 # Variable `USERADD_GID_TABLES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies a password file to use for obtaining static group identification (`gid`) values when the OpenEmbedded build system adds a group to the system during package installation.
 
@@ -17,7 +17,7 @@ Note
 
 Setting the USERADDEXTENSION variable to “useradd-staticids” causes the build system to use static `gid` values.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-USERADD_GID_TABLES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-USERADD_GID_TABLES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

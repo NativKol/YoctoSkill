@@ -30,7 +30,7 @@ The respective populate_sdk_deb, populate_sdk_rpm, and populate_sdk_ipk classes 
 
 For more information on the cross-development toolchain generation, see the “Cross-Development Toolchain Generation” section in the Yocto Project Overview and Concepts Manual. For information on advantages gained when building a cross-development toolchain using the do_populate_sdk task, see the “Building an SDK Installer” section in the Yocto Project Application Development and the Extensible Software Development Kit (eSDK) manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-populate_sdk
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-populate_sdk)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

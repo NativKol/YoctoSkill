@@ -2,7 +2,7 @@
 
 # Variable `SOC_FAMILY`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A colon-separated list grouping together machines based upon the same family of SoC (System On Chip). You typically set this variable in a common `.inc` file that you include in the configuration files of all the machines.
 
@@ -10,7 +10,7 @@ Note
 
 You must include `conf/machine/include/soc-family.inc` for this variable to appear in MACHINEOVERRIDES.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SOC_FAMILY
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SOC_FAMILY)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

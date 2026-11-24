@@ -5,7 +5,10 @@ value a variable has when a task runs. Read this before claiming that a line "ad
 "sets" or "removes" something: whether a line has any effect depends on where it is
 parsed relative to every other assignment of the same variable, and on the operator.
 
-Sources are cited as `<manual>/<page>.md: <section>` (the local scarthgap manuals; online at
+Sources are cited as `<manual>/<page>.md: <section>`, paths under the offline scarthgap
+manuals in `yocto-manuals/references/manuals/` (read one section with
+`python3 scripts/ylookup.py --section <manual>/<page>.md "<section>"`, one keyword with
+`ylookup.py <NAME>`; online citation only:
 `https://docs.yoctoproject.org/scarthgap/<manual>/<page>.html`). Where the manual does not
 spell a detail out, the claim is marked **source** and was read from the scarthgap branch
 of poky (`meta/...`) or the BitBake 2.8 branch (`lib/bb/...`); confirm those on the user's

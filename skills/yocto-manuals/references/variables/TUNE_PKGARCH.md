@@ -2,7 +2,7 @@
 
 # Variable `TUNE_PKGARCH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The package architecture understood by the packaging system to define the architecture, ABI, and tuning of output packages. The specific tune is defined using the “_tune” override as follows:
 
@@ -18,7 +18,7 @@ TUNE_PKGARCH:tune-core2-32 = "core2-32"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TUNE_PKGARCH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TUNE_PKGARCH)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

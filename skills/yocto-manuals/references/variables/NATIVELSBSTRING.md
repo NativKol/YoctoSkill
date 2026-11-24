@@ -2,13 +2,13 @@
 
 # Variable `NATIVELSBSTRING`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A string identifying the host distribution. Strings consist of the host distributor ID followed by the release, as reported by the `lsb_release` tool or as read from `/etc/lsb-release`. For example, when running a build on Ubuntu 12.10, the value is “Ubuntu-12.10”. If this information is unable to be determined, the value resolves to “Unknown”.
 
 This variable is used by default to isolate native shared state packages for different distributions (e.g. to avoid problems with `glibc` version incompatibilities). Additionally, the variable is checked against SANITY_TESTED_DISTROS if that variable is set.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-NATIVELSBSTRING
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-NATIVELSBSTRING)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

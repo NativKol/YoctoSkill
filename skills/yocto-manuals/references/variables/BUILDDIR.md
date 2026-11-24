@@ -2,11 +2,11 @@
 
 # Variable `BUILDDIR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Points to the location of the Build Directory. You can define this directory indirectly through the oe-init-build-env script by passing in a Build Directory path when you run the script. If you run the script and do not provide a Build Directory path, the BUILDDIR defaults to `build` in the current directory.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BUILDDIR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BUILDDIR)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

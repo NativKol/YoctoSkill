@@ -2,7 +2,7 @@
 
 # Variable `MODULE_TARBALL_LINK_NAME`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The link name of the kernel module tarball. This variable is set in the `meta/classes-recipe/kernel-artifact-names.bbclass` file as follows:
 
@@ -20,7 +20,7 @@ KERNEL_ARTIFACT_LINK_NAME ?= "${MACHINE}"
 
 See the MACHINE variable for additional information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MODULE_TARBALL_LINK_NAME
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MODULE_TARBALL_LINK_NAME)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,7 +2,7 @@
 
 # Variable `INITSCRIPT_PARAMS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the options to pass to `update-rc.d`. Here is an example:
 
@@ -17,7 +17,7 @@ The variable’s default value is “defaults”, which is set in the update-rc.
 
 The value in INITSCRIPT_PARAMS is passed through to the `update-rc.d` command. For more information on valid parameters, please see the manual page: *update-rc.d*.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INITSCRIPT_PARAMS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INITSCRIPT_PARAMS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

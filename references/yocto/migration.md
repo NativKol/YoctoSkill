@@ -1,6 +1,6 @@
 # Release Awareness and Migration (Scarthgap Baseline)
 
-This collection is written against Yocto Project 5.0 "scarthgap" (LTS) with BitBake 2.8. Sources: ref-manual "Yocto Project Releases and the Stable Release Process" (chapter 3), migration-guides "Release 5.0 LTS (scarthgap)", "General Migration Considerations", and the 5.0 release notes. Other releases' migration guides are online at https://docs.yoctoproject.org/migration-guides/.
+This collection is written against Yocto Project 5.0 "scarthgap" (LTS) with BitBake 2.8. Sources: ref-manual "Yocto Project Releases and the Stable Release Process" (chapter 3), migration-guides "Release 5.0 LTS (scarthgap)", "General Migration Considerations", and the 5.0 release notes. Offline: `yocto-manuals/references/manuals/ref-manual/release-process.md` and `yocto-manuals/references/manuals/migration-guides/` (5.0 guide and 5.0.x release notes only; `ylookup.py --topic <words>` finds a section). Migration guides for other releases are not in the offline copy (online only, optional: docs.yoctoproject.org/migration-guides/).
 
 ## 1. Release Facts You Can Rely On
 
@@ -9,7 +9,7 @@ This collection is written against Yocto Project 5.0 "scarthgap" (LTS) with BitB
 - LTS releases named in the scarthgap manuals: 4.0 "kirkstone", 5.0 "scarthgap" (released April 2024, supported until April 2028), and 6.0 "wrynose" (released May 2026, supported until April 2030, per the latest scarthgap ref-manual 3.5). Kirkstone (April 2022 + four years) has reached end of life.
 - Releases between the LTSes: 4.1 langdale, 4.2 mickledore, 4.3 nanbield (before scarthgap); 5.1 styhead, 5.2 walnascar, 5.3 whinlatter (after it; the 5.0.16 release notes mark styhead and walnascar EOL). Version numbers jump at an LTS: there is no 5.4.
 - Scarthgap uses the BitBake 2.8 branch (release-notes-5.0 "bitbake: Branch: 2.8"). Scarthgap point releases are 5.0.x; the offline manuals are from 5.0.21.
-- Anything newer than this, including whether a release after 6.0 has shipped, is not in these manuals. Do not guess codenames or dates: check https://wiki.yoctoproject.org/wiki/Releases (and https://docs.yoctoproject.org/releases.html) and say you checked.
+- Anything newer than this, including whether a release after 6.0 has shipped, is not in these manuals. Do not guess codenames or dates: say that the offline manuals stop at what is listed here and the user should confirm newer release status themselves (the release list is online only, optional: wiki.yoctoproject.org/wiki/Releases).
 
 ## 2. Detect the Release from the Build, Not from Memory
 
@@ -30,7 +30,7 @@ If the user runs an EOL release, say so once, then answer for the release they a
 | Boundary | Change | What to do |
 | --- | --- | --- |
 | 3.4 honister (BitBake 1.52) | Override separator `_` replaced by `:` (`FILES:${PN}`, `do_install:append`, `RDEPENDS:${PN}`); the old `_append`/`_prepend`/`_remove` forms fail to parse from 3.4 on (BitBake manual 3.3.1 note). | Convert with `scripts/contrib/convert-overrides.py` from OE-Core, then review: names like `PREFERRED_PROVIDER_virtual/kernel`, `LAYERSERIES_COMPAT_<col>`, `SRCREV_<name>` keep their underscore. Layers for 3.3 hardknott or older use the old syntax. |
-| 4.0 kirkstone | `LICENSE_FLAGS_WHITELIST` became `LICENSE_FLAGS_ACCEPTED` and SPDX license identifiers (`GPL-2.0-only`) are expected in `LICENSE` (4.0 migration guide, online only). | Rename variables in distro/local conf; update `LICENSE` strings. |
+| 4.0 kirkstone | `LICENSE_FLAGS_WHITELIST` became `LICENSE_FLAGS_ACCEPTED` and SPDX license identifiers (`GPL-2.0-only`) are expected in `LICENSE` (4.0 migration guide; not in the offline copy). | Rename variables in distro/local conf; update `LICENSE` strings. |
 | 5.0 scarthgap | `CVE_CHECK_IGNORE` deprecated for `CVE_STATUS`; `virtual/` in runtime variables warns. | See section 4. |
 | 5.1 styhead (after scarthgap) | Sources unpack into `UNPACKDIR`; git recipes use `S = "${UNPACKDIR}/git"`. | A layer claiming both scarthgap and a 5.1+ series needs per-release handling; keep `S = "${WORKDIR}/git"` on scarthgap. |
 

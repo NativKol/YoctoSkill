@@ -2,13 +2,13 @@
 
 # Variable `MACHINE_FEATURES_BACKFILL_CONSIDERED`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A list of space-separated features from MACHINE_FEATURES_BACKFILL that should not be backfilled (i.e. added to MACHINE_FEATURES) during the build.
 
 This corresponds to an opt-out mechanism. When new default machine features are introduced, machine definition maintainers can review (consider) them and decide to exclude them from the backfilled features. Therefore, the combination of MACHINE_FEATURES_BACKFILL and MACHINE_FEATURES_BACKFILL_CONSIDERED makes it possible to add new default features without breaking existing machine definitions.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MACHINE_FEATURES_BACKFILL_CONSIDERED
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MACHINE_FEATURES_BACKFILL_CONSIDERED)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

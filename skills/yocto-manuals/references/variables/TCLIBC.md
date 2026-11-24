@@ -2,13 +2,13 @@
 
 # Variable `TCLIBC`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the GNU standard C library (`libc`) variant to use during the build process.
 
 You can select “glibc”, “musl”, “newlib”, or “baremetal”.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TCLIBC
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TCLIBC)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

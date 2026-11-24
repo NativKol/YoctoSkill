@@ -2,7 +2,7 @@
 
 # Variable `TEST_TARGET`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the target controller to use when running tests against a test image. The default controller to use is “qemu”:
 
@@ -25,7 +25,7 @@ This argument is defined in `meta/lib/oeqa/controllers/simpleremote.py`.
 
 For information on running tests on hardware, see the “Enabling Runtime Tests on Hardware” section in the Yocto Project Test Environment Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TEST_TARGET
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TEST_TARGET)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,11 +2,11 @@
 
 # Variable `FILE_LAYERNAME`
 
-## BitBake User Manual
+### BitBake User Manual
 
 During parsing and task execution, this is set to the name of the layer containing the recipe file. Code can use this to identify which layer a recipe is from.
 
-Source: https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-FILE_LAYERNAME
+Offline source: yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-FILE_LAYERNAME)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

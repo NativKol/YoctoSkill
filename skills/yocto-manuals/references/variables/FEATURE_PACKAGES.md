@@ -2,7 +2,7 @@
 
 # Variable `FEATURE_PACKAGES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Defines one or more packages to include in an image when a specific item is included in IMAGE_FEATURES. When setting the value, FEATURE_PACKAGES should have the name of the feature item as an override. Here is an example:
 
@@ -17,7 +17,7 @@ Note
 
 Packages installed by features defined through FEATURE_PACKAGES are often package groups. While similarly named, you should not confuse the FEATURE_PACKAGES variable with package groups, which are discussed elsewhere in the documentation.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FEATURE_PACKAGES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FEATURE_PACKAGES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

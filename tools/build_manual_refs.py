@@ -132,10 +132,10 @@ def collect() -> dict[tuple[str, str], tuple[str, str]]:
     for name in sorted(set(yv) | set(bv)):
         parts, urls = [], []
         if name in yv:
-            parts.append("## Yocto Project Reference Manual\n\n" + yv[name])
+            parts.append("### Yocto Project Reference Manual\n\n" + yv[name])
             urls.append(f"{YP}/ref-manual/variables.html#term-{name}")
         if name in bv:
-            parts.append("## BitBake User Manual\n\n" + bv[name])
+            parts.append("### BitBake User Manual\n\n" + bv[name])
             urls.append(f"{BB}/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-{name}")
         kw[("var", name)] = ("\n\n".join(parts), " , ".join(urls))
     cls = split_sections(MAN / "ref-manual" / "classes.md", r"^##### 5\.\d+ `([^`]+)`$")
@@ -175,8 +175,20 @@ def path_for(kind: str, name: str) -> Path:
 TITLE = {"var": "Variable", "class": "Class", "task": "Task", "qa": "QA check", "feature": "Feature"}
 
 
+def offline_of(url: str) -> str:
+    """Map a docs.yoctoproject.org URL to its offline page in the yocto-manuals skill."""
+    pages = []
+    for one in url.split(" , "):
+        path = one.split("#", 1)[0]
+        for base in (YP + "/", BB + "/"):
+            if path.startswith(base):
+                pages.append("yocto-manuals/references/manuals/" + path[len(base):].replace(".html", ".md"))
+    return ", ".join(dict.fromkeys(pages))
+
+
 def render_entry(kind: str, name: str, body: str, url: str, level: str = "#") -> str:
-    return f"{level} {TITLE[kind]} `{name}`\n\n{body.strip()}\n\nSource: {url}\n"
+    return (f"{level} {TITLE[kind]} `{name}`\n\n{body.strip()}\n\n"
+            f"Offline source: {offline_of(url)} (online: {url})\n")
 
 
 def first_sentence(body: str) -> str:
@@ -250,6 +262,14 @@ def build(check: bool) -> int:
         parts.append("## Contents\n\n" + "\n".join(toc) + "\n")
         parts.extend(entries)
         want[kwfile.parent / "references" / "keywords.md"] = "\n".join(parts)
+
+    # Every skill gets the offline lookup script (single source: tools/ylookup.py).
+    lookup_src = (REPO / "tools" / "ylookup.py").read_text(encoding="utf-8")
+    lookup_src = lookup_src.replace(
+        "#!/usr/bin/env python3\n",
+        "#!/usr/bin/env python3\n# Generated copy of tools/ylookup.py by tools/build_manual_refs.py. Do not edit.\n", 1)
+    for skill_md in sorted((REPO / "skills").glob("*/SKILL.md")):
+        want[skill_md.parent / "scripts" / "ylookup.py"] = lookup_src
 
     # Remove stale generated per-keyword files.
     stale = []

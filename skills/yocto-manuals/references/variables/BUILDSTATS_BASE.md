@@ -2,11 +2,11 @@
 
 # Variable `BUILDSTATS_BASE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Points to the location of the directory that holds build statistics when you use and enable the buildstats class. The BUILDSTATS_BASE directory defaults to `${`TMPDIR`}/buildstats/`.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BUILDSTATS_BASE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BUILDSTATS_BASE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

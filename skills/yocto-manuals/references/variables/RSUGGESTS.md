@@ -2,7 +2,7 @@
 
 # Variable `RSUGGESTS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A list of additional packages that you can suggest for installation by the package manager at the time a package is installed. Not all package managers support this functionality. This feature takes effect only when the package manager is being used to install packages on the target system from a package feed.
 
@@ -15,7 +15,7 @@ RSUGGESTS:${PN} = "useful_package another_package"
 
 For more information on package management, see the Using Runtime Package Management section of the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RSUGGESTS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-RSUGGESTS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

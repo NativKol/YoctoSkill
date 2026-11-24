@@ -2,15 +2,15 @@
 
 # Variable `BB_STRICT_CHECKSUM`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 See BB_STRICT_CHECKSUM in the BitBake manual.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Sets a more strict checksum mechanism for non-local URLs. Setting this variable to a value causes BitBake to report an error if it encounters a non-local URL that does not have at least one checksum specified.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_STRICT_CHECKSUM , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_STRICT_CHECKSUM
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_STRICT_CHECKSUM , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_STRICT_CHECKSUM)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

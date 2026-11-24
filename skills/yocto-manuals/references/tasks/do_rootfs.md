@@ -4,7 +4,7 @@
 
 Creates the root filesystem (file and directory structure) for an image. See the “Image Generation” section in the Yocto Project Overview and Concepts Manual for more information on how the root filesystem is created.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-rootfs
+Offline source: yocto-manuals/references/manuals/ref-manual/tasks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-rootfs)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

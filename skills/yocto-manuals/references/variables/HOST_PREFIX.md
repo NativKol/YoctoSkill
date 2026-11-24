@@ -2,11 +2,11 @@
 
 # Variable `HOST_PREFIX`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the prefix for the cross-compile toolchain. HOST_PREFIX is normally the same as TARGET_PREFIX.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-HOST_PREFIX
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-HOST_PREFIX)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

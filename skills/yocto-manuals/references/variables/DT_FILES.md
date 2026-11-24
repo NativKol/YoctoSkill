@@ -2,7 +2,7 @@
 
 # Variable `DT_FILES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Space-separated list of device tree source files to compile using a recipe that inherits the devicetree class. These are relative to the DT_FILES_PATH.
 
@@ -10,7 +10,7 @@ For convenience, both `.dts` and `.dtb` extensions can be used.
 
 Use an empty string (default) to build all device tree sources within the DT_FILES_PATH directory.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DT_FILES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DT_FILES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

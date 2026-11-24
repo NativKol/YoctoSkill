@@ -2,11 +2,11 @@
 
 # Variable `AUTOTOOLS_SCRIPT_PATH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When using the autotools* class, the AUTOTOOLS_SCRIPT_PATH variable stores the location of the different scripts used by the Autotools build system. The default value for this variable is S.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-AUTOTOOLS_SCRIPT_PATH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-AUTOTOOLS_SCRIPT_PATH)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

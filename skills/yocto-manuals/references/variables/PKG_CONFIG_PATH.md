@@ -2,11 +2,11 @@
 
 # Variable `PKG_CONFIG_PATH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The path to `pkg-config` files for the current build context. `pkg-config` reads this variable from the environment.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PKG_CONFIG_PATH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PKG_CONFIG_PATH)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

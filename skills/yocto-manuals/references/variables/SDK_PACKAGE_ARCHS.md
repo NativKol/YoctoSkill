@@ -2,11 +2,11 @@
 
 # Variable `SDK_PACKAGE_ARCHS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies a list of architectures compatible with the SDK machine. This variable is set automatically and should not normally be hand-edited. Entries are separated using spaces and listed in order of priority. The default value for SDK_PACKAGE_ARCHS is “all any noarch ${SDK_ARCH}-${SDKPKGSUFFIX}”.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SDK_PACKAGE_ARCHS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SDK_PACKAGE_ARCHS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

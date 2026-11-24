@@ -2,11 +2,11 @@
 
 # Variable `LOCALE_UTF8_IS_DEFAULT`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 If set, locale names are renamed such that those lacking an explicit encoding (e.g. `en_US`) will always be UTF-8, and non-UTF-8 encodings are renamed to, e.g., `en_US.ISO-8859-1`. Otherwise, the encoding is specified by Glibc’s `SUPPORTED` file. This is not supported for pre-compiled locales.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LOCALE_UTF8_IS_DEFAULT
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-LOCALE_UTF8_IS_DEFAULT)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

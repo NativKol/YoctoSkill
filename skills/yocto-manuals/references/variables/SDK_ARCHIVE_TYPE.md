@@ -2,7 +2,7 @@
 
 # Variable `SDK_ARCHIVE_TYPE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the type of archive to create for the SDK. Valid values:
 
@@ -12,7 +12,7 @@ Specifies the type of archive to create for the SDK. Valid values:
 
 Only one archive type can be specified.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SDK_ARCHIVE_TYPE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SDK_ARCHIVE_TYPE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

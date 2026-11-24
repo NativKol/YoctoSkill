@@ -2,7 +2,7 @@
 
 # Variable `SIGGEN_EXCLUDERECIPES_ABISAFE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A list of recipes that are completely stable and will never change. The ABI for the recipes in the list are presented by output from the tasks run to build the recipe. Use of this variable is one way to remove dependencies from one recipe on another that affect task signatures and thus force rebuilds when the recipe changes.
 
@@ -10,7 +10,7 @@ Note
 
 If you add an inappropriate variable to this list, the software might break at runtime if the interface of the recipe was changed after the other had been built.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SIGGEN_EXCLUDERECIPES_ABISAFE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SIGGEN_EXCLUDERECIPES_ABISAFE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

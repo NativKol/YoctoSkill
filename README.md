@@ -46,6 +46,26 @@ project's release first (`LAYERSERIES_COMPAT_*`, the poky or openembedded-core b
 another release, regenerate the manuals (see Development) and review the facts marked as
 release-specific.
 
+## Offline mode
+
+The skills need no internet. Everything an agent looks up is a file in this repository:
+the scarthgap manuals in `skills/yocto-manuals/references/`, and in every skill a
+`references/keywords.md` glossary plus `scripts/ylookup.py`, which prints only the
+entry or section asked for, to keep token use low:
+
+```bash
+python3 scripts/ylookup.py IMAGE_INSTALL do_rootfs core-image   # keyword entries
+python3 scripts/ylookup.py --find RRECOMMENDS                   # search keyword names and summaries
+python3 scripts/ylookup.py --topic "read-only root"             # find manual sections
+python3 scripts/ylookup.py --section dev-manual/layers.md "Appending Other Layers"
+python3 scripts/ylookup.py --grep BB_DANGLINGAPPENDS --in ref-manual
+```
+
+URLs in the files are citations only. A skill installed on its own still has its own
+`keywords.md`. For keywords outside it, install `yocto-manuals` next to it (it is
+installed automatically with the plugin) or set `YOCTO_MANUALS` to its `references/`
+folder.
+
 ## Installation
 
 Every skill folder is self-contained, so a skill works when its folder is installed on
@@ -53,10 +73,11 @@ its own.
 
 ### Claude Code
 
-The repository is a Claude Code plugin:
+The repository is a Claude Code plugin. Clone it, then add the clone as a local
+marketplace (no network needed after cloning):
 
 ```bash
-/plugin marketplace add NativKol/YoctoSkill
+/plugin marketplace add /path/to/YoctoSkill
 /plugin install yocto-skill@yoctoskill
 ```
 
@@ -101,6 +122,7 @@ Why does do_rootfs fail with "nothing provides" for my package?
 - `references/`: source of truth for the shared summary references
 - `tools/convert_manuals.py`: converts the docs.yoctoproject.org `singleindex.html` pages to Markdown
 - `tools/build_manual_refs.py`: splits the manuals per keyword and generates each skill's `keywords.md`
+- `tools/ylookup.py`: the offline lookup script (copied into every skill's `scripts/`)
 - `tools/sync_references.py`: copies shared references into the skills that link them
 - `tools/validate_skills.py`: frontmatter, links, drift of both generators, README catalog, manifests and disclosure scan
 - `examples/`, `evals/`: worked examples and eval cases with graders

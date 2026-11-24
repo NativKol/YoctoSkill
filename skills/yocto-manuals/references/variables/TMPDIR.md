@@ -2,7 +2,7 @@
 
 # Variable `TMPDIR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This variable is the base directory the OpenEmbedded build system uses for all build output and intermediate files (other than the shared state cache). By default, the TMPDIR variable points to `tmp` within the Build Directory.
 
@@ -17,7 +17,7 @@ An example use for this scenario is to set TMPDIR to a local disk, which does no
 
 The filesystem used by TMPDIR must have standard filesystem semantics (i.e. mixed-case files are unique, POSIX file locking, and persistent inodes). Due to various issues with NFS and bugs in some implementations, NFS does not meet this minimum requirement. Consequently, TMPDIR cannot be on NFS.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TMPDIR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TMPDIR)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

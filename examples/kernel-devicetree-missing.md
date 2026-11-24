@@ -19,6 +19,7 @@ My custom board's DTB never shows up in tmp/deploy/images.
 - Editing the image recipe before proving the kernel built the DTB.
 - Guessing the DTB path without checking the kernel source tree and `KERNEL_DTBVENDORED`.
 - Grepping `bitbake -e` with a pattern that cannot match full variable names (for example `^(KERNEL|UBOOT)=`).
+- Quoting variable behavior from memory, or reading a whole manual page instead of the one entry.
 
 ## Expected Answer Pattern
 
@@ -26,6 +27,7 @@ My custom board's DTB never shows up in tmp/deploy/images.
 - Check `KERNEL_DEVICETREE` (plain `.dtb` names preferred; the vendor subdirectory is dropped on install unless `KERNEL_DTBVENDORED = "true"`), and that the selected kernel's Makefiles know the DTB.
 - Check that the append that sets it targets the selected kernel recipe.
 - Build and inspect deploy output.
+- Grounds each keyword claim in the offline manual entry (`python3 scripts/ylookup.py KERNEL_DEVICETREE KERNEL_DTBVENDORED`, run from the skill folder) and cites it; it does not fetch docs online.
 
 ## Validation
 

@@ -2,7 +2,7 @@
 
 # Variable `NO_GENERIC_LICENSE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Avoids QA errors when you use a non-common, non-CLOSED license in a recipe. There are packages, such as the linux-firmware package, with many licenses that are not in any way common. Also, new licenses are added occasionally to avoid introducing a lot of common license files, which are only applicable to a specific package. NO_GENERIC_LICENSE is used to allow copying a license that does not exist in common licenses.
 
@@ -20,7 +20,7 @@ NO_GENERIC_LICENSE[Firmware-Abilis] = "LICENSE.Abilis.txt"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-NO_GENERIC_LICENSE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-NO_GENERIC_LICENSE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

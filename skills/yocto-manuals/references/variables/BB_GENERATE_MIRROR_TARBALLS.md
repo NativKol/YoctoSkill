@@ -2,7 +2,7 @@
 
 # Variable `BB_GENERATE_MIRROR_TARBALLS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Causes tarballs of the source control repositories (e.g. Git repositories), including metadata, to be placed in the DL_DIR directory.
 
@@ -17,7 +17,7 @@ Set this variable in your `local.conf` file in the Build Directory.
 
 Once you have the tarballs containing your source files, you can clean up your DL_DIR directory by deleting any Git or other source control work directories.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Causes tarballs of the Git repositories, including the Git metadata, to be placed in the DL_DIR directory. Anyone wishing to create a source mirror would want to enable this variable.
 
@@ -28,7 +28,7 @@ BB_GENERATE_MIRROR_TARBALLS = "1"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_GENERATE_MIRROR_TARBALLS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_GENERATE_MIRROR_TARBALLS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_GENERATE_MIRROR_TARBALLS , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_GENERATE_MIRROR_TARBALLS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

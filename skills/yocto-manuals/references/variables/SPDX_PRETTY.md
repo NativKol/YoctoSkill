@@ -2,7 +2,7 @@
 
 # Variable `SPDX_PRETTY`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This option makes the SPDX output more human-readable, using identation and newlines, instead of the default output in a single line:
 
@@ -13,7 +13,7 @@ SPDX_PRETTY = "1"
 
 The generated SPDX files are approximately 20% bigger, but this option is recommended if you want to inspect the SPDX output files with a text editor.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SPDX_PRETTY
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SPDX_PRETTY)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

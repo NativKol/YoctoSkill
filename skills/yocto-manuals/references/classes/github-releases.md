@@ -6,7 +6,7 @@ For recipes that fetch release tarballs from github, the github-releases class s
 
 To use it, add “github-releases” to the inherit line in the recipe, and if the default value of GITHUB_BASE_URI is not suitable, then set your own value in the recipe. You should then use `${GITHUB_BASE_URI}` in the value you set for SRC_URI within the recipe.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-github-releases
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-github-releases)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,17 +2,17 @@
 
 # Variable `BB_SIGNATURE_HANDLER`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 See BB_SIGNATURE_HANDLER in the BitBake manual.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Defines the name of the signature handler BitBake uses. The signature handler defines the way stamp files are created and handled, if and how the signature is incorporated into the stamps, and how the signature itself is generated.
 
 A new signature handler can be added by injecting a class derived from the `SignatureGenerator` class into the global namespace.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_SIGNATURE_HANDLER , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_SIGNATURE_HANDLER
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BB_SIGNATURE_HANDLER , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-BB_SIGNATURE_HANDLER)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

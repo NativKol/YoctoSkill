@@ -2,7 +2,7 @@
 
 # Variable `INITRAMFS_NAME`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The base name of the initial RAM filesystem image. This variable is set in the `meta/classes-recipe/kernel-artifact-names.bbclass` file as follows:
 
@@ -13,7 +13,7 @@ INITRAMFS_NAME ?= "initramfs-${KERNEL_ARTIFACT_NAME}"
 
 See KERNEL_ARTIFACT_NAME for additional information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INITRAMFS_NAME
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-INITRAMFS_NAME)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,11 +2,11 @@
 
 # Variable `DISTRO_FEATURES_NATIVESDK`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies a list of features that should be included in DISTRO_FEATURES when building nativesdk recipes. This variable is used in addition to the features filtered using the DISTRO_FEATURES_FILTER_NATIVESDK variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DISTRO_FEATURES_NATIVESDK
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DISTRO_FEATURES_NATIVESDK)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,11 +2,11 @@
 
 # Variable `FIT_GENERATE_KEYS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Decides whether to generate the keys for signing the FIT image if they don’t already exist. The keys are created in UBOOT_SIGN_KEYDIR. The default value is set to “0” by the kernel-fitimage class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FIT_GENERATE_KEYS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FIT_GENERATE_KEYS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

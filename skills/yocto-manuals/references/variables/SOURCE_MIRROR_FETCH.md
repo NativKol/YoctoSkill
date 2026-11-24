@@ -2,7 +2,7 @@
 
 # Variable `SOURCE_MIRROR_FETCH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When you are fetching files to create a mirror of sources (i.e. creating a source mirror), setting SOURCE_MIRROR_FETCH to “1” in your `local.conf` configuration file ensures the source for all recipes are fetched regardless of whether or not a recipe is compatible with the configuration. A recipe is considered incompatible with the currently configured machine when either or both the COMPATIBLE_MACHINE variable and COMPATIBLE_HOST variables specify compatibility with a machine other than that of the current machine or host.
 
@@ -10,7 +10,7 @@ Note
 
 Do not set the SOURCE_MIRROR_FETCH variable unless you are creating a source mirror. In other words, do not set the variable during a normal build.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SOURCE_MIRROR_FETCH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SOURCE_MIRROR_FETCH)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,15 +2,15 @@
 
 # Variable `FAKEROOT`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 See FAKEROOT in the BitBake manual.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Contains the command to use when running a shell script in a fakeroot environment. The FAKEROOT variable is obsolete and has been replaced by the other `FAKEROOT*` variables. See these entries in the glossary for more information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FAKEROOT , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-FAKEROOT
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FAKEROOT , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-FAKEROOT)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -192,6 +192,8 @@ documented convention supports.
 
 ## 9. Practices borrowed from other review guides
 
+Credits only: the summaries below are complete for this skill's purposes, and nothing here needs to be fetched.
+
 - **yocto-recipe-review** (this repository): its "Findings to Prioritize" list (license,
   `AUTOREV`, `DEPENDS` vs `RDEPENDS`, `FILES`, `${D}`, host contamination,
   `INSANE_SKIP`, patch status, bbappend scope) seeds the recipe checks in

@@ -2,7 +2,7 @@
 
 # Variable `CLASSOVERRIDE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 An internal variable specifying the special class override that should currently apply (e.g. “class-target”, “class-native”, and so forth). The classes that use this variable (e.g. native, nativesdk, and so forth) set the variable to appropriate values.
 
@@ -29,7 +29,7 @@ FOO = "other"
 
 The underlying mechanism behind CLASSOVERRIDE is simply that it is included in the default value of OVERRIDES.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CLASSOVERRIDE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CLASSOVERRIDE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

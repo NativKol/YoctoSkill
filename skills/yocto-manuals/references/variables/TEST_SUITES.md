@@ -2,7 +2,7 @@
 
 # Variable `TEST_SUITES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 An ordered list of tests (modules) to run against an image when performing automated runtime testing.
 
@@ -37,7 +37,7 @@ TEST_SUITES = "test_A test_B"
 
 For more information on testing images, see the “Performing Automated Runtime Testing” section in the Yocto Project Test Environment Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TEST_SUITES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TEST_SUITES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

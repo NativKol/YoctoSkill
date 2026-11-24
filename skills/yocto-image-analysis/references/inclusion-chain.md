@@ -4,8 +4,10 @@ The chain from image recipe variables to the files in the root filesystem, with 
 keyword that can add, remove or swap a package along the way. Use it to answer "why is X
 in the image", "why is X missing", and "what else did this change pull in".
 
-Citations: `<manual>/<page>.md: <section or glossary entry>` from the local scarthgap
-manuals (online: `https://docs.yoctoproject.org/scarthgap/...`). **source** marks details
+Citations: `<manual>/<page>.md: <section or glossary entry>`, paths under the offline
+scarthgap manuals in `yocto-manuals/references/manuals/` (glossary entries:
+`python3 scripts/ylookup.py <NAME>`; online citation only:
+`https://docs.yoctoproject.org/scarthgap/...`). **source** marks details
 read from the scarthgap branch of poky (`meta/classes-recipe/image.bbclass`,
 `core-image.bbclass`, `packagegroup.bbclass`, `meta/lib/oe/packagegroup.py`,
 `meta/conf/bitbake.conf`); confirm with `bitbake-getvar -r <image> <VAR>` on the user's tree.

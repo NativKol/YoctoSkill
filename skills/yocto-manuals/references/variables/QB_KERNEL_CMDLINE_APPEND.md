@@ -2,7 +2,7 @@
 
 # Variable `QB_KERNEL_CMDLINE_APPEND`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The QB_KERNEL_CMDLINE_APPEND variable controls the options passed to the Linux kernel’s `-append` QEMU options, which controls the Linux kernel command-line.
 
@@ -13,7 +13,7 @@ QB_KERNEL_CMDLINE_APPEND = "console=ttyS0"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-QB_KERNEL_CMDLINE_APPEND
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-QB_KERNEL_CMDLINE_APPEND)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

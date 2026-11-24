@@ -2,7 +2,7 @@
 
 # Variable `KERNEL_FEATURES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Includes additional kernel metadata. In the OpenEmbedded build system, the default Board Support Packages (BSPs) Metadata is provided through the KMACHINE and KBRANCH variables. You can use the KERNEL_FEATURES variable from within the kernel recipe or kernel append file to further add metadata for all BSPs or specific BSPs.
 
@@ -19,7 +19,7 @@ KERNEL_FEATURES:append:qemux86-64 = " cfg/sound.scc"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_FEATURES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_FEATURES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

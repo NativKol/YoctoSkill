@@ -2,7 +2,7 @@
 
 # Variable `PKGDATA_DIR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Points to a shared, global-state directory that holds data generated during the packaging process. During the packaging process, the do_packagedata task packages data for each recipe and installs it into this shared area. This directory defaults to the following, which you should not change:
 
@@ -13,7 +13,7 @@ ${TMPDIR}/pkgdata/${MACHINE}
 
 For examples of how this data is used, see the “Automatically Added Runtime Dependencies” section in the Yocto Project Overview and Concepts Manual and the “Viewing Package Information with oe-pkgdata-util” section in the Yocto Project Development Tasks Manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PKGDATA_DIR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PKGDATA_DIR)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

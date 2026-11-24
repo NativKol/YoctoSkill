@@ -2,11 +2,11 @@
 
 # Variable `WIRELESS_DAEMON`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 For `connman` and `packagegroup-base`, specifies the wireless daemon to use. The default is “wpa-supplicant” (note that the value uses a dash and not an underscore).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-WIRELESS_DAEMON
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-WIRELESS_DAEMON)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

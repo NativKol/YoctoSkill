@@ -6,7 +6,7 @@ The oelint class is an obsolete lint checking tool available in `meta/classes` i
 
 There are some classes that could be generally useful in OE-Core but are never actually used within OE-Core itself. The oelint class is one such example. However, being aware of this class can reduce the proliferation of different versions of similar classes across multiple layers.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-oelint
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-oelint)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

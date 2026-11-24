@@ -2,7 +2,7 @@
 
 # Variable `SDK_EXT_TYPE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Controls whether or not shared state artifacts are copied into the extensible SDK. The default value of “full” copies all of the required shared state artifacts into the extensible SDK. The value “minimal” leaves these artifacts out of the SDK.
 
@@ -10,7 +10,7 @@ Note
 
 If you set the variable to “minimal”, you need to ensure SSTATE_MIRRORS is set in the SDK’s configuration to enable the artifacts to be fetched as needed.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SDK_EXT_TYPE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SDK_EXT_TYPE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

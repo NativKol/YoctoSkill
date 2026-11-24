@@ -2,7 +2,7 @@
 
 # Variable `TUNEVALID[feature]`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies a valid CPU or Application Binary Interface (ABI) tuning feature. The specified feature is stored as a flag. Valid features are specified in the machine include files (e.g. `meta/conf/machine/include/arm/arch-arm.inc`). Here is an example from that file:
 
@@ -13,7 +13,7 @@ TUNEVALID[bigendian] = "Enable big-endian mode."
 
 See the machine include files in the Source Directory for these features.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TUNEVALID[feature]
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TUNEVALID[feature])
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

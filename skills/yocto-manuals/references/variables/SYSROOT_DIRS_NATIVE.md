@@ -2,7 +2,7 @@
 
 # Variable `SYSROOT_DIRS_NATIVE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Extra directories staged into the sysroot by the do_populate_sysroot task for `-native` recipes, in addition to those specified in SYSROOT_DIRS. By default, the following extra directories are staged:
 
@@ -23,7 +23,7 @@ Note
 
 Programs built by `-native` recipes run directly from the sysroot (STAGING_DIR_NATIVE), which is why additional directories containing program executables and supporting files need to be staged.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SYSROOT_DIRS_NATIVE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SYSROOT_DIRS_NATIVE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

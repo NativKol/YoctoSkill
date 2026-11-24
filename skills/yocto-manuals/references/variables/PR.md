@@ -2,7 +2,7 @@
 
 # Variable `PR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The revision of the recipe. The default value for this variable is “r0”. Subsequent revisions of the recipe conventionally have the values “r1”, “r2”, and so forth. When PV increases, PR is conventionally reset to “r0”.
 
@@ -18,11 +18,11 @@ PR does not need to be increased for changes that do not change the package cont
 
 Because manually managing PR can be cumbersome and error-prone, an automated solution exists. See the “Working With a PR Service” section in the Yocto Project Development Tasks Manual for more information.
 
-## BitBake User Manual
+### BitBake User Manual
 
 The revision of the recipe.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PR , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PR , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PR)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

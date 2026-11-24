@@ -2,7 +2,7 @@
 
 # Variable `IMGDEPLOYDIR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the image class directly or through the core-image class, the IMGDEPLOYDIR points to a temporary work area for deployed files that is set in the `image` class as follows:
 
@@ -13,7 +13,7 @@ IMGDEPLOYDIR = "${WORKDIR}/deploy-${PN}-image-complete"
 
 Recipes inheriting the image class should copy files to be deployed into IMGDEPLOYDIR, and the class will take care of copying them into DEPLOY_DIR_IMAGE afterwards.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMGDEPLOYDIR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMGDEPLOYDIR)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,7 +2,7 @@
 
 # Variable `SDK_TITLE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 The title to be printed when running the SDK installer. By default, this title is based on the DISTRO_NAME or DISTRO variable and is set in the populate_sdk_base class as follows:
 
@@ -15,7 +15,7 @@ For the default distribution “poky”, SDK_TITLE is set to “Poky (Yocto Proj
 
 For information on how to change this default title, see the “Changing the Extensible SDK Installer Title” section in the Yocto Project Application Development and the Extensible Software Development Kit (eSDK) manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SDK_TITLE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SDK_TITLE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

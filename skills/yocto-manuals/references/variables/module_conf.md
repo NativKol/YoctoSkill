@@ -2,7 +2,7 @@
 
 # Variable `module_conf`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies *modprobe.d(5)* syntax lines for inclusion in the `/etc/modprobe.d/modname.conf` file.
 
@@ -28,7 +28,7 @@ module_conf_mymodule = "options mymodule arg1=val1 arg2=val2"
 
 For information on how to specify kernel modules to auto-load on boot, see the KERNEL_MODULE_AUTOLOAD variable.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-module_conf
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-module_conf)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

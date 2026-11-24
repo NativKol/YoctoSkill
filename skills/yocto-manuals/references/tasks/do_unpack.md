@@ -4,7 +4,7 @@
 
 Unpacks the source code into a working directory pointed to by `${`WORKDIR`}`. The S variable also plays a role in where unpacked source files ultimately reside. For more information on how source files are unpacked, see the “Source Fetching” section in the Yocto Project Overview and Concepts Manual and also see the WORKDIR and S variable descriptions.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-unpack
+Offline source: yocto-manuals/references/manuals/ref-manual/tasks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-unpack)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

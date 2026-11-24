@@ -2,7 +2,7 @@
 
 # Variable `MLPREFIX`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies a prefix has been added to PN to create a special version of a recipe or package (i.e. a Multilib version). The variable is used in places where the prefix needs to be added to or removed from a name (e.g. the BPN variable). MLPREFIX gets set when a prefix has been added to PN.
 
@@ -24,7 +24,7 @@ do_foo[depends] += "${MLPREFIX}recipe:do_foo"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MLPREFIX
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-MLPREFIX)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

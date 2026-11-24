@@ -2,11 +2,11 @@
 
 # Variable `CONFLICT_TUNE_FEATURES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the features_check class, this variable identifies tune features that would be in conflict should the recipe be built. In other words, if the CONFLICT_TUNE_FEATURES variable lists a feature that also appears in TUNE_FEATURES within the current configuration, then the recipe will be skipped, and if the build system attempts to build the recipe then an error will be triggered.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CONFLICT_TUNE_FEATURES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CONFLICT_TUNE_FEATURES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

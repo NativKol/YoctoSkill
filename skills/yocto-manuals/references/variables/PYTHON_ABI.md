@@ -2,13 +2,13 @@
 
 # Variable `PYTHON_ABI`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When used by recipes that inherit the setuptools3 class, denotes the Application Binary Interface (ABI) currently in use for Python. By default, the ABI is “m”. You do not have to set this variable as the OpenEmbedded build system sets it for you.
 
 The OpenEmbedded build system uses the ABI to construct directory names used when installing the Python headers and libraries in sysroot (e.g. `.../python3.3m/...`).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PYTHON_ABI
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PYTHON_ABI)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

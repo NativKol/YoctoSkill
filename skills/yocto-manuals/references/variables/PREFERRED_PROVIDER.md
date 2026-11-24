@@ -2,7 +2,7 @@
 
 # Variable `PREFERRED_PROVIDER`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 If multiple recipes provide the same item, this variable determines which recipe is preferred and thus provides the item (i.e. the preferred provider). You should always suffix this variable with the name of the provided item. And, you should define the variable using the preferred recipe’s name (PN). Here is a common example:
 
@@ -27,7 +27,7 @@ Note
 
 If you use a `virtual/\*` item with PREFERRED_PROVIDER, then any recipe that PROVIDES that item but is not selected (defined) by PREFERRED_PROVIDER is prevented from building, which is usually desirable since this mechanism is designed to select between mutually exclusive alternative providers.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Determines which recipe should be given preference when multiple recipes provide the same item. You should always suffix the variable with the name of the provided item, and you should set it to the PN of the recipe to which you want to give precedence. Some examples:
 
@@ -38,7 +38,7 @@ PREFERRED_PROVIDER_virtual/libgl ?= "mesa"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PREFERRED_PROVIDER , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PREFERRED_PROVIDER
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PREFERRED_PROVIDER , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PREFERRED_PROVIDER)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

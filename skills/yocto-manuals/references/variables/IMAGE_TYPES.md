@@ -2,7 +2,7 @@
 
 # Variable `IMAGE_TYPES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the complete list of supported image types by default:
 
@@ -90,7 +90,7 @@ Specifies the complete list of supported image types by default:
 
 For more information about these types of images, see `meta/classes-recipe/image_types*.bbclass` in the Source Directory.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_TYPES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_TYPES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,7 +2,7 @@
 
 # Variable `UPSTREAM_CHECK_COMMITS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 You can perform a per-recipe check for what the latest upstream source code version is by calling `devtool latest-version recipe`. If the recipe source code is provided from Git repositories, but releases are not identified by Git tags, set UPSTREAM_CHECK_COMMITS to `1` in the recipe, and the OpenEmbedded build system will compare the latest commit with the one currently specified by the recipe (SRCREV):
 
@@ -11,7 +11,7 @@ UPSTREAM_CHECK_COMMITS = "1"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UPSTREAM_CHECK_COMMITS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UPSTREAM_CHECK_COMMITS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -35,13 +35,20 @@ Interactive tasks (`menuconfig`, `devshell`) are for the human; tell them to run
 - Use `FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"` with `:=`.
 - Check vendor BSP branch compatibility before modernizing its syntax.
 
+## Offline lookup
+
+Everything this skill needs is in the repository; it works without internet. Pull only the text you need instead of reading whole files (pages run to thousands of lines). From this skill's folder:
+
+- `python3 scripts/ylookup.py <NAME>...` prints the scarthgap manual entry for any variable, class, task, feature or QA check (`--kind var|class|task|feature|qa` to disambiguate, `--find TEXT` when unsure of the name).
+- `--topic TEXT` lists manual sections, `--section <manual/page.md> "<heading>"` prints one, `--grep REGEX [--in ref-manual]` finds anything else.
+- URLs in these files are citations for the user, not lookups. The manuals are scarthgap 5.0: if the project is on another release, tell the user rather than going online. Without Python: `` grep -n -A30 '^## Variable `NAME`' references/keywords.md ``.
+
 ## References
 
 - [references/bsp-kernel.md](references/bsp-kernel.md): machine model, config mechanisms table, devicetree, deploy/FIT/U-Boot/boot files, debug flow, common problems.
 - [references/tasks-reference.md](references/tasks-reference.md): kernel tasks and `do_deploy`.
 - [references/classes-core.md](references/classes-core.md): `kernel`, `kernel-yocto`, `kernel-devicetree`, `kernel-fitimage`, `devicetree`, `uboot-config`, `uboot-sign`, `deploy`, `module`.
 - [references/migration.md](references/migration.md): release detection and scarthgap changes (linux-yocto 6.6).
-- [references/keywords.md](references/keywords.md): official scarthgap manual entry for every keyword named here; grep `` ## Variable `NAME` `` or `` ## Feature `machine:<name>` ``. Others: `yocto-manuals` skill.
 
 ## Output
 

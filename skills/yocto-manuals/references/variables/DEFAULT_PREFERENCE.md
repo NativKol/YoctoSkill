@@ -2,7 +2,7 @@
 
 # Variable `DEFAULT_PREFERENCE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies a weak bias for recipe selection priority.
 
@@ -12,7 +12,7 @@ Note
 
 The bias provided by DEFAULT_PREFERENCE is weak and is overridden by BBFILE_PRIORITY if that variable is different between two layers that contain different versions of the same recipe.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Specifies a weak bias for recipe selection priority.
 
@@ -22,7 +22,7 @@ Note
 
 The bias provided by DEFAULT_PREFERENCE is weak and is overridden by BBFILE_PRIORITY if that variable is different between two layers that contain different versions of the same recipe.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DEFAULT_PREFERENCE , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-DEFAULT_PREFERENCE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-DEFAULT_PREFERENCE , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-DEFAULT_PREFERENCE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

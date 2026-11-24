@@ -2,13 +2,13 @@
 
 # Variable `GROUPMEMS_PARAM`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When inheriting the useradd* class, this variable specifies for a package what parameters should be passed to the `groupmems` command if you wish to modify the members of a group when the package is installed.
 
 For information on the standard Linux shell command `groupmems`, see https://linux.die.net/man/8/groupmems.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-GROUPMEMS_PARAM
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-GROUPMEMS_PARAM)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

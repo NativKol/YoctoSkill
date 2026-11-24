@@ -2,11 +2,11 @@
 
 # Variable `KERNEL_STRIP`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Allows to specific which `strip` command to use to strip the kernel binary, typically either GNU binutils `strip` or `llvm-strip`.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_STRIP
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_STRIP)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

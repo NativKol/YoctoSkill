@@ -2,7 +2,7 @@
 
 # Variable `SSTATE_EXCLUDEDEPS_SYSROOT`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This variable allows to specify indirect dependencies to exclude from sysroots, for example to avoid the situations when a dependency on any `-native` recipe will pull in all dependencies of that recipe in the recipe sysroot. This behaviour might not always be wanted, for example when that `-native` recipe depends on build tools that are not relevant for the current recipe.
 
@@ -22,7 +22,7 @@ SSTATE_EXCLUDEDEPS_SYSROOT += "\
 
 The `->` substring represents the dependency between the two regular expressions.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SSTATE_EXCLUDEDEPS_SYSROOT
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-SSTATE_EXCLUDEDEPS_SYSROOT)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

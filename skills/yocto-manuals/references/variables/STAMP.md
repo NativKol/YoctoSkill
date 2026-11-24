@@ -2,7 +2,7 @@
 
 # Variable `STAMP`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the base path used to create recipe stamp files. The path to an actual stamp file is constructed by evaluating this string and then appending additional information. Currently, the default assignment for STAMP as set in the `meta/conf/bitbake.conf` file is:
 
@@ -15,11 +15,11 @@ For information on how BitBake uses stamp files to determine if a task should be
 
 See STAMPS_DIR, MULTIMACH_TARGET_SYS, PN, EXTENDPE, PV, and PR for related variable information.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Specifies the base path used to create recipe stamp files. The path to an actual stamp file is constructed by evaluating this string and then appending additional information.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-STAMP , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-STAMP
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-STAMP , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-STAMP)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

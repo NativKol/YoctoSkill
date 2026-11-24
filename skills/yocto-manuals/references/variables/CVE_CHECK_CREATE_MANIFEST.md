@@ -2,11 +2,11 @@
 
 # Variable `CVE_CHECK_CREATE_MANIFEST`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies whether to create a CVE manifest to place in the deploy directory. The default is “1”.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CVE_CHECK_CREATE_MANIFEST
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CVE_CHECK_CREATE_MANIFEST)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,8 +2,9 @@
 
 What BitBake actually does with a changed line, who is affected, and what rebuilds. Use
 this to turn "this line changed" into "this is what happens in the build". Manual
-paths are relative to the scarthgap documentation
-(https://docs.yoctoproject.org/scarthgap/).
+paths are relative to the offline scarthgap manuals in `yocto-manuals/references/manuals/`
+(read a section with `python3 scripts/ylookup.py --section <page>.md "<heading>"`, a keyword
+with `ylookup.py <NAME>`; online citation only: https://docs.yoctoproject.org/scarthgap/).
 
 ## Contents
 

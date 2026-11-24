@@ -2,11 +2,11 @@
 
 # Variable `TESTIMAGE_FAILED_QA_ARTIFACTS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When using the testimage class, the variable TESTIMAGE_FAILED_QA_ARTIFACTS lists space-separated paths on the target to retrieve onto the host.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TESTIMAGE_FAILED_QA_ARTIFACTS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TESTIMAGE_FAILED_QA_ARTIFACTS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

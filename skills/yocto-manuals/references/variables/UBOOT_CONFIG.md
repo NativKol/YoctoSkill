@@ -2,7 +2,7 @@
 
 # Variable `UBOOT_CONFIG`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Configures one or more U-Boot configurations to build. Each configuration can define the UBOOT_MACHINE and optionally the IMAGE_FSTYPES and the UBOOT_BINARY.
 
@@ -24,7 +24,7 @@ In this example, all possible seven configurations are selected. Each configurat
 
 For more information on how the UBOOT_CONFIG is handled, see the uboot-config class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_CONFIG
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-UBOOT_CONFIG)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

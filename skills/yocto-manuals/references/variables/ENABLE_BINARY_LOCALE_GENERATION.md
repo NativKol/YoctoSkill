@@ -2,11 +2,11 @@
 
 # Variable `ENABLE_BINARY_LOCALE_GENERATION`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Variable that controls which locales for `glibc` are generated during the build (useful if the target device has 64Mbytes of RAM or less).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ENABLE_BINARY_LOCALE_GENERATION
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ENABLE_BINARY_LOCALE_GENERATION)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

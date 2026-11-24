@@ -2,19 +2,19 @@
 
 # Variable `REQUIRED_VERSION`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 If there are multiple versions of a recipe available, this variable determines which version should be given preference. REQUIRED_VERSION works in exactly the same manner as PREFERRED_VERSION, except that if the specified version is not available then an error message is shown and the build fails immediately.
 
 If both REQUIRED_VERSION and PREFERRED_VERSION are set for the same recipe, the REQUIRED_VERSION value applies.
 
-## BitBake User Manual
+### BitBake User Manual
 
 If there are multiple versions of a recipe available, this variable determines which version should be given preference. REQUIRED_VERSION works in exactly the same manner as PREFERRED_VERSION, except that if the specified version is not available then an error message is shown and the build fails immediately.
 
 If both REQUIRED_VERSION and PREFERRED_VERSION are set for the same recipe, the REQUIRED_VERSION value applies.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-REQUIRED_VERSION , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-REQUIRED_VERSION
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-REQUIRED_VERSION , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-REQUIRED_VERSION)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

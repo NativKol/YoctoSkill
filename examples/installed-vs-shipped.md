@@ -18,6 +18,7 @@ do_package_qa fails: "foo: Files/directories were installed but not shipped in a
 
 - `INSANE_SKIP:${PN} += "installed-vs-shipped"` (the files would silently vanish from every image).
 - Adding random paths to `FILES:${PN}` without checking the package split, or adding paths that an earlier package (`${PN}-dev`, `${PN}-dbg`) already matches: the leftmost package in `PACKAGES` wins, so that line has no effect.
+- Quoting variable behavior from memory, or reading a whole manual page instead of the one entry.
 
 ## Expected Answer Pattern
 
@@ -25,6 +26,7 @@ do_package_qa fails: "foo: Files/directories were installed but not shipped in a
 - Preferred fix: stop overriding the install prefix so the build uses `${bindir}` and `${sysconfdir}` (default `FILES:${PN}` covers them).
 - If `/opt` is a product requirement: `FILES:${PN} += "/opt/foo"`, and mark `/opt/foo/etc/foo.conf` in `CONFFILES:${PN}` if users edit it.
 - If the files are not needed: delete them at the end of `do_install`.
+- Grounds each keyword claim in the offline manual entry (`python3 scripts/ylookup.py --kind qa installed-vs-shipped`, run from the skill folder) and cites it; it does not fetch docs online.
 
 ## Validation
 

@@ -2,11 +2,11 @@
 
 # Variable `OVERLAYFS_ETC_USE_ORIG_INIT_NAME`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When the overlayfs-etc class is inherited, controls how the generated init will be named. For more information, see the overlayfs-etc class documentation. The default value is “1”.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-OVERLAYFS_ETC_USE_ORIG_INIT_NAME
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-OVERLAYFS_ETC_USE_ORIG_INIT_NAME)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

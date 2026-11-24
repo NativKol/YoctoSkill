@@ -2,7 +2,7 @@
 
 # Variable `IMAGE_ROOTFS_MAXSIZE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Defines the maximum allowed size of the generated image in kilobytes. The build will fail if the generated image size exceeds this value.
 
@@ -12,7 +12,7 @@ Thus, if the IMAGE_ROOTFS_MAXSIZE is set, is compared with the result of the abo
 
 It’s a good idea to set this variable for images that need to fit on a limited space (e.g. SD card, a fixed-size partition, …).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_ROOTFS_MAXSIZE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_ROOTFS_MAXSIZE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

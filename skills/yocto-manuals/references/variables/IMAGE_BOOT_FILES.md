@@ -2,7 +2,7 @@
 
 # Variable `IMAGE_BOOT_FILES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A space-separated list of files installed into the boot partition when preparing an image using the Wic tool with the `bootimg-partition` source plugin. By default, the files are installed under the same name as the source files. To change the installed name, separate it from the original name with a semi-colon (;). Source files need to be located in DEPLOY_DIR_IMAGE. Here are two examples:
 
@@ -24,7 +24,7 @@ The first example installs all files from `${DEPLOY_DIR_IMAGE}/bcm2835-bootfiles
 
 You can find information on how to use the Wic tool in the “Creating Partitioned Images Using Wic” section of the Yocto Project Development Tasks Manual. Reference material for Wic is located in the “OpenEmbedded Kickstart (.wks) Reference” chapter.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_BOOT_FILES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-IMAGE_BOOT_FILES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

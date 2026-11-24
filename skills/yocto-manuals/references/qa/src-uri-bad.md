@@ -12,7 +12,7 @@ Message: `SRC_URI uses PN not BPN [src-uri-bad]`
 
 If some part of SRC_URI needs to reference the recipe name, it should do so using ${BPN} rather than ${PN} as the latter will change for different variants of the same recipe e.g. when BBCLASSEXTEND or multilib are being used. This check will fail if a reference to `${PN}` is found within the SRC_URI value — change it to `${BPN}` instead.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html
+Offline source: yocto-manuals/references/manuals/ref-manual/qa-checks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/qa-checks.html)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

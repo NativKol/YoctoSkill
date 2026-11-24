@@ -2,7 +2,7 @@
 
 # Variable `KERNEL_DANGLING_FEATURES_WARN_ONLY`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When kernel configuration fragments are missing for some KERNEL_FEATURES specified by layers or BSPs, building and configuring the kernel stops with an error.
 
@@ -15,7 +15,7 @@ KERNEL_DANGLING_FEATURES_WARN_ONLY = "1"
 
 You will still be warned that runtime issues may occur, but at least the kernel configuration and build process will be allowed to continue.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_DANGLING_FEATURES_WARN_ONLY
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KERNEL_DANGLING_FEATURES_WARN_ONLY)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

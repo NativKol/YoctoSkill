@@ -2,7 +2,7 @@
 
 # Variable `PN`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This variable can have two separate functions depending on the context: a recipe name or a resulting package name.
 
@@ -12,11 +12,11 @@ The variable refers to a package name in the context of a file created or produc
 
 If applicable, the PN variable also contains any special suffix or prefix. For example, using `bash` to build packages for the native machine, PN is `bash-native`. Using `bash` to build packages for the target and for Multilib, PN would be `bash` and `lib64-bash`, respectively.
 
-## BitBake User Manual
+### BitBake User Manual
 
 The recipe name.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PN , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PN
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PN , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-PN)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

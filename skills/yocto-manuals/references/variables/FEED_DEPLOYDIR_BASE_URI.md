@@ -2,7 +2,7 @@
 
 # Variable `FEED_DEPLOYDIR_BASE_URI`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Points to the base URL of the server and location within the document-root that provides the metadata and packages required by OPKG to support runtime package management of IPK packages. You set this variable in your `local.conf` file.
 
@@ -15,7 +15,7 @@ FEED_DEPLOYDIR_BASE_URI = "http://192.168.7.1/BOARD-dir"
 
 This example assumes you are serving your packages over HTTP and your databases are located in a directory named `BOARD-dir`, which is underneath your HTTP server’s document-root. In this case, the OpenEmbedded build system generates a set of configuration files for you in your target that work with the feed.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FEED_DEPLOYDIR_BASE_URI
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-FEED_DEPLOYDIR_BASE_URI)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

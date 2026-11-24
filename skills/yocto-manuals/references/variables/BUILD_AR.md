@@ -2,7 +2,7 @@
 
 # Variable `BUILD_AR`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies the architecture-specific *archiver* for the build host, and its default definition is derived in part from BUILD_PREFIX:
 
@@ -15,7 +15,7 @@ When building a native recipe, AR is set to the value of this variable by defaul
 
 The BUILD_AR variable should not be set manually, and is rarely used in recipes as AR contains the appropriate value depending on the context (native or target recipes). Exception be made for target recipes that need to use the *archiver* from the build host at some point during the build.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BUILD_AR
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-BUILD_AR)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

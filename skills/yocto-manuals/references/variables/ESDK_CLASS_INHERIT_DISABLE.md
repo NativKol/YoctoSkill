@@ -2,7 +2,7 @@
 
 # Variable `ESDK_CLASS_INHERIT_DISABLE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A list of classes to remove from the INHERIT value globally within the extensible SDK configuration. The populate-sdk-ext class sets the default value:
 
@@ -15,7 +15,7 @@ Some classes are not generally applicable within the extensible SDK context. You
 
 For additional information on how to customize the extensible SDK’s configuration, see the “Configuring the Extensible SDK” section in the Yocto Project Application Development and the Extensible Software Development Kit (eSDK) manual.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ESDK_CLASS_INHERIT_DISABLE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-ESDK_CLASS_INHERIT_DISABLE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,7 +2,7 @@
 
 # Variable `TARGET_LD_ARCH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Specifies architecture-specific linker flags for the target system. TARGET_LD_ARCH is initialized from TUNE_LDARGS by default in the BitBake configuration file (`meta/conf/bitbake.conf`):
 
@@ -11,7 +11,7 @@ TARGET_LD_ARCH = "${TUNE_LDARGS}"
 
 ```
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TARGET_LD_ARCH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-TARGET_LD_ARCH)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

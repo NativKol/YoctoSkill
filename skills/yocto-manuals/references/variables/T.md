@@ -2,7 +2,7 @@
 
 # Variable `T`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This variable points to a directory were BitBake places temporary files, which consist mostly of task logs and scripts, when building a particular recipe. The variable is typically set as follows:
 
@@ -15,11 +15,11 @@ The WORKDIR is the directory into which BitBake unpacks and builds the recipe. T
 
 The T variable is not to be confused with the TMPDIR variable, which points to the root of the directory tree where BitBake places the output of an entire build.
 
-## BitBake User Manual
+### BitBake User Manual
 
 Points to a directory were BitBake places temporary files, which consist mostly of task logs and scripts, when building a particular recipe.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-T , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-T
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md, yocto-manuals/references/manuals/bitbake-user-manual/bitbake-user-manual-ref-variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-T , https://docs.yoctoproject.org/bitbake/2.8/bitbake-user-manual/bitbake-user-manual-ref-variables.html#term-T)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

@@ -2,11 +2,11 @@
 
 # Variable `CLEANBROKEN`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 If set to “1” within a recipe, CLEANBROKEN specifies that the `make clean` command does not work for the software being built. Consequently, the OpenEmbedded build system will not try to run `make clean` during the do_configure task, which is the default behavior.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CLEANBROKEN
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-CLEANBROKEN)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

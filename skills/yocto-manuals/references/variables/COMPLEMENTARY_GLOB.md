@@ -2,7 +2,7 @@
 
 # Variable `COMPLEMENTARY_GLOB`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 Defines wildcards to match when installing a list of complementary packages for all the packages explicitly (or implicitly) installed in an image.
 
@@ -21,7 +21,7 @@ Note
 
 When installing complementary packages, recommends relationships (set via RRECOMMENDS) are always ignored.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-COMPLEMENTARY_GLOB
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-COMPLEMENTARY_GLOB)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

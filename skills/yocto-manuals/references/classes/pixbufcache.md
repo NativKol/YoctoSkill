@@ -6,7 +6,7 @@ The pixbufcache class generates the proper post-install and post-remove (postins
 
 If the pixbuf loaders being installed are in packages other than the recipe’s main package, set PIXBUF_PACKAGES to specify the packages containing the loaders.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-pixbufcache
+Offline source: yocto-manuals/references/manuals/ref-manual/classes.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/classes.html#ref-classes-pixbufcache)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

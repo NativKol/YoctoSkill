@@ -13,7 +13,7 @@ $ bitbake -c clean recipe
 
 Running this task does not remove the sstate cache files. Consequently, if no changes have been made and the recipe is rebuilt after cleaning, output files are simply restored from the sstate cache. If you want to remove the sstate cache files for the recipe, you need to use the do_cleansstate task instead (i.e. `bitbake -c cleansstate` recipe).
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-clean
+Offline source: yocto-manuals/references/manuals/ref-manual/tasks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-clean)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

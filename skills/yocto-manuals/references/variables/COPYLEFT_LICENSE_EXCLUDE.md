@@ -2,7 +2,7 @@
 
 # Variable `COPYLEFT_LICENSE_EXCLUDE`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A space-separated list of licenses to exclude from the source archived by the archiver class. In other words, if a license in a recipe’s LICENSE value is in the value of COPYLEFT_LICENSE_EXCLUDE, then its source is not archived by the class.
 
@@ -12,7 +12,7 @@ The COPYLEFT_LICENSE_EXCLUDE variable takes precedence over the COPYLEFT_LICENSE
 
 The default value, which is “CLOSED Proprietary”, for COPYLEFT_LICENSE_EXCLUDE is set by the copyleft_filter class, which is inherited by the archiver class.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-COPYLEFT_LICENSE_EXCLUDE
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-COPYLEFT_LICENSE_EXCLUDE)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

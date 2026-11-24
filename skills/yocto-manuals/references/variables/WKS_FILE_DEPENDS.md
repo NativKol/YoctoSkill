@@ -2,7 +2,7 @@
 
 # Variable `WKS_FILE_DEPENDS`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 When placed in the recipe that builds your image, this variable lists build-time dependencies. The WKS_FILE_DEPENDS variable is only applicable when Wic images are active (i.e. when IMAGE_FSTYPES contains entries related to Wic). If your recipe does not create Wic images, the variable has no effect.
 
@@ -17,7 +17,7 @@ WKS_FILE_DEPENDS = "some-native-tool"
 
 In the previous example, some-native-tool would be replaced with an actual native tool on which the build would depend.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-WKS_FILE_DEPENDS
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-WKS_FILE_DEPENDS)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

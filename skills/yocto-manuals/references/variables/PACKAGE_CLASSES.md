@@ -2,7 +2,7 @@
 
 # Variable `PACKAGE_CLASSES`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 This variable, which is set in the `local.conf` configuration file found in the `conf` folder of the Build Directory, specifies the package manager the OpenEmbedded build system uses when packaging data.
 
@@ -24,7 +24,7 @@ The OpenEmbedded build system uses the IPK package manager to create your image 
 
 For information on packaging and build performance effects as a result of the package manager in use, see the “package” section.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGE_CLASSES
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-PACKAGE_CLASSES)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

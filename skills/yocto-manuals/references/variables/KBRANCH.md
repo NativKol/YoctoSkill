@@ -2,7 +2,7 @@
 
 # Variable `KBRANCH`
 
-## Yocto Project Reference Manual
+### Yocto Project Reference Manual
 
 A regular expression used by the build process to explicitly identify the kernel branch that is validated, patched, and configured during a build. You must set this variable to ensure the exact kernel branch you want is being used by the build process.
 
@@ -24,7 +24,7 @@ KBRANCH:beaglebone-yocto = "v6.1/standard/beaglebone"
 
 The KBRANCH statements identify the kernel branch to use when building for each supported BSP.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KBRANCH
+Offline source: yocto-manuals/references/manuals/ref-manual/variables.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/variables.html#term-KBRANCH)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.

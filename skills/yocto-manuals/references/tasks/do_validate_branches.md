@@ -4,7 +4,7 @@
 
 After the kernel is unpacked but before it is patched, this task makes sure that the machine and metadata branches as specified by the SRCREV variables actually exist on the specified branches. Otherwise, if AUTOREV is not being used, the do_validate_branches task fails during the build.
 
-Source: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-validate-branches
+Offline source: yocto-manuals/references/manuals/ref-manual/tasks.md (online: https://docs.yoctoproject.org/scarthgap/ref-manual/tasks.html#do-validate-branches)
 
 ---
 Release: Yocto Project 5.0 (scarthgap) / BitBake 2.8. Text from the Yocto Project documentation, CC BY-SA 2.0 UK (BitBake manual: CC BY 2.5); converted to Markdown, see skills/yocto-manuals/LICENSE-docs.md.
